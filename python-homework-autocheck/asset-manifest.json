@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/python-homework-autocheck/static/css/main.00615854.chunk.css",
+    "main.js": "/python-homework-autocheck/static/js/main.29054336.chunk.js",
+    "runtime-main.js": "/python-homework-autocheck/static/js/runtime-main.dd387db2.js",
+    "static/css/2.048dedda.chunk.css": "/python-homework-autocheck/static/css/2.048dedda.chunk.css",
+    "static/js/2.bac1942a.chunk.js": "/python-homework-autocheck/static/js/2.bac1942a.chunk.js",
+    "index.html": "/python-homework-autocheck/index.html",
+    "precache-manifest.f49862b33e6e21e3fdd3bbcdfd0cdfea.js": "/python-homework-autocheck/precache-manifest.f49862b33e6e21e3fdd3bbcdfd0cdfea.js",
+    "service-worker.js": "/python-homework-autocheck/service-worker.js",
+    "static/js/2.bac1942a.chunk.js.LICENSE.txt": "/python-homework-autocheck/static/js/2.bac1942a.chunk.js.LICENSE.txt",
+    "static/media/autorenew-black-18dp.fcbcd912.svg": "/python-homework-autocheck/static/media/autorenew-black-18dp.fcbcd912.svg",
+    "static/media/TheoryAndTaskOrLayout.module.css": "/python-homework-autocheck/static/media/writing.e7cc4e62.svg",
+    "static/media/chrome_reader_mode-black-18dp.6c49fe00.svg": "/python-homework-autocheck/static/media/chrome_reader_mode-black-18dp.6c49fe00.svg",
+    "static/media/close.af1ceb8b.svg": "/python-homework-autocheck/static/media/close.af1ceb8b.svg",
+    "static/media/cup.8fb1dee0.svg": "/python-homework-autocheck/static/media/cup.8fb1dee0.svg",
+    "static/media/done.624992a6.svg": "/python-homework-autocheck/static/media/done.624992a6.svg",
+    "static/media/main.css": "/python-homework-autocheck/static/media/theoryInfo.7b892bb7.svg",
+    "static/media/left-arrow.bfab9890.svg": "/python-homework-autocheck/static/media/left-arrow.bfab9890.svg",
+    "static/media/logo2.svg": "/python-homework-autocheck/static/media/logo2.0d08ad16.svg",
+    "static/media/movie-black-18dp.e4b51847.svg": "/python-homework-autocheck/static/media/movie-black-18dp.e4b51847.svg",
+    "static/media/notDone.d9abeac5.svg": "/python-homework-autocheck/static/media/notDone.d9abeac5.svg",
+    "static/media/right-arrow.bbd67d36.svg": "/python-homework-autocheck/static/media/right-arrow.bbd67d36.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd387db2.js",
+    "static/css/2.048dedda.chunk.css",
+    "static/js/2.bac1942a.chunk.js",
+    "static/css/main.00615854.chunk.css",
+    "static/js/main.29054336.chunk.js"
+  ]
+}
