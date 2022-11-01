@@ -1,0 +1,17 @@
+<% extends 'layout.html' %>
+
+<% block container %>
+<div id="mailpoet_automation_editor" class="edit-site"></div>
+<% endblock %>
+
+<% block after_javascript %>
+<script type="text/javascript">
+  var mailpoet_automation_api = <%= json_encode(api) %>;
+  var mailpoet_automation_workflow = <%= workflow ? json_encode(workflow) : 'undefined' %>;
+</script>
+<%= javascript('automation_editor.js')%>
+<% endblock %>
+
+<% block after_css %>
+<%= stylesheet('mailpoet-automation-editor.css') %>
+<% endblock %>

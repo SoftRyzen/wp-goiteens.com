@@ -1,0 +1,18 @@
+.pagination{
+    text-align: center;
+    font-size: 20px;
+}
+
+.pagination a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.pagination .current{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.arrow-back-blog{
+    margin-top: 25px;
+}

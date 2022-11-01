@@ -1,0 +1,17 @@
+:root {
+	--accent-color:#aa43a2;
+}
+
+
+.polytic-page{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.polytic-page .title,
+.polytic-page .undertitle
+{
+	text-align:center;
+;
+	
+}

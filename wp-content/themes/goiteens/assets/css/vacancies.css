@@ -1,0 +1,159 @@
+.hero-header {
+  color: var(--white-text-cl);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(0deg, rgba(49, 45, 61, 0.95), rgba(49, 45, 61, 0.95)), url("../images/vacancies/header/bg_lg.jpg"); }
+  @media (max-width: 767.98px) {
+    .hero-header {
+      height: 100vh; } }
+  @media (min-width: 768px) {
+    .hero-header {
+      position: relative;
+      background-size: 350px auto, cover, cover;
+      background-position: bottom left calc(100% / 2 + 230px), center, center;
+      background-image: url(../images/vacancies/header/girl.png), linear-gradient(0deg, rgba(49, 45, 61, 0.95), rgba(49, 45, 61, 0.95)), url("../images/vacancies/header/bg_lg.jpg"); } }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero-header {
+      background-image: url(../images/vacancies/header/girl@2x.png), linear-gradient(0deg, rgba(49, 45, 61, 0.95), rgba(49, 45, 61, 0.95)), url("../images/vacancies/header/bg_lg.jpg"); } }
+  @media (min-width: 1280px) {
+    .hero-header {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-size: 400px auto, cover, cover; } }
+  @media (max-width: 767.98px) {
+    .hero-header__container {
+      height: 100%; } }
+  .hero-header__logo-link {
+    display: block;
+    max-width: 40%; }
+    @media (min-width: 768px) {
+      .hero-header__logo-link {
+        margin-bottom: 50px; } }
+  .hero-header__box-text {
+    position: relative;
+    padding-bottom: 40px; }
+    @media (max-width: 767.98px) {
+      .hero-header__box-text {
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; } }
+    @media (min-width: 768px) {
+      .hero-header__box-text {
+        padding-bottom: 75px; } }
+    @media (min-width: 1280px) {
+      .hero-header__box-text {
+        padding-bottom: 90px; } }
+    .hero-header__box-text::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: var(--secondary-accent-cl);
+      background-size: 14px;
+      background-repeat: no-repeat;
+      background-image: url(../images/vacancies/header/down.png);
+      background-position: top center;
+      box-shadow: 10px 10px 40px rgba(136, 55, 151, 0.3), inset 4px 4px 4px rgba(255, 255, 255, 0.2), inset -4px -4px 4px #883797;
+      animation: down 2s linear infinite; }
+      @media (min-width: 768px) {
+        .hero-header__box-text::after {
+          width: 44px;
+          height: 44px;
+          background-size: 24px;
+          left: 0;
+          transform: none; } }
+      @media (min-width: 1280px) {
+        .hero-header__box-text::after {
+          width: 64px;
+          height: 64px;
+          background-size: 34px; } }
+
+@keyframes down {
+  0% {
+    background-position: top center; }
+  100% {
+    background-position: bottom center; } }
+  .hero-header__title {
+    margin-bottom: 25px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .hero-header__title {
+        max-width: 60%;
+        font-size: 60px; } }
+    @media (min-width: 1280px) {
+      .hero-header__title {
+        max-width: 50%;
+        font-size: 74px; } }
+    @media (min-width: 768px) {
+      .hero-header__title .text-yellow {
+        display: block;
+        text-align: end; } }
+  .hero-header__subtitle {
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding-left: 70px;
+    position: relative;
+    max-width: 210px;
+    text-align: end;
+    font-size: 12px; }
+    @media (min-width: 768px) {
+      .hero-header__subtitle {
+        margin-bottom: 0;
+        position: absolute;
+        top: -90px;
+        right: 0; } }
+    @media (min-width: 1280px) {
+      .hero-header__subtitle {
+        font-size: 20px;
+        padding-left: 0;
+        padding-bottom: 70px; } }
+    .hero-header__subtitle::before {
+      content: '';
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/vacancies/header/money.png); }
+      @media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        .hero-header__subtitle::before {
+          background-image: url(../images/vacancies/header/money@2x.png); } }
+      @media (max-width: 1279.98px) {
+        .hero-header__subtitle::before {
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0; } }
+      @media (min-width: 1280px) {
+        .hero-header__subtitle::before {
+          bottom: 0;
+          right: 0; } }
+    .hero-header__subtitle .text-yellow {
+      display: block; }
+  @media (min-width: 768px) {
+    .hero-header__list {
+      max-width: 65%; } }
+  @media (min-width: 1280px) {
+    .hero-header__list {
+      max-width: 50%; } }
+  .hero-header__text-item {
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      .hero-header__text-item {
+        font-size: 18px; } }
+    .hero-header__text-item:not(:last-child) {
+      margin-bottom: 15px; }
+    @media (min-width: 1280px) {
+      .vacancy-modal-outer {
+        padding:40px; } }
+

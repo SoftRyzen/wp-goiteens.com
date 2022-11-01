@@ -1,0 +1,15 @@
+{
+    "name": "goit/landing-integration",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^5.3",
+      "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "components\\": "components"
+        }
+    }
+}

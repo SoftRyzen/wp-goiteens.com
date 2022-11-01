@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hide Admin Notices\n"
+"POT-Creation-Date: 2022-01-31 15:26+0100\n"
+"PO-Revision-Date: 2022-01-31 15:35+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: hide-admin-notices.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPathExcluded-0: src\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+
+#: includes/class-hide-admin-notices-admin.php:51
+#: includes/class-hide-admin-notices-admin.php:52
+msgid "Donate a $1"
+msgstr "1ドルを寄付する"
+
+#: includes/class-hide-admin-notices-admin.php:73
+#: includes/class-hide-admin-notices-admin.php:74
+msgid "Like it?"
+msgstr "それはいいですね！"
+
+#: includes/class-hide-admin-notices-admin.php:88
+msgid "Notifications Tab"
+msgstr "[通知]タブ"
+
+#: includes/class-hide-admin-notices-admin.php:92
+msgid "Show Notices"
+msgstr "通知を表示"
+
+#: includes/class-hide-admin-notices-admin.php:93
+msgid "Hide Notices"
+msgstr "通知を非表示にする"
+
+#. Plugin Name of the plugin/theme
+msgid "Hide Admin Notices"
+msgstr "ダッシュボード通知を非表示にする"
+
+#. Plugin URI of the plugin/theme
+msgid "https://pontetlabs.com/hide-admin-notices"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Hide – or show – WordPress Dashboard Notices, Messages, Update Nags etc. ... "
+"for everything!"
+msgstr ""
+"WordPressダッシュボードで通知、メッセージ、更新ナグなどを非表示または表示しま"
+"す。"
+
+#. Author of the plugin/theme
+msgid "PontetLabs"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://pontetlabs.com"
+msgstr ""

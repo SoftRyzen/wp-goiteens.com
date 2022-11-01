@@ -1,0 +1,5687 @@
+#setting_stopService .doNotStopServiceAsException, #setting_stopService .stopServiceForDayOfTimes, #setting_stopService .stopServiceForSpecifiedNumberOfTimes {
+    
+    margin-left: 2em;
+    
+}
+
+#setting_stopService .stopServiceForDayOfTimes, #setting_stopService .stopServiceForSpecifiedNumberOfTimes {
+    
+    margin-top: 0.5em;
+    
+}
+
+#setting_stopService .stopServiceForDayOfTimes span {
+    
+    margin-right: 0.5em;
+    
+}
+
+#setting_stopService .stopServiceForDayOfTimes label {
+    
+    display: initial;
+    margin-right: 0.5em;
+    
+}
+
+#setting_stopService .stopServiceForSpecifiedNumberOfTimes input[type=text] {
+    
+    width: 40px;
+    text-align: center;
+    
+}
+
+#setting_stopService .messageLabel {
+
+    color: #ff4b4b;
+    border: 1px solid #ff4b4b;
+    background-color: #fff6f6;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    
+}
+
+
+#booking-package-user-form, #booking-package-user-edit-form {
+    
+    max-width: 320px;
+    padding: 1% 0;
+    padding-bottom: 0;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #FFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: content-box;
+    background-color: #fcfcfc;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    border: 1px solid #969696;
+    
+}
+
+#booking-package-user-form label, #booking-package-user-edit-form label {
+    
+    display: block;
+    cursor: default;
+    margin: 0.5em 0;
+    
+}
+
+#booking-package-user-form div, #booking-package-user-edit-form div {
+    
+    margin-bottom: 1em;
+    
+}
+
+#booking-package-user-form input, #booking-package-user-edit-form input {
+    
+    width: 100%;
+    
+}
+
+#booking-package-user-form input[type=checkbox], #booking-package-user-edit-form input[type=checkbox] {
+    
+    width: inherit;
+    
+}
+
+#booking-package-user-form .sendButton, #booking-package-user-edit-form .sendButton {
+    
+    /**float: right;**/
+    margin-left: 3%;
+    
+}
+
+#booking-package-user-form .titlePanel, #booking-package-user-edit-form .titlePanel {
+    
+    display: table;
+    width: 100%;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1%;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#booking-package-user-edit-form .tabFrame {
+    
+    margin: 0;
+    
+}
+
+#booking-package-user-edit-form .menuList {
+    
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#booking-package-user-edit-form .menuItem {
+    
+    position: relative;
+    top: 1px;
+    margin-bottom: 0;
+    
+}
+
+#booking-package-user-form .inputPanel, #booking-package-user-edit-form .inputPanel {
+    
+    display: table;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1% 3%;
+    background-color: #FFF;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#booking-package-user-form .title, #booking-package-user-edit-form .title {
+    
+    float: left;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+#booking-package-user-form .closeButton, #booking-package-user-edit-form .closeButton {
+    
+    float: right;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.5em !important;
+    
+}
+
+#booking-package-user-form .errorPanel, #booking-package-user-edit-form .errorPanel, #user_detail_panel .errorPanel {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#booking-package-user-edit-form .return_button {
+    
+    margin-left: 1em;
+    
+}
+
+#booking-package-user-subscribed table{
+    
+    width: 100%;
+    font-size: 1em;
+    
+}
+
+#booking-package-user-subscribed div {
+    
+    margin-bottom: 0.5em;
+    
+}
+
+#booking-package-user-subscribed .delete_icon {
+    
+    font-weight: normal;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#booking-package-user-subscribed .canceled {
+    
+    color: #e23e3e;
+    
+}
+
+#member_list_table .userId {
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#member_list_table .priority_high {
+    
+    color: #ff6060;
+    font-size: 1.2em !important;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#member_list_table .tr_user {
+    
+    cursor: pointer;
+    
+}
+
+#member_list .actionButtonPanel {
+    
+    width: 100%;
+    float: right;
+    margin-bottom: 10px;
+    
+}
+
+#member_list .actionButtonPanelLeft {
+    
+    display: table;
+    float: left;
+    
+}
+
+#member_list .actionButtonPanelRight {
+    
+    float: right;
+    
+}
+
+#member_list .serch_users_text, #lookForUserPanel .serch_users_text {
+    
+    margin: 0;
+    padding: 0 5px;
+    line-height: 26px;
+    
+}
+
+#member_list .serch_user_button {
+    
+    border-radius: 0;
+    border-right-width: 0;
+    
+}
+
+#member_list .clear_user_button {
+    
+    border-radius: 0 3px 3px 0;
+    
+}
+
+#member_list .page_action_panel {
+    
+    display: table;
+    width: 100%;
+    margin: 0.5em 0;
+    
+}
+
+#member_list .select_limit {
+    
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    
+}
+
+#member_list .page_button {
+    
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 0.2em;
+    float: left;
+    line-height: 1.1;
+    
+}
+
+#setting_page {
+    
+    
+}
+
+#setting_page label {
+    
+    display: block;
+    
+}
+
+#setting_page th {
+    
+    text-align: left;
+    
+}
+
+#select_package {
+    
+    margin-top: 40px;
+    position: initial;
+    background-color: #FFF;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    padding: 23px 10px 0;
+    margin: 20px 20px 0 0;
+    font-size: 13px;
+    line-height: 1.7;
+    
+}
+
+#select_package .actionButtonPanel {
+    
+    float: right;
+    padding-bottom: 10px;
+    
+}
+
+#calendarName, #calendarTimeZone {
+    
+    color: #555d66;
+    text-align: right;
+    margin: 10px 0 0 0;
+    
+}
+
+#selectCalendarAccountPanel select {
+    
+    font-size: 1.2em !important;
+    height: 2.4em !important;
+    
+}
+
+#shortcode {
+    
+    color: #FFF;
+    background-color: #1e8cbe;
+    
+}
+
+.top_bar {
+    
+    display: table;
+    width: 100%;
+    
+}
+
+.top_toolbar_icon {
+    
+    position: relative !important;
+    padding: 2px 0 !important;
+    margin-right: 6px !important;
+    font: 400 20px/1 dashicons;
+    /**float: left;**/
+    top: 2px;
+    
+}
+
+.top_toolbar_icon::before {
+    
+    content: "\f508";
+    font: 400 16px/1 dashicons;
+    
+}
+
+.hidden_panel {
+    
+    display: none !important;
+    
+}
+
+.hidden_panel_left_100 {
+    
+    left: 100% !important;
+    
+}
+
+.errorPanel {
+	
+	background: #FFD5D5 !important;
+	
+}
+
+.material-icons {
+    
+    font-family: 'Material Icons';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px !important;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.loader {
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+}
+
+.loader #spinner {
+    box-sizing: border-box;
+    stroke: #673AB7;
+    stroke-width: 3px;
+    -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+    -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+          animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+
+}
+
+@-webkit-keyframes rotate {
+    from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); 
+    }
+    to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+    
+    } 
+
+}
+
+@keyframes rotate {
+    from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    
+    }
+    to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+    
+    }
+
+}
+
+@-webkit-keyframes line {
+    
+    0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0; 
+    }
+    100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    }
+
+}
+
+@keyframes line {
+    0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0;
+    }
+    100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    }
+
+}
+
+#dialogPanel, #selectOptionsPanel {
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #555;
+    
+}
+
+#dialogPanel .blockPanel, #selectOptionsPanel .blockPanel {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000000;
+    opacity: 0.3;
+    z-index: 16000;
+    
+}
+
+#dialogPanel .confirmPanel, #selectOptionsPanel .confirmPanel{
+    
+    position: fixed;
+    top: 200px;
+    left: 25%;
+    right: 25%;
+    
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #FFF;
+    z-index: 16001;
+    
+    
+}
+
+#selectOptionsPanel .confirmPanel{
+    
+    bottom: 200px;
+    
+}
+
+#dialogPanel .subject, #selectOptionsPanel .subject {
+    
+    padding: 10px 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#selectOptionsPanel .subject {
+    
+    padding: 0px 10px;
+    line-height: 40px;
+    
+}
+
+#selectOptionsPanel .body {
+    
+    overflow: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 41px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#dialogPanel .body {
+    
+    padding: 10px;
+    
+}
+
+#selectOptionsPanel .body {
+    
+    padding: 0;
+    
+}
+
+#selectOptionsPanel .buttonPanel {
+    
+    position: absolute;
+    padding: 1em;
+    float: right;
+    bottom: 0;
+    right: 0;
+    
+}
+
+#selectOptionsPanel .decisionButton {
+    
+    
+    
+}
+
+#dialogPanel .selectSchedulePanel, #selectOptionsPanel .selectSchedulePanel {
+    
+    padding: 10px;
+    overflow: auto;
+    max-height: 420px;
+    
+}
+
+#dialogPanel .selectPanel {
+    
+    position: fixed;
+    width: 300px;
+    
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #FFF;
+    z-index: 16001;
+    
+}
+
+#dialogPanel .arrowLeft {
+     
+    position: absolute;
+     
+}
+    
+#dialogPanel .arrowLeft:before {
+    
+    border: 10px solid transparent;
+    border-right-color: #FFF;
+    border-left-width: 0;
+    left: -10px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    
+}
+
+#dialogPanel .arrowRigth {
+     
+    position: absolute;
+     
+}
+    
+#dialogPanel .arrowRigth:before {
+    
+    border: 10px solid transparent;
+    border-left-color: #FFF;
+    border-right-width: 0;
+    left: 300px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    
+}
+
+#dialogPanel .horizontalRowPanel {
+    
+    display: table;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#dialogPanel .rowPanel {
+    
+    display: table-cell;
+    
+}
+
+#dialogPanel .selectRowPanel {
+    
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+    padding: 10% 20%;
+    margin: 2px;
+    cursor: pointer;
+    
+}
+
+#dialogPanel .selectRowPanel:hover {
+    
+    color: #98c878;
+    border: 1px solid #98c878;
+    
+}
+
+#dialogPanel .selectedRowPanel {
+    
+    color: #FFF;
+    background-color: #98c878;
+    border: 1px solid #98c878;
+    border-radius: 5px;
+    padding: 10% 20%;
+    margin: 2px;
+    
+}
+
+#dialogPanel .buttonPanel {
+    
+    padding-bottom: 10px;
+    text-align: right;
+    
+}
+
+#dialogPanel .scheduleButtonPanel {
+    
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    
+}
+
+#dialogPanel .yesButton {
+    
+    width: 70px;
+    background-color: #98c878;
+    border-color: #98c878;
+    box-shadow: none;
+    text-shadow: none;
+    margin-right: 10px;
+    
+}
+
+#dialogPanel .noButton {
+    
+    width: 70px;
+    background-color: #f06767;
+    border-color: #f06767;
+    box-shadow: none;
+    text-shadow: none;
+    margin-right: 10px;
+    
+}
+
+#deletePublishedSchedulesPanel, #loadSchedulesPanel, #createClonePanel, #selectionSchedule, #lookForUserPanel {
+    
+    max-width: 420px;
+    position: fixed;
+    /** padding: 1% 0; **/
+    top: 80px;
+    left: 10%;
+    right: 10%;
+    
+    margin: auto;
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+}
+
+
+
+#lookForUserPanel {
+    
+    bottom: 80px;
+    z-index: 16001;
+    
+}
+
+#deletePublishedSchedulesPanel, #createClonePanel {
+    
+    z-index: 16000;
+    
+}
+
+#loadSchedulesPanel, #selectionSchedule {
+    
+    z-index: 16001;
+    
+}
+
+#deletePublishedSchedulesPanel th, #loadSchedulesPanel th, #createClonePanel th, #selectionSchedule th {
+    
+    width: 100px;
+    text-align: left;
+    
+}
+
+#deletePublishedSchedulesPanel div, #loadSchedulesPanel div, #createClonePanel div, #selectionSchedule div {
+    
+    margin-bottom: 1em;
+    
+}
+
+#deletePublishedSchedulesPanel label, #loadSchedulesPanel label, #createClonePanel label, #selectionSchedule label {
+    
+    display: block;
+    cursor: default;
+    margin: 0.5em 0;
+    
+}
+
+#deletePublishedSchedulesPanel .freePlan, #coursePanel .freePlan, #loadSchedulesPanel .freePlan, #createClonePanel .freePlan, #selectionSchedule .freePlan {
+    
+    color: #ff4646;
+    
+}
+
+#deletePublishedSchedulesPanel .titlePanel, #loadSchedulesPanel .titlePanel, #createClonePanel .titlePanel, #selectionSchedule .titlePanel, #lookForUserPanel .titlePanel {
+    
+    display: table;
+    width: 100%;
+    padding: 1%;
+    padding-top: 1em;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    background-color: #fcfcfc;
+    
+}
+
+#deletePublishedSchedulesPanel .titlePanel {
+    
+    background-color: #ff4b4b;
+    color: #fff;
+    
+}
+
+#deletePublishedSchedulesPanel .title, #loadSchedulesPanel .title, #createClonePanel .title, #selectionSchedule .title, #lookForUserPanel .title {
+    
+    float: left;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 0.5em;
+    /**
+    text-transform: uppercase;
+    **/
+}
+
+#lookForUserPanel .inputPanel {
+    
+    width: 420px;
+    min-height: 100px;
+    border-width: 0;
+    margin-bottom: 0; 
+    position: fixed;
+    overflow: auto;
+    top: 117px;
+    bottom: 135px;
+    
+}
+
+#deletePublishedSchedulesPanel .buttonPanel, #loadSchedulesPanel .buttonPanel, #createClonePanel .buttonPanel, #selectionSchedule .buttonPanel {
+    
+    float: right;
+    margin-right: 10px;
+    background-color: #fcfcfc;
+    
+}
+
+#loadSchedulesPanel .buttonPanel, #createClonePanel .buttonPanel, #selectionSchedule .buttonPanel, #lookForUserPanel .buttonPanel {
+    
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    background-color: #fcfcfc;
+    
+}
+
+#lookForUserPanel .buttonPanel {
+    
+    position: absolute;
+    bottom: 0;
+    
+}
+
+#deletePublishedSchedulesPanel .closeButton, #loadSchedulesPanel .closeButton, #createClonePanel .closeButton, #selectionSchedule .closeButton, #lookForUserPanel .closeButton {
+    
+    float: right;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.5em !important;
+    font-weight: normal;
+    
+}
+
+#deletePublishedSchedulesPanel .inputPanel, #loadSchedulesPanel .inputPanel, #createClonePanel .inputPanel, #selectionSchedule .inputPanel {
+    
+    /**display: table;**/
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1% 3%;
+    background-color: #FFF;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#deletePublishedSchedulesPanel .from, #deletePublishedSchedulesPanel .to {
+    
+    display: inline-block;
+    width: 50px;
+    
+}
+
+#loadSchedulesPanel .fromTo {
+    
+    display: inline-block;
+    
+}
+
+#loadSchedulesPanel .fromPanel {
+    
+    display: inline-block;
+    margin-bottom: 4px;
+    
+}
+
+#loadSchedulesPanel .toPanel {
+    
+    display: inline-block;
+    
+}
+
+#addCoursePanel .from-ja, #addCoursePanel .to-ja {
+    
+    margin-left: 0.5em;
+    
+}
+
+#loadSchedulesPanel .from, #loadSchedulesPanel .to {
+    
+    display: inline-block;
+    
+}
+
+#createClonePanel select, #selectionSchedule select {
+    
+    margin-right: 1em;
+    
+}
+
+#selectionSchedule .selectBlock {
+    
+    margin-bottom: 0;
+    
+}
+
+#selectionSchedule .items {
+    
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+#selectionSchedule .selectPanel {
+    
+    height: 300px;
+    overflow: auto;
+    margin: 0;
+    
+}
+#selectionSchedule .selectItem {
+    
+    width: 16%;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    
+    
+}
+
+#selectionSchedule .selectItem:hover {
+    
+    color: #FFF;
+    background-color: #8ea1bf;
+    
+}
+
+#selectionSchedule .selectedItem {
+    
+    color: #FFF;
+    background-color: #8ea1bf;
+    
+}
+
+#selectionSchedule .openAnimation {
+    
+    animation-name: openAnimation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    border-bottom: 1px solid #ddd;
+    height: 300px;
+    margin: 0.5em 0;
+    
+}
+
+#selectionSchedule .closed {
+    
+    height: 0;
+    
+}
+
+#selectionSchedule .closeAnimation {
+    
+    animation-name: closeAnimation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    height: 0;
+    
+}
+
+#buttonPanel .button-large {
+    
+    line-height: 1;
+    
+}
+
+@keyframes openAnimation {
+    
+    from {
+        
+        height: 0;
+        
+    }
+    to {
+        
+        height: 300px;
+        
+    }
+    
+}
+
+@keyframes closeAnimation {
+    
+    from {
+        
+        height: 300px;
+        
+    }
+    to {
+        
+        height: 0;
+        
+    }
+    
+}
+
+#timeSelectPanel {
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #555;
+    
+}
+
+#timeSelectPanel .blockPanel {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000000;
+    opacity: 0.2;
+    z-index: 16000;
+    
+}
+
+#timeSelectPanel .confirmPanel{
+    
+    position: fixed;
+    top: 200px;
+    left: 25%;
+    right: 25%;
+    
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #FFF;
+    z-index: 16001;
+    
+    
+}
+
+#timeSelectPanel .subject {
+    
+    padding: 10px 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#timeSelectPanel .body {
+    
+    padding: 10px;
+    
+}
+
+#timeSelectPanel .selectSchedulePanel {
+    
+    padding: 10px;
+    overflow: auto;
+    max-height: 420px;
+    
+}
+
+#timeSelectPanel .selectPanel {
+    
+    position: fixed;
+    width: 300px;
+    
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #FFF;
+    z-index: 16001;
+    
+}
+
+#timeSelectPanel .arrowLeft {
+     
+    position: absolute;
+     
+}
+    
+#timeSelectPanel .arrowLeft:before {
+    
+    border: 10px solid transparent;
+    border-right-color: #FFF;
+    border-left-width: 0;
+    left: -10px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    
+}
+
+#timeSelectPanel .arrowRigth {
+     
+    position: absolute;
+     
+}
+    
+#timeSelectPanel .arrowRigth:before {
+    
+    border: 10px solid transparent;
+    border-left-color: #FFF;
+    border-right-width: 0;
+    left: 300px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    
+}
+
+#timeSelectPanel .horizontalRowPanel {
+    
+    display: table;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#timeSelectPanel .rowPanel {
+    
+    display: table-cell;
+    
+}
+
+#timeSelectPanel .selectRowPanel {
+    
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+    padding: 10% 20%;
+    margin: 2px;
+    cursor: pointer;
+    
+}
+
+#timeSelectPanel .selectRowPanel:hover {
+    
+    color: #98c878;
+    border: 1px solid #98c878;
+    
+}
+
+#timeSelectPanel .selectedRowPanel {
+    
+    color: #FFF;
+    background-color: #98c878;
+    border: 1px solid #98c878;
+    border-radius: 5px;
+    padding: 10% 20%;
+    margin: 2px;
+    
+}
+
+#timeSelectPanel .buttonPanel {
+    
+    padding-bottom: 10px;
+    text-align: right;
+    
+}
+
+#timeSelectPanel .scheduleButtonPanel {
+    
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    
+}
+
+#timeSelectPanel .yesButton {
+    
+    width: 70px;
+    background-color: #98c878;
+    border-color: #98c878;
+    box-shadow: none;
+    text-shadow: none;
+    margin-right: 10px;
+    
+}
+
+#timeSelectPanel .noButton {
+    
+    width: 70px;
+    background-color: #f06767;
+    border-color: #f06767;
+    box-shadow: none;
+    text-shadow: none;
+    margin-right: 10px;
+    
+}
+
+#editPanel, #editPanelForSchedule {
+    
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 16000;
+    color: #444;
+    
+}
+
+#editPanel {
+    
+    margin-left: 10px;
+    
+}
+#editPanel h1, #editPanelForScheduleForSchedule h1 {
+    
+    margin-left: 10px;
+    font-size: 23px;
+    margin: 0;
+    padding: 9px 0 4px 5px;
+    line-height: 1.3;
+    
+}
+
+#editPanel div, #editPanelForSchedule div {
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    
+}
+
+#editPanel th, #editPanelForSchedule th {
+    
+    padding-left: 10px;
+    
+}
+
+#editPanel .deletePanel, #editPanelForSchedule .deletePanel {
+    
+    color: #FFF;
+    background-color: #ff4b4b;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff0000 #ff0000 #ff0000;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+#editPanel .pointer, #editPanelForSchedule .pointer {
+    
+    cursor: pointer;
+    
+}
+
+#editPanel .media_modal_close, #editPanelForSchedule .media_modal_close {
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0;
+    border: 1px solid transparent;
+    background: 0 0;
+    color: #666;
+    z-index: 1000;
+    cursor: pointer;
+    outline: 0;
+    -webkit-transition: color .1s ease-in-out,background .1s ease-in-out;
+    transition: color .1s ease-in-out,background .1s ease-in-out;
+    
+}
+
+#editPanel .media_modal_icon, #editPanelForSchedule .media_modal_icon {
+    
+    background-image: none;
+    background-repeat: no-repeat;
+    
+}
+
+#editPanel .media_modal_icon:before, #editPanelForSchedule .media_modal_close .media_modal_icon:before {
+    
+    content: "\f158";
+    font: 400 20px/1 dashicons;
+    speak: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+#editPanel .screen_reader_text, #editPanelForSchedule .screen_reader_text {
+    
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    word-wrap: normal!important;
+    
+}
+
+#editPanel .edit_modal_content, #editPanelForSchedule .edit_modal_content {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    min-height: 300px;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    background: #fcfcfc;
+    -webkit-font-smoothing: subpixel-antialiased;
+    
+}
+
+#editPanel .media_frame_menu, #editPanelForSchedule .media_frame_menu {
+    
+    width: 200px;
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+#editPanel .media_menu, #editPanelForSchedule .media_menu {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #ccc;
+    user-select: none;
+    background: #f3f3f3;
+    
+}
+
+#editPanel .media_menu .media_active, .media_menu .media_active:hover, #editPanelForSchedule .media_menu .media_active, .media_menu .media_active:hover {
+    
+    color: #23282d;
+    font-weight: 600;
+    
+}
+
+#editPanel .media_menu > div:hover, #editPanelForSchedule .media_menu > div:hover {
+    
+    color: #0073aa;
+    background: rgba(0,0,0,.04)
+
+}
+
+#editPanel .media_menu > div:active, #editPanelForSchedule .media_menu > div:active {
+    
+    outline:0;
+    
+}
+
+#editPanel .media_menu > div, #editPanelForSchedule .media_menu > div {
+    
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 8px 20px;
+    margin: 0;
+    color: #0073aa;
+    line-height: 18px;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+#editPanel .media_frame_title, #editPanelForSchedule .media_frame_title {
+    
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 50px;
+    z-index: 200;
+    
+}
+
+#editPanel .media_frame_title h1, #editPanelForSchedule .media_frame_title h1 {
+    
+    padding: 0 16px;
+    font-size: 22px;
+    line-height: 50px;
+    margin: 0;
+    
+}
+
+#editPanel .media_frame_router, #editPanelForSchedule .media_frame_router {
+    
+    position: absolute;
+    
+    top: 50px;
+    left: 200px;
+    right: 0;
+    
+    height: 36px;
+    z-index: 200;
+    
+}
+
+#editPanel .table_row, #editPanelForSchedule .table_row {
+    
+    display: table;
+    width: 100%;
+    
+}
+
+
+
+#editPanel .table_row > div, #editPanelForSchedule .table_row > div {
+    
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-right: none;
+    background-color: #FFF;
+    padding: 8px 10px 9px;
+    height: 18px;
+    
+}
+
+#editPanel .reservation_table_row, #editPanelForSchedule .reservation_table_row {
+    
+    position: absolute;
+    padding: 0 6px;
+    margin: 0;
+    clear: both;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 0% 1%;
+    width: 98%;
+    
+}
+
+/**
+#editPanel, #editPanelForSchedule .courseAndSchedulePanel{
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+**/
+#editPanel .courseAndSchedulePanel, #editPanelForSchedule .courseAndSchedulePanel{
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    
+    
+}
+
+#editPanel .createFormPanel_show, #editPanelForSchedule .createFormPanel_show {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 50%;
+    overflow: auto;
+    background-color: #FFF;
+    
+}
+
+#editPanel .createFormPanel_return, #editPanelForSchedule .createFormPanel_return {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    width: 50%;
+    background-color: #FFF;
+    
+}
+
+
+
+#editPanel .courseAndSchedulePanel_next, #editPanelForSchedule .courseAndSchedulePanel_next {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: 0;
+    width: 100%;
+    
+    animation-name: next_animation_for_edit1;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+@keyframes next_animation_for_edit1 {
+    
+    from {
+        
+        left: 0%;
+        
+    }
+    to {
+        
+        left: -50%;
+        
+    }
+
+}
+
+#editPanel .courseAndSchedulePanel_next_no_course {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    width: 50%;
+    
+    animation-name: next_animation_for_edit3;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+@keyframes next_animation_for_edit3 {
+    
+    from {
+        
+        width: 100%;
+        
+    }
+    to {
+        
+        width: 50%;
+        
+    }
+
+}
+
+#editPanel .courseAndSchedulePanel_return, #editPanelForSchedule .courseAndSchedulePanel_return {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    width: 100%;
+    
+    animation-name: return_animation_for_edit1;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+@keyframes return_animation_for_edit1 {
+    
+    from {
+        
+        left: -50%;
+        
+    }
+    to {
+        
+        left: 0%;
+        
+    }
+
+}
+
+#editPanel .schedulePanel, #editPanelForSchedule .schedulePanel {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#editPanel .schedulePanel_next, #editPanelForSchedule .schedulePanel_next {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50% !important;
+    right: 0;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+    width: 50%;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    animation-name: next_animation_for_edit2;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+@keyframes next_animation_for_edit2 {
+    
+    from {
+        
+        width: 100%;
+        left: 0;
+        
+    }
+    to {
+        
+        width: 50%;
+        left: 50%;
+        
+    }
+
+}
+
+/**
+#editPanel, #editPanelForSchedule .courseListPanel {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+    
+}
+**/
+#editPanel .courseListPanel, #editPanelForSchedule .courseListPanel {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 50%;
+    background: #FFF;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#editPanel .scheduleListPanel, #editPanelForSchedule .scheduleListPanel {
+    
+    left: 50%;
+    width: 50%;
+    
+}
+
+#editPanel .noSchedule, #editPanelForSchedule .noSchedule {
+        
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    color: #ababab;
+    font-size: 1.5em;
+    
+}
+
+#editPanel .noReservations, #editPanelForSchedule .noReservations, #lookForUserPanel .noUsers {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    color: #ababab;
+    font-size: 1.5em;
+    
+}
+
+#lookForUserPanel .noUsers {
+    
+    padding-top: 0;
+    
+}
+
+#editPanel .box_shadow, #editPanelForSchedule .box_shadow {
+    
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.4);
+    
+}
+
+#editPanel .moveFormAnimation, #editPanelForSchedule .moveFormAnimation {
+    
+    
+    
+}
+
+#editPanel .courseListPanel_animation, #editPanelForSchedule .courseListPanel_animation {
+    
+    animation-name: courseAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    border-right: 1px solid #ddd;
+    
+}
+
+@keyframes courseAnimation {
+    
+    from {
+        
+        right: 0%;
+        
+    }
+    to {
+        
+        right: 50%;
+        
+    }
+    
+}
+
+#editPanel .scheduleListPanel_animation, #editPanelForSchedule .scheduleListPanel_animation {
+    
+    animation-name: scheduleAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    border-right: 1px solid #ddd;
+    
+}
+
+@keyframes scheduleAnimation {
+    
+    from {
+        
+        left: 100%;
+        
+    }
+    to {
+        
+        left: 50%;
+        
+    }
+    
+}
+
+
+
+#editPanel .courseAndScheduleRow, #editPanelForSchedule .courseAndScheduleRow, #selectOptionsPanel .courseAndScheduleRow {
+    
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+    margin: -1px;
+    color: #0073aa;
+    
+}
+
+#editPanel .displayRemainingCapacityLabel, #editPanelForSchedule .displayRemainingCapacityLabel {
+    
+    margin-left: 1em;
+    
+}
+
+#editPanel .courseAndScheduleRowError, #editPanelForSchedule .courseAndScheduleRowError {
+    
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    padding: 10px;
+    margin: -1px;
+    color: red;
+    
+}
+
+#editPanel .courseAndScheduleRowActive, #editPanelForSchedule .courseAndScheduleRowActive, #selectOptionsPanel .courseAndScheduleRowActive {
+    
+    background: #EAEDF3;
+    color: #32373c;
+    
+}
+
+#editPanel .courseAndScheduleRow:hover, #editPanelForSchedule .courseAndScheduleRow:hover, #selectOptionsPanel .courseAndScheduleRow:hover {
+	
+	background: #EAEDF3;
+	
+}
+
+#editPanel .courseCostPanel, #editPanelForSchedule .courseCostPanel, #selectOptionsPanel .courseCostPanel {
+    
+    float: right;
+    
+}
+
+#editPanel .media_menu_item, #editPanelForSchedule .media_menu_item {
+    
+    background: #fcfcfc;
+    padding: 8px 10px 9px;
+    float: left;
+    height: 18px;
+    margin: -1px 0px 0px 1px;
+    color: #0073aa;
+    line-height: 18px;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+#editPanel .active, #editPanelForSchedule .active {
+    
+    margin: -1px -1px 0;
+    display: inline-block;
+    background: #FFF;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 1px 0px 1px;
+    color: #32373c;
+    
+}
+
+#editPanel .active {
+    
+    /** margin: -1px 0; **/
+    margin: -2px 0;
+    height: 19px;
+    
+}
+
+#editPanel .scheduleTimePanel, #editPanelForSchedule .scheduleTimePanel {
+    
+    
+    
+}
+
+#editPanel .div_id, #editPanelForSchedule .div_id {
+    
+    border-left: none !important;
+    display: table-cell;
+    width: 10%;
+    
+}
+
+#editPanel .div_time, #editPanelForSchedule .div_time {
+    
+    display: table-cell;
+    width: 110px;
+    
+}
+
+#editPanel .div_title, #editPanelForSchedule .div_title {
+    
+    display: table-cell;
+    width: 200px;
+    
+}
+
+#editPanel .div_capacity, #editPanelForSchedule .div_capacity {
+    
+    display: table-cell;
+    width: 70px;
+    
+}
+
+#editPanel .div_stop, #editPanelForSchedule .div_stop {
+    
+    display: table-cell;
+    width: 70px;
+    
+}
+
+#editPanel .title_text_box, #editPanelForSchedule .title_text_box {
+    
+    width: 185px;
+    
+}
+
+#editPanel .media_frame_toolbar, #editPanelForSchedule .media_frame_toolbar {
+    
+    position: absolute;
+    z-index: 100;
+    left: 200px;
+    right: 0;
+    bottom: 60px;
+    height: auto;
+    border-top: 1px solid #ddd;
+    
+}
+
+#editPanel .media_toolbar, #editPanelForSchedule .media_toolbar {
+    
+    position: absolute;
+    top: initial;
+    left: 0;
+    right: 0;
+    bottom: -45px;
+    height: auto;
+    overflow: initial;
+    padding: 0 16px;
+    z-index: 100;
+    
+}
+
+#editPanel .media_toolbar_primary, #editPanelForSchedule .media_toolbar_primary {
+    
+    float: right;
+    height: 100%;
+    
+}
+
+#editPanel .media_left_zero, #editPanelForSchedule .media_left_zero {
+    
+    left: 0;
+    
+}
+
+#editPanel .content_top_48, #editPanelForSchedule .content_top_48 {
+    
+    top: 48px;
+    
+}
+
+#editPanel .mail_message_area_left, #editPanelForSchedule .mail_message_area_left {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 30%;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+    padding: 10px;
+    
+}
+
+#editPanel .mail_message_area_right, #editPanelForSchedule .mail_message_area_right {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70%;
+    right: 0;
+    width: 30%;
+    overflow: auto;
+    color: #444;
+    
+}
+
+#editPanel .mail_message_area_right_title, #editPanelForSchedule .mail_message_area_right_title {
+    
+    padding: 10px 10px 0px 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+    
+}
+
+#editPanel .help_message_label, #editPanelForSchedule .help_message_label {
+    
+    padding: 10px 10px 0px 10px;
+    
+}
+
+#editPanel .formFiledPanel, #editPanelForSchedule .formFiledPanel {
+    
+    margin: 5px 5px 0px 5px;
+    padding: 5px;
+    background-color: #f7f7f7;
+    
+}
+
+#editPanel .text_editer_panel, #editPanelForSchedule .text_editer_panel {
+    
+    
+    
+}
+
+#editPanel .mail_subject, #editPanelForSchedule .mail_subject {
+    
+    width: 100%;
+    padding: 3px 8px;
+    font-size: 1.7em;
+    height: 1.7em;
+    margin: 0 0 3px;
+    color: #72777c;
+    background-color: #FFF;
+}
+
+#editPanel .enablePanel, #editPanelForSchedule .enablePanel {
+    
+    height: 24px;
+    padding: 0px 10px 10px 0px;
+    display: table;
+    
+}
+
+#editPanel .enableLabel, #editPanelForSchedule .enableLabel {
+    
+    width: 150px;
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
+
+#editPanel .enableValuePanel, #editPanelForSchedule .enableValuePanel {
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+
+
+#editPanel .emailFormatPanel, #editPanelForSchedule .emailFormatPanel {
+    
+    width: 100%;
+    height: 24px;
+    padding: 0px 10px 10px 0px;
+    display: table;
+    
+}
+
+#editPanel .emailFormatLabel, #editPanelForSchedule .emailFormatLabel {
+    
+    width: 150px;
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
+
+#editPanel .emailFormatValuePanel, #editPanelForSchedule .emailFormatValuePanel {
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.edit_modal_backdrop {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    /**
+    background: #000000;
+    opacity: 0.7;
+    **/
+    z-index: 15990;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+
+.loading_modal_backdrop {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 169900;
+    
+}
+
+.loading_modal_backdrop > img {
+    
+    position: relative;
+    display: block;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    
+}
+
+#media_frame_reservation_content {
+    
+    position: absolute;
+    top: 78px;
+    left: 200px;
+    right: 0;
+    bottom: 61px;
+    height: auto;
+    margin: 0px;
+    overflow: hidden;
+    background: #FFF;
+    border-top: 1px solid #ddd;
+    border-top: 0;
+    
+}
+
+#media_frame_reservation_content .blockPanel {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#media_frame_reservation_content .show_change_panel {
+    
+    animation-name: changePanel_show_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+#media_frame_reservation_content .show_panel_for_new_booking {
+    
+    animation-name: userInfoPanel_show_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+#media_frame_reservation_content .show_panel {
+    
+    animation-name: userInfoPanel_show_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+#media_frame_reservation_content .return_change_panel {
+    
+    box-shadow: none;
+    left: 50%;
+    
+    animation-name: changePanel_return_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+#media_frame_reservation_content .return_panel_for_new_booking {
+    
+    box-shadow: none;
+    left: 100%;
+    
+    animation-name: userInfoPanel_return_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+#media_frame_reservation_content .return_panel {
+    
+    box-shadow: none;
+    left: 100%;
+    
+    animation-name: userInfoPanel_return_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+}
+
+@keyframes changePanel_show_animation {
+    
+    from {
+        
+        left: 50%;
+        
+    }
+    to {
+        
+        left: 0%;
+        
+    }
+    
+}
+
+@keyframes userInfoPanel_show_animation {
+    
+    from {
+        
+        left: 100%;
+        
+    }
+    to {
+        
+        left: 50%;
+        
+    }
+    
+}
+
+@keyframes changePanel_return_animation {
+    
+    from {
+        
+        left: 0%;
+        
+    }
+    to {
+        
+        left: 50%;
+        
+    }
+    
+}
+
+@keyframes userInfoPanel_return_animation {
+    
+    from {
+        
+        left: 50%;
+        
+    }
+    to {
+        
+        left: 100%;
+        
+    }
+    
+}
+
+#edit_schedule_for_hotel {
+    
+    position: absolute;
+    top: 86px;
+    left: 200px;
+    right: 0;
+    bottom: 61px;
+    height: auto;
+    padding: 10px;
+    margin: 0px;
+    overflow: auto;
+    background: #FFF;
+    border-top: 1px solid #ddd;
+    
+}
+
+#edit_schedule_for_hotel tr:nth-child(odd) {
+    
+    background-color: #f9f9f9;
+    
+}
+
+#edit_schedule_for_hotel input[type=text] {
+    
+    width: 100%;
+    
+}
+
+#email_edit_panel {
+    
+    position: absolute;
+    top: 83px;
+    left: 200px;
+    right: 0;
+    bottom: 61px;
+    height: auto;
+    margin: 0px;
+    overflow: auto;
+    background: #FFF;
+    border-top: 1px solid #ddd;
+    
+}
+
+#email_edit_panel textarea {
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+#email_edit_panel .text_editer_panel {
+    
+    height: 60%;
+    
+}
+
+#media_frame_content, #media_frame_content_for_schedule {
+    
+    position: absolute;
+    top: 86px;
+    left: 200px;
+    right: 0;
+    bottom: 61px;
+    height: auto;
+    margin: 0px;
+    overflow: auto;
+    background: #FFF;
+    border-top: 1px solid #ddd;
+    
+}
+
+#media_frame_content_for_schedule {
+    
+    top: 83px;
+    left: 199px;
+    bottom: 60px;
+    
+}
+
+#media_frame_content th, #media_frame_content_for_schedule th {
+    
+    width: 50px;
+    
+}
+
+#media_frame_content input[type="text"], #media_frame_content_for_schedule input[type="text"] {
+    
+    width: 100%;
+    
+}
+
+#media_frame_content tr:nth-child(odd), #media_frame_content_for_schedule tr:nth-child(odd) {
+    
+    background-color: #f9f9f9;
+    
+}
+
+#media_frame_content .td_width_50_px, #media_frame_content_for_schedule .td_width_50_px {
+    
+    width: 60px;
+    text-align: center;
+    
+}
+
+#media_frame_content .td_width_100_px, #media_frame_content_for_schedule .td_width_100_px {
+    
+    width: 100px;
+    
+}
+
+#media_frame_content td, #media_frame_content_for_schedule td {
+    
+    vertical-align: middle;
+    
+}
+
+#media_frame_content .timeTd, #media_frame_content_for_schedule .timeTd {
+    
+    width: 60px;
+    
+}
+
+#media_frame_content .hour, #media_frame_content_for_schedule .hour {
+    
+    display: table;
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+#media_frame_content .hour:hover, #media_frame_content_for_schedule .hour:hover {
+    
+    color: #FFF;
+    background-color: #ddd;
+    border-radius: 8px;
+    
+}
+
+/**
+#media_frame_content .hour:after, #media_frame_content_for_schedule .hour:after {
+    
+    top: 5px;
+    content: " : ";
+    position: relative;
+    
+}
+**/
+
+#media_frame_content .min, #media_frame_content_for_schedule .min {
+    
+    display: table;
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+#media_frame_content .min:hover, #media_frame_content_for_schedule .min:hover {
+    
+    color: #FFF;
+    background-color: #ddd;
+    border-radius: 8px;
+    
+}
+
+#media_frame_content .time, #media_frame_content_for_schedule .time {
+    
+    display: table;
+    float: left;
+    padding: 5px 5px 5px 0px;
+    cursor: pointer;
+    
+}
+
+#media_frame_content .time:hover, #media_frame_content_for_schedule .time:hover {
+    
+    color: #FFF;
+    background-color: #ddd;
+    border-radius: 8px;
+    
+}
+
+#media_frame_content .noTime, #media_frame_content_for_schedule .noTime {
+    
+    left: 10px;
+    display: table;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 19px;
+    font-weight: normal;
+    
+}
+
+#media_frame_content .noTime:hover, #media_frame_content_for_schedule .noTime:hover {
+    
+    color: #FFF;
+    background-color: #ddd;
+    border-radius: 8px;
+    
+}
+
+#media_frame_content .dot, #media_frame_content_for_schedule .dot {
+    
+    display: table;
+    float: left;
+    padding: 5px 0px;
+    
+}
+
+#media_frame_content .person, #media_frame_content_for_schedule .person {
+    
+    width: 20px;
+    display: table;
+    float: left;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+#media_frame_content .person:hover, #media_frame_content_for_schedule .person:hover {
+    
+    color: #FFF;
+    background-color: #ddd;
+    border-radius: 8px;
+    
+}
+
+#media_frame_content .noPerson, #media_frame_content_for_schedule .noPerson {
+    
+    display: table;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 19px !important;
+    font-weight: normal;
+    
+}
+
+#media_frame_content .noPerson:hover, #media_frame_content_for_schedule .noPerson:hover {
+    
+    color: #FFF;
+    background-color: #ddd;
+    border-radius: 8px;
+    
+}
+
+#media_router, #media_router_for_schedule {
+    
+    
+}
+
+#media_router table, #media_router_for_schedule table {
+    
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #FFF;
+    width: 100%;
+    height: 36px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#media_router th, #media_router_for_schedule th {
+    
+    width: 50px;
+    padding: 4px 10px;
+    text-align: left;
+    font-weight: 500;
+    
+}
+
+#media_router td, #media_router_for_schedule td {
+    
+    padding: 4px 10px;
+    /**
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    **/
+    
+}
+
+#media_router input[type="text"], #media_router_for_schedule input[type="text"] {
+    
+    width: 100%;
+    
+}
+
+#media_router tr:nth-child(even), #media_router_for_schedule tr:nth-child(even) {
+    
+    background-color: #f9f9f9;
+    
+}
+
+#media_router .timeTd, #media_router_for_schedule .timeTd {
+    
+    width: 60px;
+    
+}
+
+#media_router .td_width_50_px, #media_router_for_schedule .td_width_50_px {
+    
+    width: 60px;
+    
+}
+
+#media_router .td_width_100_px, #media_router_for_schedule .td_width_100_px {
+    
+    width: 100px;
+    
+}
+
+#calendarAccountList {
+    
+    
+    
+}
+
+#calendarAccountList .pointer{
+    
+    cursor: pointer;
+    
+}
+
+#calendarAccountList table {
+    
+    width: 100%;
+    border-spacing: 0;
+    
+}
+
+#calendarAccountList tr:nth-child(even){
+    
+    background-color: #f9f9f9;
+    
+}
+
+#addCoursePanel tr:nth-child(even){
+    
+    background-color: #fff;
+    
+}
+
+#calendarAccountList .shortCode {
+    
+    background-color: #1e8cbe;
+    color: #FFF;
+    text-align: center;
+    
+}
+
+#add_reservationPanel .calendarPanel {
+    
+    display: table;
+    width: 100%;
+    padding: 1em 0em;
+    
+}
+
+#add_reservationPanel .arrowLeft {
+    
+    margin-left: 1em;
+    
+}
+
+#add_reservationPanel .arrowRight {
+    
+    margin-right: 1em;
+    
+}
+
+#add_reservationPanel {
+    
+    box-sizing: border-box !important;
+    
+}
+
+#add_reservationPanel .border_bottom_width {
+	
+	border-bottom-width: 1px !important;
+	
+}
+
+#add_reservationPanel .dayPanel {
+	
+	display: table;
+	border-color: #969696;
+	border-width: 1px 0px 0px 1px;
+	border-style: solid;
+	float: left;
+	width: 14.2%;
+	padding: 5px 0px 0px 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+#add_reservationPanel .dayPanelHeight {
+	
+	height: 100px;
+	
+}
+
+#add_reservationPanel .dayPostion {
+    
+    position: absolute;
+    
+}
+
+#add_reservationPanel .selectedDayPanel {
+    
+    background-color: #adf1c3 !important;
+    
+}
+
+#add_reservationPanel .closeDay {
+	
+	background: #f5f5f5;
+	
+}
+
+#calendarPage, #schedulePage {
+	
+	font-size: 14px;
+	margin: 0em;
+	
+}
+
+#calendarPage .footerOnCalendar {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#calendarPage div, #schedulePage div {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+#calendarPage input, #schedulePage input {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0.5em 0em 0.5em 0.5em;
+	font-size: 1em;
+	border: 1px solid #969696;
+	display: inline;
+	
+}
+
+#calendarPage textarea, #schedulePage textarea {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 0.5em 0em 0.5em 0.5em;
+	font-size: 1em;
+	border: 1px solid #969696;
+	
+}
+
+#calendarPage select, #schedulePage select {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 2em;
+	margin: 2px 0px;
+	/** padding: 0.5em 0em 0.5em 0.5em; **/
+	font-size: 1em;
+	border: 1px solid #969696;
+	
+}
+
+#calendarPage label, #schedulePage label {
+	
+	
+}
+
+#calendarPage .downloadButton, #schedulePage .downloadButton {
+    
+    float: right;
+    margin-bottom: 1em;
+    
+}
+
+#calendarPage .radio_title, #schedulePage .radio_title {
+	
+	margin-left: 0.5em;
+	
+}
+
+#calendarPage .pointer, #schedulePage .pointer, #holidaysCalendarPanel .pointer {
+	
+	cursor: pointer;
+	
+}
+
+#calendarPage .pointer:hover, #schedulePage .pointer:hover, #holidaysCalendarPanel .pointer:hover {
+	
+	background: #EAEDF3;
+	
+}
+
+#calendarPage .close, #schedulePage .close {
+	
+	background: #fcfcfc;
+	
+}
+
+#calendarPage .closeDay, #schedulePage .closeDay {
+	
+	background: #f5f5f5;
+	
+}
+
+.calendarData {
+	
+	text-align: center;
+	font-size: 1.5em;
+	vertical-align: middle;
+	/**
+	display: table-cell;
+	width: 40%;
+	**/
+}
+
+.calendarChangeButton {
+    
+    margin: auto 0;
+    
+}
+
+#calendarPage .arrowLeft, #schedulePage .arrowLeft {
+	
+	text-align: left;
+	/**
+	height: 0;
+	border-right: 15px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	**/
+	
+}
+
+#calendarPage .arrowRight, #schedulePage .arrowRight {
+	
+	text-align: right;
+	/**
+	height: 0;
+	border-left: 15px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	**/
+	
+}
+
+.calendarButtonPanel {
+	
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+#calendarPage .messagePanel, #schedulePage .messagePanel {
+	
+	display: table;
+	width: 100%;
+	padding: 0.5em 0em;
+	white-space: pre-wrap;
+	word-break: break-word;
+	overflow: auto;
+	
+}
+
+
+#calendarPage .calendarPanel, #schedulePage .calendarPanel, #holidaysCalendarPanel .calendarPanel, #nationalHolidaysCalendarPanel .calendarPanel {
+	
+	/**
+	display: table;
+	width: 100%;
+	**/
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	-ms-grid-rows: auto;
+	padding: 0.5em;
+	
+}
+
+#calendarPage .calendar, #schedulePage .calendar, #holidaysCalendarPanel .calendar, #nationalHolidaysCalendarPanel .calendar {
+	
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	-ms-grid-rows: auto;
+	/**
+	display: table;
+	width: 100%;
+	**/
+	margin-bottom: 10px;
+	
+}
+
+#calendarPage .border_bottom_width, #schedulePage .border_bottom_width, #holidaysCalendarPanel .border_bottom_width, #nationalHolidaysCalendarPanel .border_bottom_width {
+	
+	border-bottom-width: 1px !important;
+	
+}
+
+#calendarPage .dayPanel, #schedulePage .dayPanel, #holidaysCalendarPanel .dayPanel, #nationalHolidaysCalendarPanel .dayPanel {
+	
+	border-color: #969696;
+	border-width: 1px 0px 0px 1px;
+	border-style: solid;
+	/**
+	float: left;
+	width: 14.2%;
+	**/
+	padding: 5px 0px 0px 5px;
+	
+}
+
+#calendarPage .dayPanelHeight, #schedulePage .dayPanelHeight, #holidaysCalendarPanel .dayPanelHeight, #nationalHolidaysCalendarPanel .dayPanelHeight {
+	
+	height: 100px;
+	
+}
+
+#calendarPage .dayPostion, #schedulePage .dayPostion, #holidaysCalendarPanel .dayPostion, #nationalHolidaysCalendarPanel .dayPostion {
+    
+    position: absolute;
+    
+}
+
+#schedulePage .incompletelySchedules {
+    
+    position: absolute;
+    margin-left: 1.2em;
+    font-size: 1.2em !important;
+    font-weight: normal;
+    color: #f0c267;
+    
+}
+
+#calendarPage .selectedDayPanel, #schedulePage .selectedDayPanel {
+    
+    background-color: #adf1c3;
+    
+}
+
+#holidaysCalendarPanel .selectedDayPanel, #nationalHolidaysCalendarPanel .selectedDayPanel {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#calendarPage .selectedDayPanel:hover, #schedulePage .selectedDayPanel:hover {
+    
+    background-color: #adf1c3 !important;
+    
+}
+
+#holidaysCalendarPanel .selectedDayPanel:hover, #nationalHolidaysCalendarPanel .selectedDayPanel:hover {
+    
+    background-color: #FFD5D5 !important;
+    
+}
+
+#calendarPage .remainderPanel, #schedulePage .remainderPanel {
+    
+    position: relative;
+    /** display: table-cell; **/
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ababab;
+    top: 1.5em;
+    
+}
+
+#calendarPage .approvedCount, #schedulePage .approvedCount {
+    
+    color: #98c878;
+    display: inline;
+    margin-right: 0px;
+    
+}
+
+#calendarPage .pendingCount, #schedulePage .pendingCount {
+    
+    color: #f06767;
+    display: inline;
+    margin-left: 0px;
+    
+}
+
+#calendarPage .canceledCount, #schedulePage .canceledCount {
+    
+    color: #f0c267;
+    display: inline;
+    margin-left: 0px;
+    
+}
+
+#calendarPage .datePanel, #schedulePage .datePanel {
+	
+	font-size: 1.2em;
+	margin: 0.5em 0em 0.5em 0em;
+	
+}
+
+#calendarPage .titleMessage, #schedulePage .titleMessage {
+	
+	font-size: 1.2em;
+	text-align: center;
+	margin: 0.5em 0em 0.5em 0em;
+	
+}
+
+#calendarPage .accountPanel, #schedulePage .accountPanel {
+	
+	border-color: #969696;
+	border-width: 1px 0px 0px 0px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	float: left;
+	width: 100%;
+	padding: 10px 5px;
+	
+}
+
+#calendarPage .unSelectPanel, #schedulePage .unSelectPanel {
+	
+	background-color: rgb(242,242,242);
+	
+}
+
+#calendarPage .errorPanel, #schedulePage .errorPanel {
+	
+	background: #FFD5D5;
+	
+}
+
+#calendarPage .inputPanel, #schedulePage .inputPanel {
+	
+	display: table;
+	border-color: #969696;
+	border-width: 1px 0px 0px 0px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	float: left;
+	width: 100%;
+	padding: 10px 5px;
+	
+}
+
+#calendarPage .indispensableLabel:after, #schedulePage .indispensableLabel:after {
+	
+	content: ' ※';
+	color: #ff0000;
+}
+
+#calendarPage .inputName, #schedulePage .inputName {
+	
+	display: table-cell;
+	vertical-align: middle;
+	width: 30%;
+	
+}
+
+#calendarPage .inputValue, #schedulePage .inputValue {
+	
+	display: table-cell;
+	vertical-align: middle;
+	width: 70%;
+	white-space: pre-wrap;
+	word-break: break-word;
+	/** overflow: auto; **/
+	
+}
+
+#calendarPage .inputValueHidden, #schedulePage .inputValueHidden {
+	
+	display: none;
+	
+}
+
+#calendarPage .buttonPanel, #schedulePage .buttonPanel {
+	
+	display: table;
+	float: right;	
+}
+
+#calendarPage .backButton, #schedulePage .backButton {
+	
+	border: 1px solid #969696;
+	border-radius: 3px 3px 3px 3px / 3px 3px 3px 3px;
+	border-right-width: 1px;
+	background: #ededed;
+	cursor: pointer;
+	font-size: 1em;
+	vertical-align: bottom;
+	padding: 5px 10px;
+	margin: 10px 10px 10px 0px;
+	color: #000000;
+	line-height: 1;
+	font-weight: normal;
+	
+}
+
+#calendarPage .hiddenButton, #schedulePage .hiddenButton {
+	
+	display: none;
+	
+}
+
+#calendarPage .calendarButton, #schedulePage .calendarButton {
+	
+	background: #FFF;
+	border: solid 1px #969696;
+	padding: 0.3em;
+	
+}
+
+#schedulePage .schedulesSharingPanel {
+    
+    color: #555d66;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10% 0;
+    
+}
+
+#incompletelyDeletedScheduleAlertPanel {
+    
+    position: absolute;
+    left: -20px;
+    bottom: 80px;
+    padding: 20px;
+    margin: 0 10%;
+    width: 80%;
+    color: #FFF;
+    background: #f0c267;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    z-index: 1000;
+    cursor: pointer;
+    
+}
+
+#tabFrame, #booking-package-tabFrame, #tabEmail {
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    
+}
+
+#tabFrame div, #booking-package-tabFrame div, #tabEmail div {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#tabFrame .menuList, #booking-package-tabFrame .menuList, #tabEmail .menuList, #edit_email_message .menuList {
+    
+    padding-left: 10px;
+    height: 36px;
+    overflow: auto;
+    word-break: keep-all;
+    white-space: nowrap;
+    display: flex;
+    padding-top: 1px;
+    
+}
+
+#edit_email_message .menuList {
+    
+    height: 33px;
+    
+}
+
+#edit_email_message .menuList {
+    
+    padding-top: 1px;
+    
+}
+
+#edit_email_message .menuTags {
+    
+    overflow-x: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#edit_email_message .mail_subject {
+    
+    position: absolute;
+    top: 10px;
+    width: 96%;
+    
+}
+
+#edit_email_message .message_body {
+    
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    left: 2%;
+    right: 2%;
+    width: 96%;
+    height: auto;
+}
+
+#tabFrame .iris-picker, #booking-package-tabFrame .iris-picker {
+    
+    box-sizing: content-box;
+    
+}
+
+#tabFrame .wp-picker-input-wrap label, #booking-package-tabFrame .wp-picker-input-wrap label {
+    
+    display: inline-block;
+    
+}
+
+#tabFrame .active, #booking-package-tabFrame .active, #tabEmail .active, #edit_email_message .active {
+    
+    color: #000 !important;
+    margin: -1px -1px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    
+}
+
+#tabFrame .menuItem, #booking-package-tabFrame .menuItem, #tabEmail .menuItem, #edit_email_message .menuItem {
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    color: #0073aa;
+    height: 18px;
+    padding: 8px 10px 9px;
+    float: left;
+    
+}
+
+#tabFrame .content, #booking-package-tabFrame .content, #tabEmail .content, #edit_email_message .content {
+    
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    bottom: 61px;
+    margin-top: -2px;
+    height: auto;
+    width: auto;
+    
+}
+
+#edit_email_message .content {
+    
+    padding: 2%;
+    position: absolute;
+    top: 113px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+    
+}
+
+#tabFrame .deleteButton, #booking-package-tabFrame .deleteButton, #deletePublishedSchedulesPanel .deleteButton, #selectionSchedule .deleteButton, #buttonPanel_for_schedule .deleteButton, #buttonPanel .deleteButton {
+    
+    background-color: #ff4b4b;
+    border-color: #ff0000 #ff0000 #ff0000;
+    text-shadow: none;
+    -webkit-box-shadow: 0 1px 0 #b90b0b;
+    box-shadow: 0 1px 0 #b90b0b;
+    margin-left: 10px;
+    
+}
+
+#buttonPanel_for_schedule .deleteButton {
+    
+    margin-left: 0;
+    margin-right: 10px;
+    
+}
+
+.dnd {
+	
+	position: relative;
+	box-sizing: content-box;
+	display: table;
+	width: 100%;
+	
+}
+
+.dnd_column, .dnd_coupon_column {
+	
+	position: relative;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-left: none;
+    border-right: none;
+    border-bottom: none;
+	background: #f9f9f9;
+	cursor: move;
+	display: table;
+	width: 100%;
+	margin-top: -1px;
+	
+}
+
+.dnd_coupon_column {
+    
+    cursor: auto;
+    
+}
+
+.dnd_cursor_initial {
+    
+    cursor: initial !important;
+    
+}
+
+.dnd_dragButton {
+	
+	font-size: 2em;
+	font-weight: 700;
+	color: #969696;
+	display: table-cell;
+	
+}
+
+.dnd_content:before {
+	
+	font-size: 1.5em;
+	font-weight: 500;
+	color: #dadada;
+	padding-left: 10px;
+	padding-right: 0.5em;
+	content: "≡";
+	
+}
+
+.dnd_content, .dnd_coupon_content {
+	
+	display: block;
+	vertical-align: middle;
+	padding-top: 10px;
+	
+}
+
+.dnd_discount, .dnd_coupon_content {
+	
+	display: block;
+	vertical-align: middle;
+	margin-left: 40px;
+	
+}
+
+.dnd_content_unactive {
+    
+    color: #ff3333;
+    
+}
+
+.dnd_optionBox {
+    
+    display: block;
+    padding-bottom: 10px;
+    
+}
+
+.dnd_edit {
+    
+    color: #0073aa;
+    margin-left: 40px;
+    
+}
+
+.dnd_copy {
+    
+    color: #0073aa;
+    margin-left: 10px;
+    
+}
+
+.dnd_delete {
+    
+    color: #0073aa;
+    margin-left: 10px;
+    
+}
+
+.urlQuery {
+    
+    font-size: 0.9em;
+    min-height: 20px !important;
+    margin-left: 1em;
+    background-color: #EEE !important;
+    
+}
+
+.dnd_required:after {
+    
+    position: relative;
+    top: 3px;
+    content: '*';
+    color: #ff1c1c;
+    margin-left: 2px;
+    display: inline;
+    
+}
+
+#addCoursePanel {
+    
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background: #FFF;
+    width: 100%;
+    
+}
+
+#addCoursePanel th {
+    
+    padding-left: 10px;
+    
+}
+
+#addCoursePanel tr {
+    
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#addCoursePanel td {
+    
+    padding-bottom: 10px;
+    
+}
+
+#addCoursePanel label {
+    
+    display: table;
+    margin-top: 0.5em;
+    
+}
+
+#addCoursePanel label:first-child {
+    /**
+    display: table;
+    margin-top: 0em;
+    **/
+}
+
+#addCoursePanel .chargeLabel {
+    
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    
+}
+
+#addCoursePanel .weekPanel {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+#addCoursePanel .timeAndWeek {
+    
+    margin: 0.5em 0;
+    /**
+    width: 100px;
+    display: inline-block !important;
+    **/
+    
+}
+
+#addCoursePanel .chooseAllTime {
+    
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+
+#addCoursePanel .table_option {
+    
+    border: none;
+    
+}
+
+#addCoursePanel .tr_option:nth-child(odd){
+    
+    background-color: #f9f9f9;
+    
+}
+
+#addCoursePanel .td_option {
+    
+    padding: 8px;
+    
+}
+
+#addCoursePanel .td_option_grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#addCoursePanel .td_delete {
+    
+    width: 50px;
+    text-align: center;
+    
+}
+
+#addCoursePanel input[type=text] {
+    
+    width: 100%;
+    
+}
+
+#addCoursePanel .td_option > select {
+    
+    width: 100%;
+    
+}
+
+#addCoursePanel textarea {
+    
+    width: 26em;
+    width: 100%;
+    height: 60px;
+    
+}
+
+#addCoursePanel .dayOfTheWeekName {
+    
+    /**margin: 0.5em 0; **/
+    
+}
+
+#addCoursePanel .dayOfTheWeekValue {
+    
+    width: 90px !important;
+    margin: 0.2em 0;
+    
+}
+
+#addCoursePanel .subscription {
+    
+    width: inherit !important;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+#addCoursePanel .addLink {
+    
+    color: #0073aa;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    
+}
+
+#addCoursePanel .addLink:before {
+    
+    content: "\f132";
+    font: 400 1px/1 dashicons;
+    color: #0073aa;
+    
+}
+
+#addCoursePanel .deleteLink, #blockEmailListsTable .deleteLink {
+    
+    font-weight: normal;
+    font-size: 19px !important;
+    color: #0073aa;
+    
+}
+
+#blockEmailListsTable .deleteLink {
+    
+    cursor: pointer;
+    
+}
+
+#addCoursePanel .costs {
+    
+    float: left;
+    width: 16%;
+    padding: 0 0.2em;
+    
+}
+
+#addCoursePanel .costs > span {
+    
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+#addCoursePanel .costs > input[type=text] {
+    
+    /** width: inherit; **/
+    
+}
+#setting_costs .messageLabel {
+    
+    clear: both;
+    padding-top: 0.5em;
+    
+}
+
+#summaryListPanel {
+    
+    display: table;
+    
+}
+
+#summaryListPanel .list {
+    
+    display: table;
+    clear: left;
+    
+}
+
+#summaryListPanel .totalLengthOfStayLabel {
+    
+    color: #2626ff;
+    cursor: pointer;
+    font-weight: normal;
+    float: none;
+    
+}
+
+#summaryListPanel .summaryTitle {
+    
+    float: left;
+    clear: left;
+    
+}
+
+#summaryListPanel .summaryValue {
+    
+    margin-left: 0.5em;
+    float: left;
+    
+}
+
+#summaryListPanel .stayAndGuestsPanel {
+    
+    margin-left: 1em;
+    
+}
+
+#inputFormPanel {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    background-color: #FFF;
+    
+}
+
+#inputFormPanel .visitorApprovedPanel {
+    
+    color: #FFF;
+    text-align: center;
+    padding: 0.5em;
+    background-color: #98c878;
+    cursor: pointer;
+    
+}
+
+#inputFormPanel .visitorStatus {
+    
+    text-transform: uppercase;
+    
+}
+
+#inputFormPanel .visitorPendingPanel {
+    
+    color: #FFF;
+    text-align: center;
+    padding: 0.5em;
+    background-color: #f06767;
+    cursor: pointer;
+    
+}
+
+#inputFormPanel .visitorCanceledPanel {
+    
+    color: #FFF;
+    text-align: center;
+    padding: 0.5em;
+    background-color: #f0c267;
+    cursor: text;
+    
+}
+
+#inputFormPanel input[type=text] {
+    
+    width: 100%;
+    
+}
+
+#inputFormPanel select {
+    
+    width: 100%;
+    
+}
+
+#inputFormPanel div {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#inputFormPanel label {
+    
+    cursor: pointer;
+    display: block;
+    padding-bottom: 5px;
+    
+}
+
+#inputFormPanel textarea {
+    
+    width: 25em;
+    height: 100px;
+    
+}
+
+#inputFormPanel ul {
+    
+    list-style: inherit;
+    padding-left: 2em;
+    margin: 0;
+    
+}
+
+#inputFormPanel li {
+    
+    display: inline-block;
+    width: 100%;
+    
+}
+
+#inputFormPanel .row {
+    
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: table;
+    width: 100%;
+    
+}
+
+#inputFormPanel .roomListPanel {
+    
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#inputFormPanel .rowRoom, #inputFormPanel .roomNoLabel {
+    
+    padding: 10px;
+    padding-bottom: 0;
+    display: table;
+    width: 100%;
+    
+}
+
+#inputFormPanel .roomNoLabel {
+    
+    margin: 0;
+    padding-bottom: 5px;
+    width: auto;
+    display: inline-block;
+    
+}
+
+#inputFormPanel .rowRoom {
+    
+    padding: 0 10px 10px 10px;
+    
+}
+
+#inputFormPanel .addRoomButton {
+    
+    float: right;
+    color: #2626ff;
+    font-weight: normal;
+    cursor: pointer;
+    
+}
+
+#inputFormPanel .deleteRoomButton {
+    
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    /** color: #2626ff; **/
+    padding: 0 10px;
+    margin: 0px;
+    float: right;
+    cursor: pointer;
+    
+}
+
+#inputFormPanel .rowError {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#inputFormPanel .editButton {
+    
+    font-size: 1em !important;
+    font-weight: normal;
+    color: #0085ba;
+    cursor: pointer;
+    margin-left: 0.5em;    
+    
+}
+
+#inputFormPanel .lookForUserButton, #inputFormPanel .deleteUserButton {
+    
+    font-size: 2em !important;
+    color: #0085ba;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin: 10px 10px 0px;
+    
+    
+}
+
+#inputFormPanel .lookForUserButton {
+    
+    position: fixed !important;
+    right: 30px !important;
+    padding: 0.2em;
+    border: 1px solid #dbdbdb;
+    border-radius: 0.5em;
+    background-color: #FFF;
+    filter: drop-shadow(5px 4px 10px rgba(0,0,0,0.1));
+    
+}
+
+#inputFormPanel .deleteUserButton {
+    
+    margin-top: 0;
+    color: #666;
+    font-size: 1.5em !important;
+    
+}
+
+#inputFormPanel .name {
+    
+    display: inline-block;
+    padding-bottom: 5px;
+    
+}
+
+#inputFormPanel .mainPlan {
+    
+    display: list-item;
+    
+}
+
+#inputFormPanel .courseLinePanel {
+    
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+#inputFormPanel .planName {
+    
+    /**float: left;**/
+    
+}
+
+#inputFormPanel .planPrice {
+    
+    /**float: left;**/
+    margin-left: 1em;
+    
+}
+
+#inputFormPanel .reflectPanel {
+    
+    /**float: left;**/
+    margin-left: 0.4em;
+    
+}
+
+#inputFormPanel .description {
+    
+    font-weight: normal;
+    margin-top: 5px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    
+}
+
+#inputFormPanel .totalLengthOfStayLabel {
+    
+    color: #2626ff;
+    cursor: pointer;
+    font-weight: normal;
+    display: inline;
+    padding-bottom: 0;
+    
+}
+
+#inputFormPanel .stayAndGuestsPanel {
+    
+    margin-left: 1em;
+    
+}
+
+#inputFormPanel .change {
+    
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 1em;
+    color: #0073aa;
+    cursor: pointer;
+    float: right;
+    
+}
+
+#inputFormPanel .change:hover {
+    
+    text-decoration: underline;
+    
+}
+
+#inputFormPanel .value {
+    
+    
+    
+}
+
+#inputFormPanel .errorMessage {
+    
+    padding-top: 0.5em;
+    color: #ff1c1c;
+    
+}
+
+#inputFormPanel .required:after {
+    
+    position: relative;
+    content: '*';
+    color: #ff1c1c;
+    margin-left: 4px;
+    top: 3px;
+    
+}
+
+#reservation_usersPanel, #booked_list_panel, #user_detail_panel {
+    
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#reservation_usersPanel .text_center {
+    
+    text-align: center;
+    
+}
+
+#reservation_usersPanel .weekHorizotalPanel {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 14.2%;
+    width: 14.2%;
+    border-left: 1px solid #ddd;
+    
+}
+
+#reservation_usersPanel .visitorListPanel {
+    
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+#reservation_usersPanel .visitorApprovedPanel {
+    
+    background-color: #98c878;
+    
+}
+
+#reservation_usersPanel .visitorPendingPanel {
+    
+    background-color: #f06767;
+    
+}
+
+#reservation_usersPanel .visitorCanceledPanel {
+    
+    background-color: #f0c267;
+    
+}
+
+#reservation_usersPanel .visitorPanel {
+    
+    color: #FFF;
+    position: relative;
+    padding: 0.5em 0.5em;
+    margin: 1em 0em;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+#reservation_usersPanel table, #user_detail_panel table {
+    
+    border: none;
+    box-shadow: none;
+    
+}
+
+#reservation_usersPanel tr {
+    
+    cursor: pointer;
+    
+}
+
+#reservation_usersPanel tr, #user_detail_panel tr {
+    
+    vertical-align: middle;
+    
+}
+
+#reservation_usersPanel tr:nth-child(even), #user_detail_panel tr:nth-child(even) {
+    
+    background-color: #f9f9f9;
+    cursor: pointer;
+    
+}
+
+#reservation_usersPanel td, #user_detail_panel td {
+    
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+#user_detail_panel .input {
+    
+    width: 100%;
+    
+}
+
+#reservation_usersPanel .pendingLabel, #dialogPanel .pendingLabel {
+    
+    display: table;
+    width: 120px;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #f06767;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #f06767;
+    text-transform: uppercase;
+    
+}
+
+#reservation_usersPanel .approvedLabel, #dialogPanel .approvedLabel, #dialogPanel .calendarTypeLabel {
+    
+    display: table;
+    width: 120px;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #98c878;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #98c878;
+    text-transform: uppercase;
+    
+}
+
+#dialogPanel .calendarTypeLabel {
+    
+    border: 1px solid #007cba;
+    background-color: #007cba;
+    text-transform: none;
+    
+}
+
+#reservation_usersPanel .canceledLabel, #dialogPanel .canceledLabel {
+    
+    display: table;
+    width: 120px;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #f0c267;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #f0c267;
+    cursor: text;
+    text-transform: uppercase;
+    
+}
+
+#dialogPanel .closeLabel {
+    
+    display: table;
+    width: 120px;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #828282;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #828282;
+    cursor: text;
+    
+}
+
+
+#dialogPanel .pendingLabel, #dialogPanel .approvedLabel, #dialogPanel .canceledLabel, #dialogPanel .calendarTypeLabel, #dialogPanel .closeLabel {
+    
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    cursor: pointer;
+    
+}
+
+#userInfoPanel {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 50%;
+    background-color: #FFF;
+    border-left: 1px solid #ddd;
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.4);
+    z-index: 1000;
+    
+    
+}
+
+#changePanel {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background-color: #FFF;
+    border-left: 1px solid #ddd;
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.4);
+    z-index: 990;
+    
+}
+
+#showUserInfo_blockPanel {
+    
+    z-index: 980;
+    
+}
+
+#leftButtonPanel {
+    
+    float: left;
+    
+}
+
+#rightButtonPanel {
+    
+    float: right;
+    
+}
+
+#downloadCsvForMonth .downloadButton, #downloadCsvForDay .downloadButton {
+    
+    padding: 0 0.5em;
+    
+}
+
+#downloadCsvForDay {
+    
+    margin-left: 10px;
+    font-weight: normal;
+    float: right;
+    
+}
+
+.beforButton {
+    
+}
+
+.beforButton:before {
+    
+    content: "\f341";
+    font: 400 20px/1px dashicons;
+	position: relative;
+	top: 5px;
+	left: 0;
+				
+    
+}
+
+.nextButton {
+    
+    
+}
+
+.nextButton:before {
+    
+    content: "\f345";
+    font: 400 20px/1px dashicons;
+	position: relative;
+	top: 5px;
+	left: 0;
+	
+}
+
+#serviceDisabled, #guestsDisabled, #timeZoneDisabled {
+    
+    margin: 12px 0 16px;
+    border-left: 4px solid #dc3232;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    
+}
+
+#timeZoneDisabled {
+    
+    margin-bottom: 0;
+    
+}
+
+#setting_minimum_guests > span, #setting_maximum_guests > span {
+    
+    /**margin-top: 0.5em;**/
+    display: block;
+    padding-top: 0.5em;
+    float: left;
+    
+}
+
+#setting_minimum_guests > :nth-child(4), #setting_maximum_guests > :nth-child(4) {
+    
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    
+}
+
+#setting_minimum_guests > div > span, #setting_maximum_guests > div > span {
+    /**
+    margin-top: 0.5em;
+    display: block;
+    **/
+}
+
+#setting_minimum_guests > .multiple_fields_margin_top input[type=checkbox], #setting_maximum_guests > .multiple_fields_margin_top input[type=checkbox] {
+    
+    margin-left: 0.5em;
+    
+}
+
+#setting_minimum_guests > .multiple_fields_margin_top input[type=text], #setting_maximum_guests > .multiple_fields_margin_top input[type=text] {
+    
+    width: initial;
+    
+}
+
+#setting_minimum_guests label, #setting_maximum_guests label {
+    
+    margin: 0 !important;
+    
+}
+
+#settingPanel .bottomButtonPanel, #addCoursePanel .bottomButtonPanel , #setting_table .bottomButtonPanel, #memberPanel .bottomButtonPanel, #cssPanel .bottomButtonPanel, #javascriptPanel .bottomButtonPanel {
+    
+    position: sticky;
+    bottom: 0px;
+    background-color: #FFF;
+    padding: 10px;
+    padding-left: 0;
+    border-top: 1px solid #ddd;
+    
+}
+
+#setting_table .bottomButtonPanel {
+    
+    border-top: 0;
+    
+}
+
+#cssPanel .bottomButtonPanel, #javascriptPanel .bottomButtonPanel {
+    
+    background-color: #FFF;
+    z-index: 1000;
+    
+}
+
+#settingPanel label, #syncPanel label {
+    
+    display: inherit;
+    margin-top: 0.5em;
+    
+}
+
+#settingPanel label {
+    
+    margin-top: 0.5em;
+    
+}
+
+#settingPanel .valuePanel, #select_package .valuePanel, #syncPanel .valuePanel, #memberPanel .valuePanel {
+    
+    position: relative;
+    
+}
+
+#select_package .multiple_fields_margin_top {
+    
+    margin-top: 0.5em;
+    width: 100%;
+    display: inline-block;
+    
+}
+
+#select_package .expirationDateFrom {
+    
+    margin-top: 0.5em;
+    padding: 0 0.5em;
+    float: left;
+    
+}
+
+#select_package .expirationDateTo {
+    
+    margin-top: 0.5em;
+    padding: 0 0.5em;
+    float: left;
+    
+}
+
+#copyAndPasteOnCalendarSetting {
+    
+    color: #555d66;
+    text-align: right;
+    margin: 5px 20px 0 2px;
+    
+}
+
+#settingPanel .messageLabel, #select_package .messageLabel, #syncPanel .messageLabel, #memberPanel .messageLabel {
+    
+    position: relative;
+    
+}
+
+#settingPanel .upperPanel, #select_package .upperPanel, #syncPanel .upperPanel, #memberPanel .upperPanel {
+    /**
+    padding: 3px 5px;
+    **/
+    white-space: pre-wrap;
+    
+}
+
+#settingPanel .extensionsValid, #select_package .extensionsValid, #syncPanel .extensionsValid, #memberPanel .extensionsValid, #javascriptPanel .extensionsValid, #blockEmailListsPanel .extensionsValid {
+    
+    color: #ff4646;
+    /**
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 1.5em;
+    opacity: 0.8;
+    **/
+    /** text-align: center; **/
+    /**
+    font-weight: bold;
+    padding: 0.5em 0em;
+    **/
+    
+}
+
+#javascriptPanel .extensionsValid, #blockEmailListsPanel .extensionsValid {
+    
+    position: relative;
+    opacity: 1.0;
+    font-size: 1em;
+    padding-bottom: 1em;
+    
+}
+
+
+#mailSettingPanel {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #4444;
+    
+}
+
+#mailSettingPanel table {
+    
+    width: 100%;
+    text-align: left;
+    border-width: 0;
+    border-top: 1px solid #ddd;
+    
+}
+
+#mailSettingPanel tr {
+    
+    
+}
+
+#mailSettingPanel tr:nth-child(odd) {
+    
+    background-color: #f9f9f9;
+    
+}
+
+#mailSettingPanel th {
+    
+    width: 30%;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    word-break: break-all;
+    word-wrap: break-word;
+    cursor: pointer;
+    
+}
+
+#mailSettingPanel td {
+    
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    
+}
+
+#mailSettingPanel .disableTh {
+    
+    color: #ff3333;
+    
+}
+
+#mailSettingPanel .editButtonTd{
+    
+    width: 60px;
+    text-align: right;
+    vertical-align: middle;
+    
+}
+
+#mailSettingPanel .subjectLabel {
+    
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#setting_table .form-table {
+    
+    border-bottom: 0px solid #ddd;
+    
+}
+
+#setting_table .title, #holidayPanel .title, #nationalHolidayPanel .title, #subscription_page .title, #cssPanel .title, #javascriptPanel .title, #blockEmailListsPanel .title {
+    
+    font-size: 1.8em;
+    line-height: 1.8em;
+    padding: 15px 0px 10px 0px;
+    
+}
+
+#blockEmailListsPanel .regular-text {
+    
+    border-radius: 4px 0px 0px 4px;
+    border-right-width: 0px;
+    
+}
+
+#blockEmailListsPanel .addValuePanel {
+    
+    padding-bottom: 1.5em;
+    
+}
+
+#blockEmailListsTable .headerDelete {
+    
+    width: 100px;
+    
+}
+
+#booking_package_addBlockEmail {
+    
+    margin: -4px;
+    border-radius: 0px 4px 4px 0px;
+    
+}
+
+#setting_table label {
+    
+    display: table;
+    margin-bottom: 0.3em;
+    
+}
+
+#member_table textarea {
+    
+    width: 25em;
+    height: 25em;
+    
+}
+
+#member_table .form-table {
+    
+    border-bottom: 0px solid #ddd;
+    
+}
+
+#member_table .title {
+    
+    font-size: 1.8em;
+    padding: 15px 0px 10px 0px;
+    
+}
+
+#member_table label {
+    
+    display: table;
+    margin-bottom: 0.3em;
+    
+}
+
+#bookingSync_table .form-table {
+    
+    border-bottom: 0px solid #ddd;
+    
+}
+
+#bookingSync_table .title, #syncPanel .title {
+    
+    font-size: 1.8em;
+    padding: 15px 0px 10px 0px;
+    
+}
+
+#bookingSync_table textarea {
+    
+    width: 25em;
+    height: 25em;
+    
+}
+
+#bookingSync_table .tokenValue {
+    
+    margin-bottom: 0.5em;
+    
+}
+
+#bookingSync_table label {
+    
+    display: table;
+    margin-bottom: 0.3em;
+    
+}
+
+#upgradeButton, #upgradeSubmit {
+    
+    background-color: #ff4b4b;
+    border-color: #ff0000 #ff0000 #ff0000;
+    text-shadow: none;
+    box-shadow: none;
+    float: right;
+    
+}
+
+.top_title_h1 {
+    
+    margin: 0 !important;
+    padding: 0 !important;
+    float: left;
+    
+}
+
+#upgrade_edit_title {
+    
+    margin-left: 10px;
+    
+}
+
+#upgrade_media_title {
+    
+    height: 76px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#upgradePanel {
+    
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 16000;
+    color: #444;
+    
+}
+
+#upgradePanel .media_modal_close {
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0;
+    border: 1px solid transparent;
+    background: 0 0;
+    color: #666;
+    z-index: 1000;
+    cursor: pointer;
+    outline: 0;
+    -webkit-transition: color .1s ease-in-out,background .1s ease-in-out;
+    transition: color .1s ease-in-out,background .1s ease-in-out;
+    
+}
+
+#upgradePanel .media_modal_icon {
+    
+    background-image: none;
+    background-repeat: no-repeat;
+    
+}
+
+#upgradePanel .screen_reader_text {
+    
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    word-wrap: normal!important;
+    
+}
+
+#upgradePanel .edit_modal_content {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    min-height: 300px;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    background: #fcfcfc;
+    -webkit-font-smoothing: subpixel-antialiased;
+    
+}
+
+#upgradePanel .media_frame_menu {
+    
+    width: 200px;
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+#upgradePanel .media_menu {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #ccc;
+    user-select: none;
+    background: #f3f3f3;
+    
+}
+
+#upgradePanel .media_menu .media_active, .media_menu .media_active:hover {
+    
+    color: #23282d;
+    font-weight: 600;
+    
+}
+
+#upgradePanel .media_menu > div:hover {
+    
+    color: #0073aa;
+    background: rgba(0,0,0,.04)
+
+}
+
+#upgradePanel .media_menu > div:active{
+    
+    outline:0;
+    
+}
+
+#upgradePanel .media_menu > div {
+    
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 8px 20px;
+    margin: 0;
+    color: #0073aa;
+    line-height: 18px;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+#upgradePanel .media_frame_title {
+    
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 50px;
+    z-index: 200;
+    
+}
+
+#upgradePanel .media_frame_title h1 {
+    
+    padding: 0 16px;
+    font-size: 22px;
+    line-height: 50px;
+    margin: 0;
+    
+}
+
+#upgradePanel .media_frame_router {
+    
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    right: 0;
+    height: 36px;
+    z-index: 200;
+    
+}
+
+#upgradePanel .media_frame_toolbar {
+    
+    position: absolute;
+    z-index: 100;
+    left: 200px;
+    right: 0;
+    bottom: 60px;
+    height: auto;
+    border-top: 1px solid #ddd;
+    
+}
+
+#upgradePanel .media_toolbar {
+    
+    position: absolute;
+    top: initial;
+    left: 0;
+    right: 0;
+    bottom: -45px;
+    height: auto;
+    overflow: initial;
+    padding: 0 16px;
+    z-index: 100;
+    
+}
+
+#upgradePanel .media_toolbar_primary {
+    
+    float: right;
+    height: 100%;
+    
+}
+
+#upgradePanel .media_left_zero {
+    
+    left: 0;
+    
+}
+
+#upgrade_content_panel {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    overflow: auto;
+    position: absolute;
+    top: 76px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #555;
+    background-color: #FFF;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 1.5em;
+    
+}
+
+#upgrade_content_panel table {
+    
+    width: 100%;
+    border-spacing: 0;
+    
+}
+
+#upgrade_content_panel th, #upgrade_content_panel td {
+    
+    padding: 8px 10px;
+    border-spacing: 0;
+    
+}
+
+#upgrade_content_panel div {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#upgrade_content_panel label {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    border: 1px solid #5a9df7;
+    border-width: 0px 1px;
+    
+}
+
+#upgrade_content_panel form {
+    
+    text-align: center;
+    border: 1px solid #5a9df7;
+    border-width: 0px 1px;
+    
+}
+
+#upgrade_content_panel .titlePanel {
+    
+    padding: 10px;
+    font-size: 1.6em;
+    text-align: center;
+    
+}
+
+#upgrade_content_panel .mainPanel {
+    
+    display: table;
+    width: 60%;
+    margin: 10px 20%;
+    
+}
+
+#upgrade_content_panel .planPanel {
+    
+    position: relative;
+    display: table-cell;
+    width: 50%;
+    border-radius: 10px;
+    padding-right: 10px;
+    
+}
+
+#upgrade_content_panel label {
+    
+    display: block;
+    /**
+    margin: 10px 0px 0px 10px;
+    **/
+}
+
+#upgrade_content_panel input[type=text] {
+    
+    width: 100%;
+    margin: 0;
+    
+}
+
+#upgrade_content_panel .planNameLabel {
+    
+    position: relative;
+    top: 0px;
+    width: 100%;
+    color: #FFF;
+    background-color: #FFF;
+    background-color: #5a9df7;
+    border-width: 0;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    cursor: auto;
+    
+}
+
+#upgrade_content_panel .priceLabel {
+    
+    padding: 10px;
+    background-color: rgba(90, 157, 247, 0.2);
+    border-bottom: 1px solid #5a9df7;
+    text-align: center;
+    cursor: auto;
+    
+}
+
+#upgrade_content_panel .functionLabel {
+    
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: rgb(246, 250, 255);
+    cursor: auto;
+    /**
+    border-bottom: 1px solid #5a9df7;
+    **/
+    
+}
+
+#upgrade_content_panel .upgradePanel {
+    
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+    
+}
+
+#upgrade_content_panel .bottomLabel {
+    
+    height: 10px;
+    border: 1px solid #5a9df7;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(90, 157, 247, 0.05);
+    
+}
+
+#upgrade_content_panel .planPanel {
+    
+    font-size: 1em;
+    margin: 10px 0px 0px 10px;
+    
+}
+
+#upgrade_content_panel .true:before {
+    
+    position: relative;
+    color: #98c878;
+    content: "\f147";
+    font: 400 20px/1 dashicons;
+    top: 4px;
+    
+}
+
+#upgrade_content_panel .false:before {
+    
+    position: relative;
+    color: #f06767;
+    content: "\f335";
+    font: 400 20px/1 dashicons;
+    top: 4px;
+    
+}
+
+#upgrade_content_panel .row {
+    
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: table;
+    width: 100%;
+    
+}
+
+#upgrade_content_panel .rowError {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#upgrade_content_panel .name {
+    
+    padding-bottom: 5px;
+    
+}
+
+#upgrade_content_panel .value {
+    
+    
+    
+}
+
+#upgrade_content_panel .required:after {
+    
+    content: '*';
+    color: #ff1c1c;
+    margin-left: 2px;
+    
+}
+
+#upgradeInputFormPanel {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    width: 100%;
+    line-height: initial;
+    padding: 10px 10%;
+    background-color: #FFF;
+    
+}
+
+#upgradeInputFormPanel .planPanel {
+    
+    margin: 10px 0px 0px 10px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding-bottom: 10px;
+    
+}
+
+#upgradeInputFormPanel .formPanel {
+    
+    border: none;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    position: relative;
+    width: 50%;
+    float: left;
+    
+}
+
+#upgradeInputFormPanel .planNameLabel {
+    
+    position: relative;
+    top: 0px;
+    width: 100%;
+    color: #797979;
+    background-color: #FFF;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5em;
+    padding: 20px 0px 10px 10px;
+    text-align: left;
+    font-weight: normal;
+    
+}
+
+#upgradeInputFormPanel .priceLabel {
+    
+    margin: 5px 0px 5px 10px;
+    padding: 0;
+    background-color: #FFF;
+    text-align: left;
+    font-weight: bold;
+    border: none;
+    
+}
+
+#upgradeInputFormPanel .functionLabel {
+    
+    margin: 5px 0px 5px 10px;
+    padding: 0;
+    background-color: #FFF;
+    /**
+    border-bottom: 1px solid #5a9df7;
+    **/
+    
+}
+
+#upgradeInputFormPanel .row {
+    
+    border: none;
+    padding-top: 5px;
+    
+}
+
+#upgradeInputFormPanel .name {
+    
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+#upgradeInputFormPanel .payTypeLabel {
+    
+    font-weight: bold;
+    text-align: left;
+    padding: 0px 10px 5px 10px;
+    
+}
+
+#upgradeInputFormPanel .buttonPanel {
+    
+    text-align: center;
+    padding: 0px 10px 0px 0px;
+    
+}
+
+#upgradeInputFormPanel .termsOfService {
+    
+    margin-top: 10px;
+    font-size: 0.8em;
+    
+}
+
+#upgradeInputFormPanel .orLabel, #booking-package-subscription_form .orLabel {
+    
+    display: table;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 10px 0px;
+    
+}
+
+#upgradeInputFormPanel .orLabel:before, #booking-package-subscription_form .orLabel:before {
+    
+    content: '';
+  display: table-cell;
+  width: 50%;
+  background: -webkit-linear-gradient(transparent 50%, #ddd, currentColor -webkit-calc(50% + 1px), transparent -webkit-calc(50% + 1px));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, currentColor), color-stop(currentColor calc(50% + 1px)), to(transparent calc(50% + 1px)));
+  background: linear-gradient(transparent 50%, #ddd, currentColor calc(50% + 1px), transparent calc(50% + 1px));
+  -webkit-background-clip: padding;
+  background-clip: padding;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+    
+}
+
+#upgradeInputFormPanel .orLabel:after, #booking-package-subscription_form .orLabel:after {
+    
+    content: '';
+  display: table-cell;
+  width: 50%;
+  background: -webkit-linear-gradient(transparent 50%, #ddd, currentColor -webkit-calc(50% + 1px), transparent -webkit-calc(50% + 1px));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, currentColor), color-stop(currentColor calc(50% + 1px)), to(transparent calc(50% + 1px)));
+  background: linear-gradient(transparent 50%, #ddd, currentColor calc(50% + 1px), transparent calc(50% + 1px));
+  -webkit-background-clip: padding;
+  background-clip: padding;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+    
+}
+
+#subscription_page {
+    
+    background-color: #FFF;
+    padding: 10px;
+    
+}
+
+#subscriptionPanel, #subscription_page {
+    
+    display: table;
+    
+}
+
+#subscriptionPanel th, #subscription_page th {
+    
+    width: 30%;
+    vertical-align: middle;
+    
+}
+
+#subscriptionPanel td, #subscription_page td {
+    
+    vertical-align: middle;
+    
+}
+
+#subscriptionPanel tr:nth-child(odd), #upgrade_content_panel tr:nth-child(odd), #subscription_page tr:nth-child(odd) {
+    
+    background-color: #f9f9f9;
+    
+}
+
+#subscriptionPanel .buttonPanel {
+    
+    margin-top: 1em;
+    /**float: right;**/
+    
+}
+
+#subscriptionPanel .cancelSubscription {
+    
+    display: table;
+    color: #ff3232;
+    margin: 10px 0px;
+    cursor: pointer;
+    
+}
+
+#subscriptionPanel .updateSubscription {
+    
+    display: table;
+    color: #0073aa;
+    margin: 10px 0px;
+    cursor: pointer;
+    
+}
+
+#subscriptionPanel .cancelSubscription:hover {
+    
+    text-decoration: underline;
+    
+}
+
+#payment-form {
+    
+    /**margin: 0px 0px 10px 0px;**/
+    padding: 0px 10px;
+    text-align: left;
+    /**
+    background-color: #f7f8f9;
+    **/
+    
+}
+
+#payment-form label {
+    
+    border: none;
+    font-weight: bold;
+    
+}
+
+/**
+#payment-form button {
+    
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    background-color: #98c878;
+    border: 1px solid #7db558;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    
+}
+
+#payment-form button:hover {
+    
+    background-color: #7db558;
+    border: 1px solid #7db558;
+    
+}
+**/
+
+#payment-form button {
+    
+    width: 100%;
+    /**height: 40px;**/
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    
+}
+
+#payment-form button:hover {
+    
+    color: #555;
+    background-color: #f7efff;
+    border: 1px solid #ddd;
+    
+}
+
+
+
+#card-element {
+    
+    margin: 5px 0px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #FFF;
+    
+}
+
+#payment-request-button {
+    
+    margin: 0px 10px;
+    
+}
+
+#card-errors {
+    
+    color: #ff1c1c;
+    margin-bottom: 5px;
+    
+}
+
+#google_calendar_api {
+    
+    background-color: #FFF;
+    
+}
+
+#google_calendar_api .step {
+    
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    
+}
+
+#google_calendar_api .open:after {
+    
+    position: relative;
+    top: 12px;
+    content: "\f142";
+    font: 400 40px dashicons;
+    color: #0073aa;
+    
+}
+
+#google_calendar_api .close:after {
+    
+    position: relative;
+    top: 12px;
+    content: "\f140";
+    font: 400 40px dashicons;
+    color: #0073aa;
+    
+}
+
+#google_calendar_api_click {
+    
+    font-size: 1.4em;
+    color: #0073aa;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+#google_calendar_api_manual {
+    
+    
+    
+}
+
+#webhook_url_for_google {
+    
+    background-color: #EEE;
+    border: 1px solid #0073aa;
+    width: 100%;
+    
+}
+
+#client_id_for_google {
+    
+    background-color: #EEE;
+    border: 1px solid #0073aa;
+    width: 100%;
+    
+}
+
+#booking_pacage_dashboard_widget {
+    
+    margin-top: -8px;
+    
+}
+
+#booking_pacage_dashboard_widget .title {
+    
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: border-bottom;
+    padding: 8px 12px;
+    padding-bottom: 0;
+    margin: 0 -12px;
+    
+}
+
+#booking_pacage_dashboard_widget .calendarName {
+    
+    padding: 8px 0;
+    
+}
+
+#booking_pacage_dashboard_widget .date {
+    
+    float: left;
+    
+}
+
+#booking_pacage_dashboard_widget .status {
+    
+    cursor: pointer;
+    display: table;
+    min-width: 120px;
+    text-align: center;
+    padding: 2px 0px;
+    border-radius: 0;
+    color: #FFF;
+    float: right;
+    
+}
+
+#booking_pacage_dashboard_widget .pending {
+    
+    border: 1px solid #f06767;
+    background-color: #f06767;
+    
+}
+
+#booking_pacage_dashboard_widget .approved {
+    
+    border: 1px solid #98c878;
+    background-color: #98c878;
+    
+}
+
+#booking_pacage_dashboard_widget .canceled {
+    
+    border: 1px solid #f0c267;
+    background-color: #f0c267;
+    cursor: text;
+    
+}
+
+#booking_pacage_dashboard_widget .name {
+    
+    clear: right;
+    
+}
+
+#booking_pacage_dashboard_widget ul {
+    
+    border-bottom: 1px solid #eee;
+    padding-top: 0;
+    margin: 0px -12px;
+    margin-top: -1px;
+    background-color: #fafafa;
+    
+}
+
+#booking_pacage_dashboard_widget li {
+    
+    border-top: 1px solid #eee;
+    margin: 0;
+    padding: 8px 12px;
+    color: #72777c;
+    
+}
+
+#the-list .delete_subscription {
+    
+    cursor: pointer;
+    
+}
+
+.CodeMirror {
+    
+    height: 100% !important;
+    
+}
+
+#coursePanel .switchPanel, #guestsPanel .switchPanel, #couponsPanel .switchPanel {
+    
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    
+}
+
+#coursePanel .switchPanel > div, #guestsPanel .switchPanel > div, #couponsPanel .switchPanel > div {
+    
+    display: table-cell;
+    width: 50%;
+    
+}
+
+.switchArea {
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    /**margin: auto;**/
+    margin-left: auto;
+    width: 82px;
+    background: #fff;
+}
+
+.switchArea input[type="checkbox"] {
+    display: none;
+}
+
+.switchArea label {
+    display: block;
+    box-sizing: border-box;
+    height: 32px;
+    border: 2px solid #999999;
+    border-radius: 16px;
+}
+
+.switchArea input[type="checkbox"]:checked +label {
+    border-color: #78bd78;
+}
+
+.switchArea label span:after{
+    content: "OFF";
+    padding: 0 0 0 19px;;
+    color: #999999;
+}
+
+.switchArea  input[type="checkbox"]:checked + label span:after{
+    content: "ON";
+    padding: 0 19px 0 0;
+    color: #78bd78;
+}
+
+.switchArea .switchImg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #999999;
+    top: 4px;
+    left: 4px;
+    border-radius: 12px;
+    transition: .2s;
+}
+
+.switchArea input[type="checkbox"]:checked ~ .switchImg {
+    transform: translateX(50px);
+    background: #78bd78;
+}

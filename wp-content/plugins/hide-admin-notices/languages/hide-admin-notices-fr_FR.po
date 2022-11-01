@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hide Admin Notices\n"
+"POT-Creation-Date: 2022-01-31 15:26+0100\n"
+"PO-Revision-Date: 2022-01-31 15:30+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: hide-admin-notices.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPathExcluded-0: src\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+
+#: includes/class-hide-admin-notices-admin.php:51
+#: includes/class-hide-admin-notices-admin.php:52
+msgid "Donate a $1"
+msgstr "Faites un don de 1 €"
+
+#: includes/class-hide-admin-notices-admin.php:73
+#: includes/class-hide-admin-notices-admin.php:74
+msgid "Like it?"
+msgstr "Vous l’aimez?"
+
+#: includes/class-hide-admin-notices-admin.php:88
+msgid "Notifications Tab"
+msgstr "Onglet notifications d’administrateur"
+
+#: includes/class-hide-admin-notices-admin.php:92
+msgid "Show Notices"
+msgstr "Montrer les notifications"
+
+#: includes/class-hide-admin-notices-admin.php:93
+msgid "Hide Notices"
+msgstr "Cacher les notifications"
+
+#. Plugin Name of the plugin/theme
+msgid "Hide Admin Notices"
+msgstr "Cacher les notifications du dashboard"
+
+#. Plugin URI of the plugin/theme
+msgid "https://pontetlabs.com/hide-admin-notices"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Hide – or show – WordPress Dashboard Notices, Messages, Update Nags etc. ... "
+"for everything!"
+msgstr ""
+"Cacher – ou montrer – les notifications, les messages, les « nags » de mise "
+"à jour ... toutes dans le dashboard WordPress !"
+
+#. Author of the plugin/theme
+msgid "PontetLabs"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://pontetlabs.com"
+msgstr ""
+
+#~ msgid "Leave a rating"
+#~ msgstr "Ajouter mon avis"
+
+#~ msgid "The Easy Web Co."
+#~ msgstr "The Easy Web Co."
+
+#~ msgid "Leave a rating »"
+#~ msgstr "Ajouter mon avis »"
+
+#~ msgid "Dashboard Notices Tab"
+#~ msgstr "Onglet notifications d’administrateur"
+
+#~ msgid ""
+#~ "A simple plugin to hide all Notices, Messages, & Update Nags in your "
+#~ "WordPress Dashboard for PHP, Plugins, Themes, & WordPress."
+#~ msgstr ""
+#~ "Un simple plugin pour masquer tous les notifications dans votre tableau "
+#~ "de bord WordPress pour PHP, extensions, thèmes et WordPress."
+
+#~ msgid "Buy Me a Coffee"
+#~ msgstr "Achetez-moi un café"

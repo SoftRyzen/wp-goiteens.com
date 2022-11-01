@@ -1,0 +1,3268 @@
+
+.material-icons {
+    
+    font-family: 'Material Icons' !important;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px !important;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.hidden_panel {
+    
+    display: none !important;
+    
+}
+
+.scrollBlock {
+    
+    overflow: hidden;
+    
+}
+
+.topPanelIndex {
+    
+    z-index: 100;
+    
+}
+
+.bottomPanelIndex {
+    
+    z-index: 100;
+    
+}
+
+.calendarNotFound {
+    
+    color: red;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+.shortcode_error {
+    
+    background-color: #fff8e5;
+    border: 1px solid #ccd0d4;
+    border-left-color: #ffb900;
+    border-left-width: 4px;
+    padding: 1px 12px;
+    
+    
+}
+
+.shortcode_error > p {
+    
+    margin: 0 !important;
+    
+}
+
+#booking_package_verificationCodePanel {
+    
+    position: fixed;
+    height: auto !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /** min-height: 360px; **/
+    z-index: 15990;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+#booking_package_verificationCodeContent {
+    
+    max-width: 500px;
+    position: fixed;
+    padding: 2%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-break: break-word;
+    
+    margin: auto;
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+}
+
+#booking_package_verificationCodeContent span {
+    
+    display: block;
+    
+}
+
+#booking_package_verificationCodeContent .address {
+    
+    font-weight: 400;
+    margin-bottom: 0.6em;
+    
+}
+
+#booking_package_verificationCodeContent input {
+    
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    
+}
+
+#booking_package_verificationCodeContent button {
+    
+    width: 100%;
+    
+}
+
+#booking-package input, #booking-package select, #booking-package textarea, #booking_package_verificationCodeContent input {
+    
+    border-width: 1px;
+    
+}
+
+#booking-package-memberActionPanel input[type=text], #booking-package-memberActionPanel select, #booking-package-memberActionPanel textarea {
+    
+    border: 1px solid #d6d6d6;
+    
+}
+
+#booking-package .maximumCharge, #booking-package .minimumCharge, #booking-package .toCharge {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+#booking-package-loginform {
+	
+	display: none;
+	
+}
+
+#booking-package-loginform p {
+    
+    font-size: inherit;
+    
+}
+
+#booking-package-user-form, #booking-package-loginform, #booking-package-subscription_form, #booking-package-subscribed_panel {
+    
+    max-width: 320px;
+    padding: 8% 10px;
+    margin: auto;
+    
+}
+
+#booking-package-user-form .titlePanel, #booking-package-user-edit-form .titlePanel, #booking-package-subscribed_panel .titlePanel, #booking-package_myBookingHistory .titlePanel, #booking-package_myBookingDetails .titlePanel, #booking-package_myBookingDetailsFroVisitor .titlePanel {
+    
+    display: table;
+    width: 100%;
+    
+}
+
+#booking-package-user-form .title, #booking-package-user-edit-form .title, #booking-package-subscribed_panel .title, #booking-package_myBookingHistory .title, #booking-package_myBookingDetails .title, #booking-package_myBookingDetailsFroVisitor .title {
+    
+    float: left;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+#booking-package-user-form .closeButton, #booking-package-user-edit-form .closeButton, #booking-package-subscribed_panel .closeButton, #booking-package_myBookingHistory .closeButton, #booking-package_myBookingDetails .closeButton, #booking-package-loginform .closeButton {
+    
+    float: right;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.5em !important;
+    font-weight: normal;
+    
+}
+
+#booking-package-loginform .closeButton {
+    
+    width: 100%;
+    text-align: right;
+    float: none;
+    
+}
+
+#booking-package_myBookingHistory, #booking-package_myBookingDetails {
+    
+    padding: 8% 10px;
+    
+}
+
+#booking-package_myBookingHistoryTable table {
+    
+    font-size: 1em;
+    
+}
+
+#booking-package_myBookingHistoryTable tr {
+    
+    cursor: pointer;
+    
+}
+
+#booking-package_myBookingHistoryTable th {
+    
+    font-weight: normal;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+#booking-package_myBookingHistoryTable td, #booking-package_myBookingHistoryTable th {
+    
+    padding-left: 0px;
+    padding-right: 0.5em;
+    padding-bottom: 7px;
+    
+}
+
+#booking-package_myBookingHistoryTable .statusTd {
+    
+    padding-right: 0em;
+    width: 140px;
+    
+}
+
+#booking-package_myBookingHistoryTable .pendingLabel {
+    
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #f06767;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #f06767;
+    text-transform: uppercase;
+    
+}
+
+#booking-package_myBookingHistoryTable .approvedLabel {
+    
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #98c878;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #98c878;
+    text-transform: uppercase;
+    
+}
+
+#booking-package_myBookingHistoryTable .canceledLabel {
+    
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0px;
+    border: 1px solid #f0c267;
+    border-radius: 0;
+    color: #FFF;
+    background-color: #f0c267;
+    cursor: text;
+    text-transform: uppercase;
+    
+}
+
+#booking-package-subscribed_panel table {
+    
+    font-size: 1em;
+    
+}
+
+#booking-package-subscribed_panel .delete_icon {
+    
+    font-weight: normal;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#booking-package-subscribed_panel .canceled {
+    
+    color: #e23e3e;
+    
+}
+
+#booking-package-user-form .errorPanel, #booking-package-user-edit-form .errorPanel, #booking-package-subscription_form .errorPanel, #booking-package-subscribed_panel .errorPanel {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#booking-package-user-edit-form {
+    
+    width: 100%;
+    padding: 8% 10px;
+    margin: auto;
+    
+}
+
+#booking-package-subscription_form .subscription {
+    
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1.4em;
+    
+}
+
+#booking-package-subscription_form .name, #booking-package-subscribed_panel .name {
+    
+    
+    
+}
+
+#booking-package-subscription_form .amount, #booking-package-subscribed_panel .amount {
+    
+    text-align: right;
+    font-weight: 600;
+    
+}
+
+#booking-package-memberActionPanel {
+    
+    width: 100%;
+    /**float: right;**/
+    display: table;
+    margin: 0;
+    
+}
+
+#booking-package-memberActionPanel .userTopButtonPanel {
+    
+    display: table;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#booking-package-memberActionPanel .hiddenLoginErrorPanel {
+    
+    animation-name: hiddenLoginErrorPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    height: 0;
+    opacity: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+
+#booking-package-memberActionPanel label {
+    
+    font-weight: normal;
+    
+}
+
+#booking-package-memberActionPanel input[type=text], #booking-package-memberActionPanel input[type=password] {
+    
+    width: 100%;
+    
+}
+
+#booking-package-memberActionPanel button, #booking-package-memberActionPanel input[type=submit] {
+    
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    
+}
+
+#booking-package-memberActionPanel div, #booking-package-memberActionPanel .row_reCAPTCHA {
+    
+    margin-bottom: 0;
+    /** display: contents; **/
+    
+}
+
+#booking-package-memberActionPanel .row_reCAPTCHA {
+    
+    display: contents;
+    
+}
+
+#booking-package-memberActionPanel div, #booking-package-memberActionPanel p {
+    
+    margin-bottom: 1em;
+    
+}
+
+#booking-package-memberActionPanel .member_login_error {
+    
+    text-align: center;
+    
+}
+
+#booking-package-loginform .member_login_error {
+    
+    text-align: left;
+    
+}
+
+#booking-package-memberActionPanel .displayName {
+    
+    display: block;
+    text-align: right;
+    
+}
+
+#booking-package-memberActionPanel .loginform {
+    
+    display: block !important;
+    
+}
+
+#booking-package-memberActionPanel .login, #booking-package-memberActionPanel .logout, #booking-package-memberActionPanel .register, #booking-package-memberActionPanel .edit {
+    
+    cursor: pointer;
+    margin: 0 5px;
+    float: right;
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+#booking-package-memberActionPanel .login:hover, #booking-package-memberActionPanel .logout:hover, #booking-package-memberActionPanel .register:hover, #booking-package-memberActionPanel .edit:hover {
+    
+    text-decoration: underline;
+    
+}
+
+#booking-package-memberActionPanel .register {
+    
+    
+    
+}
+
+#booking-package-memberActionPanel .change_password_button {
+    
+    display: block;
+    
+}
+
+#booking-package-memberActionPanel .return_button {
+    
+    margin-left: 1em;
+    
+}
+
+#booking-package-memberActionPanel .login_error, #booking-package-loginform .login_error {
+    
+    margin: 12px 0 16px;
+    border-left: 4px solid #dc3232;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    
+}
+
+#booking-package-loginform .login_error {
+    
+    margin: 5px 0;
+    padding: 5px 10px;
+    
+}
+
+
+#booking-package {
+    
+    animation-name: nextPageVisitorDetails;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    width: 100%;
+    display: table;
+    margin: 0;
+    
+}
+
+
+
+#booking-package .calendarWidthForHotel {
+    
+    animation-name: nextPageVisitorDetails;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    width: 50%;
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    box-sizing: border-box;
+    
+}
+
+#booking-package input[type=text], #booking-package textarea {
+    
+    border: 1px solid #d6d6d6;
+    
+}
+
+#booking-package select {
+    
+    border: 1px solid #ddd;
+    
+}
+
+#booking-package_servicePage {
+    
+    width: 60%;
+    float: left;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+#booking-package_serviceDetails {
+    
+    width: 40%;
+    float: left;
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-left: 1em;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+#booking-package_servicePage .noSticky, #booking-package_serviceDetails .noSticky {
+    
+    position: relative !important;
+    
+}
+
+#booking-package_serviceDetails .title, #booking-package_servicePage .title {
+    
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px 0;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    
+}
+
+#booking-package_servicePage .title {
+    
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    
+}
+
+#booking-package_schedulePage input[type=checkbox], #optionsMainPanel input[type=checkbox], #booking-package_servicePage input[type=checkbox] {
+    
+    margin-right: 0.5em;
+    
+}
+
+#booking-package_schedulePage input[type=checkbox], #optionsMainPanel input[type=checkbox][disabled], #booking-package_servicePage input[type=checkbox] {
+    
+    cursor: pointer !important;
+    
+}
+
+#booking-package_schedulePage input[type=checkbox], #optionsMainPanel label, #booking-package_servicePage label {
+    
+    font-weight: normal;
+    
+}
+
+#booking-package_durationStay {
+    
+    animation-name: nextPageVisitorDetails;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: relative;
+    width: 50%;
+    float: left;
+    margin: 0em;
+    padding-left: 1em;
+    box-sizing: border-box;
+    
+}
+
+#booking-package_durationStay button, #booking-package_serviceDetails .goToCalendarButton, #booking-package_serviceDetails .returnButton {
+    
+    width: 100%;
+    /**
+    height: 40px;
+    padding: 5px 10px;
+    
+    margin-left: 0.5em;
+    **/
+    font-weight: normal;
+    
+}
+
+#booking-package_serviceDetails .goToCalendarButton, #booking-package_serviceDetails .returnButton {
+    
+    margin-left: 0;
+    
+}
+
+#booking-package_durationStay select {
+    
+    padding: 0.2em 0.5em;
+    width: 100%;
+    
+}
+
+
+
+#booking-package_durationStay .bookingDetailsTitle {
+    
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px 0;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    z-index: 1;
+    
+}
+
+#booking-package_durationStay .rowError {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#booking-package_durationStay .errorPanel {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#booking-package_durationStay .name {
+    
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    font-weight: normal;
+    padding-bottom: 5px;
+    float: left;
+    
+}
+
+#booking-package_durationStay .forNights{
+    
+    float: left;
+    margin-left: 0.1em;
+    
+}
+
+#booking-package_durationStay .value {
+    
+    width: 100%;
+    text-align: left;
+    clear: left;
+    
+}
+
+#booking-package_durationStay .required:after {
+    
+    position: relative;
+    top: 3px;
+    content: '*';
+    color: #ff1c1c;
+    margin-left: 2px;
+    display: inline;
+    
+}
+
+#booking-package_durationStay .row {
+    /**
+    margin: 0.5em 0em;
+    **/
+    margin-left: 0em;
+    margin-right: 0em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    box-sizing: border-box;
+    
+}
+
+#booking-package_durationStay .rowRoom, #booking-package_durationStay .roomNoLabel {
+    
+    margin-left: 0em;
+    margin-right: 0em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    
+}
+
+#booking-package_myBookingDetails_panel .roomNoLabel {
+    
+    text-transform: capitalize;
+    
+}
+
+#booking-package_durationStay .roomNoLabel {
+    
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 0;
+    
+}
+
+#booking-package_durationStay .rowRoom {
+    
+    padding: 0 0.5em 0.5em 0.5em;
+    
+}
+
+#booking-package_durationStay .addRoomButton {
+    
+    float: right;
+    color: #2626ff;
+    font-weight: normal;
+    cursor: pointer;
+    
+}
+
+#booking-package_durationStay .deleteRoomButton {
+    
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    /** color: #2626ff; **/
+    padding: 0.5em;
+    padding-bottom: 0;
+    margin: 0px;
+    float: right;
+    cursor: pointer;
+    
+}
+
+#booking-package_durationStay .chooseDate {
+    
+    color: #ff1a1a;
+    /**
+    border-bottom: 1px solid #ff1a1a;
+    **/
+}
+
+#booking-package_durationStay .clearLabel {
+    
+    float: right;
+    color: #2626ff;
+    cursor: pointer;
+    font-weight: normal;
+    
+}
+
+
+
+#booking-package_durationStay .openDetails {
+    
+    animation-name: openDetails;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: relative;
+    height: inherit
+    
+    
+}
+
+#booking-package_durationStay .closeDetails {
+    
+    animation-name: closeDetails;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: relative;
+    height: inherit;
+    display: none;
+    
+}
+
+#summaryListPanel {
+    
+    display: table;
+    
+}
+
+#summaryListPanel .list {
+    
+    display: table;
+    clear: left;
+    
+}
+
+#summaryListPanel .totalLengthOfStayLabel {
+    
+    color: #2626ff;
+    cursor: pointer;
+    font-weight: normal;
+    float: none;
+    margin-bottom: 0;
+    
+}
+
+#summaryListPanel .summaryTitle {
+    
+    float: left;
+    clear: left;
+    
+}
+
+#summaryListPanel .summaryValue {
+    
+    margin-left: 0.5em;
+    float: left;
+    
+}
+
+#summaryListPanel .stayAndGuestsPanel {
+    
+    margin-left: 1em;
+    
+}
+
+#booking-package .position_sticky {
+    
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    
+}
+
+#booking-package .nextPageBookingDetails {
+    
+    animation-name: nextPageBookingDetails;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: relative;
+    padding: 0;
+    padding-right: 10px;
+    left: 0%;
+    width: 35%;
+    
+    
+}
+
+#booking-package .returnPageBookingDetails {
+    
+    animation-name: returnPageBookingDetails;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    position: relative;
+    position: 0;
+    left: 0%;
+    width: 50%;
+    
+    
+}
+
+#booking-package .nextPageVisitorDetails {
+    
+    
+    animation-name: nextPageVisitorDetails;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    
+    position: relative;
+    padding: 0;
+    padding-left: 10px;
+    /**left: 50%;**/
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+@keyframes hiddenLoginErrorPanel {
+    
+    from {
+        
+        opacity: 1;
+        height: inherit;
+        margin: 12px 0 16px;
+        padding: 10px;
+        
+    } to {
+        
+        opacity: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+}
+
+@keyframes openDetails {
+    
+    from {
+        
+        opacity: 0;
+    }
+    to {
+        
+        opacity: 1;
+        
+    }
+    
+}
+
+@keyframes closeDetails {
+    
+    from {
+        
+        opacity: 1;
+    }
+    to {
+        
+        opacity: 0;
+        display: none;
+        
+    }
+    
+}
+
+@keyframes nextPageBookingDetails {
+    
+    from {
+        
+        width: 50%;
+        left: 50%;
+    }
+    to {
+        
+        width: 35%;
+        left: 0%;
+        
+    }
+    
+}
+
+@keyframes nextPageVisitorDetails {
+    
+    from {
+        
+        opacity: 0
+    }
+    to {
+        
+        opacity: 1;
+        
+    }
+    
+}
+
+@keyframes returnPageBookingDetails {
+    
+    from {
+        
+        width: 35%;
+        left: 0%;
+    }
+    to {
+        
+        width: 50%;
+        left: 50%;
+        
+    }
+    
+}
+
+
+#calendarStatus {
+    
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+
+
+#booking-package_calendarPage {
+	/**
+	font-size: 14px;
+	**/
+	margin: 0em;
+	/**
+	background-color: #FFF;
+	**/
+}
+
+#booking-package_calendarPage div {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+#booking-package_calendarPage input {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0.5em 0em 0.5em 0.5em;
+	font-size: 1em;
+	border: 1px solid #969696;
+	display: inline;
+	
+}
+
+#booking-package_calendarPage textarea {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 0.5em 0em 0.5em 0.5em;
+	font-size: 1em;
+	border: 1px solid #969696;
+	
+}
+
+#booking-package_calendarPage select {
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 2em;
+	margin: 2px 0px;
+	/** padding: 0.5em 0em 0.5em 0.5em; **/
+	font-size: 1em;
+	border: 1px solid #969696;
+	
+}
+
+#booking-package_calendarPage label {
+	
+	
+}
+
+#booking-package_calendarPage .selectedDayPanel {
+    
+    background-color: #b1daff !important;
+    
+}
+
+#booking-package_calendarPage .radio_title {
+	
+	margin-left: 0.5em;
+	
+}
+
+#booking-package_calendarPage .pointer {
+	
+	cursor: pointer;
+	
+}
+
+#booking-package_calendarPage .pointer:hover {
+	/**
+	background: #EAEDF3;
+	**/
+}
+
+#booking-package_calendarPage .close {
+	
+	background: #f5f5f5;
+	
+}
+
+/**
+#booking-package_calendarPage .closeDay {
+	
+	background: #f5f5f5;
+	
+}
+**/
+
+#booking-package_calendarPage .calendarPanel {
+	
+	/**
+	display: table;
+	width: 100%;
+	**/
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	-ms-grid-rows: auto;
+	padding: 10px 0;
+	
+}
+
+#booking-package_calendarPage .arrowFont {
+    
+    font-weight: normal;
+    font-size: 2em !important;
+    width: 1.1em;
+    vertical-align: middle;
+    
+}
+
+#booking-package_calendarPage .arrowLeft {
+	
+	cursor: pointer;
+	text-align: left;
+	
+}
+
+#booking-package_calendarPage .arrowRight {
+	
+	cursor: pointer;
+	text-align: right;
+	float: none;
+	
+}
+
+#booking-package_calendarPage .calendar {
+	/**
+	display: table;
+	width: 100%;
+	**/
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	-ms-grid-rows: auto;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	
+}
+
+#booking-package_calendarPage .border_bottom_width {
+	
+	border-bottom-width: 1px !important;
+	
+}
+
+#booking-package_calendarPage .dayPanel {
+	
+	/**
+	display: table;
+	**/
+	/**
+	border-color: #ddd;
+	**/
+	border-width: 1px 0px 0px 1px;
+	border-style: solid;
+	/**
+	float: left;
+	width: 14.2%;
+	**/
+	padding: 5px 0;
+	text-align: center;
+	
+}
+
+#booking-package_calendarPage .dayPanelHeight {
+	
+	height: 4.5em;
+	
+}
+
+#booking-package_calendarPage .descriptionLabelForDay {
+    
+    display: none;
+    width: 100%;
+    font-size: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+#booking-package_calendarPage .dayPostion {
+    
+    /**
+    position: absolute;
+    padding: 5px;
+    **/
+    /**
+    display: table-cell;
+    **/
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+#booking-package_calendarPage .symbolPanel, #booking-package_calendarPage .numberInsteadOfSymbols {
+    
+    /**
+    position: absolute;
+    padding: 5px;
+    **/
+    /**
+    display: table-row;
+    **/
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+    font-weight: inherit;
+    font-size: 1em !important;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px 0;
+    
+}
+
+#booking-package_calendarPage .remainderPanel {
+    
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ababab;
+    
+}
+
+#booking-package_calendarPage .approvedCount {
+    
+    color: #98c878;
+    display: inline;
+    margin-right: 5px;
+    
+}
+
+#booking-package_calendarPage .pendingCount {
+    
+    color: #f06767;
+    display: inline;
+    margin-left: 5px;
+    
+}
+
+#booking-package_calendarPage .datePanel {
+	
+	font-size: 1.2em;
+	margin: 0.5em 0em 0.5em 0em;
+	
+}
+
+#booking-package_calendarPage .titleMessage {
+	
+	font-size: 1.2em;
+	text-align: center;
+	margin: 0.5em 0em 0.5em 0em;
+	
+}
+
+#booking-package_calendarPage .accountPanel {
+	
+	border-color: #969696;
+	border-width: 1px 0px 0px 0px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	float: left;
+	width: 100%;
+	padding: 10px 5px;
+	
+}
+
+#booking-package_calendarPage .unSelectPanel {
+	
+	background-color: rgb(242,242,242);
+	
+}
+
+#booking-package_calendarPage .errorPanel {
+	
+	background: #FFD5D5;
+	
+}
+
+#booking-package_calendarPage .inputPanel {
+	
+	display: table;
+	border-color: #969696;
+	border-width: 1px 0px 0px 0px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	float: left;
+	width: 100%;
+	padding: 10px 5px;
+	
+}
+
+#booking-package_calendarPage .indispensableLabel:after {
+	
+	content: ' ※';
+	color: #ff0000;
+}
+
+#booking-package_calendarPage .inputName {
+	
+	display: table-cell;
+	vertical-align: middle;
+	width: 30%;
+	
+}
+
+#booking-package_calendarPage .inputValue {
+	
+	display: table-cell;
+	vertical-align: middle;
+	width: 70%;
+	white-space: pre-wrap;
+	word-break: break-word;
+	/** overflow: auto; **/
+	
+}
+
+#booking-package_calendarPage .inputValueHidden {
+	
+	display: none;
+	
+}
+
+#booking-package_calendarPage .buttonPanel {
+	
+	display: table;
+	float: right;	
+}
+
+#booking-package_calendarPage .backButton {
+	
+	border: 1px solid #969696;
+	border-radius: 3px 3px 3px 3px / 3px 3px 3px 3px;
+	border-right-width: 1px;
+	background: #ededed;
+	cursor: pointer;
+	font-size: 1em;
+	vertical-align: bottom;
+	padding: 5px 10px;
+	margin: 10px 10px 10px 0px;
+	color: #000000;
+	line-height: 1;
+	font-weight: normal;
+	
+}
+
+#booking-package_calendarPage .hiddenButton {
+	
+	display: none;
+	
+}
+
+#booking-package_calendarPage .calendarButton {
+	
+	background: #FFF;
+	border: solid 1px #969696;
+	padding: 0.3em;
+	
+}
+
+.calendarData {
+	
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: normal;
+	vertical-align: middle;
+	/**
+	display: table-cell;
+	width: 40%;
+	**/
+	
+}
+
+.calendarChangeButton {
+    
+    /**
+    display: table-cell;
+    width: 30%;
+    **/
+    vertical-align: middle;
+    
+}
+
+#booking-package_schedulePage {
+    /**
+    font-size: 14px;
+    background-color: #FFF;
+    **/
+    position: relative;
+    width: 100%;
+    /**
+    background-size: contain;
+    overflow: hidden;
+    **/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+/**
+#booking-package_schedulePage:before {
+    
+    content: "";
+    display: block;
+    overflow: hidden;
+    
+}
+**/
+#booking-package_schedulePage div, #booking-package_servicePage div {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#booking-package_schedulePage button {
+    
+    /**padding: 5px 10px;**/
+    margin: 0;
+    margin-left: 10px;
+    font-weight: normal;
+    
+}
+
+#booking-package_schedulePage .topPanel {
+    
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    display: table;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    
+    z-index: 3;
+    
+}
+
+#booking-package_schedulePage .topPanelNoAnimation {
+    
+    position: relative;
+    display: table;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    
+    z-index: 3;
+    
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit {
+    
+    position: inherit;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    padding: 10px 0px;
+    z-index: 3;
+    
+}
+
+#booking-package_schedulePage .bottomPanel {
+    
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    padding: 10px 0px;
+    z-index: 3;
+    
+}
+
+#booking-package_schedulePage .bottomPanelNoAnimation {
+    
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    padding: 10px 0px;
+    z-index: 3;
+    float: left;
+    
+}
+
+#booking-package_schedulePage .right_button {
+    
+    float: right;
+    margin-right: 10px;
+    
+}
+
+#booking-package_schedulePage .selectedDate {
+    
+    text-align: center;
+    font-size: 1.4em;
+    /**font-size: 3vw;**/
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#booking-package_schedulePage .leftButtonPanel {
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#booking-package_schedulePage .rightButtonPanel {
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#booking-package_schedulePage .headingPosition {
+    /**
+    top: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    float: left;
+    **/
+}
+
+#booking-package_schedulePage .daysListPanel {
+    
+    position: relative;
+    top: 0px;
+    bottom: inherit;
+    left: 0;
+    right: 90px;
+    width: 90px;
+    right: 15%;
+    width: 15%;
+    /**
+    border-right: 1px solid #ddd;
+    **/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+#booking-package_schedulePage .daysListPanelNoAnimation {
+    
+    position: relative;
+    top: 0px;
+    bottom: inherit;
+    left: 0;
+    right: 90px;
+    width: 90px;
+    right: 15%;
+    width: 15%;
+    /**
+    border-right: 1px solid #ddd;
+    **/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    float: left;
+    
+}
+
+#booking-package_schedulePage .scheduleListPanel {
+    
+    position: absolute;
+    top: 50px;
+    bottom: inherit;
+    left: 0;
+    right: 90px;
+    width: 90px;
+    right: 15%;
+    width: 15%;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #FFF;
+    
+}
+
+#booking-package_schedulePage .courseListPanel {
+    
+    position: absolute;
+    top: 50px;
+    bottom: inherit;
+    left: 90px;
+    left: 15%;
+    right: 0;
+    width: 85%;
+    /**border-right: 1px solid #ddd;**/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /** background: #FFF; **/
+    
+}
+
+#booking-package_schedulePage .courseListPanelNoAnimation {
+    
+    position: relative;
+    top: 0px;
+    bottom: inherit;
+    left: 0%;
+    right: 0;
+    width: 85%;
+    /**border-right: 1px solid #ddd;**/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /** background: #FFF; **/
+    float: left;
+    
+}
+
+#booking-package_schedulePage .positionSticky {
+    
+    position: -webkit-sticky !important;
+    position: sticky;
+    
+}
+
+#booking-package_schedulePage .scheduleListPanel {
+    
+    left: 50%;
+    width: 50%;
+    z-index: 100;
+    
+}
+
+#booking-package_schedulePage .postionDefaultForCourseListPanel {
+    
+    animation-name: postionDefaultForCourseListPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 90px;
+    left: 15%;
+    right: 0;
+    
+}
+
+#booking-package_schedulePage .postionDefaultForCourseListPanelNoAnimation {
+    
+    left: 90px;
+    left: 0%;
+    right: 0;
+    
+}
+
+#booking-package_schedulePage .postionReturnForCourseListPanel {
+    
+    animation-name: postionReturnForCourseListPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 90px;
+    left: 15%;
+    right: 0;
+    width: 85%;
+    
+}
+
+#booking-package_schedulePage .postionReturnForCourseListPanelNoAnimation {
+    
+    left: 90px;
+    left: 0%;
+    right: 0;
+    width: 85%;
+    
+}
+
+#booking-package_schedulePage .postionLeftForCourseListPanel {
+    
+    animation-name: postionLeftForCourseListPanel;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 0px;
+    width: 50%;
+    z-index: 1;
+    
+}
+
+#booking-package_schedulePage .postionLeftForCourseListPanelNoAnimation {
+    
+    left: 0px;
+    width: 50%;
+    z-index: 1;
+    
+}
+
+#booking-package_schedulePage .postionDefaultForScheduleListPanel {
+    
+    animation-name: postionDefaultForScheduleListPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 50%;
+    right: 0;
+    width: 0%;
+    white-space: normal;
+    overflow-y: auto;
+    
+}
+
+#booking-package_schedulePage .postionDefaultForScheduleListPanelNoAnimation {
+    
+    left: 50%;
+    right: 0;
+    width: 0%;
+    white-space: normal;
+    overflow-y: auto;
+    
+}
+
+#booking-package_schedulePage .postionCenterForScheduleListPanel {
+    
+    animation-name: postionCenterForScheduleListPanel;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 50%;
+    width: 50%;
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+    z-index: 2;
+    white-space: normal;
+    overflow-y: hidden;
+    
+}
+
+#booking-package_schedulePage .postionCenterForScheduleListPanelNoAnimation {
+    
+    left: 0%;
+    width: 50%;
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+    z-index: 2;
+    white-space: normal;
+    overflow-y: hidden;
+    float: left;
+    
+}
+
+#booking-package_schedulePage .positionOfPanelNotHavingCourseForScheduleListPanel {
+    
+    /**left: 20%;
+    width: 80%;**/
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+    z-index: 2;
+    white-space: normal;
+    
+}
+
+#booking-package_schedulePage .addAbsoluteOfPosition {
+    
+    position: absolute;
+    
+}
+
+#booking-package_schedulePage .addRelativeOfPosition {
+    
+    position: relative;
+    top: 0;
+    
+}
+
+#booking-package_schedulePage .positionOfNextPanelNotHavingCourseForScheduleListPanel {
+    
+    animation-name: positionOfNextPanelNotHavingCourseForScheduleListPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 0%;
+    width: 20%;
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+    z-index: 100;
+    white-space: normal;
+    
+}
+
+#booking-package_schedulePage .positionOfReturnPanelNotHavingCourseForScheduleListPanel {
+    
+    animation-name: positionOfReturnPanelNotHavingCourseForScheduleListPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 20%;
+    width: 80%;
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+    z-index: 100;
+    white-space: normal;
+    
+}
+
+#booking-package_schedulePage .postionLeftZeroForScheduleListPanel {
+    
+    animation-name: postionLeftZeroForScheduleListPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 0%;
+    width: 20%;
+    z-index: 100;
+    white-space: nowrap;
+    
+}
+
+#booking-package_schedulePage .postionRetrunForScheduleListPanel {
+    
+    animation-name: postionRetrunForScheduleListPanel;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 50%;
+    width: 50%;
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+    z-index: 100;
+    opacity: 1;
+    
+}
+
+#booking-package_schedulePage .positionCenterFormPanel {
+    
+    animation-name: positionCenterFormPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 20%;
+    width: 80%;
+    z-index: 100;
+    white-space: normal;
+    
+}
+
+#booking-package_schedulePage .positionReturnFormPanel {
+    
+    animation-name: positionReturnFormPanel;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: liner;
+    
+    left: 100%;
+    width: 0%;
+    z-index: 100;
+    white-space: normal;
+    
+}
+
+@keyframes postionDefaultForCourseListPanel {
+    
+    from {
+        
+        left: 0;
+        right: 50%;
+        
+    }
+    to {
+        
+        left: 90px;
+        left: 15%;
+        right: 0;
+        
+    }    
+    
+}
+
+@keyframes postionReturnForCourseListPanel {
+    
+    from {
+        
+        left: 0;
+        right: 50%;
+        width: 50%;
+        
+    }
+    to {
+        
+        left: 90px;
+        left: 15%;
+        right: 0%;
+        width: 85%;
+        
+    } 
+    
+}
+
+@keyframes postionLeftForCourseListPanel {
+    
+    from {
+        
+        left: 90px;
+        width: 100%;
+        
+    }
+    to {
+        
+        left: 0px;
+        width: 50%;
+        
+    }
+    
+}
+
+@keyframes postionDefaultForScheduleListPanel {
+    
+    from {
+        
+        left: 50%;
+        right: 0;
+        width: 50%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    to {
+        
+        left: 100%;
+        right: 0;
+        width: 0%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    
+}
+
+@keyframes postionCenterForScheduleListPanel {
+    
+    from {
+        
+        left: 100%;
+        width: 0%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    to {
+        
+        left: 50%;
+        width: 50%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        overflow-x: hidden;
+        white-space: normal;
+        
+    }
+    
+}
+
+@keyframes positionOfNextPanelNotHavingCourseForScheduleListPanel {
+    
+    from {
+        
+        left: 20%;
+        width: 80%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        overflow-x: scroll;
+        white-space: nowrap;
+        
+    }
+    to {
+        
+        left: 0%;
+        width: 20%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+        overflow-x: hidden;
+        white-space: normal;
+        
+    }
+    
+}
+
+@keyframes positionOfReturnPanelNotHavingCourseForScheduleListPanel {
+    
+    from {
+        
+        left: 0%;
+        width: 20%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+        overflow-x: scroll;
+        white-space: nowrap;
+        
+    }
+    to {
+        
+        left: 20%;
+        width: 80%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        overflow-x: hidden;
+        white-space: normal;
+        
+    }
+    
+}
+
+@keyframes postionLeftZeroForScheduleListPanel {
+    /**
+    from {
+        
+        left: 50%;
+        
+    }
+    to {
+        
+        left: 0%;
+        
+    }
+    **/
+    
+    from {
+        
+        left: 50%;
+        width: 50%;
+        
+    }
+    to {
+        
+        left: 0%;
+        width: 20%;
+        
+    }
+    
+}
+
+@keyframes postionRetrunForScheduleListPanel {
+    
+    from {
+        
+        left: 0%;
+        
+    }
+    to {
+        
+        left: 50%;
+        
+    }
+    
+}
+
+@keyframes positionCenterFormPanel {
+    
+    from {
+        
+        left: 100%;
+        width: 0%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    to {
+        
+        left: 20%;
+        width: 80%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    
+}
+
+@keyframes positionReturnFormPanel {
+    
+    from {
+        
+        left: 20%;
+        width: 80%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    to {
+        
+        left: 100%;
+        width: 0%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0);
+        overflow-x: hidden;
+        white-space: nowrap;
+        
+    }
+    
+}
+
+#booking-package_schedulePage ::-webkit-scrollbar {
+    
+    width: 5px;
+    
+}
+
+#booking-package_schedulePage ::-webkit-scrollbar-track {
+    
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#booking-package_schedulePage ::-webkit-scrollbar-thumb {
+    
+    background-color: rgba(0, 0, 50, .5);
+    border-radius: 5px;
+    box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+    
+}
+
+#booking-package_schedulePage .box_shadow {
+    
+    box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+    
+}
+
+#booking-package_schedulePage .courseCostPanel, #booking-package_servicePage .courseCostPanel {
+    
+    float: right;
+    
+}
+
+#booking-package_schedulePage .weekPanel {
+    
+    width: 40px;
+    float: left;
+    
+}
+
+#booking-package_schedulePage .selectPanel, #booking-package_servicePage .selectPanel {
+    
+    width: 100%;
+    display: table;
+    /**
+    border: 1px solid #ddd;
+    border-width: 1px 0px 1px 0px;
+    **/
+    border-width: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-right-width: 0;
+    /**
+    background-color: #FFF;
+    **/
+    cursor: pointer;
+    padding: 10px;
+    margin: -1px;
+    /**color: #0073aa;**/
+    
+    box-sizing: border-box;
+    
+}
+
+#booking-package_servicePage .selectPanel{
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+/**
+#booking-package_servicePage .selectPanel {
+    
+    width: auto;
+    display: block;
+    
+}
+**/
+
+#booking-package_servicePage .optionTitle {
+    
+    display: none;
+    
+}
+
+#booking-package_schedulePage .descriptionOfService, #booking-package_servicePage .descriptionOfService {
+    
+    white-space: pre-wrap;
+    
+}
+
+#booking-package_servicePage .selectPanel {
+    
+    margin-left: 0px;
+    
+}
+
+#booking-package_servicePage .selectedPanel {
+    
+    border-left: 5px solid #46b450;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    
+}
+
+#booking-package_servicePage .selectOptionList {
+    
+    margin-left: 1em;
+    
+}
+
+#booking-package_servicePage .optionPanel {
+    
+    padding-left: 10px;
+    
+}
+
+#booking-package_servicePage .selectedOptionPanel {
+    
+    border-left: 5px solid #46b450;
+    padding-left: 5px;
+    
+}
+
+#booking-package_schedulePage .selectPanelError {
+    
+    width: 100%;
+    display: table;
+    /**
+    border: 1px solid #ddd;
+    border-width: 1px 0px 1px 0px;
+    **/
+    border-width: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-right-width: 0;
+    /**
+    background-color: #FFF;
+    **/
+    padding: 10px;
+    margin: -1px;
+    color: red;
+    
+}
+
+#booking-package_schedulePage .selectPanelActive {
+    
+    /**
+    background: #EAEDF3;
+    **/
+    color: #32373c;
+    
+}
+
+#booking-package_schedulePage .selectPanel:hover {
+	/**
+	background: #EAEDF3;
+	**/
+}
+
+#booking-package_schedulePage .displayRemainingCapacityLabel {
+    
+    margin-left: 1em;
+    
+}
+
+#booking-package_schedulePage .returnDayButton {
+    /**
+    padding-left: 5px;
+    **/
+    margin-left: 5px;
+    /**float: left;**/
+    
+}
+
+#booking-package_schedulePage .returnDayButton:before {
+    
+    /**
+    content: "\f341";
+    font: 400 20px/1px dashicons;
+	position: relative;
+	top: 5px;
+	left: 0;
+	**/
+	/**
+	content: "keyboard_arrow_left";
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    position: relative;
+    top: 8px;
+    margin-right: 5px;
+    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-feature-settings: 'liga';
+    **/
+}
+
+#booking-package_schedulePage .nextDayButtton {
+    /**
+    padding-right: 5px;
+    **/
+    margin-left: 5px;
+    /**float: right;**/
+    
+}
+
+#booking-package_schedulePage .nextDayButtton:after {
+    /**
+    content: "\f345";
+    font: 400 20px/1px dashicons;
+	position: relative;
+	top: 5px;
+	left: 0;
+	**/
+	/**
+	content: "keyboard_arrow_right";
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    position: relative;
+    top: 8px;
+    margin-right: 5px;
+    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-feature-settings: 'liga';
+	**/
+}
+
+#booking-package_schedulePage .bookingButton {
+    
+    float: right;
+    
+}
+
+#booking-package_inputFormPanel {
+    /**
+    font-size: 14px;
+    background-color: #FFF;
+    **/
+}
+
+#booking-package_inputFormPanel button {
+    
+    /**padding: 5px 10px;**/
+    font-weight: normal;
+    
+}
+
+#booking-package_myBookingDetails .returnButton {
+    
+    float: left;
+    
+}
+
+#booking-package_myBookingDetails .buttonPanel {
+    
+    display: table;
+    width: 100%;
+    
+}
+
+#booking-package_myBookingDetails .cancelButton {
+    
+    float: right;
+    
+}
+
+#booking-package_inputFormPanel ul, #booking-package_myBookingDetails ul, #booking-package_serviceDetails ul, #booking-package_myBookingDetailsFroVisitor ul {
+    
+    display: block;
+    font-size: 1em;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+#booking-package_inputFormPanel .editButton {
+    
+    font-size: 1em !important;
+    font-weight: normal;
+    color: #7f85ec;
+    cursor: pointer;
+    margin-left: 0.5em;
+    
+}
+
+#booking-package_inputFormPanel .selectedDate, #booking-package_myBookingDetails .selectedDate {
+    
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.4em;
+    /**font-size: 3vw;**/
+    vertical-align: middle;
+    z-index: 3;
+    
+}
+
+#booking-package_inputFormPanel .row, #booking-package_myBookingDetails .row, #booking-package_serviceDetails .row, #booking-package_myBookingDetailsFroVisitor .row {
+    
+    padding: 10px;
+    margin: 0;
+    /**
+    border-bottom: 1px solid #ddd;
+    **/
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+#booking-package_inputFormPanel .rowError, #booking-package_serviceDetails .rowError {
+    
+    background-color: #FFD5D5;
+    
+}
+
+#booking-package_inputFormPanel .name, #booking-package_serviceDetails .name, #booking-package_myBookingDetailsFroVisitor .name, #booking-package_myBookingDetails_panel .name {
+    
+    display: inline-block;
+    font-weight: normal;
+    padding-bottom: 5px;
+    
+}
+
+#booking-package_inputFormPanel .value, #booking-package_serviceDetails .value, #booking-package_myBookingDetailsFroVisitor .value, #booking-package_myBookingDetails_panel .value {
+    
+    
+    
+}
+
+#myBookingDetails_status .value {
+    
+    text-transform: uppercase;
+    
+}
+
+#booking-package_inputFormPanel .applyCouponButton {
+    
+    
+    
+}
+
+#booking_package_totalNumberOfGuests .errorMessage {
+    
+    color: #ff1c1c;
+    
+}
+
+#booking-package_inputFormPanel .mainPlan, #booking-package_serviceDetails .mainPlan, #booking-package_myBookingDetailsFroVisitor .mainPlan {
+    
+    display: inline-block;
+    width: 90%;
+    
+}
+
+#booking-package_serviceDetails .mainPlan {
+    
+    width: 100%;
+    
+}
+
+#booking-package_pay_with_paypal, #booking-package_pay_with_stripe {
+    
+    padding: 10px;
+    
+}
+
+#booking-package_inputFormPanel .courseLinePanel, #booking-package_serviceDetails .courseLinePanel, #booking-package_myBookingDetailsFroVisitor .courseLinePanel {
+    
+    display: inline-block;
+    display: table;
+    width: 100%;
+    
+}
+
+#booking-package_inputFormPanel .courseLinePanelInLink, #booking-package_serviceDetails .courseLinePanelInLink, #booking-package_myBookingDetailsFroVisitor .courseLinePanelInLink {
+    
+    color: #2626ff;
+    cursor: pointer;
+    font-weight: normal;
+    float: none;
+    margin-bottom: 0;
+    
+}
+
+#booking-package_inputFormPanel .planName, #booking-package_serviceDetails .planName, #booking-package_myBookingDetailsFroVisitor .planName, #booking-package_myBookingDetails .planName {
+    /**
+    float: left;
+    **/
+}
+
+#booking-package_inputFormPanel .planPrice, #booking-package_myBookingDetailsFroVisitor .planPrice, #booking-package_myBookingDetails .planPrice {
+    
+    /**
+    float: left;
+    **/
+    margin-left: 1em;
+    
+}
+
+#booking-package_inputFormPanel .reflectPanel, #booking-package_myBookingDetailsFroVisitor .reflectPanel {
+    
+    /**float: left;**/
+    margin-left: 0.4em;
+    
+}
+
+#booking-package_serviceDetails .planPrice {
+    
+    float: right;
+    margin-left: 0em;
+    
+}
+
+#booking-package_inputFormPanel .description {
+    
+    font-weight: normal;
+    margin-top: 5px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    
+}
+
+#booking-package_inputFormPanel label, #booking-package-subscription_form label {
+    
+    display: block;
+    font-weight: normal;
+    margin-left: 5px;
+    
+}
+
+#booking-package_inputFormPanel .radio_title {
+    
+    margin-left: 5px;
+    
+}
+
+#booking-package_inputFormPanel .required:after {
+    
+    position: relative;
+    top: 3px;
+    content: '*';
+    color: #ff1c1c;
+    margin-left: 2px;
+    display: inline;
+    
+}
+
+#booking-package_inputFormPanel input[type=text] {
+    
+    width: 100%;
+    padding: 0.2em;
+    
+}
+
+#booking-package_inputFormPanel select {
+    
+    padding: 0.2em 0.5em;
+    width: 100%;
+    
+}
+
+#booking-package_inputFormPanel textarea {
+    
+    padding: 0.2em;
+    width: 100%;
+    
+}
+
+#booking-package_inputFormPanel .radio_title {
+    
+    font-weight: normal;
+    
+}
+
+#booking-package_inputFormPanel .row_reCAPTCHA {
+    
+    /**padding-bottom: 0;**/
+    border-bottom-width: 0;
+    
+}
+
+#booking-package_inputFormPanel .cartPanel {
+    
+    /**padding: 10px 0;**/
+    padding: 0;
+    
+}
+
+#booking-package_inputFormPanel .paymentButton, #booking-package-subscription_form .paymentButton {
+    
+    width: 100%;
+    /**height: 40px;**/
+    
+}
+
+#booking-package_inputFormPanel .payTypeLabel {
+    
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    
+}
+
+#booking-package_inputFormPanel .orLabel, #booking-package-subscription_form .orLabel {
+    
+    display: table;
+    /**
+    font-size: 16px;
+    **/
+    text-align: center;
+    white-space: nowrap;
+    margin: 10px 0px;
+    
+}
+
+#booking-package_inputFormPanel .orLabel:before, #booking-package-subscription_form .orLabel:before {
+    
+    content: '';
+  display: table-cell;
+  width: 50%;
+  background: -webkit-linear-gradient(transparent 50%, #ddd, currentColor -webkit-calc(50% + 1px), transparent -webkit-calc(50% + 1px));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, currentColor), color-stop(currentColor calc(50% + 1px)), to(transparent calc(50% + 1px)));
+  background: linear-gradient(transparent 50%, #ddd, currentColor calc(50% + 1px), transparent calc(50% + 1px));
+  -webkit-background-clip: padding;
+  background-clip: padding;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+    
+}
+
+#booking-package_inputFormPanel .orLabel:after, #booking-package-subscription_form .orLabel:after {
+    
+    content: '';
+  display: table-cell;
+  width: 50%;
+  background: -webkit-linear-gradient(transparent 50%, #ddd, currentColor -webkit-calc(50% + 1px), transparent -webkit-calc(50% + 1px));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, currentColor), color-stop(currentColor calc(50% + 1px)), to(transparent calc(50% + 1px)));
+  background: linear-gradient(transparent 50%, #ddd, currentColor calc(50% + 1px), transparent calc(50% + 1px));
+  -webkit-background-clip: padding;
+  background-clip: padding;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+    
+}
+
+#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
+    
+    padding: 10px;
+    
+}
+
+#booking-package_inputFormPanel .returnButton {
+    
+    width: 100%;
+    /**height: 40px;**/
+    
+}
+
+#card-element {
+    
+    margin: 5px 0px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #FFF;
+    
+}
+
+#payment-request-button {
+    
+    margin: 0px 10px;
+    
+}
+
+#card-errors {
+    
+    color: #ff1c1c;
+    margin-bottom: 5px;
+    
+}
+
+#payment-request-button {
+    
+    margin: 0px;
+    
+}
+
+#bookingBlockPanel {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    /**
+    background: #000000;
+    opacity: 0.2;
+    **/
+    z-index: 16000;
+    
+}
+
+#bookingBlockPanel .loader {
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+}
+
+#bookingBlockPanel .loader #spinner {
+    box-sizing: border-box;
+    stroke: #673AB7;
+    stroke-width: 3px;
+    -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+    -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+          animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+
+}
+
+@-webkit-keyframes rotate {
+    from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); 
+    }
+    to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+    
+    } 
+
+}
+
+@keyframes rotate {
+    from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    
+    }
+    to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+    
+    }
+
+}
+
+@-webkit-keyframes line {
+    
+    0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0; 
+    }
+    100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    }
+
+}
+
+@keyframes line {
+    0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0;
+    }
+    100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    }
+
+}
+
+#bookingBlockPanel img {
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    
+}
+
+.bottom_test {
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    background-color: #23282d;
+    
+}
+
+#card-element {
+    
+    width: 100%;
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    #booking_package_verificationCodeContent {
+        
+        max-width: 100%;
+        padding: 5%;
+        left: 0;
+        right: 0;
+        transform: translate(0%, -50%);
+        
+    }
+    
+    #booking-package_myBookingDetails .returnButton {
+        
+        float: left;
+        
+    }
+    
+    #booking-package_myBookingDetails .cancelButton {
+        
+        float: left;
+        
+    }
+    
+    #booking-package_servicePage {
+        
+        width: 100%;
+        
+    }
+    
+    #booking-package_serviceDetails {
+        
+        width: 100%;
+        padding-left: 0;
+        
+    }
+    
+    #booking-package_schedulePage .selectedDate {
+        
+        font-size: 1em;
+        font-weight: bold;
+    
+    }
+    
+    #booking-package_durationStay {
+        
+        animation-name: none;
+        animation-duration: 0.4s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        position: relative;
+        width: 100%;
+        float: none;
+        margin: 0em;
+        padding-left: 0;
+        
+    }
+    
+    #booking-package_schedulePage .addAbsoluteOfPosition {
+        
+        position: absolute !important;
+        
+    }
+    
+    #booking-package_schedulePage .addRelativeOfPosition {
+        
+        position: relative !important;
+        top: 0;
+        
+    }
+    
+    #booking-package .position_sticky {
+        
+        position: relative !important;
+        position: relative !important;
+        
+    }
+    
+    #booking-package .calendarWidthForHotel {
+        
+        animation-name: none;
+        animation-duration: 0.4s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        width: 100%;
+        float: none;
+        position: inherit;
+        position: inherit;
+        
+    }
+    
+    #booking-package .nextPageBookingDetails {
+        
+        animation-name: none;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        position: relative;
+        padding: 0;
+        padding-right: 0;
+        left: none;
+        width: 100%;
+        
+        
+    }
+    
+    #booking-package .returnPageBookingDetails {
+        
+        animation-name: none;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        position: relative;
+        position: 0;
+        left: 0%;
+        width: 100%;
+        
+    }
+    
+    #booking-package .nextPageVisitorDetails {
+        
+        animation-name: none;
+        animation-duration: 0.4s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        position: relative;
+        padding: 0;
+        padding-left: 0;
+        /**left: 50%;**/
+        width: 100%;
+        float: none;
+        
+    }
+    
+    #booking-package_calendarPage .dayPanelHeight {
+        
+        height: 4em;
+        
+    }
+    
+    
+    
+    #booking-package_calendarPage .symbolPanel {
+        
+        /**
+        position: absolute;
+        padding: 5px;
+        **/
+        /**
+        display: table-row;
+        **/
+        display: block;
+        vertical-align: middle;
+        width: 100%;
+        overflow: hidden;
+        font-weight: normal;
+        font-size: 1em !important;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0;
+        
+    }
+    
+    #booking-package_schedulePage .daysListPanel {
+        
+        position: relative;
+        right: 90px;
+        width: 90px;
+        right: 30%;
+        width: 30%;
+        
+    }
+    
+    #booking-package_schedulePage .daysListPanelNoAnimation {
+        
+        position: relative;
+        right: 90px;
+        width: 90px;
+        right: 30%;
+        width: 30%;
+        float: left;
+        
+    }
+    
+    #booking-package_schedulePage .scheduleListPanel {
+        
+        position: absolute;
+        right: 90px;
+        width: 90px;
+        right: 30%;
+        width: 30%;
+        
+    }
+    
+    #booking-package_schedulePage .positionSticky {
+        
+        position: -webkit-sticky !important;
+        position: sticky;
+        
+    }
+    
+    #booking-package_schedulePage .scheduleListPanel {
+        
+        left: 50%;
+        width: 50%;
+        z-index: 100;
+        
+    }
+    
+    #booking-package_schedulePage .courseListPanel {
+        
+        left: 90px;
+        left: 30%;
+        width: 70%;
+        
+    }
+    
+    
+
+    
+    #booking-package_schedulePage .courseListPanelNoAnimation {
+        
+        left: 0%;
+        right: 0;
+        width: 70%;
+        float: left;
+        
+    }
+    
+    #booking-package_schedulePage .postionDefaultForCourseListPanel {
+        
+        animation-name: postionDefaultForCourseListPanel;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        left: 90px;
+        left: 30%;
+        right: 0;
+        
+    }
+    
+    #booking-package_schedulePage .postionReturnForCourseListPanel {
+        
+        animation-name: postionReturnForCourseListPanel;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        left: 90px;
+        left: 30%;
+        right: 0;
+        width: 70%;
+        
+    }
+    
+    #booking-package_schedulePage .postionLeftForCourseListPanel {
+        
+        animation-name: postionLeftForCourseListPanel;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        left: 0px;
+        width: 50%;
+        z-index: 1;
+        
+    }
+    
+    #booking-package_schedulePage .postionLeftForCourseListPanelNoAnimation {
+        
+        left: 0px;
+        width: 50%;
+        z-index: 1;
+        
+    }
+    
+    #booking-package_schedulePage .postionCenterForScheduleListPanel {
+        
+        animation-name: postionCenterForScheduleListPanel;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+        left: 50%;
+        width: 50%;
+        box-shadow: -5px 0px 5px 0 rgba(0,0,0,0.1);
+        z-index: 2;
+        white-space: normal;
+        overflow-y: hidden;
+        
+    }
+    
+    #booking-package_schedulePage .postionCenterForScheduleListPanelNoAnimation {
+        
+        left: 0%;
+        width: 50%;
+        z-index: 2;
+        float: left;
+        
+    }
+    
+    @keyframes postionDefaultForCourseListPanel {
+        
+        from {
+            
+            left: 0;
+            right: 50%;
+            
+        }
+        to {
+            
+            left: 90px;
+            left: 30%;
+            right: 0;
+            
+        }    
+        
+    }
+    
+    @keyframes postionReturnForCourseListPanel {
+        
+        from {
+            
+            left: 0;
+            right: 50%;
+            
+        }
+        to {
+            
+            left: 90px;
+            left: 30%;
+            right: 0%;
+            width: 70%;
+            
+        } 
+        
+    }
+    
+}

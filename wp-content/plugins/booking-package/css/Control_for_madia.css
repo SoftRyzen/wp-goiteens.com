@@ -1,0 +1,1097 @@
+@media screen and (max-width: 782px){
+    
+    .form-table label {
+        
+        line-height: 2.3em;
+        padding-left: 10px;
+        
+    }
+    
+    #select_package {
+        
+        position: unset;
+        margin: 10px 10px 0 0;
+        
+    }
+    
+    #calendarPage .footerOnCalendar {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    
+    #settingPanel label, #syncPanel label {
+        
+        margin-bottom: 0;
+        
+    }
+    
+    #calendarAccountList td, #addCoursePanel td {
+        
+        display: table-cell;
+        width: 70%;
+        
+    }
+    
+    #lookForUserPanel .inputPanel {
+        
+        top: 76px;
+        
+    }
+    
+    #editPanel {
+        
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        z-index: 160000;
+        margin: 0;
+        
+    }
+    
+    #selectionSchedule {
+        
+        z-index: 160002;
+        
+    }
+    
+    #editPanel, #editPanelForSchedule {
+        
+        top: 46px;
+        
+    }
+    
+    #editPanel .media_frame_menu, #editPanelForSchedule .media_frame_menu {
+        
+        width: 100px;
+        
+    }
+    
+    #editPanel .media_frame_title, #editPanelForSchedule .media_frame_title {
+        
+        left: 100px;
+        
+    }
+    
+    #editPanel .media_left_zero, #editPanelForSchedule .media_left_zero {
+        
+        left: 0 !important;
+        
+    }
+    
+    #editPanel .media_frame_router, #editPanelForSchedule .media_frame_router {
+        
+        left: 100px;
+        
+    }
+    
+    #media_frame_content, #media_frame_content_for_schedule {
+        
+        left: 100px;
+        
+    }
+    
+    #deletePublishedSchedulesPanel, #loadSchedulesPanel, #createClonePanel, #selectionSchedule, #lookForUserPanel {
+        
+        top: 46px;
+        
+    }
+    
+    #incompletelyDeletedScheduleAlertPanel {
+        
+        margin: 0 5%;
+        left: 0;
+        
+    }
+    
+    #loadSchedulesPanel {
+        
+        z-index: 170002;
+        
+    }
+    
+    #lookForUserPanel {
+        
+        z-index: 160002;
+        
+    }
+    
+    #load_blockPanel {
+        
+        z-index: 160001 !important;
+        
+    }
+    
+    #media_frame_content input[type="text"] {
+        
+        width: inherit;
+        
+    }
+    
+    #media_frame_content td {
+        
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+    
+    #media_frame_content .timeTd {
+    
+        width: 60px !important;
+        
+    }
+    
+    #media_frame_content .td_width_50_px {
+        
+        width: 60px !important;
+        text-align: left;
+        
+    }
+    
+    #media_router input[type="text"] {
+        
+        width: 100%;
+        
+    }
+    
+    #dialogPanel .blockPanel {
+        
+        z-index: 160000;
+        
+    }
+    
+    #dialogPanel .confirmPanel, #selectOptionsPanel .confirmPanel {
+        
+        z-index: 160001;
+        
+    }
+    
+    #dialogPanel .selectPanel{
+        
+        z-index: 160001;
+        
+    }
+    
+    #dialogPanel .scheduleButtonPanel > button {
+        
+        width: 70px !important;
+        
+    }
+    
+    #downloadCsvForDay .downloadButton {
+        
+        padding: 8px 14px;
+        
+    }
+    
+    #addCoursePanel td {
+        
+        padding-top: 10px;
+        
+    }
+    
+    #addCoursePanel label/**:first-child**/ {
+        
+        display: block;
+        margin-top: auto;
+        padding-left: 0;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 640px), screen and (max-height: 400px) {
+    
+    .form-table label {
+        
+        line-height: 2.3em;
+        padding-left: 10px;
+        
+    }
+    
+    #settingPanel label, #syncPanel label {
+        
+        margin-bottom: 0;
+        
+    }
+    
+    #calendarAccountList td {
+        
+        display: table-cell;
+        
+    }
+    
+    
+    
+    #select_package .actionButtonPanel {
+        
+        text-align: right;
+        float: none;
+        padding-bottom: 10px;
+        
+        
+    }
+    
+    #buttonPanel button {
+        
+        margin: 0;
+        min-height: 34px;
+        
+    }
+    
+    #downloadCsvForDay {
+        
+        display: none;
+        
+    }
+    
+    #media_frame_content input[type="text"] {
+        
+        width: inherit;
+        
+    }
+    
+    #media_frame_content td {
+        
+        display: block;
+        vertical-align: middle;
+        
+    }
+    
+    #media_frame_content .timeTd {
+    
+        width: 60px;
+        
+    }
+    
+    #media_frame_content .td_width_50_px {
+        
+        width: 60px;
+        text-align: left;
+        
+    }
+    
+    #dialogPanel .selectPanel {
+        
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100%;
+        z-index: 170001;
+        
+    }
+    
+    #dialogPanel .scheduleButtonPanel {
+        
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0px;
+        
+    }
+    
+    #dialogPanel .scheduleButtonPanel > button {
+        
+        width: 70px !important;
+        
+    }
+    
+    #dialogPanel .selectSchedulePanel {
+        
+        position: absolute;
+        width: 94%;
+        top: 39px;
+        bottom: 52px;
+        max-height: none;
+        padding: 3%;
+        
+    }
+    
+    #media_frame_content .noTime {
+        
+        left: 0;
+        
+    }
+    
+    #dialogPanel .noButton {
+        
+        margin-right: 10px !important;
+        
+    }
+    
+    #addCoursePanel th {
+        
+        padding-left: 0px;
+        
+    }
+    
+    #addCoursePanel input[type=text] {
+        
+        width: 100%;
+        
+    }
+    
+    #addCoursePanel textarea {
+        
+        width: 100%;
+        
+    }
+    
+    #calendarPage .dayPanelHeight {
+        
+        height: 50px;
+        
+    }
+    
+    #calendarPage .remainderPanel {
+    
+        vertical-align: bottom;
+        font-size: 0.5em;
+        white-space: normal;
+        top: 2.5em;
+        
+    }
+    
+    #calendarPage .approvedCount {
+        
+        margin-right: 0px;
+        
+    }
+
+    #calendarPage .pendingCount {
+        
+        margin-left: 0px;
+        
+    }
+    
+    #calendarPage .canceledCount {
+        
+        margin-left: 0px;
+        
+    }
+    
+    #dialogPanel .blockPanel {
+    
+        z-index: 170000;
+    
+    }
+    
+    #dialogPanel .confirmPanel, #selectOptionsPanel .confirmPanel {
+        
+        z-index: 170001;
+        
+    }
+    
+    #dialogPanel .confirmPanel{
+    
+        left: 10%;
+        right: 10%;
+        z-index: 170001;
+    
+    }
+    
+    
+    
+    #editPanel {
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 160000;
+        
+    }
+    
+    #editPanel .title_text_box:before {
+        
+        content: "Title";
+        
+    }
+    
+    #editPanel .tableNameList {
+        
+        display: none;
+        
+    }
+    
+    #editPanel .courseAndSchedulePanel_next {
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -50%;
+        right: 0;
+        width: 100%;
+        
+        animation-name: next_animation_for_edit1;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+    
+    }
+    
+    #editPanel .createFormPanel_show {
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        width: 70%;
+        overflow: auto;
+        background-color: #FFF;
+        
+    }
+    
+    #editPanel .createFormPanel_return {
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        width: 70%;
+        background-color: #FFF;
+        
+    }
+    
+    #editPanel .courseListPanel {
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-right: 1px solid #ddd;
+        overflow: auto;
+        overflow-x: hidden;
+        width: 50%;
+        background: #FFF;
+        
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    
+    }
+    
+    #editPanel .scheduleListPanel {
+        
+        left: 50%;
+        width: 50%;
+        
+    }
+    
+    #editPanel .courseAndScheduleRow {
+        
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        display: grid;
+        display: flow-root;
+        
+    }
+    
+    #editPanel .courseAndScheduleRowError {
+        
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        display: grid;
+        display: flow-root;
+        
+    }
+    
+    #lookForUserPanel {
+        
+        z-index: 160002;
+        
+    }
+    
+    #load_blockPanel {
+        
+        z-index: 160001 !important;
+        
+    }
+    
+    #changePanel {
+        
+        width: 30%;
+        
+    }
+    
+    #editPanel .noSchedule {
+        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 50% 0;
+        text-align: center;
+        color: #ababab;
+        font-size: 1.5em;
+        
+    }
+    
+    #edtiPanel .noReservations {
+        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 50% 0;
+        text-align: center;
+        color: #ababab;
+        font-size: 1.5em;
+        
+    }
+    
+    #inputFormPanel label {
+        
+        padding-bottom: 5px;
+        margin: 5px 5px 0px 0px;
+        
+    }
+    
+    #inputFormPanel input[type=text] {
+        
+        width: 90%;
+        
+    }
+    
+    #inputFormPanel textarea {
+        
+        width: 90%;
+        height: 100px;
+        
+    }
+    
+    #userInfoPanel {
+    
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        
+        position: absolute;
+        overflow: auto;
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        width: 70%;
+        background-color: #FFF;
+        border-left: 1px solid #ddd;
+        box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.4);
+    
+    }
+    
+    #mailSettingPanel th {
+        
+        border-width: 0;
+        width: 40%;
+    
+    }
+    #mailSettingPanel td{
+    
+        border-width: 0;
+    
+    }
+    
+    #upgradeInputFormPanel {
+        
+        padding: 10px;
+        background-color: #FFF;
+        
+    }
+    
+    #upgradeInputFormPanel .planPanel {
+        
+        width: 100%;
+        display: block;
+        margin: 0;
+        
+    }
+    
+    #upgradeInputFormPanel .formPanel {
+        
+        width: 100%;
+        padding: 10px 0px;
+        clear: left;
+        
+    }
+    
+    #upgradeInputFormPanel .row {
+        
+        padding: 5px 0px 10px 0px;
+        
+    }
+    
+    #upgradeInputFormPanel .buttonPanel {
+        
+        width: 100%;
+        text-align: center;
+        margin: 20px 0px;
+        padding: 0;
+        
+    }
+    
+    #payment-form {
+        
+        padding: 10px 0px;
+        
+    }
+    
+    #upgradeInputFormPanel .payTypeLabel{
+        
+        margin: 0px 0px 5px 0px;
+        
+    }
+    
+    #payment-request-button {
+    
+        margin: 0;
+    
+    }
+    
+    #bookingSync_table textarea {
+        
+        width: 100%;
+        
+    }
+    
+    @keyframes changePanel_show_animation {
+        
+        from {
+            
+            left: 30%;
+            
+        }
+        to {
+            
+            left: 0%;
+            
+        }
+        
+    }
+    
+    @keyframes userInfoPanel_show_animation {
+        
+        from {
+            
+            left: 100%;
+            
+        }
+        to {
+            
+            left: 30%;
+            
+        }
+        
+    }
+    
+    @keyframes changePanel_return_animation {
+        
+        from {
+            
+            left: 0%;
+            
+        }
+        to {
+            
+            left: 30%;
+            
+        }
+    
+    }
+    
+    @keyframes userInfoPanel_return_animation {
+        
+        from {
+            
+            left: 30%;
+            
+        }
+        to {
+            
+            left: 100%;
+            
+        }
+    
+    }
+    
+    #upgradePanel {
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 160000;
+        
+    }
+    
+    #upgrade_content_panel .mainPanel {
+        
+        display: table;
+        width: auto;
+        margin: 10px 0px 10px 10px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+    
+    #edit_email_message .content {
+        
+        top: 150px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #edit_email_message .content {
+        
+        top: 150px;
+        
+    }
+    
+    .form-table label {
+        
+        line-height: 2.3em;
+        padding-left: 0px;
+        
+    }
+    
+    #setting_expirationDate .expirationDateFrom, #setting_expirationDate .expirationDateTo {
+        
+        float: none;
+        
+    }
+    
+    #coursePanel .urlQuery {
+        
+        width: 90%;
+        margin: 2% 5% 0% 5%;
+        
+    }
+    
+    #editPanel .createFormPanel_show {
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        width: 50%;
+        overflow: auto;
+        background-color: #FFF;
+        
+    }
+    
+    #editPanel .createFormPanel_return {
+    
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        width: 50%;
+        background-color: #FFF;
+        
+    }
+    
+    #settingPanel label, #syncPanel label {
+        
+        margin-bottom: 0;
+        
+    }
+    
+    #calendarAccountList td, #addCoursePanel td {
+        
+        display: block;
+        width: auto;
+        
+    }
+    
+    
+    #deletePublishedSchedulesPanel, #loadSchedulesPanel, #createClonePanel, #selectionSchedule, #lookForUserPanel {
+        
+        top: 46px;
+        
+    }
+    
+    #loadSchedulesPanel {
+        
+        z-index: 170002;
+        
+    }
+    
+    #timeSelectPanel .selectPanel {
+        
+        left: 0 !important;
+        top: 100px !important;
+        margin: auto;
+        position: absolute;
+        
+    }
+    
+    #editPanel, #editPanelForSchedule {
+        
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        
+    }
+    
+    #deletePublishedSchedulesPanel, #loadSchedulesPanel, #createClonePanel, #selectionSchedule {
+        
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        
+    }
+    
+    #selectionSchedule {
+        
+        top: 50px;
+        bottom: 0px;
+        z-index: 160002;
+        
+    }
+    
+    #selectionSchedule .buttonPanel {
+        
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+    #loadSchedulesPanel .fromTo {
+        
+        display: block;
+        
+    }
+    
+    #loadSchedulesPanel .from, #loadSchedulesPanel .to {
+        
+        display: inline-block;
+        width: 50px;
+        
+    }
+    
+    #selectionSchedule .openAnimation {
+        
+        height: 250px;
+        
+    }
+    
+    #lookForUserPanel {
+        
+        z-index: 160002;
+        top: 46px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+    }
+    
+    #lookForUserPanel .inputPanel {
+        
+        top: 73px;
+        bottom: 57px;
+        
+    }
+    
+    #select_package .multiple_fields_margin_top {
+        
+        display: block;
+        
+    }
+    
+    #setting_minimum_guests > .multiple_fields_margin_top input[type=checkbox], #setting_maximum_guests > .multiple_fields_margin_top input[type=checkbox] {
+        
+        margin-left: 0em;
+        
+    }
+    
+    #setting_minimum_guests > .multiple_fields_margin_top input[type=text], #setting_maximum_guests > .multiple_fields_margin_top input[type=text] {
+        
+        width: 100%;
+        
+    }
+    
+    @keyframes openAnimation {
+        
+        from {
+            
+            height: 0;
+            
+        }
+        to {
+            
+            height: 250px;
+            
+        }
+        
+    }
+    
+    @keyframes closeAnimation {
+        
+        from {
+            
+            height: 250px;
+            
+        }
+        to {
+            
+            height: 0;
+            
+        }
+        
+    }
+    
+    #timeSelectPanel .arrowLeft, #timeSelectPanel .arrowRigth {
+        
+        display: none;
+        
+    }
+    
+    #editPanel {
+        
+        position: fixed;
+        top: 46px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        z-index: 160000;
+        
+    }
+    
+    #reservation_usersPanel .approvedLabel, #reservation_usersPanel .pendingLabel, #reservation_usersPanel .canceledLabel {
+        
+        width: auto;
+        
+    }
+    
+    #inputFormPanel .lookForUserButton {
+        
+        right: 0px !important;
+        
+    }
+    
+    #inputFormPanel label {
+        
+        padding-bottom: 10px;
+        
+    }
+    
+    #inputFormPanel input[type=text] {
+        
+        width: 90%;
+        
+    }
+    
+    #media_frame_reservation_content .show_panel_for_new_booking {
+        
+        animation-name: userInfoPanel_show_animation_for_new_booking;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+    }
+    
+    #media_frame_reservation_content .show_panel {
+        
+        animation-name: userInfoPanel_show_animation;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+    }
+    
+    #media_frame_reservation_content .return_panel_for_new_booking {
+        
+        box-shadow: none;
+        left: 100%;
+        
+        animation-name: userInfoPanel_return_animation_for_new_booking;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: liner;
+        
+    }
+    
+    @keyframes userInfoPanel_show_animation_for_new_booking {
+        
+        from {
+            
+            left: 100%;
+            
+        }
+        to {
+            
+            left: 50%;
+            
+        }
+        
+    }
+    
+    @keyframes userInfoPanel_show_animation {
+        
+        from {
+            
+            left: 100%;
+            
+        }
+        to {
+            
+            left: 30%;
+            
+        }
+        
+    }
+    
+    @keyframes userInfoPanel_return_animation_for_new_booking {
+        
+        from {
+            
+            left: 50%;
+            
+        }
+        to {
+            
+            left: 100%;
+            
+        }
+    
+    }
+    
+    @keyframes userInfoPanel_return_animation {
+        
+        from {
+            
+            left: 30%;
+            
+        }
+        to {
+            
+            left: 100%;
+            
+        }
+    
+    }
+    
+}

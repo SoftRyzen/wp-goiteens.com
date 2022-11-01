@@ -1,0 +1,194 @@
+{
+  "page": {
+    "lang": "en",
+    "title": "GoITeens Social project",
+    "description": "GoITeens Social project - Let's help children together",
+    "canonical": "https://goiteens.com/helpforUkrainechildrensEDU/en/",
+    "og_site_name": "GoITeens Social project",
+    "og_title": "GoITeens Social project",
+    "og_description": "GoITeens Social project - Let's help children together",
+    "og_image": "./assets/images/og-img-en.jpg",
+    "og_image_type": "image/jpeg",
+    "og_image_width": "1200",
+    "og_image_height": "630"
+  },
+  "menu": [
+    {
+      "title": "Menu item",
+      "link": "#id"
+    },
+    {
+      "title": "Menu item 2",
+      "link": "#id2"
+    }
+  ],
+  "socials": [
+    {
+      "link": "https://www.instagram.com/go_iteens",
+      "icon_id": "instagram"
+    },
+    {
+      "link": "https://www.facebook.com/GoITeens/",
+      "icon_id": "facebook"
+    },
+    {
+      "link": "https://www.youtube.com/channel/UCePQwxtFDx2ypM-oTh7gqMQ",
+      "icon_id": "youtube"
+    }
+  ],
+  "button": "Donate",
+  "main_title": "Let's help <br> children together",
+  "switcher": {
+    "text": "ua",
+    "icon_id": "lang",
+        "link":"https://goiteens.com/helpforUkrainechildrensEDU/"
+  },
+  "contacts": {
+    "phones": [
+      {
+        "href": "0677829583",
+        "text": "+38 (067) 782 95 83"
+      },
+      {
+        "href": "0633035139",
+        "text": "+38 (063) 303 51 39"
+      },
+      {
+        "href": "0504576601",
+        "text": "+38 (050) 457 66 01"
+      }
+    ],
+    "emailes": [
+      {
+        "href": "contact@goiteens.ua",
+        "text": "contact @ goiteens.ua"
+      }
+    ]
+  },
+  "awards": [
+    {
+      "image": {
+        "width": "60",
+        "height": "50",
+        "icon_id": "ukrainian-it-awards"
+      },
+      "description": "Ukrainian IT Awards"
+    },
+    {
+      "image": {
+        "width": "60",
+        "height": "50",
+        "icon_id": "ukrainian-people-award"
+      },
+      "description": "Ukrainian People Award"
+    }
+  ],
+  "header": {
+    "logo": {
+      "link": "https://goiteens.com/",
+      "icon_id": "goiteens_logo",
+      "text": "Social project"
+    }
+  },
+  "hero": {
+    "image": {
+      "path@1x": "./assets/images/hero/pray-ukraine.png",
+      "path@2x": "./assets/images/hero/pray-ukraine@2x.png",
+      "alt": "stop war stay with ukraine"
+    }
+  },
+  "about": {
+    "title": "About GoITeens IT Academy",
+    "text": [
+      "Ukrainian EdTech company GoITeens has been teaching children and teenagers aged 7-16 modern IT-skills for 6 years.",
+      "<strong>Our goal</strong> is to enable children and teenagers to spend their time with gadgets efficiently, develop skills useful at school and adult life, and get a solid foundation for further development, choosing a profession, and a secured future.",
+      "We teach children design, creating animations, games, sites, programs, help to create first IT-projects, develop skills of presentation, creative and logical thinking, interaction with peers and time management.",
+      "<strong>Our graduates are independent developers</strong> who start their first technological startups or start working as freelancers before entering the university. While teaching, we pay attention to each student, monitor progress, help with difficulties and motivate them to develop. That's why parents trust us.",
+      "And that is why <strong>we have achieved recognition in the education industry.</strong>"
+    ]
+  },
+  "achievements": [
+    {
+      "count": "11 250+",
+      "description": "children participated in our marathons"
+    },
+    {
+      "count": "87%",
+      "description": "Customer Loyalty Index (NPS)"
+    },
+    {
+      "count": "8",
+      "description": "initial programs for children 7-16 years"
+    },
+    {
+      "count": "2 300+",
+      "description": "students studied our courses"
+    },
+    {
+      "count": "72%",
+      "description": "students aged 14-16 take the first commercial projects"
+    },
+    {
+      "count": "90+",
+      "description": "employees in the company"
+    }
+  ],
+  "why_is_it_important": {
+    "title": "Why it matters",
+    "text": [
+      "The best thing we can do now as an educational IT company is to continue our work and teach children so that each of them can discover and learn modern IT knowledge, despite the war we are living in. And we see how studying helps children experience a normal life.",
+      "The team has decided that <strong>every child who wants to study should study! </strong>",
+      "That is why GoITeens conducts free educational marathons and webinars for children from all over Ukraine and migrants, which will allow children to gain real practical knowledge and create their first IT projects.",
+      "In addition, if possible, we give an opportunity to study our courses for free to all who need it.",
+      "Friends, if you have the opportunity to help, the best help for us is the payment for teaching. We estimated that one child needs UAH 1,000/month to study free of charge, so we offer you to pay for tuition.",
+      "The war will end! And together we will build the future of Ukraine. And our children will play a key role in it!",
+      "Glory to Ukraine! Glory to Heroes!"
+    ]
+  },
+  "learn_more_block": {
+    "text": "If you want to donate - leave an application"
+  },
+  "footer": {
+    "logotypes_desc": "with support",
+    "goit_logo": {
+      "link": "https://goit.ua/?lang=uk",
+      "width": "90",
+      "height": "28",
+      "icon_id": "goit_logo"
+    },
+    "goiteens_logo": {
+      "link": "https://goiteens.com/",
+      "width": "114",
+      "height": "28",
+      "icon_id": "goiteens_logo"
+    },
+    "geolocation": {
+      "link": "https://goo.gl/maps/9ZSyK7y4m3Krfiec7",
+      "text": "Eugene Konovalets Street, 36 <br> Kyiv, Ukraine"
+    },
+    "copyright": "GoITeens &copy; 2016 – 2022"
+  },
+  "terms": [
+    {
+      "link_path": "https://goiteens.com/contractEDU",
+      "link_text": "Public contract"
+    }
+  ],
+  "finances_list": [
+    {
+      "icon_id": "visa"
+    },
+    {
+      "icon_id": "mastercard"
+    }
+  ],
+    "donate_modal":{
+    "title":"Take financial part in the project",
+    "legal_entities":"For legal entities",
+    "input_submit_value":"Next",
+    "form_title":" Leave a request. Our manager will contact you within 5 minutes and prepare all the necessary documents",
+    "name":"Name",
+    "phone":"Phone number",
+    "form_button":"Send"
+    }
+}

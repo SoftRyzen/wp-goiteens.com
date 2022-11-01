@@ -1,0 +1,5 @@
+logs
+token.ini
+./.env
+error.log
+.env.copy

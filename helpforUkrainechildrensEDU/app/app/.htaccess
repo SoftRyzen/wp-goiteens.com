@@ -1,0 +1,11 @@
+<Files "send.php">
+    Allow from all
+</Files>
+<Files "test.php">
+    Allow from all
+</Files>
+<Files "params.php">
+    Allow from all
+</Files>
+Options -Indexes
+Order allow,deny

@@ -1,0 +1,189 @@
+/* Bootstrap dependency */
+/* HAN link wrap */
+#hidden-admin-notices-link-wrap {
+  display: none;
+  float: right;
+  margin: 0 0 0 6px;
+  /* HAN toggle button */
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link {
+  border: 1px solid #ccd0d4;
+  border-top: none;
+  height: auto;
+  margin-bottom: 0;
+  padding: 3px 6px 3px 16px;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  color: #72777c;
+  line-height: 1.7;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.1s linear;
+  /* Icon instead of text for mobile */
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link:hover {
+  color: #32373c;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link:focus {
+  border-color: #5b9dd9;
+  box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link::after {
+  right: 0;
+  content: "\f140";
+  font: 400 20px/1 dashicons;
+  speak: none;
+  display: inline-block;
+  padding: 0 5px 0 0;
+  bottom: 2px;
+  position: relative;
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+  color: #72777c;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link.hidden-admin-notices-panel-active:after {
+  content: "\f142";
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-hide,
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-show {
+  display: inline-block;
+  position: relative;
+  padding-right: 6px;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-hide::after,
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-show::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  z-index: 99;
+  top: -1px;
+  right: -2px;
+  background-color: #dc3232;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 1px 1px #f1f1f1;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-hide, #hidden-admin-notices-link-wrap #hidden-admin-notices-link[aria-expanded=true] .hidden-admin-notices-link-text-show {
+  display: none;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link[aria-expanded=true] .hidden-admin-notices-link-text-hide {
+  display: inline-block;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-icon {
+  display: none;
+}
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-icon::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZGF0YS1jb2RlPSI2MTYwMiIgZGF0YS10YWdzPSJiZWxsLW8iPjxnIGZpbGw9IiMxZDIzMjciIHRyYW5zZm9ybT0ic2NhbGUoMC4wMjczNDM3NSAwLjAyNzM0Mzc1KSI+PHBhdGggZD0iTTUyMS4xNDMgOTY5LjE0M2MwLTUuMTQzLTQtOS4xNDMtOS4xNDMtOS4xNDMtNDUuMTQzIDAtODIuMjg2LTM3LjE0My04Mi4yODYtODIuMjg2IDAtNS4xNDMtNC05LjE0My05LjE0My05LjE0M3MtOS4xNDMgNC05LjE0MyA5LjE0M2MwIDU1LjQyOSA0NS4xNDMgMTAwLjU3MSAxMDAuNTcxIDEwMC41NzEgNS4xNDMgMCA5LjE0My00IDkuMTQzLTkuMTQzek0xNDAuNTcxIDgwNC41NzFoNzQyLjg1N2MtMTAyLjI4Ni0xMTUuNDI5LTE1Mi0yNzItMTUyLTQ3NS40MjkgMC03My43MTQtNjkuNzE0LTE4Mi44NTctMjE5LjQyOS0xODIuODU3cy0yMTkuNDI5IDEwOS4xNDMtMjE5LjQyOSAxODIuODU3YzAgMjAzLjQyOS00OS43MTQgMzYwLTE1MiA0NzUuNDI5ek05ODcuNDI5IDgwNC41NzFjMCA0MC0zMy4xNDMgNzMuMTQzLTczLjE0MyA3My4xNDNoLTI1NmMwIDgwLjU3MS02NS43MTQgMTQ2LjI4Ni0xNDYuMjg2IDE0Ni4yODZzLTE0Ni4yODYtNjUuNzE0LTE0Ni4yODYtMTQ2LjI4NmgtMjU2Yy00MCAwLTczLjE0My0zMy4xNDMtNzMuMTQzLTczLjE0MyA4NC41NzEtNzEuNDI5IDE4Mi44NTctMTk5LjQyOSAxODIuODU3LTQ3NS40MjkgMC0xMDkuNzE0IDkwLjg1Ny0yMjkuNzE0IDI0Mi4yODYtMjUyLTIuODU3LTYuODU3LTQuNTcxLTE0LjI4Ni00LjU3MS0yMi4yODYgMC0zMC4yODYgMjQuNTcxLTU0Ljg1NyA1NC44NTctNTQuODU3czU0Ljg1NyAyNC41NzEgNTQuODU3IDU0Ljg1N2MwIDgtMS43MTQgMTUuNDI5LTQuNTcxIDIyLjI4NiAxNTEuNDI5IDIyLjI4NiAyNDIuMjg2IDE0Mi4yODYgMjQyLjI4NiAyNTIgMCAyNzYgOTguMjg2IDQwNCAxODIuODU3IDQ3NS40Mjl6IiAvPjwvZz48L3N2Zz4=);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 781.98px) {
+  #hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-icon {
+    display: inline-block;
+  }
+  #hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-hide,
+#hidden-admin-notices-link-wrap #hidden-admin-notices-link .hidden-admin-notices-link-text-show, #hidden-admin-notices-link-wrap #hidden-admin-notices-link[aria-expanded=true] .hidden-admin-notices-link-text-hide {
+    display: none;
+  }
+}
+#hidden-admin-notices-link-wrap #screen-meta-links {
+  display: none;
+  float: right;
+}
+
+/* Show all notices when they have moved to the notices panel */
+#wpbody-content > #hidden-admin-notices-panel > div.update-nag,
+#wpbody-content > #hidden-admin-notices-panel > div.updated,
+#wpbody-content > #hidden-admin-notices-panel > div.notice,
+#wpbody-content > #hidden-admin-notices-panel > div.error,
+#wpbody-content > #hidden-admin-notices-panel > div#message {
+  position: relative !important;
+  display: block !important;
+}
+
+/**
+ * Body states
+ */
+body {
+  /* When HAN is in use */
+  /* When panel is open */
+}
+body.hidden-admin-notices-active {
+  /* Show links */
+  /* Hide all notices after HAN has initialised */
+}
+body.hidden-admin-notices-active #hidden-admin-notices-link-wrap {
+  display: block;
+}
+body.hidden-admin-notices-active #wpbody-content > div.update-nag,
+body.hidden-admin-notices-active #wpbody-content div.updated:not(.notice),
+body.hidden-admin-notices-active #wpbody-content div.notice:not(.updated),
+body.hidden-admin-notices-active #wpbody-content div.error,
+body.hidden-admin-notices-active #wpbody-content div#message:not(.notice):not(.updated),
+body.hidden-admin-notices-active #wpbody-content .wrap > div.update-nag,
+body.hidden-admin-notices-active #wpbody-content .wrap > div.updated:not(.notice),
+body.hidden-admin-notices-active #wpbody-content .wrap > div.notice:not(.updated),
+body.hidden-admin-notices-active #wpbody-content .wrap > div.error,
+body.hidden-admin-notices-active #wpbody-content .wrap > div#message:not(.notice):not(.updated),
+body.hidden-admin-notices-active #wpbody-content .wrap > form > div.update-nag,
+body.hidden-admin-notices-active #wpbody-content .wrap > form > div.updated:not(.notice),
+body.hidden-admin-notices-active #wpbody-content .wrap > form > div.notice:not(.updated),
+body.hidden-admin-notices-active #wpbody-content .wrap > form > div.error,
+body.hidden-admin-notices-active #wpbody-content .wrap > form > div#message:not(.notice):not(.updated) {
+  display: none !important;
+}
+body.hidden-admin-notices-panel-active {
+  /* Hide original WP screen meta links */
+  /* Show but make invisible duplicated screen meta links */
+}
+body.hidden-admin-notices-panel-active #wpbody-content > #screen-meta-links {
+  display: none;
+}
+body.hidden-admin-notices-panel-active #hidden-admin-notices-link-wrap #screen-meta-links {
+  display: block;
+}
+body.hidden-admin-notices-panel-active #hidden-admin-notices-link-wrap #screen-meta-links #screen-options-link-wrap,
+body.hidden-admin-notices-panel-active #hidden-admin-notices-link-wrap #screen-meta-links #contextual-help-link-wrap {
+  visibility: hidden;
+}
+
+/**
+ * Specific plugin support
+ */
+/* WooCommerce support */
+.woocommerce-embed-page #hidden-admin-notices-link-wrap,
+.woocommerce-embed-page #hidden-admin-notices-panel {
+  position: relative;
+  top: 56px;
+}
+
+.woocommerce-page #hidden-admin-notices-link {
+  margin-top: -1px;
+}
+
+/* JetPack support */
+.jetpack-pagestyles #hidden-admin-notices-link-wrap {
+  position: relative;
+  z-index: 10;
+}
+
+/* Formidable forms support */
+.frm-white-body #hidden-admin-notices-link {
+  position: absolute;
+  right: 308px;
+  box-shadow: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.frm-full-screen #hidden-admin-notices-link,
+.post-new-php.post-type-frm_display #hidden-admin-notices-link,
+.post-php.post-type-frm_display #hidden-admin-notices-link {
+  display: none;
+}

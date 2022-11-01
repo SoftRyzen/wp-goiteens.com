@@ -1,0 +1,9 @@
+
+{% macro btn(text, class="", data="") %}
+<button type="button" class="main-btn {{class | safe}}" {{data | safe}} >
+ 
+  {{ text | safe }}
+
+</button>
+{% endmacro %}
+
