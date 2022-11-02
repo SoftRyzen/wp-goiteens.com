@@ -100,8 +100,8 @@ if( 8820 == get_the_ID() )
                     },
                     complete: function()
                     {
-                        let page_thanks = '<?= get_the_permalink(5025) ?>';
-                        location.href = page_thanks + '?btn_registered=true';
+                        let page_thanks = '<?= get_the_permalink(8825) ?>';
+                        location.href = page_thanks;
                     },
                     error: function (e)
                     {
