@@ -10,51 +10,56 @@
 get_header();
 ?>
 	<?php get_template_part( 'template-parts/main-header' ); ?>
-    <div class="container">
-    	<main id="primary" class="site-main">
-            
-    		<?php if ( have_posts() ) : ?>
-     <section class="section archive">
-<!--     			<header class="page-header"> -->
-    				<?php
-    				the_archive_title( '<h1 class="page-title test">', '</h1>' );
-    				the_archive_description( '<div class="archive-description">', '</div>' );
-    				?>
-<!--     			</header> -->
-		 
-<?php  get_template_part( 'template-parts/search-blog-forms') ;?>
-		 
-      <ul class="list grid archive__list">
-    			<?php
-    			/* Start the Loop */
-    			while ( have_posts() ) :
-    				the_post();?>
-    
-    				
-<!--     				 Include the Post-Type-specific template for the content. -->
-<!--     				 If you want to override this in a child theme, then include a file -->
-<!--     				 called content-___.php (where ___ is the Post Type name) and that will be used instead. -->
-    				 
-		    <li class="archive__item grid__item ">
-    			<?php	get_template_part( 'template-parts/content', get_post_type() );?>
-          </li>
-    		<?php	endwhile;
-    
-    			the_posts_navigation();
-    
-    		else :
-    
-    			get_template_part( 'template-parts/content', 'none' );
-    
-    		endif;
-    		?>
-            </ul>
-			</section>
-    	</main><!-- #main -->
-    
-    <?php
-    get_sidebar(); ?>
-    
-     </div>
-  <?php get_template_part( 'template-parts/main-footer' ); ?>
+
+    <?php get_template_part( 'template-parts/blog/search'); ?>
+
+    <!-- Title -->
+    <section class="cat_title">
+
+        <!-- container -->
+        <div class="container">
+
+            <?php the_archive_title( '<h1 class="offers-title">', '</h1>' ); ?>
+            <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- End Title -->
+
+    <!-- Popular -->
+    <section class="popular blog__grid">
+
+        <!-- container -->
+        <div class="container">
+
+            <?php if( have_posts() ) { ?>
+
+                <!-- list -->
+                <ul class="blog__grid-list popular-list">
+
+                    <?php while ( have_posts() ) { the_post(); ?>
+                            <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
+                    <?php } ?>
+
+                </ul>
+                <!-- end list -->
+
+            <?php }else{ ?>
+
+                <?php _e( 'Нічого не знайдено', 'goiteens' ) ?>
+
+            <?php } ?>
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- End Popular -->
+
+    <?php get_template_part( 'template-parts/blog/specials'); ?>
+    <?php get_template_part( 'template-parts/blog/order'); ?>
+
+    <?php get_template_part( 'template-parts/main-footer' ); ?>
+
 <?php get_footer();

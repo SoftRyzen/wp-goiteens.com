@@ -13,7 +13,7 @@
 <header class="header">
   <div class="container">
 	 <?php get_template_part( 'template-parts/python-start/top-panel', get_post_type()  ); ?>
-   
+
     <div class="header-content">
       <div class="header-mark">
         <span><?php the_field('header_mark'); ?></span>
@@ -23,12 +23,14 @@
       <h1 class="header-title"><?php the_field('header_title'); ?></h1>
       <p class="header-description"><?php the_field('header_description'); ?></p>
       <button class="btn btn-modal btn-accent btn-desktop"><?php the_field('btn_program_start'); ?></button>
-      <span class="btn-label btn-desktop"
-        ><span class="text-accent">*</span><?php the_field('header_price'); ?></span
-      >
+        <?php if( !empty(get_field('header_price')) ) { ?>
+          <span class="btn-label btn-desktop">
+              <span class="text-accent">*</span><?php the_field('header_price'); ?>
+          </span>
+        <?php } ?>
     </div>
     <picture>
-		<?php 
+		<?php
 		if(get_the_ID() == 6489){
 			$imgSrc = "fe-start/header/header";
 		}elseif(get_the_ID() == 6850){
@@ -78,6 +80,8 @@
       </li>
     </ul>
     <button class="btn btn-modal btn-accent btn-mobile"><?php the_field('btn_program_start'); ?></button>
-    <span class="btn-label btn-mobile"><span class="text-accent">*</span><?php the_field('header_price'); ?></span>
+      <?php if( !empty(get_field('header_price')) ) { ?>
+        <span class="btn-label btn-mobile"><span class="text-accent">*</span><?php the_field('header_price'); ?></span>
+      <?php } ?>
   </div>
 </header>

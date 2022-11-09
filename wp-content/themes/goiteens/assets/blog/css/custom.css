@@ -1,0 +1,60 @@
+.hero__content {
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #707882;
+    line-height: 1.45;
+}
+.hero__content p {
+    display: block;
+}
+.hero__content p:not(:last-child) {
+    margin: 0 0 30px 0;
+}
+
+.blog__grid {
+    padding-top: 0px;
+}
+.blog__grid-list,
+.popular-list {
+    flex-wrap: wrap;
+}
+
+.popular.preloader {
+    position:relative;
+}
+.popular.preloader::after {
+    content: '';
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.blog__search-result {
+    padding-top: 0px;
+}
+.blog__search-result-title {
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+    .hero__content {
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 420px;
+    }
+}
+@media (min-width: 1280px) {
+    .hero__content {
+        font-size: 24px;
+        line-height: 1.2;
+        max-width: 630px;
+    }
+}
+

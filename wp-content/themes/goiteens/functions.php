@@ -107,6 +107,11 @@ endif;
 add_action('after_setup_theme', 'goiteens_setup');
 
 /**
+ * Blog
+ */
+require get_template_directory() . '/inc/_blog.php';
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
@@ -242,46 +247,46 @@ function goiteens_theme_style()
 	//   }
 
 
-	
+
 	wp_enqueue_style('input-mask-style', get_template_directory_uri() . '/assets/css/intTelInput.css');
 		  if(is_page_template('templates/tmpl-homepage.php') || is_page_template('templates/tmpl-course-page.php') || is_page_template('templates/tmpl-about-page.php') || is_page_template('templates/tmpl-testimonials-page.php') || is_page_template('templates/tmpl-contacts-page.php') ) {
 	   wp_enqueue_style('banner-style', get_template_directory_uri() . '/assets/css/banner-zsu.css') ;
-	  } 
+	  }
 
 	if (get_locale() == 'pl_PL') {
        wp_enqueue_style('style-font', get_template_directory_uri() . '/style-fonts-pl.css');
 	} else {
 		wp_enqueue_style('style-font', get_template_directory_uri() . '/style-fonts.css');
 	}
-	
+
 	if (is_page_template('templates/tmpl-course-page.php')) {
 		if (get_locale() == 'pl_PL') {
            wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/program-page-pl.css');
 	    } else {
 		   wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/program-page.css');
 	    }
-		
+
 	} else if (is_page_template('templates/tmpl-about-page.php')) {
 	    if (get_locale() == 'pl_PL') {
            wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/about-page-pl.css');
 	    } else {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/about-page.css');
 	    }
-		
+
 	} else if (is_page_template('templates/tmpl-testimonials-page.php')) {
 	    if (get_locale() == 'pl_PL') {
           wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/testimonials-page-pl.css');
 	    } else {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/testimonials-page.css');
 	    }
-		
+
 	} else if (is_page_template('templates/tmpl-contacts-page.php')) {
 	    if (get_locale() == 'pl_PL') {
           wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/contact-page-pl.css');
 	    } else {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/contact-page.css');
 	    }
-		
+
 	} else if (is_page_template('templates/tmpl-contract-page.php')) {
 		  if (get_locale() == 'pl_PL') {
           wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
@@ -294,7 +299,7 @@ function goiteens_theme_style()
 	    } else {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/minecraft.css');
 	    }
-		
+
 	} else  if (is_page_template('templates/tmpl-frontend-junior-page.php')) {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/frontend-junior.css');
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
@@ -311,7 +316,7 @@ function goiteens_theme_style()
 	    } else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/python.css');
 	    }
-		
+
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 	} else	if (is_page_template('templates/tmpl-programming4kids-page.php')) {
 	    if (get_locale() == 'pl_PL') {
@@ -319,21 +324,21 @@ function goiteens_theme_style()
 	    } else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/programming4kids.css');
 	    }
-		
+
 	} else	if (is_page_template('templates/tmpl-design-page.php')) {
 	    if (get_locale() == 'pl_PL') {
         	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/design-pl.css');
 	    } else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/design.css');
 	    }
-		
+
 	} else	if (is_page_template('templates/tmpl-roblox-page.php')) {
 	    if (get_locale() == 'pl_PL') {
         	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/roblox-pl.css');
 	    } else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/roblox.css');
 	    }
-		
+
 	} else	if (is_page_template('templates/tmpl-vacancies-page.php')) {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
 		wp_enqueue_style('style-vac', get_template_directory_uri() . '/assets/css/vacancies.css');
@@ -876,3 +881,18 @@ if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
     }
 }
 /** end */
+
+/**
+ * Remove css js Version
+ */
+add_filter( 'style_loader_src', 'goiteens_remove_cssjs_ver', 10, 2 );
+add_filter( 'script_loader_src', 'goiteens_remove_cssjs_ver', 10, 2 );
+function goiteens_remove_cssjs_ver( $src )
+{
+
+    if( strpos( $src, '?ver=' ) )
+        $src = remove_query_arg( 'ver', $src );
+
+    return $src;
+
+}

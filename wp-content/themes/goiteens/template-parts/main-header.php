@@ -49,24 +49,24 @@
 					'container' => 'nav',
 					'container_class' => 'navigation',
 					'menu_id'        => false,
-					'menu_class'      => 'navigation__list list',		
+					'menu_class'      => 'navigation__list list',
 				)
 			);
 			?>
 
 		<?php $header = get_field('header', 'option');?>
-		<?php if($header['location_href']): ?>
-		<?php if(!(get_locale() == 'pl_PL')):?>
-			<a class="link location"  href="<?php echo "{$header['location_href']}"; ?>"  target="_blank"
-          rel="noreferrer noopener nofollow">
-        <svg width="18" height="18" class="location__icon">
-          <use href="<?php echo get_template_directory_uri(); ?>/assets/images/sprite.svg#location"></use>
-        </svg>
-        <span><?php echo "{$header['location']}"; ?></span>
-      </a>
-			<?php endif; ?>
-		  
-		<?php endif; ?>
+<!--		--><?php //if($header['location_href']): ?>
+<!--		--><?php //if(!(get_locale() == 'pl_PL')):?>
+<!--			<a class="link location"  href="--><?php //echo "{$header['location_href']}"; ?><!--"  target="_blank"-->
+<!--          rel="noreferrer noopener nofollow">-->
+<!--        <svg width="18" height="18" class="location__icon">-->
+<!--          <use href="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/sprite.svg#location"></use>-->
+<!--        </svg>-->
+<!--        <span>--><?php //echo "{$header['location']}"; ?><!--</span>-->
+<!--      </a>-->
+<!--			--><?php //endif; ?>
+<!--		  -->
+<!--		--><?php //endif; ?>
 
       <a class="contact-tel link" href="tel:<?php echo "{$header['phone_href']}"; ?>"><?php echo "{$header['phone']}"; ?></a>
       <div class="language-select" style="display: none">

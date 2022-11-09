@@ -136,7 +136,7 @@ class LanguageSwitch implements \IWPML_Action {
 		global $wp_textdomain_registry;
 
 		if ( $wp_textdomain_registry ) {
-			$wp_textdomain_registry->reset();
+			//$wp_textdomain_registry->reset();
 		} elseif ( function_exists( '_get_path_to_translation' ) ) {
 			_get_path_to_translation( null, true );
 		}

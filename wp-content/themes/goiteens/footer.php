@@ -71,6 +71,9 @@
 
 <?php wp_footer();
 
+/**
+ * Test No Pay
+ */
 if( 8820 == get_the_ID() )
 {
     ?>
@@ -86,12 +89,12 @@ if( 8820 == get_the_ID() )
 
                 $.ajax({
                     type: 'POST',
-                    url: '<?= get_stylesheet_directory_uri() . '/assets/crm/pythonstartpay/lead.php' ?>',
+                    url: '<?= get_stylesheet_directory_uri() . '/assets/crm/pythonstartnopay/lead.php' ?>',
                     data: $this.serialize(),
                     dataType: 'json',
                     success: function( response )
                     {
-
+                        //console.dir(response)
 
                     },
                     beforeSend: function()
@@ -101,6 +104,7 @@ if( 8820 == get_the_ID() )
                     complete: function()
                     {
                         let page_thanks = '<?= get_the_permalink(8825) ?>';
+
                         location.href = page_thanks;
                     },
                     error: function (e)
