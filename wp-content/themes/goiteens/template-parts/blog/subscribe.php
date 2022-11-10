@@ -21,7 +21,7 @@
 
                 <label class="subscribe-form__label subscribe-form__label--padding">
                     <input class="subscribe-form__checkbox" type="checkbox">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <?php _e( 'Я приймаю умови конфіденційності', 'goiteens' ) ?>
                 </label>
 
             </form>

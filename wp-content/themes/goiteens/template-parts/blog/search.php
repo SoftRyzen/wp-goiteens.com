@@ -17,7 +17,7 @@
                         type="text"
                         name="search"
                         placeholder="<?= _e( 'Пошук', 'goiteens' ) ?>"
-                        value="<?= $_GET['search'] ?>"
+                        value="<?= isset($_GET['search']) ? $_GET['search'] : '' ?>"
                 >
                 <button
                         class="button"
