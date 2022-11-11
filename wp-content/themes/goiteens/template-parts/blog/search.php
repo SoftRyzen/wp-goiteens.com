@@ -2,18 +2,18 @@
 
 ?>
 <!-- Search -->
-<section class="search">
+<section class="find">
 
     <!-- container -->
     <div class="container">
 
         <!-- form -->
-        <form class="search-form" method="get" action="<?= home_url('blog') ?>">
+        <form class="find-form" method="get" action="<?= home_url('blog') ?>">
 
             <!-- label -->
-            <label class="search-form__label">
+            <label class="find-form__label">
                 <input
-                        class="input search-form__input"
+                        class="find-form__input"
                         type="text"
                         name="search"
                         placeholder="<?= _e( 'Пошук', 'goiteens' ) ?>"
@@ -42,10 +42,10 @@
 
                 ?>
                 <!-- label -->
-                <label class="search-form__label">
+                <label class="find-form__label">
 
                     <select
-                            class="input search-form__select blogFilterCategorySelect"
+                            class="find-form__select blogFilterCategorySelect"
                             name=""
                     >
 
@@ -80,21 +80,21 @@
         {
             ?>
             <!-- wrapper -->
-            <div class="search-wrapper">
+            <div class="find-wrapper">
 
                 <!-- title -->
-                <p class="search-wrapper__text">
+                <p class="find-wrapper__text">
                     <?= _e( 'Важливі рубрики', 'goiteens' ) ?>
                 </p>
                 <!-- end title -->
 
                 <!-- list -->
-                <ul class="search-wrapper__list">
+                <ul class="find-wrapper__list">
 
                     <?php foreach ( $bestCategories as $cat ) { ?>
 
                         <li>
-                            <a class="search-wrapper__link" href="<?= get_term_link( $cat ) ?>">
+                            <a class="find-wrapper__link" href="<?= get_term_link( $cat ) ?>">
                                 <?= $cat->name ?>
                             </a>
                         </li>
