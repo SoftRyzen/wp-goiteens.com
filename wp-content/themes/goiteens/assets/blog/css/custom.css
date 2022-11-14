@@ -56,5 +56,10 @@
         line-height: 1.2;
         max-width: 630px;
     }
+    .subscribe-title {
+        line-height: 1.2;
+        position:relative;
+        top: -5px;
+    }
 }
 
