@@ -14,7 +14,7 @@
             <form class="subscribe-form">
                 <div class="subscribe-form__box">
                     <label class="subscribe-form__label">
-                        <input class="input subscribe-form__input" type="text" placeholder="<?= _e( 'email', 'goiteens' ) ?>" name="email">
+                        <input class="input subscribe-form__input" type="text" placeholder="<?= _e( 'Email', 'goiteens' ) ?>" name="email">
                     </label>
                     <button class="button subscribe-form__button" type="submit"><?= _e( 'Надіслати', 'goiteens' ) ?></button>
                 </div>

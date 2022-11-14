@@ -22,6 +22,7 @@ function generateData(name, phone = null, email = null, ipData = {}) {
     leadFBP: getCookie('_fbp'),
     leadFBC: getCookie('_fbc'),
     leadIP: ipData.ip || '',
+    leadapi: "MarLeadAPI",
   };
   return ensureUtmData(data);
 }
