@@ -2580,4 +2580,14 @@ select {
   background-color:#FFD500;
 }
 
+.navigation .menu .menu-item a {
+  color: #2D2D2D;
+}
+.header__tel {
+  color: #fff;
+}
+.header__top.fixed .navigation .menu .menu-item a {
+  color: #fff;
+}
+
 

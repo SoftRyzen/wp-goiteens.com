@@ -8,7 +8,18 @@
                             <img class="header__logo-img" src=" <?php echo get_template_directory_uri(); ?>/assets/images/itmarathon/logo.svg" alt="<?php the_field('logo_alt'); ?>" width="143" height="37" />
                         </a>
 
+                        <?php get_template_part( 'template-parts/itmarathon/components/navigation', get_post_type()  ); ?>
+
+                        <button type="button" class="mobile-menu-btn" data-menu-btn aria-label="<?php the_field('btn_open_lab'); ?>">
+                            <svg class="mobile-menu-svg" width="57" height="57">
+                                <use href="<?php echo get_template_directory_uri(); ?>/assets/images/itmarathon/sprite.svg#icon-mobile-menu"></use>
+                            </svg>
+                        </button>
+
                     </div>
+
+                    <?php $header = get_field('header', 'option'); ?>
+                    <a class="header__tel link" href="tel:<?php echo "{$header['phone_href']}"; ?>"><?php echo "{$header['phone']}"; ?></a>
 
                 </div>
             </div>
