@@ -21,3 +21,8 @@
     color: #E03EAB;
     font-family: "Gotham Pro";
 }
+@media (max-width: 1280px) {
+    .header .contact-tel {
+        margin-left: 0px;
+    }
+}
