@@ -54,12 +54,13 @@
 		window.productName = '<?php echo get_field('product_name'); ?>';
 		window.productId = '<?php echo get_field('product_id'); ?>';
   <?php endif; ?>
-     
+
       window.leelooHash = '<?php echo get_field('leeloo_hash'); ?>';
 		<?php if(get_the_ID() == 4862): ?>
 		window.leelooHashKid = '<?php echo get_field('leeloo_hash_kid'); ?>';
 		<?php endif; ?>
 	  window.leadFormat = '<?php echo get_field('lead_format'); ?>';
+        window.leadapi = 'MarLeadAPI';
     </script>
 </head>
 

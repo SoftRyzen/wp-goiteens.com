@@ -50,9 +50,9 @@
                     <?php if (get_locale() == 'pl_PL' || get_locale() == 'en_US') : ?>
                     <?php the_field('checkbox_text_start', 'option'); ?>
                     <a href="<?php the_field('modal_policy_link', 'option'); ?>" target="_blank"
-                        rel="noopener noreferrer"><?php the_field('policy_link_text', 'option'); ?></a> 
+                        rel="noopener noreferrer"><?php the_field('policy_link_text', 'option'); ?></a>
 					i <a href="<?php the_field('policy_link', 'option'); ?>" target="_blank"
-                        rel="noopener noreferrer">Regulaminem świadczenia usług szkoleniowych</a> 
+                        rel="noopener noreferrer">Regulaminem świadczenia usług szkoleniowych</a>
                     <?php the_field('checkbox_text_end', 'option'); ?>
                     <?php else : ?>
                     <?php the_field('checkbox_text_start', 'option'); ?>

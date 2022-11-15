@@ -18,7 +18,7 @@ function send($token, $data, $input)
 	} else {
 			$url = 'https://universalcrmconnector.goiteens.ua/connector.php';
 	}
-	
+
     $ch = curl_init();
     $curl_options = [];
 
