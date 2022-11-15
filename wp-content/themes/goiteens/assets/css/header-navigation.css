@@ -40,3 +40,9 @@
       margin-right: 0; }
   .navigation .menu-item a {
     font-size: 17px; } }
+
+@media (max-width: 1280px) {
+  .navigation {
+    margin-bottom: 50px;
+  }
+}
