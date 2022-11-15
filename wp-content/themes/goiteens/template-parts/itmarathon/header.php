@@ -59,7 +59,24 @@
             </div>
         </div>
     </div>
+    <div class="header__side" style="display:none">
+        <div class="header__img-wrapper">
+            <picture>
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md.webp 1x, http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
 
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md.png 1x, http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md@2x.png 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm.webp 1x, http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/images/header/boy_sm@2x.png 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img class="header__img" src="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm.png" alt="Фото хлопчика з ноутбуком" width="320" height="391" loading="lazy">
+            </picture>
+            <div class="play-btn" data-video-open="">
+                <svg class="play-btn__svg" width="70" height="70">
+                    <use href="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/sprite.svg#icon-play-btn"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
 </header>
 <?php get_template_part( 'template-parts/itmarathon/components/mobile-menu', get_post_type()  ); ?>
 <?php get_template_part( 'template-parts/itmarathon/components/modal-video', get_post_type()  ); ?>
