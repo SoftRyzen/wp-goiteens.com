@@ -142,17 +142,5 @@ if (get_field('binotel_hash')) { ?>
 
 <?php } ?>
 
-<?php if (get_field('binotel_hash_consultant')) { ?>
-
-    <script type="text/javascript">
-        (function(d, w, s) {
-            var widgetHash = '<?php echo get_field('binotel_hash_consultant'); ?>', bch = d.createElement(s); bch.type = 'text/javascript'; bch.async = true;
-            bch.src = '//widgets.binotel.com/chat/widgets/' + widgetHash + '.js';
-            var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(bch, sn);
-        })(document, window, 'script');
-    </script>
-
-<?php } ?>
-
 </body>
 </html>
