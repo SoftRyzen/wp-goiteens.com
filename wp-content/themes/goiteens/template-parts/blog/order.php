@@ -1,27 +1,24 @@
 <?php
-
+$fields = get_field('offers');
 ?>
 <!-- Lesson -->
 <section class="lesson">
+
+    <!-- container -->
     <div class="container">
+
+        <!-- title -->
         <h2 class="lesson-title">
-            <?php
-            echo sprintf( __( '%s<span class="lesson-title__span">%s</span>%s', 'goiteens' ), 'Пройти', ' безплатно', ' пробне заняття' );
-            ?>
+            <?= $fields['title'] ?>
         </h2>
+        <!-- end title -->
 
-        <form class="lesson-form">
-            <label class="lesson-form__label">
-                <input class="input lesson-form__input" type="text" placeholder="<?= _e( 'Ім\'я', 'goiteens' ) ?>">
-            </label>
-
-            <label class="lesson-form__label">
-                <input class="input lesson-form__input" type="text" placeholder="<?= _e( 'Email', 'goiteens' ) ?>">
-            </label>
-
-            <button class="button lesson-form__button" type="submit"><?= _e( 'Надіслати', 'goiteens' ) ?></button>
-        </form>
+        <!-- form -->
+        <?= do_shortcode('[contact-form-7 id="' . $fields['form'] . '" title="" html_class="lesson-form wpcf7Submit"]') ?>
+        <!-- end form -->
 
     </div>
+    <!-- end container -->
+
 </section>
 <!-- End Lesson -->

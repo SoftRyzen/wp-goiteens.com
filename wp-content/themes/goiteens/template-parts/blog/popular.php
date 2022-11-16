@@ -6,7 +6,7 @@ $popularPost = get_field('populars');
     <!-- Popular -->
     <section class="popular blogListPreload">
         <div class="container">
-            <h2 class="popular-title"><?= _e( 'Популярні', 'goiteens' ) ?></h2>
+            <h2 class="popular-title"><?= get_field('populars_title') ?></h2>
             <?php
             $args = [
                 'post__in' => $popularPost,

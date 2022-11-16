@@ -4,12 +4,17 @@ if( $specials ) {
     ?>
     <!-- Offers -->
     <section class="offers">
+
+        <!-- container -->
         <div class="container">
 
-            <?php
-            echo sprintf( __( '<h2 class="offers-title">%s<br>%s</h2>', 'goiteens' ), 'Спеціальні пропозиції для читачів', 'GoITeens Journal' );
-            ?>
+            <!-- title -->
+            <h2 class="offers-title">
+                <?= get_field('specials_title') ?>
+            </h2>
+            <!-- end title -->
 
+            <!-- list -->
             <ul class="offers-list">
                 <?php foreach ( $specials as $special ) { ?>
                     <li>
@@ -19,7 +24,11 @@ if( $specials ) {
                     </li>
                 <?php } ?>
             </ul>
+            <!-- end list -->
+
         </div>
+        <!-- end container -->
+
     </section>
     <!-- End Offers -->
 <?php } ?>

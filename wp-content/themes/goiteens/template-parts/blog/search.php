@@ -84,7 +84,7 @@
 
                 <!-- title -->
                 <p class="find-wrapper__text">
-                    <?= _e( 'Важливі рубрики', 'goiteens' ) ?>
+                    <?= get_field('categories_title') ?>
                 </p>
                 <!-- end title -->
 
