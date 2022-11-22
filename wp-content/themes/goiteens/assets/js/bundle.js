@@ -1,0 +1,1 @@
+jQuery(function(t){"use strict";({init:function(){this.install=this.install(this)},install:function(){},intro:function(t){t.preventDefault()}}).init()});
