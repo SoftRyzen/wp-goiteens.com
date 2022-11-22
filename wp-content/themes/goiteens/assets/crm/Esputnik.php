@@ -10,21 +10,29 @@ class Esputnik
     private function fillData($array_data)
     {
         $contact = new stdClass();
-        $contact->firstName = $array_data['name'];
+
+        $contact->firstName = (array_key_exists('name', $array_data)) ? $array_data['name'] : '';
         $contact->channels = array(
-            array('type' => 'email', 'value' => $array_data['email']),
-            array('type' => 'sms', 'value' => $array_data['phone'])
+            array('type' => 'email', 'value' => (array_key_exists('email', $array_data)) ? $array_data['email'] : ''),
+            array('type' => 'sms', 'value' => (array_key_exists('phone', $array_data)) ? $array_data['phone'] : '')
         );
 
         $request_entity = new stdClass();
         $request_entity->contact = $contact;
         $request_entity->formType = ['webinarUSA'];
-        $request_entity->groups =array( $array_data['product_name']);
+
+        if( array_key_exists('product_name', $array_data) )
+        {
+            $request_entity->groups = array( $array_data['product_name']);
+        }
+
         $this->request_entity_send = $request_entity;
+
     }
 
     public function __construct($array)
     {
+
         $this->fillData($array);
         $this->send_request($this->import_contacts_url, $this->request_entity_send, $this->apiKey);
     }
