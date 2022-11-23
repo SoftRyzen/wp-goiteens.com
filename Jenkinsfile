@@ -58,7 +58,10 @@ node("all-biulds"){
 
         if (success) {
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                sh "ncftpput ${env.ftpUserAndPass} ./"
+
+                sh "ncftpput -z ${env.ftpUserPassAndHost} ./ ./*"
+
+                //sh "ncftpput ${env.ftpUserAndPass} ./"
                 //sh "rm -r *"
             }
         }
