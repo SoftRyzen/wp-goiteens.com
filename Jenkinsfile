@@ -10,7 +10,7 @@ node("all-biulds"){
             string(credentialsId: 'tech_alert_chat_id', variable: 'telegramAlertChannelChatId'),
 
             //add ftp credential for https://html.lp.goit.global/mx/
-            string(credentialsId: 'ftp_user_pass_for_goiteens_com', variable: 'ftpUserAndPass')
+            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_develop', variable: 'ftpUserAndPass')
         ]) {
                 env.telegramNotifyChannelBotApiToken = telegramNotifyChannelBotApiToken;
                 env.telegramNotifyChannelChatId = telegramNotifyChannelChatId;
@@ -41,7 +41,7 @@ node("all-biulds"){
 
     stage('Clone Git Repo') {
         catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-            git branch: 'master', credentialsId: 'pasha-goitacad-ssh', url: 'git@github.com:SoftRyzen/wp-goiteens.com.git'
+            git branch: 'develop', credentialsId: 'pasha-goitacad-ssh', url: 'git@github.com:SoftRyzen/wp-goiteens.com.git'
         }
     }
 
