@@ -62,7 +62,7 @@ node("all-biulds"){
         if (success) {
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 //sent files to  https://html.lp.goit.global/mx/
-                sh "ncftpput ${env.ftpUserAndPass}"
+                sh "ncftpput ${env.ftpUserAndPass} ./"
                 sh "rm -r *"
             }
         }
