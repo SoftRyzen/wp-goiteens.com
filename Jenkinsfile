@@ -20,7 +20,7 @@ node("all-biulds"){
                 env.ftpUserPassAndHost = ftpUserPassAndHost;
 
                 env.gitRepository = 'git@github.com:SoftRyzen/wp-goiteens.com.git';
-                env.gitBranch = 'master';
+                env.gitBranch = 'develop';
         }
     }
 
