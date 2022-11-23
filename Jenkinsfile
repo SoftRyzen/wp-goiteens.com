@@ -9,15 +9,18 @@ node("all-biulds"){
             string(credentialsId: 'tech_alert_bot_api_key', variable: 'telegramAlertChannelBotApiToken'),
             string(credentialsId: 'tech_alert_chat_id', variable: 'telegramAlertChannelChatId'),
 
-            //add ftp credential for https://html.lp.goit.global/mx/
-            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_develop', variable: 'ftpUserAndPass')
+            //add ftp credential
+            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_develop', variable: 'ftpUserPassAndHost')
         ]) {
                 env.telegramNotifyChannelBotApiToken = telegramNotifyChannelBotApiToken;
                 env.telegramNotifyChannelChatId = telegramNotifyChannelChatId;
                 env.telegramAlertChannelBotApiToken = telegramAlertChannelBotApiToken;
                 env.telegramAlertChannelChatId = telegramAlertChannelChatId;
 
-                env.ftpUserAndPass = ftpUserAndPass;
+                env.ftpUserPassAndHost = ftpUserPassAndHost;
+
+                env.gitRepository = 'git@github.com:SoftRyzen/wp-goiteens.com.git';
+                env.gitBranch = 'master';
         }
     }
 
@@ -41,29 +44,22 @@ node("all-biulds"){
 
     stage('Clone Git Repo') {
         catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-            git branch: 'develop', credentialsId: 'pasha-goitacad-ssh', url: 'git@github.com:SoftRyzen/wp-goiteens.com.git'
+            git branch: env.gitBranch, credentialsId: 'pasha-goitacad-ssh', url: env.gitRepository
         }
     }
 
-
-   stage('Build'){
-       def success = 'SUCCESS'.equals(currentBuild.currentResult);
-
-       if (success) {
-           catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-               sh "./build.sh"
-           }
-       }
-   }
+    stage('Build'){
+        def success = 'SUCCESS'.equals(currentBuild.currentResult);
+        sh "./build.sh"
+    }
 
     stage('Deploy') {
          def success = 'SUCCESS'.equals(currentBuild.currentResult);
 
         if (success) {
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                //sent files to  https://html.lp.goit.global/mx/
                 sh "ncftpput ${env.ftpUserAndPass} ./"
-                sh "rm -r *"
+                //sh "rm -r *"
             }
         }
     }
