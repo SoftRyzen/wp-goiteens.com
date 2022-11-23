@@ -41,7 +41,7 @@ node("all-biulds"){
 
     stage('Clone Git Repo') {
         catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-            git branch: 'main', credentialsId: 'pasha-goitacad-ssh', url: 'git@github.com:SoftRyzen/wp-goiteens.com.git'
+            git branch: 'master', credentialsId: 'pasha-goitacad-ssh', url: 'git@github.com:SoftRyzen/wp-goiteens.com.git'
         }
     }
 
