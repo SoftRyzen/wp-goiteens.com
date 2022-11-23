@@ -19,3 +19,5 @@ helpforUkrainechildrensEDU/app/vendor/
 helpforUkrainechildrensEDU/app/app/vendor/
 /wp-content/themes/goiteens/package-lock.json
 /wp-content/themes/goiteens/node_modules
+!Jenkinsfile
+!build.sh
