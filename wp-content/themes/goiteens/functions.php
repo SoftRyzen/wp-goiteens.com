@@ -167,7 +167,7 @@ function goiteens_scripts()
 
 	if (is_page_template('templates/tmpl-minecraft-page.php')) {
 		if (get_locale() == 'pl_PL') {
-			if (get_the_ID() == 7584) {
+			if (get_the_ID() == 7584 || get_the_ID() == 4008) {
 				wp_enqueue_script('goiteens-styles', get_template_directory_uri() . '/assets/js/form.js', array(), _S_VERSION, true);
 			}
 			else {
