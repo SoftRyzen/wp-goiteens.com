@@ -1,0 +1,1 @@
+{"version":3,"file":"critical-css.css","sources":["critical-css.scss","_vars.scss"],"sourcesContent":["@import 'vars';\r\n","$font: 'Inter', sans-serif;\r\n$bg-color: #fff;\r\n\r\n"],"names":[],"mappings":""}

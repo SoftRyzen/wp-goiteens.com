@@ -1,0 +1,65 @@
+/*******************************************************************
+	Table of contents:
+
+		1. System classes
+		2. Gallery
+		3. Captions
+
+*******************************************************************/
+
+/**
+	-----------------------------------------------------------------
+	System classes
+	-----------------------------------------------------------------
+**/
+.alignleft {
+	float: left;
+	margin: 20px 30px 20px 0; 
+}
+
+.alignright {
+	float: right;
+	margin: 20px 0 20px 30px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+	-----------------------------------------------------------------
+	Gallery
+	-----------------------------------------------------------------
+**/
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px 28px -15px;
+}
+
+.gallery-item {
+	flex: 0 0 33%;
+	padding: 0 15px;
+	margin: 0 0 18px;
+	@media( max-width: 768px) {
+		flex: 0 0 50%; 
+	}
+}
+
+.gallery-icon {
+	img {
+		margin-bottom: 0;
+	}
+}
+
+/**
+	-----------------------------------------------------------------
+	Captions
+	-----------------------------------------------------------------
+**/
+figure.wp-caption.alignnone {
+	margin-left: 0;
+	margin-right: 0;
+}
