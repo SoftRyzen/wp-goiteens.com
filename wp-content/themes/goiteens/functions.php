@@ -394,7 +394,9 @@ wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-gr
 	    } else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
 	    }
+
 	}
+	wp_enqueue_style('bundle', get_template_directory_uri() . '/assets/css/bundle.css');
 }
 add_action('wp_enqueue_scripts', 'goiteens_theme_style');
 

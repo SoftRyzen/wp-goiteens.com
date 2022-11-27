@@ -1,0 +1,24 @@
+.gift-wrapper {
+    background-color: white;
+}
+// .gift-certificate {
+// }
+.sales-page_title {
+    color: $color-sale-black;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 700;
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+      } 
+}
+// .gift-certificate_order-link {
+// }
+// .unique-opportunity {
+// }
+// .unique-opportunity_title {
+// }
+// .unique-opportunity_list {
+// }
+// .unique-opportunity_item {
+// }
