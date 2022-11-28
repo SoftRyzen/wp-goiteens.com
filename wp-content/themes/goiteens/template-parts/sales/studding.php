@@ -29,7 +29,7 @@
         <ul class="studding-payments_per-month-list">
             <li class="studding-payments_per-month-item">
                 <h3 class="studding-payments_quantity-months">1 місяць </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">10%</span>
+                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
                 <ul class="studding-payments_price-list">
                     <li class="studding-payments_new-price"><span >4141</span>
                 <span >$</span></li>
@@ -48,7 +48,7 @@
             </li>
             <li class="studding-payments_per-month-item">
                 <h3 class="studding-payments_quantity-months">3 місяці </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">10%</span>
+                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
                 <ul class="studding-payments_price-list">
                     <li class="studding-payments_new-price"><span >4141</span>
                 <span >$</span></li>
@@ -66,7 +66,7 @@
           
             <li class="studding-payments_per-month-item">
                 <h3 class="studding-payments_quantity-months">6 місяців </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">10%</span>
+                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
                 <ul class="studding-payments_price-list">
                     <li class="studding-payments_new-price"><span >4141</span>
                 <span >$</span></li>
@@ -83,7 +83,7 @@
             </li>
             <li class="studding-payments_per-month-item">
                 <h3 class="studding-payments_quantity-months">9 місяців</h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">10%</span>
+                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
                 <ul class="studding-payments_price-list">
                     <li class="studding-payments_new-price"><span >4141</span>
                 <span >$</span></li>
@@ -100,7 +100,7 @@
             </li>
             <li class="studding-payments_per-month-item">
                 <h3 class="studding-payments_quantity-months">12 місяців </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">10%</span>
+                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
                 <ul class="studding-payments_price-list">
                     <li class="studding-payments_new-price"><span >4141</span>
                 <span >$</span></li>

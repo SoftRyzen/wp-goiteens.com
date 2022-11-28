@@ -1,13 +1,58 @@
 .sales-hero {
-    height: 600px;
-    background-color: $color-sale-yellow;
-    @media screen and (min-width: 768px) {
-        height: 640px;
-      }
-}
-// .hero_container {
-   
-// }
+  overflow: hidden;
+  height: 600px;
+  background-color: $color-sale-yellow;
 
-// .sales-hero_img {
-// }
+  @media screen and (min-width: 768px) {
+      height: 640px;
+      text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+      height: 640px;
+
+  }
+}
+
+.sales-hero__wrapper{
+position: relative;
+width:100%;
+max-width:1600px;
+height: 100%;
+} 
+.sales-hero__wrapper::before{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  content: "";
+  display: block;
+  z-index: 2;
+  background-image:url(../images/hero-decor-mob.svg), url(../images/ellipse-mob.svg);
+  background-position: top 127px left calc(50vw - 10px), top -200px right -110px;
+  background-repeat: no-repeat;
+  background-size: 200px, 365px, cover;
+      @media screen and (min-width: 768px) {
+          background-image:url(../images/hero-decor-tab.svg), url(../images/ellipse-tab.svg);
+          background-size: 679px, 641px, cover;
+          background-position: top 30% center, top -200px right -140px;
+          height: 562px;
+      }
+      @media screen and (min-width: 1200px) {
+          background-image:url(../images/hero-decor-desk.svg), url(../images/ellipse-desk.svg);
+          background-size: 1330px, 996px, cover;
+          background-position: top 50% center, top -400px right -240px;
+          height: 568px;
+      }
+
+}
+.sales-hero__img{
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  right: 0;
+  @media screen and (min-width: 768px) {
+      right:0;
+  }
+  @media screen and (min-width: 1200px) {
+      right:300px;
+  }
+}
