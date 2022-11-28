@@ -64,8 +64,8 @@ get_header();
                         podobnych
                         zainteresowaniach.
                         Jeżeli brzmi to interesująco, możesz zapoznać się z informacjami o produkcie tutaj → <a
-                            class="link text-accent" href="https://goiteens.com/pl/course/" target="_blank"
-                            rel="noopener noreferrer nofollow">https://goiteens.com/pl/course/</a>
+                            class="link text-accent" href="<?php echo site_url() ?>/pl/course/" target="_blank"
+                            rel="noopener noreferrer nofollow"><?php echo site_url() ?>/pl/course/</a>
 
                     </p>
                 </div>

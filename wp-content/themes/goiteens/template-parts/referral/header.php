@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <div class="header__wrapper">
-      <a href="https://goiteens.com/" target="_blank" rel="noopener nofollow noreferrer" class="link header__link">
+      <a href="<?php echo site_url() ?>" target="_blank" rel="noopener nofollow noreferrer" class="link header__link">
         <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/referral/logo-black.svg" alt="{{page.logo_alt}}" width="143"
           height="37" />
       </a>
