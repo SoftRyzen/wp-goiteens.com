@@ -26,18 +26,18 @@ height: 100%;
   content: "";
   display: block;
   z-index: 2;
-  background-image:url(../../../../images/sales-page/hero-decor-mob.svg), url(../../../../images/sales-page/ellipse-mob.svg);
+  background-image:url(../images/sales-page/hero-decor-mob.svg), url(../images/sales-page/ellipse-mob.svg);
   background-position: top 127px left calc(50vw - 150px), top -200px right -110px;
   background-repeat: no-repeat;
   background-size: 200px, 365px, cover;
       @media screen and (min-width: 768px) {
-          background-image:url(../../../../images/sales-page/hero-decor-tab.svg), url(../../../../images/sales-page/ellipse-tab.svg);
+          background-image:url(../images/sales-page/hero-decor-tab.svg), url(../images/sales-page/ellipse-tab.svg);
           background-size: 679px, 641px, cover;
           background-position: top 30% center, top -200px right -140px;
           height: 562px;
       }
       @media screen and (min-width: 1200px) {
-          background-image:url(../../../../images/sales-page/hero-decor-desk.svg), url(../../../../images/sales-page/ellipse-desk.svg);
+          background-image:url(../images/sales-page/hero-decor-desk.svg), url(../images/sales-page/ellipse-desk.svg);
           background-size: 1330px, 996px, cover;
           background-position: top 50% center, top -400px right -240px;
           height: 568px;

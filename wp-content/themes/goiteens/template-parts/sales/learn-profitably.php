@@ -2,11 +2,12 @@
 
         <h2 class="sales-section-title sales-section-title--learn-profitably">Навчатися вигідніше Легко!</h2>
         <div class="container-sales container-sales--flex-tab">
+
         <picture class="learn-profitably_img-wrap"><source media="(min-width: 1200px)" type="image/png" srcset="<?= get_template_directory_uri() ?>/assets/images/sales-page/boy-desk-1x.png 1x, <?= get_template_directory_uri() ?>/assets/images/sales-page/boy-desk-2x.png 2x" width="470"/><source media="(min-width: 768px)" type="image/png" srcset="<?= get_template_directory_uri() ?>/assets/images/sales-page/boy-tab-1x.png 1x, <?= get_template_directory_uri() ?>/assets/images/sales-page/boy-desk-2x.png 2x" width="444"/><img class="learn-profitably_img" width="272" height="375" loading="lazy" alt="Усміхнений хлопець" src="<?= get_template_directory_uri() ?>/assets/images/sales-page/boy-mob-1x.png"/></picture>
         <ul class="learn-profitably_list">
             <li class="learn-profitably_item">
             <svg  width="84" height="84">
-                        <use href="<?= get_template_directory_uri() ?>/assets/images/sales-page/symbol-defs.svg#icon-free"></use>
+                        <use href="<?= get_template_directory_uri() ?>/assets/images/sales-page/symbol-defs.svg#icon-free"></use>    
                     </svg>
                 <h3>1 безплатний урок
 за відгук</h3>
