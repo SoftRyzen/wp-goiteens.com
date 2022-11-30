@@ -230,7 +230,7 @@ function goiteens_scripts()
 	}
 
 
-
+    wp_enqueue_script('bundle', get_template_directory_uri() . '/assets/js/bundle.js', array(), _S_VERSION, true);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

@@ -34,14 +34,14 @@
 
 
   @media screen and (min-width: 768px) {
-   
+
     width: 90%;
     height: 90%;
     top:-30px;
     left:-30px;
   }
   @media screen and (min-width: 1200px) {
-   
+
     width: 440px;
     height: 413px;
     top:-30px;
@@ -107,7 +107,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px){
       left:0;
      }
-  
+
   }
   .studding-process_item-timeline:nth-child(odd){
     @media screen and (min-width: 768px) and (max-width: 1199px){
@@ -136,7 +136,7 @@
   }
   .rating__box {
     position: relative;
-    
+
   }
   .rating__box::before {
     content: "★★★★★";
@@ -149,7 +149,7 @@
     left: 0;
     top: 0;
     overflow: hidden;
-  
+
   }
   .rating__active::before{
     content: "★★★★★";
@@ -188,11 +188,20 @@
     gap: 70px;
     margin-bottom: 52px;
   }
+
+  &-content {
+    &-item {
+      &:not(.active) {
+        display: none;
+      }
+    }
+  }
+
 }
 .studding-payments_currency-tabs-item {
   flex-basis: calc((100% - 16px) / 2);
   height: 64px;
-  
+
   color: black;
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 52px) / 3);

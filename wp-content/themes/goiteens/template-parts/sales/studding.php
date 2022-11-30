@@ -81,102 +81,119 @@
     <section class="studding-payments">
     <div class="container-sales">
         <h2 class="visually-hidden">Payments Details</h2>
+
         <ul class="studding-payments_currency-tabs-list">
-            <li class="studding-payments_currency-tabs-item"><button class="studding-payments_currency-tabs-btn">USD $</button></li>
-            <li class="studding-payments_currency-tabs-item"><button class="studding-payments_currency-tabs-btn studding-payments_currency-tabs-btn--active">ГРН ₴</button></li>
-            <li class="studding-payments_currency-tabs-item"><button class="studding-payments_currency-tabs-btn">EUR €</button></li>
+            <li class="studding-payments_currency-tabs-item"><button data-tab="#studding-payments-tb-1" class="studding-payments_currency-tabs-btn">USD $</button></li>
+            <li class="studding-payments_currency-tabs-item"><button data-tab="#studding-payments-tb-2" class="studding-payments_currency-tabs-btn studding-payments_currency-tabs-btn--active">ГРН ₴</button></li>
+            <li class="studding-payments_currency-tabs-item"><button data-tab="#studding-payments-tb-3" class="studding-payments_currency-tabs-btn">EUR €</button></li>
         </ul>
-        <ul class="studding-payments_per-month-list">
-            <li class="studding-payments_per-month-item">
-                <h3 class="studding-payments_quantity-months">1 місяць </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
-                <ul class="studding-payments_price-list">
-                    <li class="studding-payments_new-price"><span >4141</span>
-                <span >$</span></li>
-                    <li class="studding-payments_previous-price"><span> 4141</span>
-                <span >$</span></li>
-                </ul>
-                
-                
-                <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
-                <ul class="studding-payments_tabs-list">
-                    <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                    <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+
+        <div class="studding-payments_currency-tabs-list-content">
+
+            <div class="studding-payments_currency-tabs-list-content-item active" id="studding-payments-tb-1">
+                <ul class="studding-payments_per-month-list">
+                    <li class="studding-payments_per-month-item">
+                        <h3 class="studding-payments_quantity-months">1 місяць </h3>
+                        <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
+                            <ul class="studding-payments_price-list">
+                                <li class="studding-payments_new-price"><span >4141</span>
+                                    <span >$</span></li>
+                                <li class="studding-payments_previous-price"><span> 4141</span>
+                                    <span >$</span></li>
+                            </ul>
+
+
+                            <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
+                            <ul class="studding-payments_tabs-list">
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="studding-payments_per-month-item">
+                        <h3 class="studding-payments_quantity-months">3 місяці </h3>
+                        <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
+                            <ul class="studding-payments_price-list">
+                                <li class="studding-payments_new-price"><span >4141</span>
+                                    <span >$</span></li>
+                                <li class="studding-payments_previous-price"><span> 4141</span>
+                                    <span >$</span></li>
+                            </ul>
+                            <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
+                            <ul class="studding-payments_tabs-list">
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="studding-payments_per-month-item">
+                        <h3 class="studding-payments_quantity-months">6 місяців </h3>
+                        <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
+                            <ul class="studding-payments_price-list">
+                                <li class="studding-payments_new-price"><span >4141</span>
+                                    <span >$</span></li>
+                                <li class="studding-payments_previous-price"><span> 4141</span>
+                                    <span >$</span></li>
+                            </ul>
+                            <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
+                            <ul class="studding-payments_tabs-list">
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="studding-payments_per-month-item">
+                        <h3 class="studding-payments_quantity-months">9 місяців</h3>
+                        <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
+                            <ul class="studding-payments_price-list">
+                                <li class="studding-payments_new-price"><span >4141</span>
+                                    <span >$</span></li>
+                                <li class="studding-payments_previous-price"><span> 4141</span>
+                                    <span >$</span></li>
+                            </ul>
+                            <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
+                            <ul class="studding-payments_tabs-list">
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="studding-payments_per-month-item">
+                        <h3 class="studding-payments_quantity-months">12 місяців </h3>
+                        <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
+                            <ul class="studding-payments_price-list">
+                                <li class="studding-payments_new-price"><span >4141</span>
+                                    <span >$</span></li>
+                                <li class="studding-payments_previous-price"><span> 4141</span>
+                                    <span >$</span></li>
+                            </ul>
+                            <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
+                            <ul class="studding-payments_tabs-list">
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
                 </ul>
             </div>
 
-            </li>
-            <li class="studding-payments_per-month-item">
-                <h3 class="studding-payments_quantity-months">3 місяці </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
-                <ul class="studding-payments_price-list">
-                    <li class="studding-payments_new-price"><span >4141</span>
-                <span >$</span></li>
-                    <li class="studding-payments_previous-price"><span> 4141</span>
-                <span >$</span></li>
-                </ul>
-                <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
-                <ul class="studding-payments_tabs-list">
-                    <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                    <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
-                </ul>
+            <div class="studding-payments_currency-tabs-list-content-item" id="studding-payments-tb-2">
+                Тут контент второго таба
             </div>
-            
-            </li>
-          
-            <li class="studding-payments_per-month-item">
-                <h3 class="studding-payments_quantity-months">6 місяців </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
-                <ul class="studding-payments_price-list">
-                    <li class="studding-payments_new-price"><span >4141</span>
-                <span >$</span></li>
-                    <li class="studding-payments_previous-price"><span> 4141</span>
-                <span >$</span></li>
-                </ul>
-                <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
-                <ul class="studding-payments_tabs-list">
-                    <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                    <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
-                </ul>
+
+            <div class="studding-payments_currency-tabs-list-content-item" id="studding-payments-tb-3">
+                Тут контент третьего таба
             </div>
-            
-            </li>
-            <li class="studding-payments_per-month-item">
-                <h3 class="studding-payments_quantity-months">9 місяців</h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
-                <ul class="studding-payments_price-list">
-                    <li class="studding-payments_new-price"><span >4141</span>
-                <span >$</span></li>
-                    <li class="studding-payments_previous-price"><span> 4141</span>
-                <span >$</span></li>
-                </ul>
-                <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
-                <ul class="studding-payments_tabs-list">
-                    <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                    <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
-                </ul>
-            </div>
-            
-            </li>
-            <li class="studding-payments_per-month-item">
-                <h3 class="studding-payments_quantity-months">12 місяців </h3>
-                <div class="studding-payments_box"><span class="studding-payments_discount">-10%</span>
-                <ul class="studding-payments_price-list">
-                    <li class="studding-payments_new-price"><span >4141</span>
-                <span >$</span></li>
-                    <li class="studding-payments_previous-price"><span> 4141</span>
-                <span >$</span></li>
-                </ul>
-                <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
-                <ul class="studding-payments_tabs-list">
-                    <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                    <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
-                </ul>
-            </div>
-            
-            </li>
-        </ul>
+
+        </div>
+
     </div>
     </section>
-   
+
 </div>
