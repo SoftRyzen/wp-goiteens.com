@@ -10,7 +10,7 @@ $additionalParameters = array(  // правити для кожного окре
     "productID" => 1819773000180826760,                                        // айді продукту з зохо
     "productName" => "GoITeens_UA_PythonStart_1",                            // назва продукту
     "fopID" => 1819773000102087784,                                            // айді фопа з зохо
-    "returnURL" =>  get_template_directory_uri() . "/assets/crm/pythonstartpay/return_url.php",        // перевірка статусу оплати
+    "returnURL" => "https://goiteens.com/wp-content/themes/goiteens/assets/crm/pythonstartpay/return_url.php",        // перевірка статусу оплати
     "productPrice" => 299,                                                     // ціна продукту
     "productCurrency" => "UAH",                                                // валюта продукту
     "promoKey" => "",                                                          // промокод
@@ -50,7 +50,7 @@ $input = createOutputArray($inputPost, $additionalParameters);
     "productID": 1819773000312352055,
     "productName": "GoITeens_UA_AutoFE_wishbord",
     "fopID": 1819773000064300183,
-    "returnURL":  get_template_directory_uri() . "/assets/crm/autofewishbord/lead.php",
+    "returnURL": "https://goiteens.com/wp-content/themes/goiteens/assets/crm/autofewishbord/lead.php",
     "productPrice": 399,
     "productCurrency": "UAH",
     "promoKey": "",

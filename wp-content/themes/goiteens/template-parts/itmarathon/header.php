@@ -62,17 +62,17 @@
     <div class="header__side" style="display:none">
         <div class="header__img-wrapper">
             <picture>
-                <source srcset="<?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md.webp 1x, <?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md.webp 1x, http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
 
-                <source srcset="<?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md.png 1x, <?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md@2x.png 2x" media="(min-width: 768px)" type="image/jpeg">
-                <source srcset="<?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm.webp 1x, <?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md.png 1x, http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_md@2x.png 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm.webp 1x, http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
 
-                <source srcset="<?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/images/header/boy_sm@2x.png 2x" media="(max-width: 767px)" type="image/jpeg">
-                <img class="header__img" src="<?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm.png" alt="Фото хлопчика з ноутбуком" width="320" height="391" loading="lazy">
+                <source srcset="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/images/header/boy_sm@2x.png 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img class="header__img" src="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/header/boy_sm.png" alt="Фото хлопчика з ноутбуком" width="320" height="391" loading="lazy">
             </picture>
             <div class="play-btn" data-video-open="">
                 <svg class="play-btn__svg" width="70" height="70">
-                    <use href="<?php echo site_url() ?>/wp-content/themes/goiteens/assets/images/itmarathon/sprite.svg#icon-play-btn"></use>
+                    <use href="http://goiteens.com.loc/wp-content/themes/goiteens/assets/images/itmarathon/sprite.svg#icon-play-btn"></use>
                 </svg>
             </div>
         </div>
