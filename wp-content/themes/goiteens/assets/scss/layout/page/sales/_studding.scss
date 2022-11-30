@@ -17,6 +17,35 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 60px;
+    margin-bottom: 0;
+    margin-right: auto;
+    flex-basis: 64%
+  }
+}
+.studding-wrapper::after{
+  content: '';
+  display: block;
+  z-index: 3;
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: top 0 left 0, bottom 50% right -50px;
+  background-size: 221px, 245px;
+
+
+  @media screen and (min-width: 768px) {
+   
+    width: 90%;
+    height: 90%;
+    top:-30px;
+    left:-30px;
+  }
+  @media screen and (min-width: 1200px) {
+   
+    width: 440px;
+    height: 413px;
+    top:-30px;
+    left:-30px;
   }
 }
 .studding-process_timeline {
@@ -25,26 +54,145 @@
     border-radius: 12px;
     @media screen and (min-width: 768px) {
         padding: 40px;
+        height: 220px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: 370px;
+      height:auto;
     }
 }
+.studding-process_list-timeline{
+  border-left: 4px solid $color-sale-yellow;
+  padding-left: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: flex;
+    border-bottom: 4px solid $color-sale-yellow;
+    padding-left: 0;
+    padding-bottom: 24px;
+    border-left: 0;
+}
+}
+.studding-process_item-timeline{
+  height: 40px;
+  position: relative;
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+ width: 194px;
+  }
+  }
+  .studding-process_item-timeline:not(:last-child){
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      margin-bottom: 0;
+  }
+}
+.studding-process_item-timeline:last-child{
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    left:-60px;
+}
+}
+.studding-process_item-timeline:last-child:before{
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  left:60px;
+}
+}
+  .studding-process_item-timeline::before{
+    position:absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left:-28px;
+    top:14px;
+    background-color: $color-sale-purple;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      left:0;
+     }
+  
+  }
+  .studding-process_item-timeline:nth-child(odd){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+     height: 40px;
+     bottom: -95px;
+    }
+  }
+  .studding-process_item-timeline:nth-child(even):before{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      top: 60px;
+    }
+  }
+  .studding-process_item-timeline:nth-child(odd):before{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+     top: -36px;
+    }
+  }
+  .rating {
+    display: flex;
+    align-items: flex-end;
+    line-height: 1.2;
+    font-size: 16px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      margin-top: 30px;
+    }
+  }
+  .rating__box {
+    position: relative;
+    
+  }
+  .rating__box::before {
+    content: "★★★★★";
+    display: block;
+    color: transparent;
+  }
+  .rating__active{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  
+  }
+  .rating__active::before{
+    content: "★★★★★";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color:$color-sale-yellow;
+  }
+  .rating__elements {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    gap: 8px;
+  }
+  .rating__elem {
+    flex: 0 0 calc((100% - 4 * 9px) / 5);
+    height: 100%;
+    opacity: 0;
+  }
 .studding-payments_currency-tabs-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     gap: 52px;
     flex-wrap: nowrap;
   }
   @media screen and (min-width: 1200px) {
     gap: 70px;
+    margin-bottom: 52px;
   }
 }
 .studding-payments_currency-tabs-item {
   flex-basis: calc((100% - 16px) / 2);
   height: 64px;
-  border: 1px solid $color-sale-purple;
-  border-radius: 8px;
+  
   color: black;
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 52px) / 3);
@@ -54,6 +202,8 @@
   }
 }
 .studding-payments_currency-tabs-btn{
+  border: 1px solid $color-sale-purple;
+  border-radius: 8px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,6 +211,7 @@
     align-items: center;
     transition: color 750ms, background-color 750ms;
 }
+.studding-payments_currency-tabs-btn--active,
 .studding-payments_currency-tabs-btn:hover,
 .studding-payments_currency-tabs-btn:focus {
   color: $color-tabs-yellow;
@@ -69,7 +220,6 @@
 .studding-payments_per-month-list {
   width: 100%;
   display: flex;
-  margin-bottom: 40px;
   gap: 24px;
   flex-direction: column;
   @media screen and (min-width: 768px) {
@@ -80,7 +230,6 @@
   }
   @media screen and (min-width: 1200px) {
     gap: 22px;
-    margin-bottom: 52px;
     flex-wrap: nowrap;
   }
 }
@@ -202,13 +351,40 @@
     font-size: 20px;
   }
 }
+.studding-process_description > p:not(:first-child) {
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+  }
+}
 .studding-process_description > b {
   color: black;
   font-size: 12px;
   line-height: 1.45;
   font-weight: 700;
-
+  margin-top: 27px;
+  display: block;
   @media screen and (min-width: 768px) {
     font-size: 17px;
+    margin-top: 40px;
   }
+    @media screen and (min-width: 1200px) {
+      margin-top: 60px;
+}
+}
+.studding-process_subtitle{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.45;
+margin-bottom: 4px;
+color: #000;
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  position: absolute;
+  min-width: 194px;
+}
+
 }
