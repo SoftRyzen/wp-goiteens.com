@@ -68,7 +68,7 @@ get_header();
         </p>
         <a
           class="more-link"
-          href="https://goiteens.com/course/programming4kids/"
+          href="<?php echo site_url() ?>/course/programming4kids/"
           target="_blank"
           rel="noreferrer noopener nofollow"
           ><?php the_field('link_text'); ?></a
@@ -83,7 +83,7 @@ get_header();
         <p class="courses-list__description">
           <?php the_field('minecraft_descript'); ?>
         </p>
-        <a class="more-link" href="https://goiteens.com/course/minecraft/" target="_blank"
+        <a class="more-link" href="<?php echo site_url() ?>/course/minecraft/" target="_blank"
           rel="noreferrer noopener nofollow"><?php the_field('link_text'); ?></a>
         <ul class="courses-mark">
           <li class="courses-mark__about"><?php the_field('mark_main'); ?></li>
@@ -109,7 +109,7 @@ get_header();
         </p>
         <a
           class="more-link"
-          href="https://goiteens.com/course/frontend/"
+          href="<?php echo site_url() ?>/course/frontend/"
           target="_blank"
           rel="noreferrer noopener nofollow"
           ><?php the_field('link_text'); ?></a
@@ -126,7 +126,7 @@ get_header();
         </p>
         <a
           class="more-link"
-          href="https://goiteens.com/course/design/"
+          href="<?php echo site_url() ?>/course/design/"
           target="_blank"
           rel="noreferrer noopener nofollow"
           ><?php the_field('link_text'); ?></a
@@ -161,7 +161,7 @@ get_header();
         </p>
         <a
           class="more-link"
-          href="https://goiteens.com/course/python/"
+          href="<?php echo site_url() ?>/course/python/"
           target="_blank"
           rel="noreferrer noopener nofollow"
           ><?php the_field('link_text'); ?></a
