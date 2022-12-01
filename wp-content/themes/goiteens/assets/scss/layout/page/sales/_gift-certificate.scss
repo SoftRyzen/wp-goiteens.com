@@ -7,7 +7,7 @@
         padding-bottom: 132px;
     }
 }
-.gift-certificate_order-link {
+.container-sales .gift-certificate_order-link {
     width: 266px;
     height:54px;
     margin: 0 auto;
@@ -74,6 +74,26 @@ background-color:transparent
             margin-bottom: 0;
         }
     }
+
+    &:nth-child(1){
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/sales-page/line-catd-1.svg);
+            background-position: bottom 0 right 0;
+            background-repeat: no-repeat;
+        }
+    } 
+    
+    &:nth-child(4){
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/sales-page/line-card-2.svg);
+            background-position: bottom 0 right 0;
+            background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 1200px) {
+            background-position: bottom 0 right -10%;
+        }
+    } 
+    
     & > svg {
         position: absolute;
         top:20px;
@@ -150,3 +170,5 @@ background-color:transparent
 }
 
 }
+
+

@@ -105,8 +105,8 @@
 
                             <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
                             <ul class="studding-payments_tabs-list">
-                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay"></a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay"></a></li>
                             </ul>
                         </div>
 
@@ -122,8 +122,8 @@
                             </ul>
                             <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
                             <ul class="studding-payments_tabs-list">
-                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay"></a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay"></a></li>
                             </ul>
                         </div>
 
@@ -140,8 +140,8 @@
                             </ul>
                             <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
                             <ul class="studding-payments_tabs-list">
-                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay"></a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay"></a></li>
                             </ul>
                         </div>
 
@@ -157,8 +157,8 @@
                             </ul>
                             <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
                             <ul class="studding-payments_tabs-list">
-                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay"></a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay"></a></li>
                             </ul>
                         </div>
 
@@ -174,8 +174,8 @@
                             </ul>
                             <a href="#" class="studding-payments_button-pay">Оплатити карткою</a>
                             <ul class="studding-payments_tabs-list">
-                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay">Apple</a></li>
-                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay">Google</a></li>
+                                <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay"></a></li>
+                                <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay"></a></li>
                             </ul>
                         </div>
 
@@ -183,13 +183,13 @@
                 </ul>
             </div>
 
-            <div class="studding-payments_currency-tabs-list-content-item" id="studding-payments-tb-2">
+            <!-- <div class="studding-payments_currency-tabs-list-content-item" id="studding-payments-tb-2">
                 Тут контент второго таба
             </div>
 
             <div class="studding-payments_currency-tabs-list-content-item" id="studding-payments-tb-3">
                 Тут контент третьего таба
-            </div>
+            </div> -->
 
         </div>
 

@@ -25,7 +25,7 @@
           <h3 class="item-title text-accent"><?php echo $item->award_title; ?></h3>
           <p><?php echo $item->award_description; ?></p>
         </li>
-         <? } ?>
+         <?php } ?>
       </ul>
     </div>
   </div>

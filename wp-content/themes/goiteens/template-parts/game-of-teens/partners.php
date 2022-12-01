@@ -35,7 +35,7 @@
                 <h3 class="partners__name "><?php echo $item->partner_name; ?></h3>
                 <p><?php echo $item->partner_description; ?></p>
             </li>
-            <? } ?>
+            <?php } ?>
         </ul>
         <a class="link main-btn main-btn--yellow partners__btn" href="<?php the_field('partners_link'); ?>"
             target="_blank" rel="noopener noreferrer nofollow"><?php the_field('partner_text'); ?></a>

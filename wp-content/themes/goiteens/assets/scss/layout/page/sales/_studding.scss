@@ -19,7 +19,7 @@
     padding: 60px;
     margin-bottom: 0;
     margin-right: auto;
-    flex-basis: 64%
+    flex-basis: 64%;
   }
   & > p {
     color: black;
@@ -241,6 +241,7 @@
   border: 1px solid $color-sale-purple;
   border-radius: 8px;
     width: 100%;
+    background-color: transparent;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -392,3 +393,22 @@ color: #000;
 }
 
 }
+.studding-payments_tabs-list{
+  display: flex;
+  justify-content: center;
+  gap:28px;
+  }
+  .studding-payments_tab-pay{
+    width: 100%;
+    height: 100%;
+  }
+  .studding-payments_tabs-item{
+    width: 48px;
+    height: 48px;
+    &:first-child>.studding-payments_tab-pay{
+      background-image: url(../images/sales-page/apple-pay.png);
+    }
+    &:last-child>.studding-payments_tab-pay{
+      background-image: url(../images/sales-page/google-pay.png);
+    }
+  }

@@ -30,7 +30,7 @@
       </div>
 		            </div>
 			<? $idCount ++; ?>	
- <? } ?>
+ <?php } ?>
     </div>
 
   </div>

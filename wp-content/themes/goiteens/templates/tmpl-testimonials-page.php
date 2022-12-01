@@ -172,7 +172,7 @@ get_header();
           <p><?php echo $item->parents_name; ?></p>
         </div>
       </div>
-<? } ?>
+<?php } ?>
     </div>
     <div class="parents-reviews__btn-wrap">
       <button class="parents-reviews__prev-btn parent-prev-but-js" type="button"

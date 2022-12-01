@@ -41,7 +41,7 @@
         <p class="text-accent speakers__item-title"><?php echo $item->speaker_name; ?></p>
         <p><?php echo $item->speaker_position; ?> <span class="speakers__item-company"> <?php echo $item->speaker_company; ?></span></p>
       </div>
-     	<? } ?>
+     	<?php } ?>
     </div>
   </div>
 </section>
