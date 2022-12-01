@@ -1,6 +1,20 @@
 .studding-wrapper {
   padding: 52px 0;
   position: relative;
+  background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg);
+  background-position: top -70px left -80px, top 810px right -90px;
+  background-repeat: no-repeat;
+  background-size: 221px, 245px;
+  @media screen and (min-width: 768px) {
+    padding: 88px 0;
+    background-position: top 9px left -62px, top 567px right -97px;
+  background-size: 304px, 334px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-position: top 80px left -8px, top 435px right -25px;
+    background-size: 440px, 440px;
+    padding: 132px 0;
+  }
 }
 .studding-process {
   padding-bottom: 60px;
