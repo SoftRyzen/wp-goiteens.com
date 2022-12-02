@@ -54,6 +54,7 @@ background-color:transparent
     margin: 0 auto 32px auto;
     @media screen and (min-width: 768px) {
         margin: 0 auto 28px auto;
+        width: 600px;
     }
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
@@ -153,7 +154,7 @@ background-color:transparent
     margin-bottom: 52px;
     @media screen and (min-width: 1200px) {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row-reverse;
     }
 }
