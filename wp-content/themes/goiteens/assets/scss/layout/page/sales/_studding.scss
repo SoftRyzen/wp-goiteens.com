@@ -1,23 +1,28 @@
 .studding-wrapper {
   padding: 52px 0;
+  z-index: -1;
   position: relative;
   background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg);
   background-position: top -70px left -80px, top 810px right -90px;
   background-repeat: no-repeat;
   background-size: 221px, 245px;
   @media screen and (min-width: 768px) {
+    background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg), url(../images/sales-page/side-sections-tab-dots.svg), url(../images/sales-page/bottom-section-dots-tab.svg);
     padding: 88px 0;
-    background-position: top 9px left -62px, top 567px right -97px;
-  background-size: 304px, 334px;
+    background-position: top 9px left -62px, top 567px right -97px, top 120px left 54px, bottom 26px left 45px;
+  background-size: 304px, 334px, 190px, 85%;
   }
   @media screen and (min-width: 1200px) {
-    background-position: top 80px left -8px, top 435px right -25px;
-    background-size: 440px, 440px;
+    background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg), url(../images/sales-page/studding-desk-dots.svg);
+    background-position: top 80px left -8px, top 435px right -25px, top 139px left 92px;
+    background-size: 440px, 440px, 90%;
     padding: 132px 0;
   }
 }
 .studding-process {
   padding-bottom: 60px;
+  position: relative;
+  z-index: 30;
 }
 .studding-process_description {
   margin-bottom: 32px;

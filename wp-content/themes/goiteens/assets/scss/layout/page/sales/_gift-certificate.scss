@@ -1,10 +1,20 @@
 .gift-wrapper {
     padding: 52px 0;
     position: relative;
+    background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/top-triangle.svg);
+    background-position: top -100px right -80px , top 990px left -40px;
+    background-repeat: no-repeat;
+    background-size: 221px, 245px;
     @media screen and (min-width: 768px) {
-      padding: 88px 0;
+    background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/triangle-tab-bottom.svg), url(../images/sales-page/cerf-tab-dots.svg), url(../images/sales-page/bottom-section-dots-tab.svg);
+    padding: 88px 0;
+    background-position: top -134px right -134px, top 923px left -95px, top 460px left 158px, bottom 50px left -20px;
+    background-size: 380px, 380px, 541px, 719px;
     }
     @media screen and (min-width: 1200px) {
+        background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/triangle-tab-bottom.svg), url(../images/sales-page/gift-cert-desk-bottom.svg);
+      background-position: top -133px right -88px, top 520px left 0, bottom 0 center;
+      background-size: 440px, 440px, 100%;
       padding: 132px 0;
     }
   }
