@@ -5,8 +5,9 @@ Template Name: Sales Page
 get_header();
 ?>
 
+<?php get_template_part('template-parts/main-header'); ?>
+
 <main class="main">
-    <?php get_template_part( 'template-parts/frontend/header', get_post_type()  ); ?>
 	<?php get_template_part( 'template-parts/sales/sales-hero'  ); ?>
 	<?php get_template_part( 'template-parts/sales/studding'  ); ?>
 	<?php get_template_part( 'template-parts/sales/learn-profitably'  ); ?>
