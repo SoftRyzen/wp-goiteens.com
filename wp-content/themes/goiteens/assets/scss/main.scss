@@ -4,7 +4,7 @@
  * Variables
  */
 @import "base/variables";
-
+@import "base/visibility-hidden";
 /**
  * Mixins
  */
@@ -34,4 +34,4 @@
  * Pages
  */
 @import "layout/page/home/index";
-
+@import "layout/page/sales/index";

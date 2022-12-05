@@ -1,0 +1,440 @@
+.sale_page {
+
+
+  .studding-wrapper {
+    padding: 52px 0;
+    position: relative;
+    background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg);
+    background-position: top -70px left -80px, top 810px right -90px;
+    background-repeat: no-repeat;
+    background-size: 221px, 245px;
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg), url(../images/sales-page/side-sections-tab-dots.svg), url(../images/sales-page/bottom-section-dots-tab.svg);
+      padding: 88px 0;
+      background-position: top 9px left -62px, top 567px right -97px, top 120px left 54px, bottom 26px left 45px;
+      background-size: 304px, 334px, 190px, 85%;
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/bottom-triangle.svg), url(../images/sales-page/studding-desk-dots.svg);
+      background-position: top 80px left -8px, top 435px right -25px, top 139px left 92px;
+      background-size: 440px, 440px, 90%;
+      padding: 132px 0;
+    }
+  }
+  .studding-process {
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .studding-process_description {
+    background-color: $color-white;
+    margin-bottom: 32px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08),
+    10px 10px 40px rgba(92, 46, 145, 0.24);
+    @media screen and (min-width: 768px) {
+      padding: 40px;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 60px;
+      margin-bottom: 0;
+      margin-right: auto;
+      flex-basis: 64%;
+    }
+    & > p {
+      color: black;
+      font-size: 16px;
+      line-height: 1.45;
+
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 20px;
+      }
+      &:not(:first-child) {
+        margin-top: 20px;
+
+        @media screen and (min-width: 768px) {
+          margin-top: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    & > b {
+      color: black;
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 700;
+      margin-top: 27px;
+      display: block;
+      @media screen and (min-width: 768px) {
+        font-size: 17px;
+        margin-top: 40px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-top: 60px;
+      }
+    }
+  }
+  // .studding-wrapper::after{
+  //   content: '';
+  //   display: block;
+  //   z-index: 3;
+  //   position: absolute;
+  //   background-repeat: no-repeat;
+  //   background-position: top 0 left 0, bottom 50% right -50px;
+  //   background-size: 221px, 245px;
+
+
+  //   @media screen and (min-width: 768px) {
+  //     width: 90%;
+  //     height: 90%;
+  //     top:-30px;
+  //     left:-30px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     width: 440px;
+  //     height: 413px;
+  //     top:-30px;
+  //     left:-30px;
+  //   }
+  // }
+  .studding-process_timeline {
+    background-color: $color-white;
+    box-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08), 10px 10px 40px rgba(92, 46, 145, 0.24);
+    padding: 20px;
+    border-radius: 12px;
+    @media screen and (min-width: 768px) {
+      padding: 40px;
+      height: 220px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: 370px;
+      height:auto;
+    }
+  }
+  .studding-process_list-timeline{
+    border-left: 4px solid $color-sale-yellow;
+    padding-left: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+      border-bottom: 4px solid $color-sale-yellow;
+      padding-left: 0;
+      padding-bottom: 24px;
+      border-left: 0;
+    }
+  }
+  .studding-process_item-timeline{
+    height: 40px;
+    position: relative;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      width: 194px;
+    }
+    &:not(:last-child){
+      margin-bottom: 32px;
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-bottom: 0;
+      }
+    }
+    &:last-child{
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        left:-60px;
+      }
+      &:before{
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+          left:60px;
+        }
+      }
+    }
+    &:nth-child(odd){
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        height: 40px;
+        bottom: -95px;
+      }
+      &:before{
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+          top: -36px;
+        }
+      }
+    }
+    &:nth-child(even):before{
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        top: 60px;
+      }
+    }
+    &::before{
+      position:absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      left:-28px;
+      top:14px;
+      background-color: $color-sale-purple;
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        left:0;
+      }
+
+    }
+  }
+
+  .rating {
+    display: flex;
+    align-items: flex-end;
+    line-height: 1.2;
+    font-size: 16px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      margin-top: 30px;
+    }
+  }
+  .rating__box {
+    position: relative;
+    &::before {
+      content: "★★★★★";
+      display: block;
+      color: transparent;
+    }
+  }
+
+  .rating__active{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    &::before{
+      content: "★★★★★";
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      color:$color-sale-yellow;
+    }
+  }
+
+  .rating__elements {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    gap: 8px;
+  }
+  .rating__elem {
+    flex: 0 0 calc((100% - 4 * 9px) / 5);
+    height: 100%;
+    opacity: 0;
+  }
+  .studding-payments_currency-tabs-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      gap: 52px;
+      flex-wrap: nowrap;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+      margin-bottom: 52px;
+    }
+  }
+  .studding-payments_currency-tabs-item {
+    flex-basis: calc((100% - 16px) / 2);
+    height: 64px;
+
+    color: black;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 52px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: 230px;
+    }
+  }
+  .studding-payments_currency-tabs-btn{
+    border: 1px solid $color-sale-purple;
+    border-radius: 8px;
+    width: 100%;
+    background-color: $color-white;
+    height: 100%;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 750ms, background-color 750ms;
+  }
+  .studding-payments_currency-tabs-btn--active,
+  .studding-payments_currency-tabs-btn:hover,
+  .studding-payments_currency-tabs-btn:focus {
+    color: $color-tabs-yellow;
+    background-color: $color-sale-purple;
+  }
+  .studding-payments_per-month-list {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 22px;
+      flex-wrap: nowrap;
+    }
+  }
+  .studding-payments_per-month-item {
+    flex-basis: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 2 * 28px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 4 * 22px) / 5);
+    }
+  }
+  .studding-payments_quantity-months {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-sale-yellow;
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 12px;
+      background: $color-sale-yellow;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+  }
+
+  .studding-payments_box {
+    border: 1px solid $color-tabs-yellow;
+    border-radius: 12px;
+    text-align: center;
+    padding: 24px 56px 34px 52px;
+    @media screen and (min-width: 768px) {
+      padding: 24px 24px 34px 24px;
+    }
+  }
+  .studding-payments_discount {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 33px;
+    display: block;
+    &::before{
+      background: $color-sale-ashen;
+      border-radius: 50%;
+      width: 43px;
+      height: 43px;
+      z-index: -1;
+      content: "";
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+
+  .studding-payments_new-price {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .studding-payments_previous-price {
+    font-size: 24px;
+    text-decoration: line-through;
+  }
+  .studding-payments_price-list {
+    margin-bottom: 46px;
+  }
+  .studding-payments_button-pay {
+    display: flex;
+    background-color: $color-sale-purple;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    font-size: 12px;
+    max-width: 168px;
+    color:white;
+    height: 38px;
+    border: 1px solid $color-sale-purple;
+    position: relative;
+    margin-bottom: 52px;
+    text-transform: uppercase;
+    transition: color 750ms, background-color 750ms, box-shadow 750ms;
+    &:hover,
+    &:focus{
+      color:$color-sale-black;
+      background-color: transparent;
+
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -20px;
+      height: 2px;
+      width: 100%;
+      background-color: $color-sale-purple;
+
+    }
+  }
+
+
+  .studding-payments_tab-pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .studding-process_subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 4px;
+    color: #000;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      position: absolute;
+      min-width: 194px;
+    }
+
+  }
+  .studding-payments_tabs-list{
+    display: flex;
+    justify-content: center;
+    gap:28px;
+  }
+  .studding-payments_tab-pay{
+    width: 100%;
+    height: 100%;
+  }
+  .studding-payments_tabs-item{
+    width: 48px;
+    height: 48px;
+    &:first-child>.studding-payments_tab-pay{
+      background-image: url(../images/sales-page/apple-pay.png);
+    }
+    &:last-child>.studding-payments_tab-pay{
+      background-image: url(../images/sales-page/google-pay.png);
+    }
+  }
+
+}
+

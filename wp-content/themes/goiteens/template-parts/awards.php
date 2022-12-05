@@ -48,7 +48,7 @@
           <p><?php echo $item->award_description; ?></p>
         </div>
 
-		<? } ?>
+		<?php } ?>
       </div>
     </div>
   </div>

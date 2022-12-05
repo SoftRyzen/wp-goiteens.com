@@ -43,7 +43,7 @@
         </a>
       </article>
 
-     <? } ?>
+     <?php } ?>
     </div>
 	   <p class="item-title text-green projects__sub-title"><?php the_field('projects_sub_title'); ?></p>
 	   <button type="button" class="main-btn how__btn" data-modal-open><?php the_field('roblox_booking_btn'); ?></button>

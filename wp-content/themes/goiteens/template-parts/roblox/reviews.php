@@ -45,7 +45,7 @@
         <p class=" reviews__item-description"><?php echo $item->parents_description ; ?></p>
       </div>
   
-		  <? } ?>
+		  <?php } ?>
     </div>
   </div>
 </section>

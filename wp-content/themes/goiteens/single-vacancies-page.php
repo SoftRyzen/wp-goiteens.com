@@ -47,7 +47,7 @@ get_header(); // подключаем header.php ?>
                         </a>
                     </li>
     			    <? $idCount ++; ?>
-    		        <? } ?>
+    		        <?php } ?>
                 </ul>	
               </aside>
 		</div>

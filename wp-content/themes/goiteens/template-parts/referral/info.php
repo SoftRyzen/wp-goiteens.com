@@ -33,7 +33,7 @@
           <p class="info-item-text"><?php echo $item->award_description; ?></p>
  </div>
         </li>
-       <? } ?>
+       <?php } ?>
       </ul>
 
     </div>

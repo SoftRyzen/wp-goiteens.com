@@ -42,7 +42,7 @@
         </div>
 
       </li>
-     <? } ?>
+     <?php } ?>
     </ul>
 	  
     <button type="button" class="reviews__btn main-btn  main-btn--violet " id="showMore"><?php the_field('referral_review_btn') ;?></button>
