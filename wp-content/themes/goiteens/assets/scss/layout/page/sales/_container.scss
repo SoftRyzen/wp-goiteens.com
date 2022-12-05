@@ -1,5 +1,11 @@
 .sale_page {
 
+  header {
+    &.header {
+      z-index: 3;
+    }
+  }
+
   .container-sales{
     width: 100%;
     padding: 0 24px;
