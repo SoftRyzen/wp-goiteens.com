@@ -18,7 +18,7 @@ jQuery( function( $ ) {
 		{
 
 			this.install  = this.install( this )
-			this.tab  = this.tab( this )
+			this.prices  = this.prices( this )
 
 		},
 
@@ -32,9 +32,9 @@ jQuery( function( $ ) {
 		},
 
 		/**
-		 * Tab
+		 * Prices
 		 */
-		tab: function(e)
+		prices: function(e)
 		{
 
 			/**
@@ -46,23 +46,15 @@ jQuery( function( $ ) {
 				e.preventDefault()
 
 				let $this = $(this),
-					$tabs = $('.studding-payments_currency-tabs-list-content'),
-					$tb = $this.data('tab'),
-					btn_active_class = 'studding-payments_currency-tabs-btn--active'
+					tab = $this.data('tab')
 
-				$this
-					.parent()
-					.parent()
-					.find('.' + btn_active_class)
-					.removeClass(btn_active_class)
+				$this.parent().parent().find('.studding-payments_currency-tabs-btn--active').removeClass('studding-payments_currency-tabs-btn--active')
 
-				$this.addClass(btn_active_class)
+				$('.studding-payments_price-list').removeClass('active')
 
-				$tabs
-					.find('.active')
-					.removeClass('active')
+				$('[data-prices="' + tab + '"]').addClass('active')
 
-				$($tb).addClass('active')
+
 
 			} )
 

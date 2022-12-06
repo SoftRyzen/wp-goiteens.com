@@ -363,6 +363,14 @@
   }
   .studding-payments_price-list {
     margin-bottom: 46px;
+
+    &:not(.active) {
+      display: none;
+    }
+
+
+
+
   }
   .studding-payments_button-pay {
     display: flex;
