@@ -30,7 +30,7 @@ background-repeat: no-repeat;
         max-width: 1440px;
         height: 1407px;
 background-image: url(../images/itmarathon/xmas-img/expect-desk.svg), url(../images/itmarathon/xmas-img/garland.svg);
-background-position: top 0 center, bottom 0 left 0;
+background-position: top 0 center, bottom 0 left 0, top 40px center;
 background-size: cover, 307px;
         
       }
@@ -55,14 +55,28 @@ background-size: cover, 307px;
       }
 
     }
+
+    .container{
+      background-image: url(../images/itmarathon/xmas-img/mob-bg-expect-short.png);
+      background-position: top 65px left 0;
+      background-repeat: no-repeat;
+      @media screen and (min-width: 1280px) {
+        width: 900px;
+      // background-image: url(../images/itmarathon/xmas-img/list-bg.png);
+      //     background-position: top 265px center;
+      //     background-size: 818px;
+      //     background-repeat: no-repeat;
+      }
+    }
     .expect_question {
       font-size: 24px;
       font-weight: 700;
       text-align: center;
       margin-bottom: 44px;
       @media screen and (min-width: 768px) {
+       
         margin-bottom: 50px;
-        text-align: start;
+        // text-align: start;
         font-size: 40px;
       }
     }
@@ -75,13 +89,22 @@ background-size: cover, 307px;
       padding-left: 110px;
       // position: relative;
       background-repeat: no-repeat;
-      background-image: url(../images/itmarathon/xmas-img/way-line-mob.svg);
+      // background-image: url(../images/itmarathon/xmas-img/list-bg.png);
 background-position: top 20px left -40px;
 background-size: 44px 62px;
+
+@media screen and (min-width: 768px) {
+  max-width: 568px;
+  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
         @media screen and (min-width: 1280px) {
-          background-image: url(../images/itmarathon/xmas-img/way-line-mob.svg);
-          // background-position: top 65px center;
-          // background-size: cover;
+          padding-left: 0;
+          margin: 0 auto;
+          margin-bottom: 186px;
+          width: 818px;
+          
           //         max-width: 826px;
           //         height: 1035px;
          }
@@ -90,6 +113,10 @@ background-size: 44px 62px;
     .expect_days-item {
       position: relative;
       width: 100%;
+      @media screen and (min-width: 768px) {
+        max-width: 390px;
+        
+       }
       @media screen and (min-width: 1280px) {
         max-width: 590px;
        }
@@ -99,7 +126,10 @@ background-size: 44px 62px;
         text-transform: uppercase;
         line-height: 1.2;
         font-weight: 700;
-      
+        @media screen and (min-width: 768px) {
+          margin-bottom: 15px;
+          
+         }
       @media screen and (min-width: 1280px) {
        font-size: 32px;
        line-height: 1.22;
@@ -108,7 +138,7 @@ background-size: 44px 62px;
       }
   
       }
-& > p{
+      & > p{
   font-size: 16px;
   line-height: 1.19;
   @media screen and (min-width: 1280px) {
@@ -116,180 +146,219 @@ background-size: 44px 62px;
     line-height: 1.21;
    }
 
-}
-    }
-    .expect_days-item :nth-child(1){
-      @media screen and (min-width: 1280px) {
-       text-align: start;
       }
-      &::before{
-        width: 47px;
-        position: absolute;
-        height: 70px;
-        content: "";
-        display: block;
-        z-index: 1;
-        background-image:url(../images/itmarathon/xmas-img/tree-toy.svg);
-        background-position: top 0 left 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-  
-        @media screen and (min-width: 1280px) {
-          background-position: top 0 left 20px;
-          width: 112px;
-          height: 134px;
-        }
-      
-      }
-       & > h3{
-          @media screen and (min-width: 1280px) {
-          background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
-  background-position: center;
-  background-size: cover;
-          width: 205px;
-          height: 90px;
-          }
     }
-  }
-    .expect_days-item :nth-child(2){
-      @media screen and (min-width: 1280px) {
-        text-align: end;
+
+    .expect_days-item:nth-child(odd){
+      @media screen and (min-width: 768px) {
+        text-align: start;
+        align-self:flex-start;
        }
-       &::before{
-        width: 47px;
-        position: absolute;
-        height: 46px;
-        content: "";
-        display: block;
-        z-index: 1;
-        background-image:url(../images/itmarathon/xmas-img/x-mas-hat.svg);
-        background-position: top 0 left 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media screen and (min-width: 1280px) {
-          // background-position: top 0 right 20px;
-          width: 143px;
-          height: 140px;
-        }
-      }
-       & > h3{
-        @media screen and (min-width: 1280px) {
-        background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
+    }
+    .expect_days-item:nth-child(even){
+      @media screen and (min-width: 768px) {
+        text-align: end;
+        align-self:flex-end;
+       }
+    }
+    // @media screen and (min-width: 1280px) {
+    //   text-align: start;
+    //  }
+
+    // .expect_days-item:nth-child(1)::before{
+    //     width: 47px;
+    //     position: absolute;
+    //     height: 70px;
+    //     content: "";
+    //     background-size: 47px 70px;
+    //     background-repeat: no-repeat;
+    //     background-image: url(../images/itmarathon/xmas-img/tree-toy.svg);
+    //     display: block;
+    //     z-index: 1;
+    //     top:20px;
+    //     left: 10px;
+    //     @media screen and (min-width: 1280px) {
+    //       background-size: 112px 134px;
+    //       width: 112px;
+    //       height: 134px;
+    //     }
+      
+    //   }
+  //      & > h3{
+  //         @media screen and (min-width: 1280px) {
+  //         background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
+  // background-position: center;
+  // background-size: cover;
+  //         width: 205px;
+  //         height: 90px;
+  //         }
+  //   }
+  }
+
+  //   .expect_days-item:nth-child(1){
+  //     @media screen and (min-width: 1280px) {
+  //      text-align: start;
+  //     }
+  //     &::before{
+  //       width: 47px;
+  //       position: absolute;
+  //       height: 70px;
+  //       content: url(../images/itmarathon/xmas-img/tree-toy.svg);
+  //       display: block;
+  //       z-index: 1;
+  //       top:20px;
+  //       left: 10px;
+  //       @media screen and (min-width: 1280px) {
+  //         width: 112px;
+  //         height: 134px;
+  //       }
+      
+  //     }
+  //      & > h3{
+  //         @media screen and (min-width: 1280px) {
+  //         background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
+  // background-position: center;
+  // background-size: cover;
+  //         width: 205px;
+  //         height: 90px;
+  //         }
+  //   }
+  // }
+//     .expect_days-item :nth-child(2){
+//       @media screen and (min-width: 1280px) {
+//         text-align: end;
+//        }
+//        &::before{
+//         width: 47px;
+//         position: absolute;
+//         height: 46px;
+//         content: url(../images/itmarathon/xmas-img/x-mas-hat.svg);
+//         display: block;
+//         z-index: 1;
+//         background-image:u;
+//         @media screen and (min-width: 1280px) {
+//           width: 143px;
+//           height: 140px;
+//         }
+//       }
+//        & > h3{
+//         @media screen and (min-width: 1280px) {
+//         background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
+// // background-position: center;
+// // background-size: cover;
+//         width: 169px;
+//         height: 71px;
+//         }
+//       }
+    
+//   }
+//     .expect_days-item :nth-child(3){
+//       @media screen and (min-width: 1280px) {
+//        text-align: start;
+//       }
+//       &::before{
+//         width: 44px;
+//         position: absolute;
+//         height: 49px;
+//         content: url(../images/itmarathon/xmas-img/present.svg);
+//         display: block;
+//         z-index: 1;
+//         top:15px;
+//         left:10px;
+//         @media screen and (min-width: 1280px) {
+         
+//           width: 74px;
+//           height: 152px;
+//         }
+//       }
+//       & > h3{
+//         @media screen and (min-width: 1280px) {
+//         background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
 // background-position: center;
 // background-size: cover;
-        width: 169px;
-        height: 71px;
-        }
-      }
+//         width: 186px;
+//         height: 91px;
+//         }
+//       }
     
-  }
-    .expect_days-item :nth-child(3){
-      @media screen and (min-width: 1280px) {
-       text-align: start;
-      }
-      &::before{
-        width: 44px;
-        position: absolute;
-        height: 49px;
-        content: "";
-        display: block;
-        z-index: 1;
-        background-image:url(../images/itmarathon/xmas-img/present.svg);
-        background-position: top 0 left 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media screen and (min-width: 1280px) {
-          background-position: top 0 left 20px;
-          width: 74px;
-          height: 152px;
-        }
-      }
-      & > h3{
-        @media screen and (min-width: 1280px) {
-        background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
-background-position: center;
-background-size: cover;
-        width: 186px;
-        height: 91px;
-        }
-      }
+//   }
+//     .expect_days-item :nth-child(4){
+//       @media screen and (min-width: 1280px) {
+//        text-align: end;
+//       }
+//       &::before{
+//         width: 80px;
+//         position: absolute;
+//         height: 80px;
+//         content: url(../images/itmarathon/xmas-img/tree-man-2x.png);
+//         display: block;
+//         z-index: 1;
+//         top:10;
+//         left:6px;
+//         transform: scaleX(-1);
+//         @media screen and (min-width: 1280px) {
+//           transform: scaleX(0);
+//           width: 200px;
+//           height: 207px;
+//         }
+//       }
+//       & > h3{
+//         @media screen and (min-width: 1280px) {
+//         background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
+// background-position: center;
+// background-size: cover;
+//         width: 208px;
+//         height: 68px;
+//         }
+//       }
     
-  }
-    .expect_days-item :nth-child(4){
-      @media screen and (min-width: 1280px) {
-       text-align: end;
-      }
-      &::before{
-        width: 80px;
-        position: absolute;
-        height: 80px;
-        content: "";
-        display: block;
-        z-index: 1;
-        background-image:url(../images/itmarathon/xmas-img/tree-man-2x.png);
-        background-position: top 0 left 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transform: scaleX(-1);
-        @media screen and (min-width: 1280px) {
-          transform: scaleX(0);
-          background-position: top 0 left 20px;
-          width: 200px;
-          height: 207px;
-        }
-      }
-      & > h3{
-        @media screen and (min-width: 1280px) {
-        background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
-background-position: center;
-background-size: cover;
-        width: 208px;
-        height: 68px;
-        }
-      }
+//   }
+//     .expect_days-item:nth-child(5){
+//       @media screen and (min-width: 1280px) {
+//        text-align: start;
+//       } 
+//       &::before{
+//         width: 52px;
+//         position: absolute;
+//         height: 67px;
+//         content: url(../images/itmarathon/xmas-img/candy.svg);
+//         display: block;
+//         z-index: 1;
+//         @media screen and (min-width: 1280px) {
+//           background-position: top 0 left 20px;
+//           width: 122px;
+//           height: 125px;
+//         }
+//       }
+//       & > h3{
+//         @media screen and (min-width: 1280px) {
+//         background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
+// background-position: center;
+// background-size: cover;
+//         width: 162px;
+//         height: 52px;
+//         }
+//       }
     
-  }
-    .expect_days-item :nth-child(5){
-      @media screen and (min-width: 1280px) {
-       text-align: start;
-      } 
-      &::before{
-        width: 52px;
-        position: absolute;
-        height: 67px;
-        content: "";
-        display: block;
-        z-index: 1;
-        background-image:url(../images/itmarathon/xmas-img/candy.svg);
-        background-position: top 0 left 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media screen and (min-width: 1280px) {
-          background-position: top 0 left 20px;
-          width: 122px;
-          height: 125px;
-        }
-      }
-      & > h3{
-        @media screen and (min-width: 1280px) {
-        background-image: url(../images/itmarathon/xmas-img/bg-item-1.svg);
-background-position: center;
-background-size: cover;
-        width: 162px;
-        height: 52px;
-        }
-      }
-    
-  }
+//   }
     .expect_suggestion {
       font-size: 24px;
       margin-bottom: 26px;
       font-weight: 700;
       text-align: center;
       display: block;
+      max-width: 290px;
+      margin: 0 auto;
+      @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      }
+
       @media screen and (min-width: 1280px) {
      font-size: 48px;
      margin-bottom: 22px;
+     max-width: 694px;
+    //  margin: 0 auto;
+     
       }
     }
     .expect_registration-btn {
@@ -317,4 +386,4 @@ background-size: cover;
 }
 
   }
-}
+
