@@ -399,12 +399,10 @@ wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-gr
 add_action('wp_enqueue_scripts', 'goiteens_theme_style');
 
 
+
 /**
- * It adds a script tag to the head of the page that contains a javascript object with two properties:
- * theme and CRM. 
- * The theme property is the path to the theme directory. 
- * The CRM property is the path to the lead.php file. 
- * The lead.php file is a php file that will be used to process the form data.
+ * It creates a global variable called themeVar that contains the site URL, the course URL, the theme
+ * URL, and the CRM URL.
  */
 function localize_script()
 { ?>
