@@ -399,6 +399,26 @@ wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-gr
 add_action('wp_enqueue_scripts', 'goiteens_theme_style');
 
 
+/**
+ * It adds a script tag to the head of the page that contains a javascript object with two properties:
+ * theme and CRM. 
+ * The theme property is the path to the theme directory. 
+ * The CRM property is the path to the lead.php file. 
+ * The lead.php file is a php file that will be used to process the form data.
+ */
+function localize_script()
+{ ?>
+	<script type="text/javascript">
+		const themeVar = {
+			siteURL: '<?php echo json_encode(site_url()); ?>',
+			course: '<?php echo json_encode(site_url('/course')); ?>',
+			theme: '<?php echo json_encode(get_template_directory_uri()); ?>',
+			CRM: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm/lead.php'); ?>'
+			CRM_dir: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm'); ?>',
+		};
+	</script><?php
+}
+add_action('wp_head', 'localize_script');
 
 
 add_action('init', 'register_post_type_student_projects');
