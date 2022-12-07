@@ -3,7 +3,19 @@
   header {
 
     &.header {
-
+      .header__main-wrap {
+        background-image: url(../images/itmarathon/xmas-img/header-mob.jpg);
+        @media screen and (min-width: 1280px) {
+          background-image:url(../images/itmarathon/xmas-img/header-desk-2x.jpg);
+         
+        }
+      }
+.hd__btn{
+  background-color: $color-xmas-btn;
+}
+.hd__date{
+color: $color-white;
+}
     }
 
   }

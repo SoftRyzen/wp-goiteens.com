@@ -6,14 +6,42 @@
   }
   &__expect {
     .expect_wrapper{
+      width: 100%;
       background-color: $color-xmas-beige;
-      @media screen and (min-width: 1280px) {
-background-image: url(../images/itmarathon/xmas-img/expect-desk.svg);
-background-position: center;
+      background-image: url(../images/itmarathon/xmas-img/garland-mob.svg);
+background-position: bottom 0 left 0;
+background-size: 75px;
+// transform: rotate(46deg);
 background-size: cover;
+        height:  176px;
+      
+      @media screen and (min-width: 1280px) {
         max-width: 1440px;
         height: 1407px;
+background-image: url(../images/itmarathon/xmas-img/expect-desk.svg), url(../images/itmarathon/xmas-img/garland.svg);
+background-position: top 0 center, bottom 0 left 0;
+background-size: cover, 307px;
+        
       }
+      &::before{
+        width: 47px;
+        position: absolute;
+        height: 70px;
+        content: "";
+        display: block;
+        z-index: 1;
+        background-image:url(../images/itmarathon/xmas-img/hat-man-mob-2x.png);
+        background-position: bottom 0 left 0;
+        background-repeat: no-repeat;
+        background-size: 107px cover;
+  
+        @media screen and (min-width: 1280px) {
+          background-image:url(../images/itmarathon/xmas-img/hat-man-desk-2x.png);
+          background-position: top 0 left 0;
+          background-size: 296px cover;
+        }
+      }
+
     }
     .expect_question {
       font-size: 24px;
