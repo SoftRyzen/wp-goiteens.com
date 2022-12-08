@@ -10,7 +10,7 @@ $additionalParameters = array(  // правити для кожного окре
     "productID" => 1819773000312352055,                                        // айді продукту з зохо
     "productName" => "GoITeens_UA_AutoFE_wishbord",                            // назва продукту
     "fopID" => 1819773000102087784,                                            // айді фопа з зохо
-    "returnURL" => "https://goiteens.com/wp-content/themes/goiteens/assets/crm/autofewishbord/return_url.php",        // перевірка статусу оплати
+    "returnURL" => get_template_directory_uri() . "/assets/crm/autofewishbord/return_url.php",        // перевірка статусу оплати
     "productPrice" => 399,                                                     // ціна продукту
     "productCurrency" => "UAH",                                                // валюта продукту
     "promoKey" => "",                                                          // промокод
@@ -19,9 +19,9 @@ $additionalParameters = array(  // правити для кожного окре
 
 if (empty($_POST))
 {
-	        die(json_encode(array(
-            "status"=>"error"
-        )));
+    die(json_encode(array(
+        "status"=>"error"
+    )));
 }
 /*
  *  відсилає дані в x-www-form-urlencoded, тому витягую з $_POST дані
@@ -55,7 +55,7 @@ $input=createOutputArray($inputPost,$additionalParameters);
     "productID": 1819773000312352055,
     "productName": "GoITeens_UA_AutoFE_wishbord",
     "fopID": 1819773000064300183,
-    "returnURL": "https://goiteens.com/wp-content/themes/goiteens/assets/crm/autofewishbord/lead.php",
+    "returnURL":  get_template_directory_uri() . "/assets/crm/autofewishbord/lead.php",
     "productPrice": 399,
     "productCurrency": "UAH",
     "promoKey": "",
