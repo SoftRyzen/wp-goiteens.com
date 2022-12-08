@@ -2,11 +2,13 @@
 
   header {
     margin: 0 auto;
-   
+    .mobile-menu-btn{
+      display: none;
+    }
     &.header {
       padding-bottom: 0;
             // background: radial-gradient(#D8200E, #FFDE5E);
-        
+       
         
       .header__main-wrap {
         margin-bottom: 0;
