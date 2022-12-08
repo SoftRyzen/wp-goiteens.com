@@ -13,3 +13,4 @@
 /wp-content/themes/goiteens/node_modules
 Jenkinsfile
 build.sh
+.DS_Store
