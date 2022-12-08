@@ -1,13 +1,14 @@
 .itm_newyear {
 
   header {
-
+    margin: 0 auto;
+   
     &.header {
       padding-bottom: 0;
+            // background: radial-gradient(#D8200E, #FFDE5E);
+        
+        
       .header__main-wrap {
-        // background: radial-gradient(#D8200E, #FFDE5E);
-        max-width: 1440px;
-        margin: 0 auto;
         margin-bottom: 0;
         background-image: url(../images/itmarathon/xmas-img/header-mob.jpg);
        
