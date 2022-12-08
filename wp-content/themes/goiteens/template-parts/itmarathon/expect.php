@@ -5,7 +5,8 @@
     <div class="expect_wrapper">
     <div class="container">
 <h2 hidden class="expect_title">holiday marathon schedule</h2>
-<p class="expect_question">Що ми будем робити на марфоні ?</p>
+<p class="expect_question">Що чекає на вас протягом адвент ІТ-марафону?
+</p>
 <ul class="expect_days-list">
     <li class="expect_days-item">
         <h3 >день 1</h3>
@@ -31,7 +32,7 @@
  <div class="expect_cloud-text"><p> і це лише перші 5 днів - <span>далі більше!</span></p></div>
 <strong class="expect_suggestion">Відкрийте нові таланти
 вашої дитини!</strong>
-<button class="expect_registration-btn">зареєструватися</button>
+<button type="button" class="expect_registration-btn">зареєструватися</button>
         <!-- TODO тут HTML разметка -->
 
     </div>
