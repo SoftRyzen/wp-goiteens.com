@@ -415,6 +415,7 @@ function localize_script()
 			CRM_dir: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm'); ?>'
 		};
 	</script><?php
+
 }
 add_action('wp_head', 'localize_script');
 
