@@ -418,8 +418,8 @@ function localize_script()
 			siteURL: '<?php echo json_encode(site_url()); ?>',
 			course: '<?php echo json_encode(site_url('/course')); ?>',
 			theme: '<?php echo json_encode(get_template_directory_uri()); ?>',
-			CRM: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm/lead.php'); ?>'
-			CRM_dir: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm'); ?>',
+			CRM: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm/lead.php'); ?>',
+			CRM_dir: '<?php echo json_encode(get_template_directory_uri() . '/assets/crm'); ?>'
 		};
 	</script><?php
 }
