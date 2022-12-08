@@ -86,15 +86,15 @@ background-position: top 20px left -40px;
 background-size: 44px 62px;
 
 @media screen and (min-width: 768px) {
-  max-width: 568px;
+  width: 568px;
   padding: 0;
   margin: 0 auto;
   margin-bottom: 50px;
 }
   @media screen and (min-width: 1280px) {
-          margin-bottom: 200px;
-          gap:31px;
-          width: 818px;
+          margin-bottom: 150px;
+          gap:29px;
+          width: 720px;
          }
     }
 
@@ -105,6 +105,7 @@ background-size: 44px 62px;
         max-width: 390px;
        }
       @media screen and (min-width: 1280px) {
+        height: 120px;
         max-width: 590px;
        }
       & > h3 {
@@ -119,7 +120,7 @@ background-size: 44px 62px;
       @media screen and (min-width: 1280px) {
        font-size: 32px;
        line-height: 1.22;
-       margin-bottom: 12px;
+       margin-bottom: 13px;
       }
   
       }
@@ -139,22 +140,22 @@ background-size: 44px 62px;
         text-align: start;
         align-self:flex-start;
        }
-       @media screen and (min-width: 1280px) {
-       margin-left: -60px;
-       }
+      //  @media screen and (min-width: 1280px) {
+      //  margin-left: -60px;
+      //  }
     }
     .expect_days-item:nth-child(even){
       @media screen and (min-width: 768px) {
         text-align: end;
         align-self:flex-end;
        }
-       @media screen and (min-width: 1280px) {
-        margin-right: -80px;
-       }
+      //  @media screen and (min-width: 1280px) {
+      //   margin-right: -80px;
+      //  }
     }
     .expect_days-item:last-child{
       @media screen and (min-width: 1280px) {
-margin-top: -60px;
+margin-top: -40px;
       }
     }
 
