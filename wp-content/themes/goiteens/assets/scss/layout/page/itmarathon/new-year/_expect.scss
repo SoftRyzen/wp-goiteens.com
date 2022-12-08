@@ -26,7 +26,7 @@ background-repeat: no-repeat;
         // max-width: 1440px;
         height: 1407px;
 background-image: url(../images/itmarathon/xmas-img/expect-desk.svg), url(../images/itmarathon/xmas-img/garland.svg);
-background-position: top 0 center, bottom 0 left 0, top 40px center;
+background-position: top 0 center, bottom -20px left 0;
 background-size: cover, 307px;
         
       }
@@ -37,13 +37,15 @@ background-size: cover, 307px;
         content: "";
         display: block;
         bottom:0;
-        right: 0;
+        right: -10px;
         z-index: 3;
         background-image:url(../images/itmarathon/xmas-img/hat-man-mob-2x.png);
         background-repeat: no-repeat;
         background-size: contain;
   
         @media screen and (min-width: 1280px) {
+          bottom: -20px;
+          right: 0;
           width: 296px;
           height: 617px;
           background-image:url(../images/itmarathon/xmas-img/hat-man-desk-2x.png);
@@ -86,15 +88,15 @@ background-position: top 20px left -40px;
 background-size: 44px 62px;
 
 @media screen and (min-width: 768px) {
-  max-width: 568px;
+  width: 568px;
   padding: 0;
   margin: 0 auto;
   margin-bottom: 50px;
 }
   @media screen and (min-width: 1280px) {
-          margin-bottom: 200px;
-          gap:31px;
-          width: 818px;
+          margin-bottom: 150px;
+          gap:29px;
+          width: 720px;
          }
     }
 
@@ -105,6 +107,7 @@ background-size: 44px 62px;
         max-width: 390px;
        }
       @media screen and (min-width: 1280px) {
+        height: 120px;
         max-width: 590px;
        }
       & > h3 {
@@ -119,7 +122,7 @@ background-size: 44px 62px;
       @media screen and (min-width: 1280px) {
        font-size: 32px;
        line-height: 1.22;
-       margin-bottom: 12px;
+       margin-bottom: 13px;
       }
   
       }
@@ -139,22 +142,22 @@ background-size: 44px 62px;
         text-align: start;
         align-self:flex-start;
        }
-       @media screen and (min-width: 1280px) {
-       margin-left: -60px;
-       }
+      //  @media screen and (min-width: 1280px) {
+      //  margin-left: -60px;
+      //  }
     }
     .expect_days-item:nth-child(even){
       @media screen and (min-width: 768px) {
         text-align: end;
         align-self:flex-end;
        }
-       @media screen and (min-width: 1280px) {
-        margin-right: -80px;
-       }
+      //  @media screen and (min-width: 1280px) {
+      //   margin-right: -80px;
+      //  }
     }
     .expect_days-item:last-child{
       @media screen and (min-width: 1280px) {
-margin-top: -60px;
+margin-top: -40px;
       }
     }
 
