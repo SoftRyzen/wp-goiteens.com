@@ -32,8 +32,8 @@
  <div class="expect_cloud-text"><p> і це лише перші 5 днів - <span>далі більше!</span></p></div>
 <strong class="expect_suggestion">Відкрийте нові таланти
 вашої дитини!</strong>
-<button type="button" class="expect_registration-btn">зареєструватися</button>
-        <!-- TODO тут HTML разметка -->
+<button type="button" class="expect_registration-btn" data-modal-open>зареєструватися</button>
+
 
     </div>
     <!-- end container -->
