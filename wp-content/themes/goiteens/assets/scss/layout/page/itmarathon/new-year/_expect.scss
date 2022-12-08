@@ -101,7 +101,7 @@ background-size: 44px 62px;
 }
         @media screen and (min-width: 1280px) {
          
-          margin-bottom: 80px;
+          margin-bottom: 200px;
           gap:31px;
           width: 818px;
           
@@ -367,8 +367,6 @@ margin-top: -60px;
      font-size: 48px;
      margin-bottom: 22px;
      max-width: 694px;
-    //  margin: 0 auto;
-     
       }
     }
     .expect_registration-btn {
@@ -391,17 +389,32 @@ margin-top: -60px;
 .expect_cloud-text{
   display: none;
   @media screen and (min-width: 1280px) {
-    font-size: 20px;
+    position: absolute;
+    bottom: 25%;
+    left:60%;
+    display: block;
+    width: 317px;
+   height: 332px;
+    background-image: url(../images/itmarathon/xmas-img/cloud-think.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  & > p{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 228px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.4;
-    display: block;
-    max-width: 238px;
-    background-image: url(../images/itmarathon/xmas-img/cloud-think.svg);
-    background-size: 123px 132px;
+    & > span{
+      text-transform: uppercase;
+        }
   }
-  & > span{
-text-transform: uppercase;
-  }
+ 
 }
 
   }

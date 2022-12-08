@@ -28,7 +28,7 @@
         <p>Створюємо новорічний наряд в роблокс</p>
     </li>
 </ul>
-<p class="expect_cloud-text">і це лише перші 5 днів - <span>далі більше!</span></p>
+ <div class="expect_cloud-text"><p> і це лише перші 5 днів - <span>далі більше!</span></p></div>
 <strong class="expect_suggestion">Відкрийте нові таланти
 вашої дитини!</strong>
 <button class="expect_registration-btn">зареєструватися</button>
