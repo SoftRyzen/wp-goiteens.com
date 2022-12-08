@@ -1,0 +1,45 @@
+.itm_newyear {
+
+  header {
+
+    &.header {
+      padding-bottom: 0;
+      .header__main-wrap {
+        // background: radial-gradient(#D8200E, #FFDE5E);
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-bottom: 0;
+        background-image: url(../images/itmarathon/xmas-img/header-mob.jpg);
+       
+        @media screen and (min-width: 385px) {
+          background-image:url(../images/itmarathon/xmas-img/header-tab.jpg);
+        }
+        @media screen and (min-width: 768px) {
+          background-image:url(../images/itmarathon/xmas-img/header-tab-2x.jpg);
+        }
+        @media screen and (min-width: 1280px) {
+          background-image:url(../images/itmarathon/xmas-img/header-desk-2x.jpg);
+        }
+      }
+.hd__btn{
+  background-color: $color-xmas-btn;
+}
+.hd__date,.hd__title,.hd__subtitle,.hd__list{
+color: $color-white;
+}
+.hd__title span {
+  color: $color-xmas-red;
+  background: url(../images/itmarathon/xmas-img/underline.png) center no-repeat;
+  @media screen and (min-width: 768px) {
+    color: $color-white;
+    background: none;
+}
+    }
+    .navigation .menu .menu-item a {
+      color: $color-white;
+  }
+
+  }
+
+}
+}
