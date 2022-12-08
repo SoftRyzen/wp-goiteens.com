@@ -61,10 +61,10 @@ background-size: cover, 307px;
       background-position: top 65px left 0;
       background-repeat: no-repeat;
       @media screen and (min-width: 1280px) {
-        width: 900px;
-      // background-image: url(../images/itmarathon/xmas-img/list-bg.png);
-      //     background-position: top 265px center;
-      //     background-size: 818px;
+       
+      background-image: url(../images/itmarathon/xmas-img/expect-clear-bg.png);
+          background-position: top -60px center;
+          background-size: 100%;
       //     background-repeat: no-repeat;
       }
     }
@@ -97,16 +97,15 @@ background-size: 44px 62px;
   max-width: 568px;
   padding: 0;
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
         @media screen and (min-width: 1280px) {
-          padding-left: 0;
-          margin: 0 auto;
-          margin-bottom: 186px;
+         
+          margin-bottom: 80px;
+          gap:31px;
           width: 818px;
           
-          //         max-width: 826px;
-          //         height: 1035px;
+        
          }
     }
 
@@ -133,8 +132,7 @@ background-size: 44px 62px;
       @media screen and (min-width: 1280px) {
        font-size: 32px;
        line-height: 1.22;
-       margin: 0;
-       padding-bottom: 25px;
+       margin-bottom: 12px;
       }
   
       }
@@ -154,13 +152,25 @@ background-size: 44px 62px;
         text-align: start;
         align-self:flex-start;
        }
+       @media screen and (min-width: 1280px) {
+       margin-left: -60px;
+       }
     }
     .expect_days-item:nth-child(even){
       @media screen and (min-width: 768px) {
         text-align: end;
         align-self:flex-end;
        }
+       @media screen and (min-width: 1280px) {
+        margin-right: -80px;
+       }
     }
+    .expect_days-item:last-child{
+      @media screen and (min-width: 1280px) {
+margin-top: -60px;
+      }
+    }
+
     // @media screen and (min-width: 1280px) {
     //   text-align: start;
     //  }
@@ -381,7 +391,16 @@ background-size: 44px 62px;
 .expect_cloud-text{
   display: none;
   @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
     display: block;
+    max-width: 238px;
+    background-image: url(../images/itmarathon/xmas-img/cloud-think.svg);
+    background-size: 123px 132px;
+  }
+  & > span{
+text-transform: uppercase;
   }
 }
 
