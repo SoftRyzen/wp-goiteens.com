@@ -1,9 +1,7 @@
 &__main-awards {
 	@media (max-width: 767px) {
-		.main-awards {
-			background-color: var(--yellow-bg);
-			padding-top: 60px;
-		}
+		background-color: var(--yellow-bg);
+		padding-top: 60px;
 	}
 	&-title {
 		margin-bottom: 32px;
