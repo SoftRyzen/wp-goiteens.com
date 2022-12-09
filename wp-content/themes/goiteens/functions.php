@@ -112,6 +112,11 @@ add_action('after_setup_theme', 'goiteens_setup');
 require get_template_directory() . '/inc/_blog.php';
 
 /**
+ * Yoast
+ */
+require get_template_directory() . '/inc/_yoast.php';
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
