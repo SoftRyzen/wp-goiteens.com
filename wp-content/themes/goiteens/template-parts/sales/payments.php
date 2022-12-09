@@ -133,7 +133,7 @@ $exchange = get_option('exchange_privatbank');
                                         <?php } ?>
 
                                     <?php } ?>
-
+                                   <div class="studding-payments_tabs-box">
                                     <a href="#pay-card" class="studding-payments_button-pay">
                                         <?= $price['button_text'] ?>
                                     </a>
@@ -141,6 +141,7 @@ $exchange = get_option('exchange_privatbank');
                                         <li class="studding-payments_tabs-item"><a href="#" class="studding-payments_tab-pay"></a></li>
                                         <li class="studding-payments_tabs-item"> <a href="#" class="studding-payments_tab-pay"></a></li>
                                     </ul>
+                                    </div>
                                 </div>
 
                             </li>
