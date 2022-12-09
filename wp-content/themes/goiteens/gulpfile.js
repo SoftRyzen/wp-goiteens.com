@@ -10,7 +10,7 @@ const   gulp            = require('gulp'),
     browserSync     = require('browser-sync').create();
 
 /**
- * Browser Syncтз
+ * Browser Sync
  */
 gulp.task('serve', function() {
     browserSync.init({

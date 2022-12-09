@@ -1,4 +1,7 @@
 .header {
-
-
+	&__wrapper {
+		@media screen and (max-width: 1279px) {
+			justify-content: flex-end;
+		}
+	}
 }

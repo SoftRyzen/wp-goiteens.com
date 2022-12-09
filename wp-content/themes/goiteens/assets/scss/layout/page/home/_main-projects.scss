@@ -1,0 +1,27 @@
+&__main-projects {
+	background: linear-gradient(
+		to bottom,
+		var(--white-bg) 0,
+		var(--white-bg) 32%,
+		var(--yellow-bg) 32%,
+		var(--yellow-bg)
+	);
+	padding-bottom: 30px;
+	@media (min-width: 768px) {
+		background: url("../images/components/projects/bg-line_md.svg") 50% / contain no-repeat,
+			linear-gradient(to bottom, var(--white-bg) 0, var(--white-bg) 25%, var(--yellow-bg) 25%, var(--yellow-bg));
+		padding-bottom: 34px;
+	}
+
+	@media (min-width: 1280px) {
+		background: url("../images/components/projects/bg-line_lg.svg") bottom 40% center/contain no-repeat,
+			linear-gradient(to bottom, var(--white-bg) 0, var(--white-bg) 30%, var(--yellow-bg) 30%, var(--yellow-bg));
+		padding-bottom: 45px;
+	}
+	.slick-dotted.slick-slider {
+		margin-bottom: 60px;
+		@media (min-width: 1280px) {
+			margin-bottom: 139px;
+		}
+	}
+}

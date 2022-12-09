@@ -1,0 +1,18 @@
+&__main-awards {
+	@media (max-width: 767px) {
+		.main-awards {
+			background-color: var(--yellow-bg);
+			padding-top: 60px;
+		}
+	}
+	&-title {
+		margin-bottom: 32px;
+		max-width: 900px;
+		@media (min-width: 1280px) {
+			margin-bottom: 52px;
+		}
+		span {
+			color: var(--secondary-accent-cl);
+		}
+	}
+}

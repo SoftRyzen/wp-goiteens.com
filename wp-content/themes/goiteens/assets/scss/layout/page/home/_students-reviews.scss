@@ -1,0 +1,8 @@
+&__students-reviews {
+	&-title {
+		margin-bottom: 32px;
+		@media (min-width: 1280px) {
+			margin-bottom: 52px;
+		}
+	}
+}

@@ -1,1 +1,11 @@
-@import "intro";
+.home {
+	// Sections import
+	@import "achievments";
+	@import "advantages";
+	@import "appeal";
+	@import "dignity";
+	@import "hero";
+	@import "main-awards";
+	@import "main-projects";
+	@import "students-reviews";
+}

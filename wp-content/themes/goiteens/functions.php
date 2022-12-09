@@ -246,104 +246,92 @@ function goiteens_theme_style()
 	//     wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/main.css' );
 	//   }
 
-
-
 	wp_enqueue_style('input-mask-style', get_template_directory_uri() . '/assets/css/intTelInput.css');
-		  if(is_page_template('templates/tmpl-homepage.php') || is_page_template('templates/tmpl-course-page.php') || is_page_template('templates/tmpl-about-page.php') || is_page_template('templates/tmpl-testimonials-page.php') || is_page_template('templates/tmpl-contacts-page.php') ) {
-	   wp_enqueue_style('banner-style', get_template_directory_uri() . '/assets/css/banner-zsu.css') ;
-	  }
+	if (is_page_template('templates/tmpl-homepage.php') || is_page_template('templates/tmpl-course-page.php') || is_page_template('templates/tmpl-about-page.php') || is_page_template('templates/tmpl-testimonials-page.php') || is_page_template('templates/tmpl-contacts-page.php')) {
+		wp_enqueue_style('banner-style', get_template_directory_uri() . '/assets/css/banner-zsu.css');
+	}
 
 	if (get_locale() == 'pl_PL') {
-       wp_enqueue_style('style-font', get_template_directory_uri() . '/style-fonts-pl.css');
+		wp_enqueue_style('style-font', get_template_directory_uri() . '/style-fonts-pl.css');
 	} else {
 		wp_enqueue_style('style-font', get_template_directory_uri() . '/style-fonts.css');
 	}
 
 	if (is_page_template('templates/tmpl-course-page.php')) {
 		if (get_locale() == 'pl_PL') {
-           wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/program-page-pl.css');
-	    } else {
-		   wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/program-page.css');
-	    }
-
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/program-page-pl.css');
+		} else {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/program-page.css');
+		}
 	} else if (is_page_template('templates/tmpl-about-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-           wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/about-page-pl.css');
-	    } else {
-		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/about-page.css');
-	    }
-
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/about-page-pl.css');
+		} else {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/about-page.css');
+		}
 	} else if (is_page_template('templates/tmpl-testimonials-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-          wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/testimonials-page-pl.css');
-	    } else {
-		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/testimonials-page.css');
-	    }
-
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/testimonials-page-pl.css');
+		} else {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/testimonials-page.css');
+		}
 	} else if (is_page_template('templates/tmpl-contacts-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-          wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/contact-page-pl.css');
-	    } else {
-		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/contact-page.css');
-	    }
-
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/contact-page-pl.css');
+		} else {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/contact-page.css');
+		}
 	} else if (is_page_template('templates/tmpl-contract-page.php')) {
-		  if (get_locale() == 'pl_PL') {
-          wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
-	    } else {
-		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
-	    }
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
+		} else {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
+		}
 	} else if (is_page_template('templates/tmpl-minecraft-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/minecraft-pl.css');
-	    } else {
-		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/minecraft.css');
-	    }
-
-	} else  if (is_page_template('templates/tmpl-frontend-junior-page.php')) {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/minecraft-pl.css');
+		} else {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/minecraft.css');
+		}
+	} else if (is_page_template('templates/tmpl-frontend-junior-page.php')) {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/frontend-junior.css');
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 	} else if (is_page_template('templates/tmpl-frontend-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/frontend-pl.css');
-	    } else {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/frontend-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/frontend.css');
-	    }
+		}
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 	} else if (is_page_template('templates/tmpl-python-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/python-pl.css');
-	    } else {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/python-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/python.css');
-	    }
-
+		}
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
-	} else	if (is_page_template('templates/tmpl-programming4kids-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/programming4kids-pl.css');
-	    } else {
+	} else if (is_page_template('templates/tmpl-programming4kids-page.php')) {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/programming4kids-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/programming4kids.css');
-	    }
-
-	} else	if (is_page_template('templates/tmpl-design-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/design-pl.css');
-	    } else {
+		}
+	} else if (is_page_template('templates/tmpl-design-page.php')) {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/design-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/design.css');
-	    }
-
-	} else	if (is_page_template('templates/tmpl-roblox-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/roblox-pl.css');
-	    } else {
+		}
+	} else if (is_page_template('templates/tmpl-roblox-page.php')) {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/roblox-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/roblox.css');
-	    }
-
-	} else	if (is_page_template('templates/tmpl-vacancies-page.php')) {
+		}
+	} else if (is_page_template('templates/tmpl-vacancies-page.php')) {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
 		wp_enqueue_style('style-vac', get_template_directory_uri() . '/assets/css/vacancies.css');
-	} else	if (is_page_template('templates/tmpl-python-start-page.php')) {
-
+	} else if (is_page_template('templates/tmpl-python-start-page.php')) {
 		if (get_the_ID() == 6489) {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/fe-start.css');
 		} elseif (get_the_ID() == 6850) {
@@ -352,21 +340,19 @@ function goiteens_theme_style()
 
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/python-start.css');
 		}
-
-
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
-	} else	if (is_page_template('templates/tmpl-itmarathon-page.php')) {
+	} else if (is_page_template('templates/tmpl-itmarathon-page.php')) {
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/itmarathon.css');
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 	} else if (is_page_template('templates/tmpl-courses-all-page.php')) {
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/courses-all.css');
 	} else if (is_page_template('templates/tmpl-privacy-policy-page.php')) {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
-	    } else {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
-	    }
+		}
 		wp_enqueue_style('policy-style', get_template_directory_uri() . '/assets/css/privacy-policy.css');
 	} else if (is_page_template('templates/tmpl-python-start-thx-page.php')) {
 		if (get_the_ID() == 6547) {
@@ -377,25 +363,23 @@ function goiteens_theme_style()
 			wp_enqueue_style('python-start-thx-style', get_template_directory_uri() . '/assets/css/python-start-thx.css');
 		}
 	} else if (is_page_template('templates/tmpl-referral-page.php')) {
-
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/referral.css');
 	} else if (is_page_template('templates/tmpl-game-of-teens-page.php')) {
-
 		wp_enqueue_style('main-footer-style', get_template_directory_uri() . '/assets/css/main-footer.css');
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/game-of-teens.css');
-	} else if(is_page_template('templates/tmpl-pl-vacancies-pm-page.php')){
-wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/pl-vacancies-pm.css');
-	} else if(is_page_template('templates/tmpl-uk-vacancies-head-of-growth.php')){
-wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-growth.css');
+	} else if (is_page_template('templates/tmpl-pl-vacancies-pm-page.php')) {
+		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/pl-vacancies-pm.css');
+	} else if (is_page_template('templates/tmpl-uk-vacancies-head-of-growth.php')) {
+		wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-growth.css');
 	} else {
-	    if (get_locale() == 'pl_PL') {
-        	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
-	    } else {
+		if (get_locale() == 'pl_PL') {
+			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main-pl.css');
+		} else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
-	    }
+		}
 	}
-    wp_enqueue_style('bundle', get_template_directory_uri() . '/assets/css/bundle.css');
+	wp_enqueue_style('bundle', get_template_directory_uri() . '/assets/css/bundle.css');
 }
 add_action('wp_enqueue_scripts', 'goiteens_theme_style');
 

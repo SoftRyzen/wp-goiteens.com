@@ -1,0 +1,70 @@
+&__achievments {
+	color: var(--white-text-cl);
+	@media (max-width: 767.98px) {
+		background-color: var(--secondary-accent-cl);
+	}
+	&-cont {
+		padding: 38px 0;
+		@media (max-width: 767.98px) {
+			background-image: url("../images/components/triangle-white-1_sm.svg"),
+				url("../images/components/triangle-white-2_sm.svg");
+			background-repeat: no-repeat, no-repeat;
+			background-position: top 14% right, top 50% right;
+		}
+		@media (min-width: 768px) {
+			padding: 0;
+		}
+	}
+	&-wrapper {
+		@media (min-width: 1280px) {
+			display: flex;
+			margin-left: -30px;
+			align-items: flex-start;
+		}
+	}
+	&-img {
+		display: none;
+		margin-top: 52px;
+		border-radius: 12px;
+		@media (min-width: 1280px) {
+			display: block;
+			margin-left: 30px;
+		}
+	}
+	&-side {
+		@media (min-width: 768px) {
+			padding: 68px 75px;
+			border-radius: 12px;
+			background-image: url("../images/components/triangle-white_lg.svg"),
+				linear-gradient(var(--secondary-accent-cl), var(--secondary-accent-cl));
+			background-repeat: no-repeat, no-repeat;
+			background-position: bottom right, bottom right;
+		}
+		@media (min-width: 1280px) {
+			padding: 52px 100px 52px 70px;
+			margin-left: 30px;
+			max-width: 670px;
+		}
+	}
+	&-title {
+		margin-bottom: 24px;
+		text-transform: uppercase;
+		text-align: start;
+		color: var(--primary-accent-cl);
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 1.3;
+		letter-spacing: 0.01em;
+	}
+	&-content {
+		font-size: 17px;
+		line-height: 1.3;
+	}
+	&-text {
+		text-align: right;
+		color: var(--primary-accent-cl);
+		span {
+			display: block;
+		}
+	}
+}

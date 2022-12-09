@@ -1,0 +1,50 @@
+&__dignity {
+	&-title {
+		margin-bottom: 32px;
+		span {
+			color: var(--secondary-accent-cl);
+		}
+	}
+	&-list {
+		flex-direction: column;
+		position: relative;
+		text-align: center;
+		@media (min-width: 768px) {
+			--grid-item: 2;
+			flex-direction: row;
+		}
+		@media (min-width: 1280px) {
+			--grid-item: 4;
+			flex-direction: row;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			height: 352px;
+			left: -70px;
+			top: 140px;
+			width: 375px;
+			background-image: url('../images/components/triangle-gray.svg');
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+	}
+	&-item {
+		background-color: var(--white-bg);
+		box-shadow: var(--block-shadow);
+		padding: 24px;
+	}
+	&-img {
+		margin-bottom: 24px;
+		width: 100%;
+	}
+	&-item,
+	&-img {
+		border-radius: var(--border-radius);
+	}
+	&-text {
+		font-size: 17px;
+		line-height: 1.3;
+		margin-bottom: 24px;
+	}
+}
