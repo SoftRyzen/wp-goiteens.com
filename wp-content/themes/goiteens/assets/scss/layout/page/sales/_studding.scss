@@ -53,33 +53,36 @@
       @media screen and (min-width: 1200px) {
         font-size: 20px;
       }
-      &:not(:first-child) {
-        margin-top: 20px;
+      &:first-child {
+        margin-bottom: 20px;
 
         @media screen and (min-width: 768px) {
-          margin-top: 30px;
+          margin-bottom: 30px;
         }
         @media screen and (min-width: 1200px) {
-          margin-top: 24px;
+          margin-bottom: 24px;
         }
       }
-    }
-
-    & > b {
-      color: black;
-      font-size: 12px;
-      line-height: 1.45;
-      font-weight: 700;
-      margin-top: 27px;
-      display: block;
-      @media screen and (min-width: 768px) {
-        font-size: 17px;
-        margin-top: 40px;
+      &:nth-child(2){
+        margin-bottom: 27px;
+        @media screen and (min-width: 768px) {
+          margin-bottom: 40px;
+        }
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 60px;
+        }
       }
-      @media screen and (min-width: 1200px) {
-        margin-top: 60px;
+      & > b{
+        color: black;
+        font-size: 12px;
+        line-height: 1.45;
+        font-weight: 700;
+                @media screen and (min-width: 768px) {
+            font-size: 17px;
+          }
       }
     }
+ 
   }
   // .studding-wrapper::after{
   //   content: '';
@@ -328,6 +331,10 @@
   .studding-payments_box {
     border: 1px solid $color-tabs-yellow;
     border-radius: 12px;
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
+    flex-direction: column;
     text-align: center;
     padding: 24px 56px 34px 52px;
     @media screen and (min-width: 768px) {
@@ -424,6 +431,10 @@
     }
 
   }
+
+  // .studding-payments_tabs-box{
+  //   margin-top: auto;
+  // }
   .studding-payments_tabs-list{
     display: flex;
     justify-content: center;
