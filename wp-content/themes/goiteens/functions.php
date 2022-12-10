@@ -107,14 +107,15 @@ endif;
 add_action('after_setup_theme', 'goiteens_setup');
 
 /**
+ * Sales Page
+ */
+require get_template_directory() . '/inc/_sales-page.php';
+
+/**
  * Blog
  */
 require get_template_directory() . '/inc/_blog.php';
 
-/**
- * Sales Page
- */
-require get_template_directory() . '/inc/_sales-page.php';
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
