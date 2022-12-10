@@ -36,7 +36,7 @@ function ensureUtmData(data) {
   return data;
 }
 function send(data) {
-  return fetch('https://goiteens.com/wp-content/themes/goiteens/assets/crm/lead.php', {
+  return fetch(themeVar.CRM, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

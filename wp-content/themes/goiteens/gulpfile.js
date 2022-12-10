@@ -14,7 +14,7 @@ const   gulp            = require('gulp'),
  */
 gulp.task('serve', function() {
     browserSync.init({
-        proxy: "http://goiteens.com.loc",
+        proxy: "http://localhost:8888/goiteens-com",
         notify: false
     });
     gulp.watch(

@@ -10,7 +10,7 @@ node("all-biulds"){
             string(credentialsId: 'tech_alert_chat_id', variable: 'telegramAlertChannelChatId'),
 
             //add ftp credential
-            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_master', variable: 'ftpUserPassAndHost')
+            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_develop', variable: 'ftpUserPassAndHost')
         ]) {
                 env.telegramNotifyChannelBotApiToken = telegramNotifyChannelBotApiToken;
                 env.telegramNotifyChannelChatId = telegramNotifyChannelChatId;
@@ -20,7 +20,7 @@ node("all-biulds"){
                 env.ftpUserPassAndHost = ftpUserPassAndHost;
 
                 env.gitRepository = 'git@github.com:SoftRyzen/wp-goiteens.com.git';
-                env.gitBranch = 'master';
+                env.gitBranch = 'develop';
         }
     }
 
@@ -58,7 +58,10 @@ node("all-biulds"){
 
         if (success) {
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                //sh "ncftpput ${env.ftpUserAndPass} ./*"
+
+                sh "ncftpput -z ${env.ftpUserPassAndHost} ./ ./*"
+
+                //sh "ncftpput ${env.ftpUserAndPass} ./"
                 //sh "rm -r *"
             }
         }
