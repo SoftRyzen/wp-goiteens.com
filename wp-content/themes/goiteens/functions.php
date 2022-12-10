@@ -111,10 +111,7 @@ add_action('after_setup_theme', 'goiteens_setup');
  */
 require get_template_directory() . '/inc/_blog.php';
 
-/**
- * Sales Page
- */
-require get_template_directory() . '/inc/_sales-page.php';
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -128,7 +125,6 @@ function goiteens_content_width()
 	$GLOBALS['content_width'] = apply_filters('goiteens_content_width', 640);
 }
 add_action('after_setup_theme', 'goiteens_content_width', 0);
-
 
 /**
  * Register widget area.
