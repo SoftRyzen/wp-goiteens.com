@@ -38,7 +38,7 @@
         </li>
        
       </ul>
-			<?php } ?>
+			<? } ?>
 		 <button type="button" class="main-btn awards__btn" data-modal-open><?php the_field('roblox_trial_btn'); ?></button>
     </div>
   </div>

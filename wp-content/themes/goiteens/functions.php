@@ -112,9 +112,9 @@ add_action('after_setup_theme', 'goiteens_setup');
 require get_template_directory() . '/inc/_blog.php';
 
 /**
- * Sales Page
+ * Yoast
  */
-require get_template_directory() . '/inc/_sales-page.php';
+require get_template_directory() . '/inc/_yoast.php';
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -172,7 +172,7 @@ function goiteens_scripts()
 
 	if (is_page_template('templates/tmpl-minecraft-page.php')) {
 		if (get_locale() == 'pl_PL') {
-			if (get_the_ID() == 7584) {
+			if (get_the_ID() == 7584 || get_the_ID() == 4008) {
 				wp_enqueue_script('goiteens-styles', get_template_directory_uri() . '/assets/js/form.js', array(), _S_VERSION, true);
 			}
 			else {
@@ -399,9 +399,8 @@ wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-gr
 	    } else {
 			wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css');
 	    }
-
 	}
-	wp_enqueue_style('bundle', get_template_directory_uri() . '/assets/css/bundle.css');
+    wp_enqueue_style('bundle', get_template_directory_uri() . '/assets/css/bundle.css');
 }
 add_action('wp_enqueue_scripts', 'goiteens_theme_style');
 

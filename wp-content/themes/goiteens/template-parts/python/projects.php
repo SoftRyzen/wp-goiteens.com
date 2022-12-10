@@ -36,7 +36,7 @@
           <h3 class="text-bold projects__item-title"><?php echo $item->item_title; ?></h3>
           <p class="projects__item-text"><?php echo $item->item_description; ?></p>
         </div>
-         <?php } ?>
+         <? } ?>
       </div>
     </div>
   </div>

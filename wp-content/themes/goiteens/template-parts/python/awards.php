@@ -40,7 +40,7 @@
           <h3 class="awards__item-title"><?php echo $item->award_title; ?></h3>
           <p><?php echo $item->award_description; ?></p>
         </div>
-         <?php } ?>
+         <? } ?>
       </div>
     </div>
   </div>

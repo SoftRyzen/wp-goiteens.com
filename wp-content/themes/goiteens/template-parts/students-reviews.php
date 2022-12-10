@@ -32,7 +32,7 @@
       </div>
     </div>
 	  
-	  <?php } ?>
+	  <? } ?>
 
   </div>
   <div class="students-reviews__btn-wrapper">
