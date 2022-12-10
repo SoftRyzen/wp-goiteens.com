@@ -1,0 +1,193 @@
+.sale_page {
+
+    .gift-wrapper {
+        padding: 52px 0;
+        position: relative;
+        background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/top-triangle.svg);
+        background-position: top -100px right -80px , top 990px left -40px;
+        background-repeat: no-repeat;
+        background-size: 221px, 245px;
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/triangle-tab-bottom.svg), url(../images/sales-page/cerf-tab-dots.svg), url(../images/sales-page/bottom-section-dots-tab.svg);
+            padding: 88px 0;
+            background-position: top -134px right -134px, top 923px left -95px, top 460px left 158px, bottom 50px left -20px;
+            background-size: 380px, 380px, 541px, 719px;
+        }
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/sales-page/top-triangle.svg), url(../images/sales-page/triangle-tab-bottom.svg), url(../images/sales-page/gift-cert-desk-bottom.svg);
+            background-position: top -133px right -88px, top 520px left 0, bottom 0 center;
+            background-size: 440px, 440px, 100%;
+            padding: 132px 0;
+        }
+    }
+    .gift-certificate {
+        padding-bottom: 60px;
+        @media screen and (min-width: 768px) {
+            padding-bottom: 132px;
+        }
+    }
+    .container-sales .gift-certificate_order-link {
+        width: 266px;
+        height:54px;
+        margin: 0 auto;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        box-shadow: 0px 4px 30px rgba(170, 67, 162, 0.45);
+        border-radius: 12px;
+        background-color: $color-sale-purple;
+        color: $color-white;
+        border: 1px solid transparent;
+        transition: color 750ms, background-color 750ms, border-color 750ms;
+        &:hover,
+        &:focus{
+            color: $color-black;
+            border-color: $color-sale-purple;
+            background-color:transparent
+        }
+    }
+    .gift-certificate_img{
+        display: block;
+
+        margin: 0 auto 32px auto;
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 28px auto;
+            width: 600px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+    }
+    .unique-opportunity_list {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap:30px
+        }
+    }
+    .unique-opportunity_item {
+        border-radius: 12px;
+        position: relative;
+        background-color: $color-sale-yellow;
+        padding: 20px;
+        @media screen and (min-width: 768px) {
+            padding: 40px 154px 40px 100px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 40px 100px;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 32px;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(1){
+            @media screen and (min-width: 768px) {
+                background-image: url(../images/sales-page/line-catd-1.svg);
+                background-position: bottom 0 right 0;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &:nth-child(4){
+            @media screen and (min-width: 768px) {
+                background-image: url(../images/sales-page/line-card-2.svg);
+                background-position: bottom 0 right 0;
+                background-repeat: no-repeat;
+            }
+            @media screen and (min-width: 1200px) {
+                background-position: bottom 0 right -10%;
+            }
+        }
+
+        & > svg {
+            position: absolute;
+            top:20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            @media screen and (min-width: 768px) {
+                width: 60px;
+                height: 60px;
+                top:32px;
+                right: 32px;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 60px;
+                height: 60px;
+                right: 20px;
+            }
+
+        }
+        & > h3 {
+            line-height: 1.4;
+            max-width: 184px;
+            font-size: 20px;
+            color: $color-black;
+            margin-bottom: 20px;
+            font-weight: 700;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 24px;
+                max-width: 335px;
+            }
+        }
+        & > p {
+            line-height: 1.4;
+            font-size: 16px;
+            color: $color-black;
+            @media screen and (min-width: 768px) {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .gift-certificate__box{
+        margin-bottom: 52px;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+        }
+    }
+    .gift-certificate__info{
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: 55%;
+        }
+
+        & > h5{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: $color-black;
+            margin-bottom: 32px;
+            @media screen and (min-width: 768px) {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+        }
+        & > p{
+            font-size: 16px;
+            font-weight: 1.4;
+        }
+        & > p:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+
+
+
