@@ -11,5 +11,6 @@
 !README.md
 /wp-content/themes/goiteens/package-lock.json
 /wp-content/themes/goiteens/node_modules
-!Jenkinsfile
-!build.sh
+Jenkinsfile
+build.sh
+.DS_Store

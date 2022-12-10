@@ -39,7 +39,7 @@
           <h3 class="projects__card-title"><?php echo $item->item_title; ?></h3>
           <p class="projects__card-description"><?php echo $item->item_description; ?></p>
         </li>
-        <?php } ?>
+        <? } ?>
       </ul>
     </div>
   </div>

@@ -112,7 +112,7 @@ get_header();
           </div>
         </a>
       </li>
- <?php } ?>
+ <? } ?>
     </ul>
   </div>
 </section>

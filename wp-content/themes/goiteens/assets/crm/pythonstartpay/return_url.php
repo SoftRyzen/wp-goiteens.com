@@ -4,8 +4,8 @@ $postdata = json_encode($_POST);
 
 // урли для перенаправлення після оплати в в4п
 $credentialsURL = array(
-    "sucessURL" => "https://goiteens.com/course/python-start/python-start-thx/",        // перенаправлення після успішної оплати
-    "errorURL" => "https://goiteens.com/course/python-start/python-start-thx/",        // перенаправлення після помилки оплати
+    "sucessURL" => site_url() . "/course/python-start/python-start-thx/",        // перенаправлення після успішної оплати
+    "errorURL" => site_url() . "/course/python-start/python-start-thx/",        // перенаправлення після помилки оплати
 );
 
 

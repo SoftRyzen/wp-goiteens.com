@@ -4,8 +4,8 @@ $postdata = json_encode($_POST);
 
 // урли для перенаправлення після оплати в в4п
 $credentialsURL = array(
-    //"sucessURL" => "https://goiteens.com/course/design-start/design-start-thx/",        // old
-    //"errorURL" => "https://goiteens.com/course/design-start/design-start-thx/",        // old
+    //"sucessURL" => site_url() . "/course/design-start/design-start-thx/",        // old
+    //"errorURL" => site_url() . "/course/design-start/design-start-thx/",        // old
     "sucessURL" => "https://g.goit.global/003pxx",        // перенаправлення після успішної оплати
     "errorURL" => "https://g.goit.global/003pxx",        // перенаправлення після помилки оплати
 );

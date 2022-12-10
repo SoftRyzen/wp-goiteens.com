@@ -45,7 +45,7 @@
         <p class="teachers__item-description"><?php echo $item->teachers_description; ?></p>
         <p class="text-blue"><?php echo $item->teachers_position; ?></p>
       </div>
-       <?php } ?>
+       <? } ?>
     </div>
 	   <?php get_template_part( 'template-parts/roblox/reviews' ); ?>
   </div>

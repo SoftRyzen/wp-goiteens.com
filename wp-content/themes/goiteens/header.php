@@ -37,6 +37,30 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <?php
+    if( get_locale() == 'pl_PL' && (7584 === get_the_ID() || 4008 === get_the_ID()) ) {
+        ?>
+        <!-- Google Tag Manager Poland -->
+        <script>
+            (function (w, d, s, l) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=GTM-TQF6X5Z" + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer');
+        </script>
+        <!-- End Google Tag Manager Poland -->
+        <?php
+    }
+    ?>
+
     <script>
 	<?php if(is_page_template('templates/tmpl-referral-page.php') || is_page_template('templates/tmpl-courses-all-page.php')) :?>
  		<?php $marketingList = get_field('all_marketing_data');
@@ -56,11 +80,11 @@
   <?php endif; ?>
 
       window.leelooHash = '<?php echo get_field('leeloo_hash'); ?>';
-		<?php if(get_the_ID() == 4862): ?>
+		<?php if(get_the_ID() == 4862 || get_the_ID() == 9279): ?>
 		window.leelooHashKid = '<?php echo get_field('leeloo_hash_kid'); ?>';
 		<?php endif; ?>
 	  window.leadFormat = '<?php echo get_field('lead_format'); ?>';
-        window.leadapi = 'MarLeadAPI';
+    window.leadapi = '<?php echo get_field('lead_api'); ?>';
     </script>
 </head>
 

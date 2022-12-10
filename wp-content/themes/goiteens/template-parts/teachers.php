@@ -45,7 +45,7 @@
         <p class="teachers__item-description"><?php echo $item->teachers_description; ?></p>
         <p class="text-accent"><?php echo $item->teachers_position; ?></p>
       </div>
-    	<?php } ?>
+    	<? } ?>
     </div>
   </div>
 </section>

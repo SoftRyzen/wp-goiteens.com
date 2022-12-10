@@ -41,7 +41,7 @@
                 <h3 class="speakers__name text-accent"><?php echo $item->speaker_name; ?></h3>
                 <p><?php echo $item->speaker_position; ?></p>
             </li>
-            <?php } ?>
+            <? } ?>
         </ul>
         <p class="speakers__title section__title "><?php the_field('video_title'); ?>
         </p>
