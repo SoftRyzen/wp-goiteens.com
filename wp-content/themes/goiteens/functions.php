@@ -107,6 +107,11 @@ endif;
 add_action('after_setup_theme', 'goiteens_setup');
 
 /**
+ * Sales Page
+ */
+require get_template_directory() . '/inc/_sales-page.php';
+
+/**
  * Blog
  */
 require get_template_directory() . '/inc/_blog.php';
