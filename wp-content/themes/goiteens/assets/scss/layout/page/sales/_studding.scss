@@ -368,6 +368,9 @@
   .studding-payments_new-price {
     font-size: 32px;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
   .studding-payments_previous-price {
     font-size: 24px;
@@ -379,10 +382,6 @@
     &:not(.active) {
       display: none;
     }
-
-
-
-
   }
   .studding-payments_button-pay {
     display: flex;
