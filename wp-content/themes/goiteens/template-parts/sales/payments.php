@@ -61,7 +61,7 @@ $exchange = get_option('exchange_privatbank');
                                         ?>
                                         <span class="studding-payments_discount">-<?= $percent ?>%</span>
                                     <?php } ?>
-
+                                    <div class="studding-payments_tabs-box">
                                     <ul class="studding-payments_price-list active" data-prices="uah">
 
                                         <?php if( !empty($price['sale_price']) ) { ?>
@@ -133,7 +133,7 @@ $exchange = get_option('exchange_privatbank');
                                         <?php } ?>
 
                                     <?php } ?>
-                                   <div class="studding-payments_tabs-box">
+                                   
                                     <a href="#pay-card" class="studding-payments_button-pay">
                                         <?= $price['button_text'] ?>
                                     </a>
@@ -148,6 +148,7 @@ $exchange = get_option('exchange_privatbank');
                         <?php } ?>
 
                     </ul>
+                    <form action="" method="post" class="promo-code_form"><input type="text" class="promo-code_input" placeholder="промокод"><button type="submit" class="promo-code_btn">застосувати</button></form>
 
                 </div>
 
