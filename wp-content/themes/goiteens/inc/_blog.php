@@ -84,11 +84,33 @@ add_action('wpcf7_mail_sent', function ($contact_form)
     /**
      * Form Subscribe
      */
-    if( array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_subscribe' )
+    if( array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_subscribe' && array_key_exists('your-email', $posted_data) && !empty($posted_data['your-email']) )
     {
 
-        require get_template_directory() . '/assets/crm/Esputnik.php';
-        $esputnik = new Esputnik($posted_data);
+        $message_id = '3077403';
+        $password = '7504D8FD8A7C93267FFD86C81FCC20A8';
+        $url = 'https://esputnik.com/api/v1/message/'.$message_id.'/smartsend';
+
+        $json_value = new stdClass();
+        $json_value->recipients = [
+            [
+                'email' => $posted_data['your-email']
+            ]
+        ];
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($json_value));
+        curl_setopt($ch, CURLOPT_HEADER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER,
+            array('Accept: application/json',
+                'Content-Type: application/json',
+                'Authorization: Basic ' . base64_encode("hellos:$password")));
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSLVERSION, 6);
+        $output = curl_exec($ch);
+        curl_close($ch);
 
     }
 
