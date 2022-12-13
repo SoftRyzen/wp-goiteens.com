@@ -122,6 +122,11 @@ require get_template_directory() . '/inc/_yoast.php';
 require get_template_directory() . '/inc/quiz/_admin.php';
 
 /**
+ * Esputnik
+ */
+require get_template_directory() . '/inc/quiz/_esputnik.php';
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
