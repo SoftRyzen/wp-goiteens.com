@@ -146,6 +146,24 @@ function goiteens_widgets_init()
 add_action('widgets_init', 'goiteens_widgets_init');
 
 /**
+ * It creates a global variable called themeVar that contains the site URL, the course URL, the theme
+ * URL, the CRM URL, and the CRM directory URL
+ */
+function localize_script()
+{ ?>
+	<script type="text/javascript">
+		const themeVar = {
+			siteURL: <?php echo json_encode(site_url()); ?>,
+			course: <?php echo json_encode(site_url('/course')); ?>,
+			theme: <?php echo json_encode(get_template_directory_uri()); ?>,
+			CRM: <?php echo json_encode(get_template_directory_uri() . '/assets/crm/lead.php'); ?>,
+			CRM_dir: <?php echo json_encode(get_template_directory_uri() . '/assets/crm'); ?>
+		};
+	</script><?php
+}
+add_action('wp_head', 'localize_script');
+
+/**
  * Enqueue scripts and styles.
  */
 function goiteens_scripts()
@@ -397,26 +415,6 @@ wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/head-of-gr
 	}
 }
 add_action('wp_enqueue_scripts', 'goiteens_theme_style');
-
-
-
-/**
- * It creates a global variable called themeVar that contains the site URL, the course URL, the theme
- * URL, and the CRM URL.
- */
-function localize_script()
-{ ?>
-	<script type="text/javascript">
-		const themeVar = {
-			siteURL: <?php echo json_encode(site_url()); ?>,
-			course: <?php echo json_encode(site_url('/course')); ?>,
-			theme: <?php echo json_encode(get_template_directory_uri()); ?>,
-			CRM: <?php echo json_encode(get_template_directory_uri() . '/assets/crm/lead.php'); ?>,
-			CRM_dir: <?php echo json_encode(get_template_directory_uri() . '/assets/crm'); ?>
-		};
-	</script><?php
-}
-add_action('wp_head', 'localize_script');
 
 
 add_action('init', 'register_post_type_student_projects');
