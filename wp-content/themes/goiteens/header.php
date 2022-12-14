@@ -80,11 +80,11 @@
   <?php endif; ?>
 
       window.leelooHash = '<?php echo get_field('leeloo_hash'); ?>';
-		<?php if(get_the_ID() == 4862): ?>
+		<?php if(get_the_ID() == 4862 || get_the_ID() == 9279): ?>
 		window.leelooHashKid = '<?php echo get_field('leeloo_hash_kid'); ?>';
 		<?php endif; ?>
 	  window.leadFormat = '<?php echo get_field('lead_format'); ?>';
-        window.leadapi = 'MarLeadAPI';
+    window.leadapi = '<?php echo get_field('lead_api'); ?>';
     </script>
 </head>
 

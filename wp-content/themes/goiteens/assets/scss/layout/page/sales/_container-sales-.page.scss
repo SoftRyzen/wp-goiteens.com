@@ -1,0 +1,63 @@
+//TODO Example Bem | .sale_page__container-sales--flex
+.sale_page {
+
+  &__container {
+
+    &-sales {
+
+      &--flex {
+
+        //TODO Media Mixin
+        @include media(lg) {
+
+        }
+        @include media(md) {
+
+        }
+        @include media(sm) {
+
+        }
+
+      }
+
+      &-tab {
+
+
+      }
+
+    }
+
+  }
+
+}
+
+.sale_page {
+
+  .container-sales{
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+    @media screen and (min-width: 320px) {
+      max-width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      padding: 0 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+  .container-sales--flex-desk{
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  .container-sales--flex-tab{
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding: 0 32px;
+    }
+  }
+
+}

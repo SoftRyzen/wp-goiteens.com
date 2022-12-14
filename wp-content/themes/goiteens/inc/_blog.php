@@ -84,11 +84,33 @@ add_action('wpcf7_mail_sent', function ($contact_form)
     /**
      * Form Subscribe
      */
-    if( array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_subscribe' )
+    if( array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_subscribe' && array_key_exists('your-email', $posted_data) && !empty($posted_data['your-email']) )
     {
 
-        require get_template_directory() . '/assets/crm/Esputnik.php';
-        $esputnik = new Esputnik($posted_data);
+        $message_id = '3077403';
+        $password = '7504D8FD8A7C93267FFD86C81FCC20A8';
+        $url = 'https://esputnik.com/api/v1/message/'.$message_id.'/smartsend';
+
+        $json_value = new stdClass();
+        $json_value->recipients = [
+            [
+                'email' => $posted_data['your-email']
+            ]
+        ];
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($json_value));
+        curl_setopt($ch, CURLOPT_HEADER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER,
+            array('Accept: application/json',
+                'Content-Type: application/json',
+                'Authorization: Basic ' . base64_encode("hellos:$password")));
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSLVERSION, 6);
+        $output = curl_exec($ch);
+        curl_close($ch);
 
     }
 
@@ -101,8 +123,8 @@ add_action('wpcf7_mail_sent', function ($contact_form)
         $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
         $postfields = [
             'Lead' => [
-                'productID' => 1819773000329070325,         // айді продукту з зохо
-                'productName' => "GoITeens_UA_AutoDesign",  // назва продукту
+                'productID' => $posted_data['zoho-product-id'],         // айді продукту з зохо
+                'productName' => $posted_data['zoho-product-name'],  // назва продукту
                 'fopID' => 1819773000102087784,             // айді фопа з зохо
                 'returnURL' => "",        // перевірка статусу оплати
                 'productPrice' => '',
@@ -136,11 +158,36 @@ add_action('wpcf7_mail_sent', function ($contact_form)
 
         curl_setopt_array($ch, $curl_options);
         $response = curl_exec($ch);
-        //echo $response;
         curl_close($ch);
 
     }
 
 });
+
+/*
+ * Contact Form 7
+ * Create Input Zoho Product Name and Product ID
+ */
+add_action( 'wpcf7_init', 'goiteens_custom_add_form_tag_zoho' );
+function goiteens_custom_add_form_tag_zoho()
+{
+
+    wpcf7_add_form_tag( 'zoho', 'goiteens_custom_form_tag_zoho_handler' );
+
+}
+function goiteens_custom_form_tag_zoho_handler( $tag )
+{
+
+    $out = '';
+
+    $product_name = get_field('product_name');
+    $product_id = get_field('product_id');
+
+    $out .= '<input type="hidden" name="zoho-product-name" value="' . $product_name . '" id="zoho-product-name">';
+    $out .= '<input type="hidden" name="zoho-product-id" value="' . $product_id . '" id="zoho-product-id">';
+
+    return $out;
+
+}
 
 
