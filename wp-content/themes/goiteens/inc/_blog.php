@@ -123,8 +123,8 @@ add_action('wpcf7_mail_sent', function ($contact_form)
         $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
         $postfields = [
             'Lead' => [
-                'productID' => 1819773000329070325,         // айді продукту з зохо
-                'productName' => "GoITeens_UA_AutoDesign",  // назва продукту
+                'productID' => 1819773000568964184,         // айді продукту з зохо
+                'productName' => "GoITeens_Blog_MainPage",  // назва продукту
                 'fopID' => 1819773000102087784,             // айді фопа з зохо
                 'returnURL' => "",        // перевірка статусу оплати
                 'productPrice' => '',
