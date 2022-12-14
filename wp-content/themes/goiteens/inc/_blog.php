@@ -123,8 +123,8 @@ add_action('wpcf7_mail_sent', function ($contact_form)
         $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
         $postfields = [
             'Lead' => [
-                'productID' => 1819773000568964184,         // айді продукту з зохо
-                'productName' => "GoITeens_Blog_MainPage",  // назва продукту
+                'productID' => $posted_data['zoho-product-id'],         // айді продукту з зохо
+                'productName' => $posted_data['zoho-product-name'],  // назва продукту
                 'fopID' => 1819773000102087784,             // айді фопа з зохо
                 'returnURL' => "",        // перевірка статусу оплати
                 'productPrice' => '',
@@ -158,11 +158,36 @@ add_action('wpcf7_mail_sent', function ($contact_form)
 
         curl_setopt_array($ch, $curl_options);
         $response = curl_exec($ch);
-        //echo $response;
         curl_close($ch);
 
     }
 
 });
+
+/*
+ * Contact Form 7
+ * Create Input Zoho Product Name and Product ID
+ */
+add_action( 'wpcf7_init', 'goiteens_custom_add_form_tag_zoho' );
+function goiteens_custom_add_form_tag_zoho()
+{
+
+    wpcf7_add_form_tag( 'zoho', 'goiteens_custom_form_tag_zoho_handler' );
+
+}
+function goiteens_custom_form_tag_zoho_handler( $tag )
+{
+
+    $out = '';
+
+    $product_name = get_field('product_name');
+    $product_id = get_field('product_id');
+
+    $out .= '<input type="hidden" name="zoho-product-name" value="' . $product_name . '" id="zoho-product-name">';
+    $out .= '<input type="hidden" name="zoho-product-id" value="' . $product_id . '" id="zoho-product-id">';
+
+    return $out;
+
+}
 
 
