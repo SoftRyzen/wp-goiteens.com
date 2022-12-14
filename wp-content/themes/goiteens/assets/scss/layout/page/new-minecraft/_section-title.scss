@@ -1,0 +1,16 @@
+.section-title{
+    font-size: 20px;
+    line-height: 1.2;
+    color:$color-nm-text;
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px) {
+        font-style: 24px;
+        margin-bottom: 24px;
+      }
+    
+      @media screen and (min-width: 1280px) {
+        max-width: 800px;
+        font-style: 32px;
+        margin-bottom: 20px;
+      }
+    }

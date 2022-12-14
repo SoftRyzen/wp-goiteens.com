@@ -1,0 +1,94 @@
+.new-minecraft{
+    .int-math {
+        padding: 20px 0;
+        background-color: $color-nm-bg-lite;
+        @media screen and (min-width: 768px) {
+            padding: 40px 0;
+          }
+          @media screen and (min-width: 1280px) {
+            padding: 60px 0;
+          }
+        .section-title{
+        margin-bottom: 28px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+          }
+          @media screen and (min-width: 1280px) {
+            margin-bottom: 32px;
+            
+          }
+        & > span{
+            text-transform: uppercase;
+        }
+       }
+
+       & _box{
+        display: flex;
+        flex-direction: column;
+        gap:28px;
+        margin-bottom: 28px;
+        @media screen and (min-width: 768px) {
+           gap:5px;
+            flex-direction: row;
+            margin-bottom: 60px;
+          }
+          @media screen and (min-width: 1280px) {
+            gap:104px;
+            margin-bottom: 40px;    
+            
+          }
+
+           .text{
+            font-size: 14px;
+            line-height: 1.2;
+             margin-bottom: 20px;
+            &:first-child{
+                margin-bottom: 16px;
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 20px;
+                   }
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 16px;
+
+               }
+               @media screen and (min-width: 1280px) {
+                 font-size: 20px;
+                 margin-bottom: 24px;
+                 
+               }
+          }
+        
+       }
+
+       & _subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 500;
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 29px;
+           }
+           @media screen and (min-width: 1280px) {
+            font-size: 24px;
+            margin-bottom: 24px;
+             
+           }
+    }
+& _year-list {
+
+}
+& _year-item {
+
+}
+}
+   
+   
+    
+    .int-math_info-wrapper {
+    }
+    .subtitle {
+    }
+    .int-math_info-box {
+    }
+}
