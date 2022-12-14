@@ -76,10 +76,32 @@
            }
     }
 & _year-list {
-
+    display: flex;
+    gap:16px;
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+        
+       }
+       @media screen and (min-width: 1280px) {
+      
+         
+       }
 }
 & _year-item {
+    padding: 8px;
+    flex-basis: calc((100% - 16px) / 2);
+    border: 2px solid $color-nm-yellow;
+    border-radius: 4px;
+&:last-child{
+    border: 2px solid $color-nm-purple;
+}
+@media screen and (min-width: 768px) {
+        
+}
+@media screen and (min-width: 1280px) {
 
+  
+}
 }
 }
    
@@ -87,7 +109,7 @@
     
     .int-math_info-wrapper {
     }
-    .subtitle {
+    .info-subtitle {
     }
     .int-math_info-box {
     }
