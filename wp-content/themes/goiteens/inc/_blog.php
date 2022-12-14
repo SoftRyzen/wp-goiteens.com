@@ -123,32 +123,47 @@ add_action('wpcf7_mail_sent', function ($contact_form)
         $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
         $postfields = [
             'Lead' => [
-                'productID' => $posted_data['zoho-product-id'],         // айді продукту з зохо
-                'productName' => $posted_data['zoho-product-name'],  // назва продукту
-                'fopID' => 1819773000102087784,             // айді фопа з зохо
-                'returnURL' => "",        // перевірка статусу оплати
-                'productPrice' => '',
-                'productCurrency' => "",
-                'promoKey' => "",
-                'promoDiscount' => 0,
-                'first_name' => $posted_data['your-name'],
-                'email' => $posted_data['your-email'],
+                'google_id' => '',
+                'name' => $posted_data['your-name'],
                 'phone' => '',
-                'ip' => $_SERVER['HTTP_CLIENT_IP'],
-                'utm_content' => '',
-                'utm_medium' => '',
+                'email' => $posted_data['your-email'],
+                'product_name' => $posted_data['zoho-product-name'],
+                'product_id' => $posted_data['zoho-product-id'],
+                'Potential_Category' => 'Blog',
+                'Projects' => 'GoIT',
+                'Course' => '',
+                'website' => '',
+                'leadapi' => '',
+                'logURL' => site_url(),
+                'leadFormat' => 'individual',
+                'leadActionSource' => site_url(),
+                'leadUserAgent' => $_SERVER['HTTP_USER_AGENT'],
+                'leadFBP' => '',
+                'leadFBC' => '',
+                'leadIP' => '',
                 'utm_source' => '',
+                'utm_medium' => '',
                 'utm_term' => '',
-                'utm_campaign' => ''
+                'utm_campaign' => '',
+                'utm_content' => '',
             ]
         ];
 
+        $connID=substr((string)$posted_data['zoho-product-id'],0,4);
+        if ($connID=="1819"){
+            $url = 'https://universalcrmconnector.goiteens.ua/connector.php';
+        } else if ($connID=="4525"){
+            $url = 'https://goit-connectors.place/pl/newcrm/goiteens/connectorPL.php';
+        } else {
+            $url = 'https://universalcrmconnector.goiteens.ua/connector.php';
+        }
+
         $ch = curl_init();
         $curl_options = [];
-        $url = "https://w4ppaymnew.goiteens.ua/loader.php";
+
         $curl_options[CURLOPT_URL] = $url;
         $curl_options[CURLOPT_RETURNTRANSFER] = true;
-        $curl_options[CURLOPT_HEADER] = 0;
+        $curl_options[CURLOPT_HEADER] = 1;
         $curl_options[CURLOPT_CUSTOMREQUEST] = "POST";
         $curl_options[CURLOPT_POSTFIELDS] = json_encode($postfields);
         $headersArray = [];
@@ -158,7 +173,9 @@ add_action('wpcf7_mail_sent', function ($contact_form)
 
         curl_setopt_array($ch, $curl_options);
         $response = curl_exec($ch);
-        curl_close($ch);
+
+        $log = date('Y-m-d H:i:s') . ' ' . print_r($postfields, true);
+        file_put_contents(__DIR__ . '/log.txt', $log . PHP_EOL, FILE_APPEND);
 
     }
 
