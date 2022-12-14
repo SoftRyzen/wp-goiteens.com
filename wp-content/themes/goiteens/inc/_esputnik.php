@@ -1,8 +1,6 @@
 <?php
 defined('ABSPATH') || exit;
 
-//TODO Code Example
-
 /**
  * Create admin submenu page
  */
@@ -78,7 +76,6 @@ function save_esputnik_options_data()
             update_option('_esputnik_token', $_POST['esputnik_token']);
         }
 
-        var_dump($_POST);
         // Create an empty array.
         $esputnik_options = array();
 
