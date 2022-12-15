@@ -7,8 +7,7 @@ add_action('wp_enqueue_scripts', 'goiteens_blog_enqueue_styles', 20);
 function goiteens_blog_enqueue_styles()
 {
 
-    if(is_page_template('templates/tmpl-blog-page.php') || is_category() )
-    {
+    if (is_page_template('templates/tmpl-blog-page.php') || is_category()) {
 
         wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/blog/css/style.css');
         wp_enqueue_style('blog-custom', get_stylesheet_directory_uri() . '/assets/blog/css/custom.css?v=6');
@@ -16,9 +15,9 @@ function goiteens_blog_enqueue_styles()
         wp_enqueue_script('blog', get_stylesheet_directory_uri() . '/assets/blog/js/blog.js?v=5', array('jquery'), false, true);
 
         $script_data_array = [
-            'ajaxurl' => admin_url( 'admin-ajax.php' ),
+            'ajaxurl' => admin_url('admin-ajax.php'),
         ];
-        wp_localize_script( 'blog', 'ajax_blog_handle', $script_data_array );
+        wp_localize_script('blog', 'ajax_blog_handle', $script_data_array);
 
     }
 
@@ -32,7 +31,7 @@ function goiteens_blog_load_more()
 {
 
     $default_posts_per_page = 3;
-    $offset = ( $_POST['paged'] - 1 ) * $default_posts_per_page + 1;
+    $offset = ($_POST['paged'] - 1) * $default_posts_per_page + 1;
 
     $ajaxposts = new WP_Query([
         'posts_per_page' => $default_posts_per_page,
@@ -43,11 +42,10 @@ function goiteens_blog_load_more()
     $response = '';
     $max_pages = $ajaxposts->max_num_pages;
 
-    if($ajaxposts->have_posts())
-    {
+    if ($ajaxposts->have_posts()) {
 
         ob_start();
-        while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+        while ($ajaxposts->have_posts()) : $ajaxposts->the_post();
             $response .= get_template_part('template-parts/content', 'post');
         endwhile;
         $output = ob_get_contents();
@@ -67,29 +65,33 @@ function goiteens_blog_load_more()
     echo json_encode($result);
     wp_die();
 }
+
 add_action('wp_ajax_blog_load_more', 'goiteens_blog_load_more');
 add_action('wp_ajax_nopriv_blog_load_more', 'goiteens_blog_load_more');
 
 /**
  * Contact Form 7 After Mail Sent
  */
-add_action('wpcf7_mail_sent', function ($contact_form)
-{
+add_action('wpcf7_mail_sent', function ($contact_form) {
 
     $form_id = $contact_form->id();
 
     $submission = WPCF7_Submission::get_instance();
     $posted_data = $submission->get_posted_data();
+    $esputnik_options = get_option('_esputnik_options');
 
     /**
      * Form Subscribe
      */
-    if( array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_subscribe' && array_key_exists('your-email', $posted_data) && !empty($posted_data['your-email']) )
-    {
+    if (array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_subscribe' && array_key_exists('your-email', $posted_data) && !empty($posted_data['your-email'])) {
+        if (!$esputnik_options['esputnik_login'] || !$esputnik_options['esputnik_token']) {
+            return;
+        }
 
         $message_id = '3077403';
-        $password = '7504D8FD8A7C93267FFD86C81FCC20A8';
-        $url = 'https://esputnik.com/api/v1/message/'.$message_id.'/smartsend';
+        $login = $esputnik_options['esputnik_login'];
+        $password = $esputnik_options['esputnik_token'];
+        $url = 'https://esputnik.com/api/v1/message/' . $message_id . '/smartsend';
 
         $json_value = new stdClass();
         $json_value->recipients = [
@@ -105,7 +107,7 @@ add_action('wpcf7_mail_sent', function ($contact_form)
         curl_setopt($ch, CURLOPT_HTTPHEADER,
             array('Accept: application/json',
                 'Content-Type: application/json',
-                'Authorization: Basic ' . base64_encode("hellos:$password")));
+                'Authorization: Basic ' . base64_encode("$login:$password")));
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSLVERSION, 6);
@@ -117,8 +119,7 @@ add_action('wpcf7_mail_sent', function ($contact_form)
     /**
      * Form Order
      */
-    if( array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_order' )
-    {
+    if (array_key_exists('action', $posted_data) && $posted_data['action'] == 'blog_order') {
 
         $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
         $postfields = [
