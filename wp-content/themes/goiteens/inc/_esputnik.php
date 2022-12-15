@@ -23,8 +23,6 @@ add_action('admin_init', 'register_esputnik_settings_fields');
 function register_esputnik_settings_fields()
 {
     register_setting('esputnik_settings', '_esputnik_options');
-    register_setting('esputnik_settings', '_esputnik_login');
-    register_setting('esputnik_settings', '_esputnik_token');
 }
 
 /**
@@ -32,7 +30,9 @@ function register_esputnik_settings_fields()
  * @return void
  */
 function wpcf7_admin_esputnik_page()
-{ ?>
+{
+    $esputnik_options = get_option('_esputnik_options');
+    ?>
     <div class="wrap">
         <h1><?php echo __('Esputnik integration'); ?></h1>
 
@@ -44,14 +44,21 @@ function wpcf7_admin_esputnik_page()
                 <tr>
                     <th scope="row"><label for="esputnik_login"><?php echo __('Esputnik login'); ?></label></th>
                     <td><input type="text" required name="esputnik_login" class="regular-text"
-                               value="<?php echo esc_attr(get_option('_esputnik_login')); ?>"/></td>
+                               value="<?php
+                               if (isset($esputnik_options['esputnik_login']) && !empty($esputnik_options['esputnik_login'])) {
+                                   echo esc_attr($esputnik_options['esputnik_login']);
+                               }
+                               ?>"/></td>
                 </tr>
                 <tr>
                     <th scope="row">
                         <label for="esputnik_token">  <?php echo __('Esputnik token'); ?></label>
                     </th>
                     <td><input class="regular-text" type="text" required name="esputnik_token"
-                               value="<?php echo esc_attr(get_option('_esputnik_token')); ?>"/></td>
+                               value="<?php
+                               if (isset($esputnik_options['esputnik_token']) && !empty($esputnik_options['esputnik_token'])) {
+                                   echo esc_attr($esputnik_options['esputnik_token']);
+                               } ?>"/></td>
                 </tr>
                 </tbody>
             </table>
@@ -68,14 +75,7 @@ function wpcf7_admin_esputnik_page()
 add_action('admin_init', 'save_esputnik_options_data');
 function save_esputnik_options_data()
 {
-    if (isset($_POST)) {
-        if (isset($_POST['esputnik_login'])) {
-            update_option('_esputnik_login', $_POST['esputnik_login']);
-        }
-        if (isset($_POST['esputnik_token'])) {
-            update_option('_esputnik_token', $_POST['esputnik_token']);
-        }
-
+    if (isset($_POST['esputnik_token']) || isset($_POST['esputnik_login'])) {
         // Create an empty array.
         $esputnik_options = array();
 
