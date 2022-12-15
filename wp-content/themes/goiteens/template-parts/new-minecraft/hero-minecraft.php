@@ -3,12 +3,12 @@
         <div class="hero-nm_marked">
         <p class="hero-nm_marked-text">Освітня програма для дітей 7-8 років</p>
         </div>
-        <p class="hero-nm_start--info"><span>Граємо, рахуємо та програмуємо</span>на онлайн-курсі <br>
-<span>«Цікава математика і програмування у всесвіті Майнкрафт»</span></p>
+        <p class="hero-nm_start--info"><span>Граємо, рахуємо та програмуємо </span>на онлайн-курсі <br>
+«Цікава математика і програмування у всесвіті Майнкрафт»</p>
         <h1 class="hero-nm_page-title">
             <span class="hero-nm_page-title--uppercase">актуальні знаяння,</span>
             <p>що допоможуть дитині 
-<span>стати №1</span>в школі та дорослому житті</p>
+<span>стати №1 </span>в школі та дорослому житті</p>
         </h1>
         <p class="hero-nm_try-free">Спробуйте перший урок програми<span>безкоштовно</span></p>
         <button class="btn_registration">зареєструватися</button>

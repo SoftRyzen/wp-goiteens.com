@@ -39,7 +39,7 @@ border-radius: 4px;
    flex-basis: calc((100% - 3 * 32px) / 4);
 
   }
-    }
+    
 
     & > p{
         margin-top: 20px;
@@ -47,8 +47,12 @@ border-radius: 4px;
     }
 
     & > h3{
+
         font-size: 44px;
         font-weight: 700px;
+        & > span{
+          display: block;
+        }
     }
 
     &:nth-child(even) > h3{
@@ -59,4 +63,5 @@ color:$color-nm-green;
         color:$color-nm-yellow;
         
     }
+}
 }

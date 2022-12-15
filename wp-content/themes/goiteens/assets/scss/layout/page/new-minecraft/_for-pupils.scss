@@ -38,6 +38,7 @@
   }
   .for-pupils_item {
       display: flex;
+      align-items: center;
       flex-direction: column;
       gap:16px;
       padding: 16px 8px 8px;
@@ -68,8 +69,10 @@ border-radius: 4px;
 }
   }
   .for-pupils_info-block {
+    width: 100%;
       background-color: $color-nm-yellow;
       display: flex;
+
       justify-content: center;
       flex-direction: column;
       padding: 20px 12px;
@@ -81,16 +84,18 @@ border-radius: 4px;
           align-items: center;
           gap:40px;
       }
-      @media screen and (min-width: 1280px) {}
+      @media screen and (min-width: 1280px) {
       padding: 20px 59px;
-      width: 1008px;
+      max-width: 1008px;
+      margin: 0 auto;
       gap: 60px;
   }
-& > svg{
-  width: 70px;
+&>svg{
+  min-width: 130px;
   height: 70px;
 }
   & > p{
+    text-align: left;
       font-size: 16px;
       line-height: 1.75;
       
@@ -103,4 +108,5 @@ border-radius: 4px;
           line-height: 1.8;
       }
   }
+}
 }
