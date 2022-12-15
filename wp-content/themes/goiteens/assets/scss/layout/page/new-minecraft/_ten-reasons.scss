@@ -8,12 +8,21 @@
           @media screen and (min-width: 1280px) {
             padding: 60px 0;
           }
+          &  .section-title{
+margin-bottom: 40px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 60px 0;
+  }
+          }
     &_list {
         display: flex;
         flex-direction: column;
         gap:16px;
         margin-bottom: 12px;
-        counter-reset: ten-reasons-item ;
+        counter-reset: ten-reasons-item 00;
         @media screen and (min-width: 768px) {
             flex-direction: row;
             margin-bottom: 40px;
@@ -32,19 +41,22 @@
     &_item {
 
         position: relative;
-        padding-left: 80px;
+        padding-left: 60px;
         width: 100%;
        
         min-height: 66px;
         @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 33px) / 2);
+            padding-left: 80px;
           }
           @media screen and (min-width: 1280px) {
             flex-basis: calc((100% - 2 * 32px) / 3);
+            
           }
+
           &:before{
 display: block;
-content: " 0"counter(ten-reasons-item);
+content: "0"counter(ten-reasons-item);
 counter-increment: ten-reasons-item;
 position: absolute;
 width: 54px;
@@ -68,11 +80,54 @@ font-size: 50px;
 
   }
           }
-    
+    & > h3{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 12px;
+          @media screen and (min-width: 1280px) {
+            margin-bottom: 16px;
+            font-size: 18px;
+          }
+    }
+
+& > p{
+font-size: 14px;
+line-height: 1.2;
+    @media screen and (min-width: 768px) {
+      
+      }
+}
     }
     &_info {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+          }
+          @media screen and (min-width: 1280px) {
+            max-width: 488px;
+            display: inline-block;
+            
+          }
     }
     .awards_list {
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 32px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 92px;
+      }
+      @media screen and (min-width: 1280px) {
+        max-width: 590px;
+        gap:37px;
+        display: inline-flex;
+        
+      }
     }
     .awards_item {
     }

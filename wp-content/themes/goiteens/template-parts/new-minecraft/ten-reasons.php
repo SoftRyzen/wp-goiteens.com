@@ -45,12 +45,12 @@
                 <p></p>
             </li>
         </ul>
-        <p class="ten-reasons_info"></p>
+    
+        <p class="ten-reasons_info">GoITeens — IT-академія, що надає повноцінну системну IT-освіту дітям від 8 до 16 років. Створена на базі міжнародної освітньої платформи GoIT Global, партнера проєкту IT Ukraine та IT Generation.</p>
         <ul class="awards_list">
-            <li class="awards_item"><strong class="awards">Ukrainian
-IT Awards</strong></li>
-            <li class="awards_item"><strong class="awards">Best
-IT education</strong></li>
+            <li class="awards_item"><img  src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/ukr-aw-19-22.png" width="198" height="64" loading="lazy" alt="українська народна премія перше місце з 2018 по 2022 роки"></li>
+            <li class="awards_item"><img  src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/ukr-it-aw.png" width="165" height="64" loading="lazy"  alt="Ukrainian IT Awards"></li>
+            <li class="awards_item"><img  src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/best-it-edu.png" width="154" height="64" loading="lazy"  alt="Best IT education"></li>
         </ul>
         <div class="info-box">
             <h3>Навчання доступне та зручне</h3>

@@ -110,6 +110,7 @@ padding: 5px;
 display: block;
 content: " 0"counter(lessons_details-item);
 counter-increment: lessons_details-item;
+
 position: absolute;
 width: 77px;
 height: 66px;
