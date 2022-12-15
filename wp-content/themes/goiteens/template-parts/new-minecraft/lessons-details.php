@@ -3,12 +3,27 @@
         <h2 class="section-title">Кожне заняття — це неймовірна пригода, маса нових знань та крутих емоцій</h2>
         <ul class="lessons_list">
             <li class="lessons_item">
+            <svg width="70" height="70">
+
+<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite2.svg#icon-idea"></use>
+
+</svg>
                 <p>Онлайн формат</p>
             </li>
             <li class="lessons_item">
+            <svg width="70" height="70">
+
+<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite2.svg#icon-gear"></use>
+
+</svg>
                 <p>60 хв тривалість заняття</p>
             </li>
             <li class="lessons_item">
+            <svg width="70" height="70">
+
+<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite2.svg#icon-heart"></use>
+
+</svg>
                 <p>2 рази / тиждень в будні після школи або вихідні</p>
             </li>
         </ul>
