@@ -86,7 +86,7 @@
                 }
           }
       }
-      }
+      
       
       .hero-nm_page-title {
       font-size: 28px;
@@ -132,8 +132,13 @@
           margin-top: 12px;  
              }
       }
+    
       
     }
-    
+    & .btn_registration{
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   
+}

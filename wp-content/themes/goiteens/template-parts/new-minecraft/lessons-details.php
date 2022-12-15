@@ -5,7 +5,7 @@
             <li class="lessons_item">
             <svg width="70" height="70">
 
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite2.svg#icon-idea"></use>
+<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-bulb-2"></use>
 
 </svg>
                 <p>Онлайн формат</p>
@@ -13,7 +13,7 @@
             <li class="lessons_item">
             <svg width="70" height="70">
 
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite2.svg#icon-gear"></use>
+<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-business-3"></use>
 
 </svg>
                 <p>60 хв тривалість заняття</p>
@@ -21,7 +21,7 @@
             <li class="lessons_item">
             <svg width="70" height="70">
 
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite2.svg#icon-heart"></use>
+<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-target-3"></use>
 
 </svg>
                 <p>2 рази / тиждень в будні після школи або вихідні</p>
@@ -39,7 +39,7 @@
                 <p>Творче завдання для реалізації ідеї за допомогою вивчених інструментів</p>
             </li>
         </ul>
-        <strong>Реєструйтеся на пробне заняття, щоб перевірити якість курсу на практиці!</strong>
+        <strong class="suggestion-block" >Реєструйтеся на пробне заняття, щоб перевірити якість курсу на практиці!</strong>
 <button class="btn_registration">зареєструватися</button>
 </div>
 </section>
