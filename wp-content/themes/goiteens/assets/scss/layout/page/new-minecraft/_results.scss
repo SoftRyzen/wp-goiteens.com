@@ -105,7 +105,7 @@ background-color: $color-white;
               line-height: 1.45;
               font-weight: 500;
               @media screen and (min-width: 768px) {
-                font-style: 18px;
+                font-size: 18px;
                 }
             }
         }
@@ -150,12 +150,12 @@ background-color: $color-white;
 
         }
         & .text{
-          font-style: 14px;
+          font-size: 14px;
           line-height: 1.2;
           margin-bottom: 40px;
           text-align: center;
           @media screen and (min-width: 768px) {
-            font-style: 16px;
+            font-size: 16px;
     
           }
         }
