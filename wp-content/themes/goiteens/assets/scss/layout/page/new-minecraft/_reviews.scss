@@ -20,6 +20,7 @@
 
     }
     &_item {
+        background-color: $color-white;
         overflow: hidden;
         height: 320px;
         padding: 24px 16px;
@@ -63,6 +64,17 @@ border-radius: 4px;
     display:inline-block;
     vertical-align: middle;
     margin-right: 12px;
+}
+& .section-title{
+  
+    @media screen and (min-width: 768px) {
+        max-width: 336px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 592px;
+    }
 }
 }
 }

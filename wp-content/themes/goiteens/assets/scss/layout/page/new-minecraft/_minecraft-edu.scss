@@ -111,16 +111,11 @@ border-radius: 4px;
                        }
                 
                 }
-           
     }
     @media screen and (min-width: 768px) {
         flex-direction: row;
         margin-bottom: 40px;
-        gap: 32px;
-       }
-       @media screen and (min-width: 1280px) {
-        gap:32px;
-         
+        justify-content: space-around;
        }
        &:last-child{
         margin-bottom: 0;
