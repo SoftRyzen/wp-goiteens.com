@@ -285,15 +285,18 @@
     display: flex;
     gap: 24px;
     flex-direction: column;
+    margin-bottom: 24px;
     @media screen and (min-width: 768px) {
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
       gap: 28px;
+      margin-bottom: 28px;
     }
     @media screen and (min-width: 1200px) {
       gap: 22px;
       flex-wrap: nowrap;
+      margin-bottom: 32px;
     }
   }
   .studding-payments_per-month-item {
@@ -329,6 +332,7 @@
   }
 
   .studding-payments_box {
+    background-color: $color-white;
     border: 1px solid $color-tabs-yellow;
     border-radius: 12px;
     display: flex;
@@ -344,6 +348,7 @@
   .studding-payments_discount {
     position: relative;
     font-size: 24px;
+    z-index: 1;
     margin-bottom: 33px;
     display: block;
     &::before{
@@ -363,6 +368,9 @@
   .studding-payments_new-price {
     font-size: 32px;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
   .studding-payments_previous-price {
     font-size: 24px;
@@ -374,10 +382,6 @@
     &:not(.active) {
       display: none;
     }
-
-
-
-
   }
   .studding-payments_button-pay {
     display: flex;
@@ -432,9 +436,9 @@
 
   }
 
-  // .studding-payments_tabs-box{
-  //   margin-top: auto;
-  // }
+  .studding-payments_tabs-box{
+margin-top: auto;
+  }
   .studding-payments_tabs-list{
     display: flex;
     justify-content: center;
@@ -455,5 +459,70 @@
     }
   }
 
+  .promo-code_form {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-basis: 100%;
+      gap: 28px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 39%;
+      gap: 22px;
+    }
+  }
+
+  .promo-code_input, .promo-code_btn{
+    height: 48px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 28px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 22px) / 2);
+    }
+  }
+
+  .promo-code_input { 
+color: $color-sale-black;
+text-align: center;
+padding: 0 10px;
+border: 0;
+margin-bottom: 24px;
+border-bottom: 1px solid $color-sale-purple;
+@media screen and (min-width: 768px) {
+ margin-bottom: 0;
+  }
+&::placeholder{
+  font-size: 16px;
+line-height: 1.5;
+  text-transform: uppercase;
+  color: $color-sale-yellow;
+  text-align: center;
+  
+}
+  }
+
+  .promo-code_btn {
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-sale-purple;
+    color: $color-sale-yellow;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: color 750ms, background-color 750ms, border-color 750ms;
+
+  }
+  .promo-code_btn:hover,
+  .promo-code_btn:focus{
+    background-color: $color-white;
+    border-color: $color-sale-purple;
+    color: $color-sale-black;
+  }
 }
 
