@@ -32,7 +32,7 @@ border-radius: 16px 16px 0px 0px;
   @media screen and (min-width: 1280px) {
     border-radius: 16px;
   }
-&::not(:last-child){
+&:not(:last-child){
     margin-bottom: 16px;
       @media screen and (min-width: 1280px) {
         margin-bottom: 20px;
