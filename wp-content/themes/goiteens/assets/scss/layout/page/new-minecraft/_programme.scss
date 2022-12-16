@@ -1,12 +1,77 @@
 .new-minecraft{
     .programme {
+        padding: 16px 0 20px;
+        background-color: $color-white;
+        @media screen and (min-width: 768px) {
+            padding: 40px 0;
+          }
+          @media screen and (min-width: 1280px) {
+            padding: 60px 0;
+          }
+    
+    &_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 94px;
+
+        @media screen and (min-width: 768px) {
+           row-gap: 20px;
+           column-gap: 96px;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center;
+          }
+          @media screen and (min-width: 1280px) {
+            flex-wrap: nowrap;
+          }
     }
-    .programme_list {
+    &_item {
+        position: relative;
+        &:first-child{
+           
+            width: 176px;
+        }
+        &:not(:last-child)::after{
+            position: absolute;
+            content: "";
+            width: 72px;
+            height: 65px;
+            left:50%;
+            bottom: -50%;
+            box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+border-radius: 4px;
+            // background-repeat: no-repeat;
+           
+            background: url(../images/new-minecraft/arrow-img-2x.png) no-repeat violet;
+background-size: 26px 32px;
+background-position: center;
+
+        }
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 2 * 96px) / 3);
+           }
+           @media screen and (min-width: 1280px) {
+            flex-basis: calc((100% - 4 * 96px) / 5);
+           }
     }
-    .programme_item {
+    &_details-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:16px;
     }
-    .programme_details-list {
+    &_details-item {
+text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+border-radius: 4px;
+
     }
-    .programme_details-item {
-    }
+}
 }

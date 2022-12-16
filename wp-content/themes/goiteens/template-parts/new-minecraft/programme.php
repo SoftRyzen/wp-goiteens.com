@@ -4,6 +4,9 @@
         <ul class="programme_list">
             <li class="programme_item">
                         <h3>Minecraft Kids</h3>
+                        <p>7-8 років</p>
+                        <img class="programme_img" width="83" height="171" loading="lazy" alt="хлопчик персонаж майнкрафта" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/boy-1x.png"
+        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/boy-2x.png 2x"/>
                         
             </li>
             <li class="programme_item">
