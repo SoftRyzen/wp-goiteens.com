@@ -30,7 +30,7 @@
         position: relative;
         @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 2 * 96px) / 3);
-            min-height: 390px;
+            height: 390px;
             
            }
            @media screen and (min-width: 1280px) {
@@ -94,7 +94,7 @@
             width: 72px;
             height: 65px;
             left: 180px;
-            bottom: 50%;
+            bottom: 40%;
             transform: rotate(-90deg);
    }
    @media screen and (min-width: 1280px) {
@@ -119,6 +119,7 @@
             flex-direction: column;
             flex-wrap: nowrap;
             height: 100%;
+            justify-content: space-between;
         }
 
     }
