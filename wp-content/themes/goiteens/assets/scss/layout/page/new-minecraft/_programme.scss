@@ -29,21 +29,49 @@
     &_item {
         position: relative;
         &:first-child{
-           
+            padding: 40px 0 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             width: 176px;
+            box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+border-radius: 4px;
+        }
+        &:nth-child(2){
+            & .programme_details-item{
+height: 117px;
+& > h3{
+    font-size: 20px;
+}
+& > p{
+    font-size: 16px;
+}
+            }
+        }
+
+        &:last-child{
+            & .programme_details-item{
+height: 84px;
+& > h3{
+    font-weight: 500;
+    color: $color-nm-deep-green;
+}
+            }
         }
         &:not(:last-child)::after{
             position: absolute;
             content: "";
             width: 72px;
             height: 65px;
-            left:50%;
-            bottom: -50%;
+            left: 50%;
+            bottom: -80px;
+            transform: translateX(-50%);
             box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
 border-radius: 4px;
             // background-repeat: no-repeat;
            
-            background: url(../images/new-minecraft/arrow-img-2x.png) no-repeat violet;
+            background: url(../images/new-minecraft/arrow-img-2x.png) no-repeat  $color-white;
 background-size: 26px 32px;
 background-position: center;
 
@@ -61,17 +89,28 @@ background-position: center;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap:16px;
+        // column-gap:16px;
+        row-gap:14px
     }
     &_details-item {
+flex-basis: calc((100% - 16px) / 2);
 text-align: center;
+height: 80px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: column;
         align-items: center;
         box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
 border-radius: 4px;
+& > h3{
+    color: $color-nm-yellow;
+    font-weight: 700;
+    font-size: 16px;
 
+}
+& > p {
+    font-size: 14px;
+}
     }
 }
 }
