@@ -3,44 +3,50 @@
         <h2 class="section-title">IT-академія GoITeens розробила власну унікальну методологію навчання</h2>
         <ul class="methodology_list">
             <li class="methodology_item">
-                <h3>10%</h3>
+            <div class="percent-wrap">
+                <h3 class="percent-label">10%</h3>
+                </div>
                 <ul class="methodology_details-list">
                     <li class="methodology_details-item">
-                        <p>Теоретична база зібрана та структурована</p>
+                        Теоретична база зібрана та структурована
                     </li>
                     <li class="methodology_details-item">
-                        <p>Інформація доступною мовою</p>
+                        Інформація доступною мовою
                     </li>
                     <li class="methodology_details-item">
-                        <p>Конспекти та відеозаписи до кожної теми</p>
+                        Конспекти та відеозаписи до кожної теми
                     </li>
                 </ul>
             </li>
             <li class="methodology_item">
-                <h3>70%</h3>
+            <div class="percent-wrap">
+                <h3 class="percent-label">70%</h3>
+                </div>
                 <ul class="methodology_details-list">
                     <li class="methodology_details-item">
-                        <p>Практичні домашні завдання</p>
+                        Практичні домашні завдання
                     </li>
                     <li class="methodology_details-item">
-                        <p>2 командних проєкти</p>
+                        2 командних проєкти
                     </li>
                     <li class="methodology_details-item">
-                        <p>4+ особистих проєкти</p>
+                        4+ особистих проєкти
                     </li>
                 </ul>
             </li>
             <li class="methodology_item">
-                <h3>20%</h3>
+                <div class="percent-wrap">
+                <h3 class="percent-label">20%</h3>
+                </div>
                 <ul class="methodology_details-list">
                     <li class="methodology_details-item">
-                        <p>Перевірка домашніх завдань</p>
+                        Перевірка домашніх завдань
                     </li>
                     <li class="methodology_details-item">
-                        <p>Рекомендації від викладачів</p>
+                        Рекомендації від викладачів
                     </li>
                     <li class="methodology_details-item">
-                        <p>Допомога ментора у вирішенні будь-яких питань з навчання</p>
+                        Допомога ментора у вирішенні будь-яких питань з навчання
                     </li>
                 </ul>
             </li>
