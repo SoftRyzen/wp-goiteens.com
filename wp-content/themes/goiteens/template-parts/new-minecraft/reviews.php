@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block11_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block11_title');
+
+?>
 <section class="reviews">
     <div class="container">
         <h2 class="section-title">Ось що кажуть батьки про навчання</h2>

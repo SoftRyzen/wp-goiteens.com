@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block10_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block10_title');
+
+?>
 <section class="programme">
     <div class="container">
         <h2 class="section-title">Програма навчання у всесвіті Майнкрафт — це перший крок, який відчиняє дитині двері до будь-якого IT-напрямку</h2>
@@ -7,7 +19,7 @@
                         <p>7-8 років</p>
                         <img class="programme_img" width="83" height="171" loading="lazy" alt="хлопчик персонаж майнкрафта" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/boy-1x.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/boy-2x.png 2x"/>
-                        
+
             </li>
             <li class="programme_item">
                 <ul class="programme_details-list">

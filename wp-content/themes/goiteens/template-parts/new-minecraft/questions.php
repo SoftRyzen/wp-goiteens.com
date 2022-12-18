@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block12_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block12_title');
+
+?>
 <section class="questions">
     <div class="container">
         <h2 class="section-title">Залишилися питання?</h2>
@@ -22,7 +34,7 @@
 Ми обираємо найкращих людей в команду, щоб кожна дитина почувала себе комфортно в школі GoITeens.</p>
             </li>
         </ul>
-        <strong class="suggestion-block"><span>Ще досі вагаєтесь?</span>  
+        <strong class="suggestion-block"><span>Ще досі вагаєтесь?</span>
         <span>Погляньте, як проходить навчання на курсі</span>
         Подайте заявку на вступне заняття прямо зараз</strong>
         <button class="btn_registration">зареєструватися</button></div>
