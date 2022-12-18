@@ -84,4 +84,5 @@ jQuery( function( $ ) {
 
 	CourseChildPage.init()
 
+
 });
