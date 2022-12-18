@@ -1,0 +1,19 @@
+.new-minecraft{
+    .suggestion-block{
+    margin-bottom: 20px;
+    font-size: 16px;
+    display: block;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 500;
+    @media screen and (min-width: 768px) {
+        max-width: 348px;
+        margin: 0 auto 40px;
+
+      }
+      @media screen and (min-width: 1280px) {
+        max-width: 435px;
+        font-size: 20px;
+      }
+    }
+}
