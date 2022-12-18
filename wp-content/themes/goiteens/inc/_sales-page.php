@@ -1,6 +1,25 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
+function goiteens_register_layout_category( $categories )
+{
+
+    $categories[] = array(
+        'slug'  => 'goiteens-layout-category',
+        'title' => 'GoIteens'
+    );
+
+    return $categories;
+}
+
+if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) )
+{
+    add_filter( 'block_categories_all', 'goiteens_register_layout_category' );
+} else {
+    add_filter( 'block_categories', 'goiteens_register_layout_category' );
+}
+
+
 add_action('acf/init', 'goiteens_sale_page_acf_blocks_init');
 function goiteens_sale_page_acf_blocks_init()
 {
@@ -11,11 +30,12 @@ function goiteens_sale_page_acf_blocks_init()
         // Register a testimonial block.
         acf_register_block_type(array(
             'name'              => 'sale-page',
-            'title'             => __('Sale Page'),
+            'title'             => __('GoIteens: Sale Page'),
             'description'       => __('A custom Sale Page block.'),
             'render_template'   => 'blocks/sale-page/page.php',
-            'category'          => 'formatting',
+            'category'          => 'goiteens-layout-category',
             'enqueue_style' => get_template_directory_uri() . '/assets/css/bundle.css',
+            'keywords'          => ['goiteens', 'sale', 'sale page'],
         ));
     }
 }
