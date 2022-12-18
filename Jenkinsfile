@@ -10,7 +10,7 @@ node("all-biulds"){
             string(credentialsId: 'tech_alert_chat_id', variable: 'telegramAlertChannelChatId'),
 
             //add ftp credential
-            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_develop', variable: 'ftpUserPassAndHost')
+            string(credentialsId: 'ftp_user_pass_host_fot_goiteens_com_master', variable: 'ftpUserPassAndHost')
         ]) {
                 env.telegramNotifyChannelBotApiToken = telegramNotifyChannelBotApiToken;
                 env.telegramNotifyChannelChatId = telegramNotifyChannelChatId;
@@ -20,7 +20,7 @@ node("all-biulds"){
                 env.ftpUserPassAndHost = ftpUserPassAndHost;
 
                 env.gitRepository = 'git@github.com:SoftRyzen/wp-goiteens.com.git';
-                env.gitBranch = 'develop';
+                env.gitBranch = 'master';
         }
     }
 
