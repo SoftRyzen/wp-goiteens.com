@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block2_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block2_title');
+
+?>
 <section class="advantages">
     <div class="container">
         <h2 class="visually-hidden"></h2>

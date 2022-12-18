@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block6_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block6_title');
+
+?>
 <section class="lessons">
     <div class="container">
         <h2 class="section-title">Кожне заняття — це неймовірна пригода, маса нових знань та крутих емоцій</h2>

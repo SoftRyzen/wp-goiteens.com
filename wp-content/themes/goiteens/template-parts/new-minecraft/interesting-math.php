@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block4_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block4_title');
+
+?>
 <section class="int-math">
     <div class="container">
         <h2 class="section-title">Курс «Цікава математика і програмування у всесвіті Майнкрафт» — це <span>навчання </span>, яке <span>захоплює!</span></h2>
@@ -19,10 +31,10 @@
         </div>
         <picture class="int-math_img-wrap">
         <source media="(min-width: 1280px)" type="image/png" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-1x.png 1x, 
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-2x.png 2x" width="448" height="382"/>
         <source media="(min-width: 768px)" type="image/png" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-1x.png 1x, 
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-2x.png 2x" width="335" height="287"/>
         <img class="int-math_img" width="272" height="233" loading="lazy" alt="пара персонажів" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-mob-1x.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-mob-2x.png 2x"/>
@@ -32,10 +44,10 @@
         <div class="int-math_info-wrapper">
         <picture class="int-math_img-wrap">
         <source media="(min-width: 1280px)" type="image/png" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-desk-1x.png 1x, 
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-desk-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-desk-2x.png 2x" width="455" height="384"/>
         <source media="(min-width: 768px)" type="image/png" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-tab.png.png 1x, 
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-tab.png.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-tab.png 2x" width="315" height="268"/>
         <img class="int-math_img" width="181" height="154" loading="lazy" alt="Дерево в майнкрафті" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-mob.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-mob.png 2x"/>
