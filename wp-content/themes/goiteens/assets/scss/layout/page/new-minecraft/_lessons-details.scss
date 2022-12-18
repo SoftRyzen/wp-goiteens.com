@@ -1,0 +1,150 @@
+.new-minecraft{
+    .lessons {
+        background-color: $color-nm-bg-lite;
+        padding: 20px 0;
+        @media screen and (min-width: 768px) {
+            padding: 40px 0;
+          }
+          @media screen and (min-width: 1280px) {
+            padding: 60px 0;
+          }
+    
+    .lessons_list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+        margin-bottom: 40px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            row-gap:20px;
+            column-gap: 32px;
+            justify-content: center;
+          }
+          @media screen and (min-width: 1280px) {
+            flex-wrap: nowrap;
+            margin-bottom: 60px;
+            gap:32px;
+          }
+    }
+    .lessons_item {
+      background-color: $color-white;
+        box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+gap:16px;
+justify-content: center;
+align-items: center;
+padding: 5px;
+        width: 100%;
+        height: 152px;
+        & > p{
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.2;
+            @media screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+        }
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 32px) / 2);
+            height: 174px;
+          }
+          @media screen and (min-width: 1280px) {
+            flex-basis: calc((100% - 2 * 32px) / 3);
+            flex-wrap: nowrap;
+            gap:32px;
+          }
+    }
+    .lessons_subtitle {
+        font-size: 20px;
+        margin-bottom: 28px;
+        font-weight: 500;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 32px;
+            @media screen and (min-width: 1280px) {
+                margin-bottom: 40px;
+            }
+          }
+    }
+    .lessons_details-list {
+
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        margin-bottom: 28px;
+        counter-reset: lessons_details-item ;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            margin-bottom: 40px;
+            -ms-flex-wrap: wrap;
+            row-gap:32px;
+            flex-wrap: wrap;
+            column-gap: 33px;
+            justify-content: center;
+          }
+          @media screen and (min-width: 1280px) {
+            flex-wrap: nowrap;
+            gap:32px;
+          }
+    }
+    .lessons_details-item {
+        position: relative;
+        padding-left: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 66px;
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 33px) / 2);
+          }
+          @media screen and (min-width: 1280px) {
+            flex-basis: calc((100% - 2 * 32px) / 3);
+          }
+          &:before{
+display: block;
+content: " 0"counter(lessons_details-item);
+counter-increment: lessons_details-item;
+
+position: absolute;
+width: 77px;
+height: 66px;
+top:0;
+left: -15px;
+background: radial-gradient(76.7% 76.7% at 58.24% 29.89%, #FFF9E4 0%, #FFE58A 100%);
+// background-color: $color-nm-counter-bg;
+font-weight: 700;
+background-size: 60px;
+background-repeat: no-repeat;
+// background-position: top 0 left 0;
+font-size: 50px;
+color: $color-nm-green-act;
+border-radius: 4px;
+text-align: center;
+          }
+    }
+// &  strong{
+//     margin-bottom: 20px;
+//     font-size: 16px;
+//     display: block;
+//     line-height: 1.2;
+//     text-align: center;
+//     font-weight: 500;
+//     @media screen and (min-width: 768px) {
+//         max-width: 348px;
+//         margin: 0 auto 40px;
+
+//       }
+//       @media screen and (min-width: 1280px) {
+//         max-width: 435px;
+//         font-size: 20px;
+//       }
+
+// }
+}
+}

@@ -1,0 +1,161 @@
+.new-minecraft{
+    .programme {
+        padding: 16px 0 20px;
+        background-color: $color-white;
+        @media screen and (min-width: 768px) {
+            padding: 40px 0;
+          }
+          @media screen and (min-width: 1280px) {
+            padding: 60px 0;
+          }
+    
+    &_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 94px;
+
+        @media screen and (min-width: 768px) {
+           row-gap: 20px;
+           column-gap: 96px;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center;
+          }
+          @media screen and (min-width: 1280px) {
+            flex-wrap: nowrap;
+          }
+    }
+    &_item {
+        position: relative;
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 2 * 96px) / 3);
+            height: 390px;
+            
+           }
+           @media screen and (min-width: 1280px) {
+            flex-basis: calc((100% - 4 * 96px) / 5);
+           }
+
+        &:first-child{
+            padding: 40px 0 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 176px;
+            box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+            border-radius: 4px;
+        }
+
+        &:nth-child(2){
+            & .programme_details-item{
+                     height: 117px;
+                       @media screen and (min-width: 768px) {
+                             min-height: 166px;
+            }
+
+                & > h3{
+                       font-size: 20px;
+                            }
+                    & > p{
+                         font-size: 16px;
+                                        }
+            }
+        }
+
+
+        &:last-child{
+            & .programme_details-item{
+                  min-height: 84px;
+             & > h3{
+                font-weight: 500;
+                color: $color-nm-deep-green;
+            }
+        }
+    }
+        &:not(:last-child)::after{
+            position: absolute;
+            content: "";
+            width: 65px;
+            height: 72px;
+            left: 50%;
+            bottom: -80px;
+            transform: translateX(-50%);
+            box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+            border-radius: 4px;
+            
+            background: url(../images/new-minecraft/arrow-img-2x.png) no-repeat  $color-white;
+            background-size: 26px 32px;
+            background-position: center;
+
+@media screen and (min-width: 768px) {
+   
+            width: 72px;
+            height: 65px;
+            left: 180px;
+            bottom: 40%;
+            transform: rotate(-90deg);
+   }
+   @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 4 * 96px) / 5);
+   }
+
+}
+
+        &:nth-child(3)::after{
+        @media screen and (min-width: 768px) and (max-width:1279px){
+            display: none;
+        }
+        }
+    }
+    &_details-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // column-gap:16px;
+        row-gap:14px;
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+    }
+    &_details-item {
+        flex-basis: calc((100% - 16px) / 2);
+        text-align: center;
+        min-height: 80px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+        border-radius: 4px;
+@media screen and (min-width: 768px) {
+   padding: 0 21px;
+    
+}
+
+& > h3{
+    color: $color-nm-yellow;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+& > p {
+    font-size: 14px;
+}
+    }
+    & .section-title{
+        margin-bottom: 26px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 60px;
+        }
+    }
+  }
+}

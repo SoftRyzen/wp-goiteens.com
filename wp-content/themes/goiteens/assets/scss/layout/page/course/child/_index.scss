@@ -1,0 +1,10 @@
+.lp_noregistration {
+  .modal {
+    &-form, &-description {
+      display: none;
+    }
+    &-message {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.new-minecraft{
+    .reviews {
+        padding: 20px 0;
+        background-color: $color-nm-bg-lite;
+        @media screen and (min-width: 768px) {
+            padding: 40px 0;
+          }
+          @media screen and (min-width: 1280px) {
+            padding: 60px 0;
+          }
+    
+    &_list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:10px;
+        @media screen and (min-width: 768px) {
+            gap:32px;
+          }
+
+    }
+    &_item {
+        background-color: $color-white;
+        overflow: hidden;
+        height: 320px;
+        padding: 24px 16px;
+        box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
+border-radius: 4px;
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 2);
+}
+@media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 2 * 32px) / 3);
+    }
+    & > h3{
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.28;
+        max-width: 160px;
+        @media screen and (min-width: 768px) {
+            max-width: 180px;
+        }
+      
+    }
+    & > p {
+        height: 60%;
+        font-size: 14px;
+        line-height: 1.28;
+        margin-top: 22px;
+        overflow-y: scroll;
+       
+    }
+    .social-link {
+        margin-top: 12px;
+        font-size: 9px;
+        color: $color-nm-social;
+        display: block;
+        text-decoration: underline;
+    }
+}
+&_img{
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+& .section-title{
+  
+    @media screen and (min-width: 768px) {
+        max-width: 336px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 592px;
+    }
+}
+}
+}
