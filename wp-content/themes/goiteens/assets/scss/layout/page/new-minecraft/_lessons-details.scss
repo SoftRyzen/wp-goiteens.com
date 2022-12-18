@@ -108,7 +108,7 @@ padding: 5px;
           }
           &:before{
 display: block;
-content: " 0"counter(lessons_details-item);
+content: counter(lessons_details-item, decimal-leading-zero);
 counter-increment: lessons_details-item;
 
 position: absolute;

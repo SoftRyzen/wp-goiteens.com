@@ -8,6 +8,7 @@
           @media screen and (min-width: 1280px) {
             padding: 60px 0;
           }
+
           &_list {
             display: flex;
             flex-direction: column;
@@ -72,13 +73,24 @@ padding: 20px 16px;
             flex-direction: row;
             row-gap: 60px;
             column-gap: 88px;
-            margin-bottom: 63px;
+            padding-bottom: 63px;
+            margin-bottom: 0;
             flex-wrap: wrap;
+            background-image: url(../images/new-minecraft/down-line.svg), url(../images/new-minecraft/down-line.svg);
+            background-repeat: no-repeat;
+            background-size: 169px 169px;
+            background-position: top 3% center,bottom -25% center;
+            
             }
             @media screen and (min-width: 1280px) {
              flex-wrap: nowrap;
-             margin-bottom: 60px;
+             padding: 60px 0;
              gap: 32px;
+             margin-bottom: 0;
+             background-image: url(../images/new-minecraft/down-line.svg), url(../images/new-minecraft/up-line.svg), url(../images/new-minecraft/down-line.svg);
+             background-repeat: no-repeat;
+             background-size: 169px 169px 169px;
+             background-position: bottom -120% left 18%, top -120% left 48%, bottom -120% right 22%;
             }
         }
         &_development-item {
@@ -136,7 +148,7 @@ background-color: $color-white;
             @media screen and (min-width: 1280px) {
              font-size: 24px;
              max-width: 864px;
-             margin-bottom: 60px;
+             margin-bottom: 0;
             }
         }
         &  .suggestion-block{
