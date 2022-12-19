@@ -7,7 +7,7 @@
         <div class="modal-progress">
             <ul class="list 1 modal-progress-bar">
                 <li class="item is-active"><span><?php the_field('first_step', 'option'); ?></span></li>
-                <?php 
+                <?php
 		  if ($args): ?>
                 <li class="item"><span><?php echo $args['secondFormStep']; ?></span></li>
                 <?php endif; ?>
