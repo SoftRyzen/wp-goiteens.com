@@ -66,7 +66,6 @@
 
                 </label>
             </div>
-            <input type="hidden" name="url_theme" value="<?= get_template_directory_uri() ?>" />
         </form>
         <div class="modal-message">
             <p class="text is-hidden" data-text-wait><?php the_field('wait_text', 'option'); ?></p>

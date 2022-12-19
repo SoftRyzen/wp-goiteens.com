@@ -62,7 +62,6 @@
                     <?php endif; ?>
                 </label>
             </div>
-            <input type="hidden" name="url_theme" value="<?= get_template_directory_uri() ?>" />
         </form>
 		<?php if(get_the_ID() == 4008): ?>
         <div class="modal-calendar" style="display: none; margin-top: 32px;">
