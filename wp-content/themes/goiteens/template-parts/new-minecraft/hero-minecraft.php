@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block1_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block1_title');
+
+?>
 <section class="hero-nm">
     <div class="container">
         <div class="hero-nm_marked">
@@ -7,7 +19,7 @@
 «Цікава математика і програмування у всесвіті Майнкрафт»</p>
         <h1 class="hero-nm_page-title">
             <span class="hero-nm_page-title--uppercase">актуальні знаяння,</span>
-            <p>що допоможуть дитині 
+            <p>що допоможуть дитині
 <span>стати №1 </span>в школі та дорослому житті</p>
         </h1>
         <p class="hero-nm_try-free">Спробуйте перший урок програми<span>безкоштовно</span></p>

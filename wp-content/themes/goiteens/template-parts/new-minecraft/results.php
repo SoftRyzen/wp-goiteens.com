@@ -1,9 +1,21 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block7_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block7_title');
+
+?>
 <section class="results">
     <div class="container">
         <h2 class="section-title">Реальні результати ви побачите вже в перші місяці роботи на курсі</h2>
         <ul class="results_list">
             <li class="results_item">
-               
+
                 <svg class="results_icon">
 
 <use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-heart"></use>

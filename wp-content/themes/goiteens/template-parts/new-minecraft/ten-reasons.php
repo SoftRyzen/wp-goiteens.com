@@ -1,7 +1,19 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block8_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block8_title');
+
+?>
 <section class="ten-reasons">
     <div class="container">
         <h2 class="section-title"><span>10 ПРИЧИН</span> навчатися на курсі
-«Цікава математика і програмування у всесвіті Майнкрафт» 
+«Цікава математика і програмування у всесвіті Майнкрафт»
 від GoITeens</h2>
         <ul class="ten-reasons_list">
             <li class="ten-reasons_item">
@@ -45,7 +57,7 @@
                 <p></p>
             </li>
         </ul>
-    
+
         <p class="ten-reasons_info">GoITeens — IT-академія, що надає повноцінну системну IT-освіту дітям від 8 до 16 років. Створена на базі міжнародної освітньої платформи GoIT Global, партнера проєкту IT Ukraine та IT Generation.</p>
         <ul class="awards_list">
             <li class="awards_item"><img  src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/ukr-aw-19-22.png" width="198" height="64" loading="lazy" alt="українська народна премія перше місце з 2018 по 2022 роки"></li>
