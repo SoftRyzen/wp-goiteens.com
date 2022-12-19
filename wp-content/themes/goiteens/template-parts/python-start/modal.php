@@ -36,7 +36,6 @@
       <div class="btn-cont">
         <button class="btn modal-btn order-btn" type="submit">Замовити</button>
       </div>
-        <input type="hidden" name="url_theme" value="<?= get_template_directory_uri() ?>" />
     </form>
     <div class="modal-message">
       <p class="modal-text"><?php the_field('wait_text', 'option'); ?></p>

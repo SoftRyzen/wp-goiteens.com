@@ -1,4 +1,6 @@
 <?php
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
+
 $postdata = json_encode($_POST);
 
 

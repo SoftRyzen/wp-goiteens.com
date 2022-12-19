@@ -33,7 +33,6 @@
                   <input type="hidden" name="utm_term" value="" />
                   <input type="hidden" name="utm_campaign" value="" />
                   <input type="hidden" name="utm_content" value="" />
-            <input type="hidden" name="url_theme" value="<?= get_template_directory_uri() ?>" />
 
             <!-- end hidden inputs for utm-tags -->
             <div class="btn-cont">
