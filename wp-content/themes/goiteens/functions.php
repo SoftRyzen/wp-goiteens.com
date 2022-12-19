@@ -137,6 +137,11 @@ require get_template_directory() . '/inc/_esputnik.php';
 require get_template_directory() . '/inc/course/_child.php';
 
 /**
+ * Minecraft Page
+ */
+require get_template_directory() . '/inc/_minecraft-landing-page.php';
+
+/**
  * Telegram
  */
 require get_template_directory() . '/inc/_telegram.php';

@@ -1,3 +1,15 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+
+if ( !is_admin() )
+{
+    $hide = get_field('block9_show');
+    if( $hide ) return;
+}
+
+$title = get_field('block9_title');
+
+?>
 <section class="methodology">
     <div class="container">
         <h2 class="section-title">IT-академія GoITeens розробила власну унікальну методологію навчання</h2>
@@ -50,6 +62,6 @@
                     </li>
                 </ul>
             </li>
-        </ul> 
+        </ul>
     </div>
 </section>
