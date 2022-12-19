@@ -8,10 +8,12 @@
         border-radius: 4px;
         border-top: 4px solid $color-nm-lite-green;
         border-bottom: 4px solid $color-nm-deep-green;
+        border-left: 0;
+        border-right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $color-nm-green;
+        background-color: $color-nm-green-act;
         transition: background-color 750ms, border 750px;
         cursor: pointer;
         text-transform: uppercase;

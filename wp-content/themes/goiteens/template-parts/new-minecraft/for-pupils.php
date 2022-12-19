@@ -34,7 +34,7 @@ $title = get_field('block3_title');
                 <img  alt="bit red heart" width="26" height="32" loading="lazy"
                  src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
-                <p>навчимо втілювати найсміливіші ідеї в цифров ому світі</p>
+                <p>навчимо втілювати найсміливіші ідеї в цифровому світі</p>
             </li>
             <li class="for-pupils_item">
             <img  alt="bit red heart" width="40" height="32" loading="lazy"
