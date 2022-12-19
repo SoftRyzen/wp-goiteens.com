@@ -16,7 +16,7 @@ add_filter(
         $telegramMessage .= 'Строка: <code>' . $error['line'] . '</code>';
 
         $getQuery = array(
-            "chat_id" 	=> -885097434,
+            "chat_id" 	=> -1001886465230,
             "text"  	=> $telegramMessage,
             "parse_mode" => "html"
         );
