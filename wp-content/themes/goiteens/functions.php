@@ -137,6 +137,11 @@ require get_template_directory() . '/inc/_esputnik.php';
 require get_template_directory() . '/inc/course/_child.php';
 
 /**
+ * Telegram
+ */
+require get_template_directory() . '/inc/_telegram.php';
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
