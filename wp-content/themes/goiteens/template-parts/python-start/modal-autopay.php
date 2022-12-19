@@ -23,7 +23,7 @@
         <input class="modal-input" type="email" id="register_form_input_email" name="email" required=""
           data-required="email" data-invalid-message="<?php the_field('email_invalid', 'option'); ?>" />
       </div>
-  
+
       <!-- hidden inputs for utm-tags -->
 	  <input type="hidden" name="promo" value="" />
 		<input type="hidden" name="ip" value="" />
@@ -33,11 +33,12 @@
       <input type="hidden" name="utm_term" value="" />
       <input type="hidden" name="utm_campaign" value="" />
       <input type="hidden" name="utm_content" value="" /> -->
-      
+
       <!-- end hidden inputs for utm-tags -->
       <div class="btn-cont">
         <button class="btn modal-btn order-btn" type="submit">Замовити</button>
       </div>
+        <input type="hidden" name="url_theme" value="<?= get_template_directory_uri() ?>" />
     </form>
     <div class="modal-message">
       <p class="modal-text"><?php the_field('wait_text', 'option'); ?></p>
