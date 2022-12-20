@@ -1,4 +1,6 @@
 <?php
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
+
 require_once "Esputnik.php";
 $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
 $inputJSON = file_get_contents('php://input');
