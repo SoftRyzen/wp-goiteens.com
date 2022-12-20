@@ -51,7 +51,7 @@ $title = get_field('block6_title');
                 <p>Творче завдання для реалізації ідеї за допомогою вивчених інструментів</p>
             </li>
         </ul>
-        <strong class="suggestion-block" >Реєструйтеся на пробне заняття, щоб перевірити якість курсу на практиці!</strong>
+        <strong class="suggestion-block" >Реєструйтеся на пробне заняття,           щоб перевірити якість курсу на практиці!</strong>
 <button class="btn_registration">зареєструватися</button>
 </div>
 </section>
