@@ -7,6 +7,7 @@
           }
           @media screen and (min-width: 1280px) {
             padding: 60px 0;
+            position: relative;
           }
           &  .section-title{
 margin-bottom: 40px;
@@ -33,6 +34,7 @@ margin-bottom: 40px;
             column-gap:32px;
             row-gap: 40px;
             justify-content: left;
+            margin-bottom: 12px;
           }
     }
     &_item {
@@ -106,6 +108,7 @@ line-height: 1.2;
           @media screen and (min-width: 1280px) {
             max-width: 488px;
             display: inline-block;
+            margin-left: 50px;
             
           }
     }
@@ -123,6 +126,8 @@ line-height: 1.2;
         max-width: 590px;
         gap:37px;
         display: inline-flex;
+        position: absolute;
+        bottom: 370px;
         
       }
     }

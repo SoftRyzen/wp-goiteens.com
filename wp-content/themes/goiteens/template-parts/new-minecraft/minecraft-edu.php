@@ -17,9 +17,19 @@ $title = get_field('block5_title');
         <source media="(min-width: 1280px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-1x-desk.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-2x-desk.png 2x" width="568" height="349"/>
+
+        <source media="(min-width: 1280px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-1x-desk.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-2x-desk.webp 2x" width="568" height="349"/>
+
         <source media="(min-width: 768px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-1x-tab.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-2x-tab.png 2x" width="316" height="198"/>
+        
+        <source media="(min-width: 768px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-1x-tab.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-2x-tab.webp 2x" width="316" height="198"/>
+
         <img class="item_img" width="240" height="151" loading="lazy" alt="minecraft logo" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-1x-mob.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/minecraft-2x-mob.png 2x"/>
         </picture>
@@ -47,9 +57,19 @@ $title = get_field('block5_title');
         <source media="(min-width: 1280px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-2x.png 2x" width="589" height="392"/>
+
+        <source media="(min-width: 1280px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-1x.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-2x.webp 2x" width="589" height="392"/>
+
         <source media="(min-width: 768px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-2x.png 2x" width="336" height="256"/>
+       
+        <source media="(min-width: 768px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-1x.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-2x.webp 2x" width="336" height="256"/>
+
         <img class="item_img" width="272" height="208" loading="lazy" alt="coliseum in minecraft" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-mob-1x.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-mob-2x.png 2x"/>
         </picture>
@@ -59,9 +79,19 @@ $title = get_field('block5_title');
         <source media="(min-width: 1280px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-desk-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-desk-2x.png 2x" width="520" height="427"/>
+
+        <source media="(min-width: 1280px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-desk-1x.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-desk-2x.webp 2x" width="520" height="427"/>
+
         <source media="(min-width: 768px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-tab-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-tab-2x.png 2x" width="284" height="224"/>
+
+        <source media="(min-width: 768px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-tab-1x.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-tab-2x.webp 2x" width="284" height="224"/>
+
         <img class="item_img" width="272" height="224" loading="lazy" alt="пара персонажів" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-mob-1x.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/team-mob-2x.png 2x"/>
         </picture>
