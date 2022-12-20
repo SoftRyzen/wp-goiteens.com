@@ -9,7 +9,7 @@
             padding: 60px 0;
           }
     
-    .lessons_list {
+    &_list {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -29,7 +29,7 @@
             gap:32px;
           }
     }
-    .lessons_item {
+    &_item {
       background-color: $color-white;
         box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
 border-radius: 4px;
@@ -48,6 +48,11 @@ padding: 5px;
             @media screen and (min-width: 768px) {
                 font-size: 20px;
               }
+              & > span{
+                @media screen and (min-width: 768px) {
+                 display: block;
+                }
+              }
         }
         @media screen and (min-width: 768px) {
             width: calc((100% - 32px) / 2);
@@ -58,8 +63,9 @@ padding: 5px;
             flex-wrap: nowrap;
             gap:32px;
           }
+         
     }
-    .lessons_subtitle {
+    &_subtitle {
         font-size: 20px;
         margin-bottom: 28px;
         font-weight: 500;
@@ -72,7 +78,7 @@ padding: 5px;
             }
           }
     }
-    .lessons_details-list {
+    &_details-list {
 
         display: flex;
         flex-direction: column;
@@ -93,7 +99,7 @@ padding: 5px;
             gap:32px;
           }
     }
-    .lessons_details-item {
+    &_details-item {
         position: relative;
         padding-left: 70px;
         width: 100%;
@@ -126,6 +132,11 @@ font-size: 50px;
 color: $color-nm-green-act;
 border-radius: 4px;
 text-align: center;
+          }
+
+          & > p{
+            @media screen and (min-width: 1280px) {}
+            max-width: 280px;
           }
     }
 // &  strong{

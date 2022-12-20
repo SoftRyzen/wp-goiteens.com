@@ -52,7 +52,9 @@
             & .programme_details-item{
                      height: 117px;
                        @media screen and (min-width: 768px) {
-                             min-height: 166px;
+                             height: 166px;
+                             justify-content: center;
+                             gap:24px;
             }
 
                 & > h3{

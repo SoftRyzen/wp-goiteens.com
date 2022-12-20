@@ -35,11 +35,11 @@ $title = get_field('block5_title');
             <div class="box-content"><h3 class="box-content_subtitle">Що будуємо?</h3>
             <p class="box-content_text">Виконуючи математичні розрахунки, діти зводять грандіозні об’єкти:</p>
             <ul class="minecraft-edu_list">
-                <li class="minecraft-edu_item--objects">Римський Амфітеатр</li>
-                <li class="minecraft-edu_item--objects">Голландську ферму</li>
-                <li class="minecraft-edu_item--objects">Венеціанські канали</li>
-                <li class="minecraft-edu_item--objects">Австрійську залізницю</li>
-                <li class="minecraft-edu_item--objects">Британське підземне метро та багато інших видатних споруд</li>
+                <li class="minecraft-edu_item minecraft-edu_item--objects">Римський Амфітеатр</li>
+                <li class="minecraft-edu_item minecraft-edu_item--objects">Голландську ферму</li>
+                <li class="minecraft-edu_item minecraft-edu_item--objects">Венеціанські канали</li>
+                <li class="minecraft-edu_item minecraft-edu_item--objects">Австрійську залізницю</li>
+                <li class="minecraft-edu_item minecraft-edu_item--objects">Британське підземне метро та багато інших видатних споруд</li>
             </ul>
         </div>
 
