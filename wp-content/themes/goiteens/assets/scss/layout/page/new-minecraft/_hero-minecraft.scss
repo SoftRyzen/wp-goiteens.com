@@ -16,9 +16,14 @@
     background-position: top 0 right -200px;
     padding-top: 40px;
     padding-bottom: 94px;
-    // max-width: 1440px;
     margin: 0 auto;
      }
+     @media screen and (min-width: 1440px){
+     background-position: top 0 right -70px;
+     max-width: 1920px;
+    
+      }
+
      & > .container{
       @media screen and (min-width: 768px) {
         width: 520px;
@@ -102,11 +107,11 @@
               font-size: 40px;
             }
             &  span{
-              color: $color-nm-green;
+              color: $color-nm-green-act;
             }
       .hero-nm_page-title--uppercase {
         text-transform: uppercase;
-        color: $color-nm-green;
+        color: $color-nm-green-act;
       }
       
     }

@@ -33,9 +33,19 @@ $title = get_field('block4_title');
         <source media="(min-width: 1280px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-2x.png 2x" width="448" height="382"/>
+
+        <source media="(min-width: 1280px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-1x.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-desk-2x.webp 2x" width="448" height="382"/>
+
         <source media="(min-width: 768px)" type="image/png" srcset="
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-1x.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-2x.png 2x" width="335" height="287"/>
+
+        <source media="(min-width: 768px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-1x.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-2x.webp 2x" width="335" height="287"/>
+
         <img class="int-math_img" width="272" height="233" loading="lazy" alt="пара персонажів" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-mob-1x.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-mob-2x.png 2x"/>
         </picture>
@@ -44,11 +54,21 @@ $title = get_field('block4_title');
         <div class="int-math_info-wrapper">
         <picture class="int-math_img-wrap">
         <source media="(min-width: 1280px)" type="image/png" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-desk-1x.png 1x,
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-desk-2x.png 2x" width="455" height="384"/>
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-desk.png 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-desk.png 2x" width="455" height="384"/>
+
+        <source media="(min-width: 1280px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-desk.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-desk.webp 2x" width="455" height="384"/>
+
         <source media="(min-width: 768px)" type="image/png" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-tab.png.png 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-tab.png 1x,
         <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-tab.png 2x" width="315" height="268"/>
+
+        <source media="(min-width: 768px)" type="image/webp" srcset="
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-tab.webp 1x,
+        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-tab.webp 2x" width="315" height="268"/>
+
         <img class="int-math_img" width="181" height="154" loading="lazy" alt="Дерево в майнкрафті" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-1x-mob.png"
         srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/tree-2x-mob.png 2x"/>
 
