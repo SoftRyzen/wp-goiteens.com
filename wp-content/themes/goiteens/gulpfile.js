@@ -25,6 +25,7 @@ gulp.task('serve', function() {
     gulp.watch(
         [
             'assets/js/src/**/*.js',
+            'assets/js/src/vendor/**/*.js',
             'assets/js/script/**/*.js',
             'assets/js/pages/**/*.js'
         ], gulp.parallel('js'));
@@ -72,8 +73,10 @@ gulp.task('js', function() {
     return gulp.src(
         [
             './assets/js/src/vendor/*.js',
+            './assets/js/src/vendor/**/*.js',
             './assets/js/script/*.js',
-            './assets/js/pages/*.js'
+            './assets/js/pages/*.js',
+            './assets/js/pages/**/*.js',
         ])
         .pipe(concat('bundle.js'))
         .pipe(uglify())
