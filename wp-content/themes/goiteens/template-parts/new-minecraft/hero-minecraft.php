@@ -23,6 +23,6 @@ $title = get_field('block1_title');
 <span>стати №1 </span>в школі та дорослому житті
         </h1>
         <p class="hero-nm_try-free">Спробуйте перший урок програми<span>безкоштовно</span></p>
-        <button class="btn_registration">зареєструватися</button>
+        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
     </div>
 </section>

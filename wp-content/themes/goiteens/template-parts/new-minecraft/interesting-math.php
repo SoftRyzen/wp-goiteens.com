@@ -88,6 +88,6 @@ $title = get_field('block4_title');
         <h3 class="subtitle-blog" >Протестуйте курс безплатно,
 а потім приймайте рішення</h3>
         <strong>Тисніть кнопку, щоб зареєструйтеся на вступне заняття!</strong>
-        <button class="btn_registration">зареєструватися</button>
+        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
     </div>
 </section>
