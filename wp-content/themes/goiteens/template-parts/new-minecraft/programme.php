@@ -1,98 +1,56 @@
 <?php
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( !is_admin() )
-{
+if (!is_admin()) {
     $hide = get_field('block10_show');
-    if( $hide ) return;
+    if ($hide) return;
 }
 
 $title = get_field('block10_title');
+$first_title = get_field('block10_first_title');
+$first_text = get_field('block10_first_text');
+$first_image = get_field('block10_first_photo');
+$list = get_field('block10_list');
 
 ?>
 <section class="programme">
     <div class="container">
-        <h2 class="section-title">Програма навчання у всесвіті Майнкрафт — це перший крок, який відчиняє дитині двері до будь-якого IT-напрямку</h2>
-        <ul class="programme_list">
-            <li class="programme_item">
-                        <h3>Minecraft Kids</h3>
-                        <p>7-8 років</p>
-                        <img class="programme_img" width="83" height="171" loading="lazy" alt="хлопчик персонаж майнкрафта" src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/boy-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/boy-2x.png 2x"/>
+        <?php if ($title) { ?>
+            <h2 class="section-title"><?= $title ?></h2>
+        <?php } ?>
+        <?php if ($list) { ?>
+            <ul class="programme_list">
+                <li class="programme_item">
+                    <?php if ($first_title) { ?>
+                        <h3><?= $first_title ?></h3>
 
-            </li>
-            <li class="programme_item">
-                <ul class="programme_details-list">
-                    <li class="programme_details-item">
-                        <h3>Minecraft Kids</h3>
-                        <p>9-12 років</p>
+                    <?php } ?>
+                    <?php if ($first_text) { ?>
+                        <p>  <?= $first_text ?></p>
+                    <?php } ?>
+                    <?php if ($first_title) { ?>
+                        <img class="programme_img" width="83" height="171" loading="lazy"
+                             alt="хлопчик персонаж майнкрафта"
+                             src=" <?= $first_image ?>"
+                             srcset="<?= $first_image ?> 2x"/>
+
+                    <?php } ?>
+                </li>
+                <?php foreach ($list as $item) { ?>
+                    <li class="programme_item">
+                        <?php if ($item['list']) { ?>
+                            <ul class="programme_details-list">
+                                <?php foreach ($item['list'] as $second_list_item) { ?>
+                                    <li class="programme_details-item">
+                                        <h3><?=$second_list_item['title']?></h3>
+                                        <p><?=$second_list_item['text']?></p>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        <?php } ?>
                     </li>
-                    <li class="programme_details-item">
-                        <h3>Front-End Junior</h3>
-                        <p>10-11 років</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="programme_item">
-                <ul class="programme_details-list">
-                    <li class="programme_details-item">
-                        <h3>Front-End Junior</h3>
-                        <p>10-11 років</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Roblox</h3>
-                        <p>11-12 років</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Design Junior</h3>
-                        <p>10-11 років</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Front-End</h3>
-                        <p>11-16 років</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="programme_item">
-                <ul class="programme_details-list">
-                    <li class="programme_details-item">
-                        <h3>Front-End </h3>
-                        <p>11-16 років</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>GameDev</h3>
-                        <p>13-16 років</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Digital Design</h3>
-                        <p>11-16 років</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Python</h3>
-                        <p>13-16 років</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="programme_item">
-                <ul class="programme_details-list">
-                    <li class="programme_details-item">
-                        <h3>Розробник сайтів</h3>
-                        <p>середня ЗП від €2 000</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Розробник ігор</h3>
-                        <p>середня ЗП від €2 700</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Діджитал дизайнер</h3>
-                        <p>середня ЗП від €2 700</p>
-                    </li>
-                    <li class="programme_details-item">
-                        <h3>Фул-стек розробник</h3>
-                        <p>середня ЗП від €3 000</p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+                <?php } ?>
+            </ul>
+        <?php } ?>
     </div>
 </section>

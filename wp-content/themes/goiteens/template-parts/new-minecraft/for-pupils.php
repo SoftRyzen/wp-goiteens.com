@@ -1,79 +1,57 @@
 <?php
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( !is_admin() )
-{
+if (!is_admin()) {
     $hide = get_field('block3_show');
-    if( $hide ) return;
+    if ($hide) return;
 }
 
 $title = get_field('block3_title');
+$under_title_text = get_field('block3_under');
+$list = get_field('block3_list');
+$icon = get_field('block3_icon');
+$yellow_text = get_field('block3_yellow');
 
 ?>
 <section class="for-pupils">
     <div class="container">
-        <h2 class="section-title">Програма курсу розроблена спеціально для учнів 1-2 класів</h2>
-        <p class="text">Ідеально підійде дитині, яка…</p>
-        <ul class="for-pupils_list">
+        <?php if ($title) { ?>
+            <h2 class="section-title">
+                <?= $title ?>
+            </h2>
+        <?php } ?>
+        <?php if ($under_title_text) { ?>
+            <p class="text"><?= $under_title_text ?></p>
+        <?php } ?>
 
-            <li class="for-pupils_item">
-                <img  alt="bit red heart" width="40" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-2x.png 2x"/>
-                <h3>Захоплюється іграми, гаджетами</h3>
-                <img  alt="bit red heart" width="26" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
-                <p>ми ніжно направимо ентузіазм в корисне русло</p>
-            </li>
-            <li class="for-pupils_item">
-            <img  alt="bit red heart" width="40" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-2x.png 2x"/>
-                <h3>Має інженерне мислення, будує з лего</h3>
-                <img  alt="bit red heart" width="26" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
-                <p>навчимо втілювати найсміливіші ідеї в цифровому світі</p>
-            </li>
-            <li class="for-pupils_item">
-            <img  alt="bit red heart" width="40" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-2x.png 2x"/>
-                <h3>Мислить творчо, має розвинену уяву</h3>
-                <img  alt="bit red heart" width="26" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
-                <p>покажемо, як реалізувати творчий потенціал у створенні ігрових світів</p>
-            </li>
-            <li class="for-pupils_item">
-            <img  alt="bit red heart" width="40" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-2x.png 2x"/>
-                <h3>Має гарні математичні здібності</h3>
-                <img  alt="bit red heart" width="26" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
-                <p>програма курсу допоможе їх розкрити і прокачати</p>
-            </li>
-            <li class="for-pupils_item">
-            <img  alt="bit red heart" width="40" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-2x.png 2x"/>
-                <h3>Або навпаки, не дружить з математикою</h3>
-                <img  alt="bit red heart" width="26" height="32" loading="lazy"
-                 src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
-        srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
-                <p>навчимо рахувати та розуміти математичні закони без сліз</p>
-            </li>
-        </ul>
+        <?php if ($list) { ?>
+            <ul class="for-pupils_list">
+                <?php foreach ($list as $item) { ?>
+                    <li class="for-pupils_item">
+                        <img alt="bit red heart" width="40" height="32" loading="lazy"
+                             src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-1x.png"
+                             srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/heart-img-2x.png 2x"/>
+                        <h3><?= $item['title']; ?></h3>
+                        <img alt="bit red heart" width="26" height="32" loading="lazy"
+                             src="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-1x.png"
+                             srcset="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/arrow-img-2x.png 2x"/>
+                        <p><?= $item['text']; ?></p>
+                    </li>
+                <?php } ?>
+
+            </ul>
+        <?php } ?>
         <div class="for-pupils_info-block">
-        <svg>
+            <?php if($icon) { ?>
+            <svg>
 
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-idea"></use>
+                <use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#<?= $icon ?>"></use>
 
-</svg>
-            <p><span>7-8 років —</span> час, коли дитина формується, як особистість. Саме тому важливо вже зараз вкласти в неї фундаментальні знання та допомогти встановити позитивні асоціації з процесом навчання.</p>
+            </svg>
+            <?php } ?>
+            <?php if ($yellow_text) { ?>
+                <p><?= $yellow_text ?></p>
+            <?php } ?>
         </div>
     </div>
 </section>

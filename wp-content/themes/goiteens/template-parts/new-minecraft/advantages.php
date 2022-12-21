@@ -6,30 +6,21 @@ if ( !is_admin() )
     $hide = get_field('block2_show');
     if( $hide ) return;
 }
-
-$title = get_field('block2_title');
+$list = get_field('block2_list');
 
 ?>
+<?php if( $list ) { ?>
 <section class="advantages">
     <div class="container">
         <h2 class="visually-hidden"></h2>
         <ul class="advantages_list">
+            <?php foreach ( $list as $item ) { ?>
             <li class="advantages_item">
-                <h3><span>7+ </span>років</h3>
-                <p>навчаємо школярів</p>
+                <h3><?= $item['title'] ?></h3>
+                <p><?= $item['text'] ?></p>
             </li>
-            <li class="advantages_item">
-                <h3><span>9500+ </span>дітей</h3>
-                <p>навчились програмувати</p>
-            </li>
-            <li class="advantages_item">
-                <h3><span>2120+ </span>проєктів</h3>
-                <p>створено на заняттях</p>
-            </li>
-            <li class="advantages_item">
-                <h3><span>9 / 10 </span>студентів</h3>
-                <p>покращили успішність в школі</p>
-            </li>
+            <?php } ?>
         </ul>
     </div>
 </section>
+<?php } ?>

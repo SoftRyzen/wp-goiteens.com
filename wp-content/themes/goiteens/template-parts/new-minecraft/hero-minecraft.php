@@ -1,28 +1,38 @@
 <?php
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( !is_admin() )
-{
+if (!is_admin()) {
     $hide = get_field('block1_show');
-    if( $hide ) return;
+    if ($hide) return;
 }
 
 $title = get_field('block1_title');
+$yellow_test = get_field('block1_yellow_text');
+$text_over_title = get_field('block1_over_text');
+$text_before_title = get_field('block1_text_before_title');
+$button_text = get_field('block1_button_text');
 
 ?>
 <section class="hero-nm">
     <div class="container">
         <div class="hero-nm_marked">
-        <p class="hero-nm_marked-text">Освітня програма для дітей 7-8 років</p>
+            <?php if ($yellow_test) { ?>
+                <p class="hero-nm_marked-text"><?= $yellow_test ?></p>
+            <?php } ?>
         </div>
-        <p class="hero-nm_start--info"><span>Граємо, рахуємо та програмуємо </span>на онлайн-курсі <br>
-«Цікава математика і програмування у всесвіті Майнкрафт»</p>
-        <h1 class="hero-nm_page-title">
-            <span class="hero-nm_page-title--uppercase">актуальні знаяння,</span>
-            що допоможуть дитині
-<span>стати №1 </span>в школі та дорослому житті
-        </h1>
-        <p class="hero-nm_try-free">Спробуйте перший урок програми<span>безкоштовно</span></p>
-        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
+        <?php if ($text_over_title) { ?>
+            <p class="hero-nm_start--info"><?= $text_over_title ?></p>
+        <?php } ?>
+        <?php if ($title) { ?>
+            <h1 class="hero-nm_page-title">
+                <?= $title ?>
+            </h1>
+        <?php } ?>
+        <?php if ($text_before_title) { ?>
+            <p class="hero-nm_try-free"><?= $text_before_title ?></p>
+        <?php } ?>
+        <?php if ($button_text) { ?>
+            <button class="btn_registration"><?= $button_text ?></button>
+        <?php } ?>
     </div>
 </section>
