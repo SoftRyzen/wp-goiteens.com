@@ -79,6 +79,6 @@ $title = get_field('block7_title');
         </div>
         <strong class="suggestion-block">Перевірте, чи підходить програма вашій дитині на вступному занятті</strong>
         <p class="text">Це безкоштовно та швидко — всього 45 хвилин</p>
-        <button class="btn_registration">зареєструватися</button>
+        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
     </div>
 </section>

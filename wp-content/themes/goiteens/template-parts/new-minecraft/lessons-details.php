@@ -52,6 +52,6 @@ $title = get_field('block6_title');
             </li>
         </ul>
         <strong class="suggestion-block" >Реєструйтеся на пробне заняття,           щоб перевірити якість курсу на практиці!</strong>
-<button class="btn_registration">зареєструватися</button>
+        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
 </div>
 </section>

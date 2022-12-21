@@ -37,5 +37,6 @@ $title = get_field('block12_title');
         <strong class="suggestion-block"><span>Ще досі вагаєтесь?</span>
         <span>Погляньте, як проходить навчання на курсі</span>
         Подайте заявку на вступне заняття прямо зараз</strong>
-        <button class="btn_registration">зареєструватися</button></div>
+        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
+    </div>
 </section>

@@ -1,6 +1,5 @@
-.new-minecraft{
-  
-  .hero-nm{
+.new-minecraft {
+  .hero-nm {
     background-image: url(../images/new-minecraft/hero-mob-2x.png);
     background-position: top 0 right 0;
     background-repeat: no-repeat;
@@ -8,142 +7,133 @@
     padding: 20px 0;
     @media screen and (min-width: 768px) {
       background-image: url(../images/new-minecraft/hero-tab-2x.png);
-    background-position: top 0 right -400px;
-    padding-top: 32px;
-    padding-bottom: 83px;
-     }
-     @media screen and (min-width: 1280px) {
-    background-position: top 0 right -200px;
-    padding-top: 40px;
-    padding-bottom: 94px;
-    margin: 0 auto;
-     }
-     @media screen and (min-width: 1440px){
-     background-position: top 0 right -70px;
-     max-width: 1920px;
-    
-      }
+      background-position: top 0 right -400px;
+      padding-top: 32px;
+      padding-bottom: 83px;
+    }
+    @media screen and (min-width: 1280px) {
+      background-position: top 0 right -200px;
+      padding-top: 40px;
+      padding-bottom: 94px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1440px) {
+      background-position: top 0 right -70px;
+      max-width: 1920px;
+    }
 
-     & > .container{
+    & > .container {
       @media screen and (min-width: 768px) {
         width: 520px;
         margin: 0;
       }
       @media screen and (min-width: 1280px) {
-        width:746px;
+        width: 746px;
       }
-     }
-     .hero-nm_marked {
+    }
+    &_marked {
       background-color: $color-nm-marker;
       padding: 4px;
       margin-bottom: 20px;
       @media screen and (min-width: 768px) {
-          padding: 8px 20px;
-          margin-bottom: 40px;
-          width: 308px;
-         }
-         @media screen and (min-width: 1280px) {
-          width: 315px;
+        padding: 8px 20px;
+        margin-bottom: 40px;
+        width: 308px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 315px;
+      }
+    }
+    &_marked-text {
+      font-size: 12px;
+      line-height: 1.33;
+      color: $color-nm-text-gray;
+
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+      }
+
+      @media screen and (min-width: 1280px) {
+        font-weight: 500;
+      }
+    }
+
+    &_start--info {
+      color: $color-nm-text-mid;
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 32px;
+      width: 273px;
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+        width: 386px;
+        margin-bottom: 24px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 656px;
+        margin-bottom: 48px;
+      }
+      & > span {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 12px;
+
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 16px;
         }
       }
-      .hero-nm_marked-text {
-          font-size: 12px;
-          line-height: 1.33;
-          color:$color-nm-text-gray;
-          
-          @media screen and (min-width: 768px) {
-             font-size: 14px;
-             line-height: 1.14;
-            }
-        
-            @media screen and (min-width: 1280px) {
-              font-weight: 500;
-            }
-      }
-      
-    
-    
-    .hero-nm_start--info {
-      
-          color:$color-nm-text-mid;
-          font-size: 14px;
-          line-height: 1.2;
-          margin-bottom: 32px;
-          width: 273px;
-          @media screen and (min-width: 768px) {
-              font-size: 20px;
-              width: 386px;
-              margin-bottom: 24px;
-             }
-             @media screen and (min-width: 1280px) {
-              width: 656px;
-              margin-bottom: 48px;
-            }
-      & > span{   
-        display: block; 
-              font-size: 14px;
-             font-weight: 700;
-              margin-bottom: 12px;
-              
-              @media screen and (min-width: 768px) {
-                 font-size: 20px;
-                 margin-bottom: 16px;
-                }
-          }
-      }
-      
-      
-      .hero-nm_page-title {
+    }
+
+    &_page-title {
       font-size: 28px;
       line-height: 1.2;
       font-weight: 700;
       margin-bottom: 20px;
-      color:$color-nm-text;
-       @media screen and (min-width: 768px) {
-          font-size: 36px;
-          margin-bottom: 40px;  
-             }
-             @media screen and (min-width: 1280px) {
-              font-size: 40px;
-            }
-            &  span{
-              color: $color-nm-green-act;
-            }
-      .hero-nm_page-title--uppercase {
+      color: $color-nm-text;
+      @media screen and (min-width: 768px) {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 1280px) {
+        font-size: 40px;
+      }
+      & span {
+        color: $color-nm-green-act;
+      }
+      &--uppercase {
         text-transform: uppercase;
         color: $color-nm-green-act;
       }
-      
     }
-    
-    .hero-nm_try-free {
+
+    &_try-free {
       font-size: 14px;
       line-height: 1.2;
       margin-bottom: 24px;
       @media screen and (min-width: 768px) {
-          font-size: 16px;
-          margin-bottom: 20px;  
-             }
-           
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
       & > span {
         display: block;
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 700;
         margin-top: 12px;
-        
+
         @media screen and (min-width: 768px) {
           font-size: 20px;
-          margin-top: 12px;  
-             }
+          margin-top: 12px;
+        }
       }
-    
-      
     }
-    & .btn_registration{
+    & .btn_registration {
       margin-left: 0;
       margin-right: 0;
     }
   }
-  
 }
