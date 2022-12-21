@@ -11,6 +11,10 @@
     & > .container {
       position: relative;
       height: 100%;
+      //max-width: none;
+      //width: 100%;
+      //padding-right: 0px;
+      //padding-left: 0px;
     }
 
     &_list {
@@ -26,8 +30,10 @@
       //   }
       // gap:32px;
     }
-    &_item.swiper-slide {
-      max-width: 272px;
+    &_item {
+      //max-width: 272px;
+      margin-left: auto;
+      margin-right: auto;
       background-color: $color-white;
       min-height: 320px;
       padding: 24px 16px;
@@ -35,10 +41,11 @@
         10px 10px 32px rgba(2, 105, 0, 0.14);
       border-radius: 4px;
       @media screen and (min-width: 768px) {
-        max-width: 336px;
+        //max-width: 336px;
       }
       @media screen and (min-width: 1280px) {
-        max-width: 384px;
+       //max-width: 384px;
+
       }
       & > h3 {
         display: inline-block;

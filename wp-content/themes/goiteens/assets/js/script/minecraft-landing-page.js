@@ -37,20 +37,18 @@ jQuery( function( $ ) {
 		slider: function()
 		{
 
-			 const swiper = new Swiper('.swiper', {
+			 const swiper = new Swiper('.minecraftSwiperReviews .swiper', {
 				loop: true,
-				// initialSlide:0,
 				slidesPerView: 1,
 				spaceBetween: 32,
-				centeredSlides:true,
-				slidesPerGroup:1,
-				//TODO This Settings
+				//centeredSlides:true,
+				//slidesPerGroup:1,
 				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
+					nextEl: '.minecraftSwiperReviews .swiper-button-next',
+					prevEl: '.minecraftSwiperReviews .swiper-button-prev',
 				  },
 				  pagination: {
-					el: ".swiper-pagination",
+					el: ".minecraftSwiperReviews .swiper-pagination",
 					dynamicBullets: true,
 					clickable: true,
 				  },
@@ -63,14 +61,14 @@ jQuery( function( $ ) {
 					  slidesPerView: 3,
 					}
 				},
-					
+
 			});
 		},
 
 	}
 
 	MinecraftLandingPage.init()
-	
+
 
 
 });
