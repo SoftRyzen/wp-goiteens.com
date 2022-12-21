@@ -8,8 +8,8 @@
           @media screen and (min-width: 1280px) {
             padding: 60px 0;
           }
-    }
-    .advantages_list {
+    
+    &_list {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -26,7 +26,7 @@
           }
     
     }
-    .advantages_item {
+    &_item {
         text-align: center;
         padding: 28px 0;
         background-color: $color-white;
@@ -63,5 +63,6 @@ color:$color-nm-green-act;
         color:$color-nm-yellow;
         
     }
+}
 }
 }

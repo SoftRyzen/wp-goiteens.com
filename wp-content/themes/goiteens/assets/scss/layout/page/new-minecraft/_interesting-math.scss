@@ -22,7 +22,7 @@
         }
        }
 
-       .int-math_box{
+       &_box{
         display: flex;
         flex-direction: column;
         gap:28px;
@@ -91,10 +91,6 @@
     @media screen and (min-width: 768px) {
         gap: 32px;
        }
-       @media screen and (min-width: 1280px) {
-      
-         
-       }
 }
 &_year-item {
     padding: 8px;
@@ -136,11 +132,8 @@ flex-basis: calc((100% - 32px) / 2);
   
 }
 }
-
-   
-   
     
-    .int-math_info-wrapper {
+    &_info-wrapper {
       border-radius: 4px;
       background-color: $color-nm-purple;
       display: flex;
@@ -204,22 +197,7 @@ flex-basis: calc((100% - 32px) / 2);
       }
 
     }
-    // &  h3{
-    //   margin: 0 auto 20px;
-    //   font-size: 18px;
-    //   line-height: 1.22;
-    //   font-weight: 500;
-    //   text-align: center;
-    //   @media screen and (min-width: 768px) {
-    //     font-size: 20px;
-    //     line-height: 1.4;
-    //     max-width: 336px;
-    //   }
-    //   @media screen and (min-width: 1280px) {
-    //    max-width: 306px;
-        
-    //   }
-    // }
+
 
     &  strong{
       text-align: center;

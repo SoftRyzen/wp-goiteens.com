@@ -33,7 +33,7 @@
         width:746px;
       }
      }
-     .hero-nm_marked {
+     &_marked {
       background-color: $color-nm-marker;
       padding: 4px;
       margin-bottom: 20px;
@@ -46,7 +46,7 @@
           width: 315px;
         }
       }
-      .hero-nm_marked-text {
+      &_marked-text {
           font-size: 12px;
           line-height: 1.33;
           color:$color-nm-text-gray;
@@ -61,10 +61,7 @@
             }
       }
       
-    
-    
-    .hero-nm_start--info {
-      
+    &_start--info {
           color:$color-nm-text-mid;
           font-size: 14px;
           line-height: 1.2;
@@ -92,8 +89,7 @@
           }
       }
       
-      
-      .hero-nm_page-title {
+      &_page-title {
       font-size: 28px;
       line-height: 1.2;
       font-weight: 700;
@@ -109,14 +105,14 @@
             &  span{
               color: $color-nm-green-act;
             }
-      .hero-nm_page-title--uppercase {
+      &--uppercase {
         text-transform: uppercase;
         color: $color-nm-green-act;
       }
       
     }
     
-    .hero-nm_try-free {
+    &_try-free {
       font-size: 14px;
       line-height: 1.2;
       margin-bottom: 24px;
