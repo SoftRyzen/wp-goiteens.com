@@ -1,176 +1,173 @@
-.new-minecraft{
-    .results {
-        padding: 20px 0;
-        background-color: $color-nm-yellow;
+.new-minecraft {
+  .results {
+    padding: 20px 0;
+    background-color: $color-nm-yellow;
+    @media screen and (min-width: 768px) {
+      padding: 40px 0;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 60px 0;
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 32px;
+        margin-bottom: 60px;
+      }
+    }
+    &_item {
+      background-color: $color-white;
+      display: flex;
+      gap: 12px;
+      box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08),
+        10px 10px 32px rgba(2, 105, 0, 0.14);
+      border-radius: 4px;
+      padding: 20px 16px;
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 32px) / 2);
+        padding: 40px 16px;
+        gap: 16px;
+      }
+      @media screen and (min-width: 1280px) {
+        padding: 40px 20px;
+        gap: 40px;
+      }
+      & h4 {
+        color: $color-nm-text-lite;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.45;
+        margin-bottom: 12px;
         @media screen and (min-width: 768px) {
-            padding: 40px 0;
-          }
-          @media screen and (min-width: 1280px) {
-            padding: 60px 0;
-          }
-
-          &_list {
-            display: flex;
-            flex-direction: column;
-            gap:16px;
-            margin-bottom: 40px;
-            @media screen and (min-width: 768px) {
-                flex-direction: row;
-                flex-wrap: wrap;
-                row-gap: 20px;
-                column-gap: 32px;
-                margin-bottom: 60px;
-              }
-              
+          margin-bottom: 20px;
         }
-        &_item {
-          background-color: $color-white;
-            display: flex;
-            gap:12px;
-            box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
-border-radius: 4px;
-padding: 20px 16px;
-@media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 32px) / 2);
-    padding: 40px 16px;
-    gap: 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 40px 20px;
-    gap: 40px;
-  }
-  &  h4{
-    color: $color-nm-text-lite ;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.45;
-    margin-bottom: 12px;
-    @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-    }
-    @media screen and (min-width: 1280px) {
-     font-size: 18px;
-    }
-  }
-   &  p{
-    font-size: 14px;
-    line-height: 1.2;
-    @media screen and (min-width: 768px) {
-    line-height: 1.45;
-    }
-    @media screen and (min-width: 1280px) {
-     font-size: 16px;
-    }
-   }
-}
-
-        &_development-list {
-          display: flex;
-          flex-direction: column;
-          gap:12px;
-          margin-bottom: 24px;
-          @media screen and (min-width: 768px) {
-            flex-direction: row;
-            row-gap: 60px;
-            column-gap: 88px;
-            padding-bottom: 63px;
-            margin-bottom: 0;
-            flex-wrap: wrap;
-            background-image: url(../images/new-minecraft/down-line.svg), url(../images/new-minecraft/down-line.svg);
-            background-repeat: no-repeat;
-            background-size: 169px 169px;
-            background-position: top 3% center,bottom -25% center;
-            
-            }
-            @media screen and (min-width: 1280px) {
-             flex-wrap: nowrap;
-             padding: 60px 0;
-             gap: 32px;
-             margin-bottom: 0;
-             background-image: url(../images/new-minecraft/down-line.svg), url(../images/new-minecraft/up-line.svg), url(../images/new-minecraft/down-line.svg);
-             background-repeat: no-repeat;
-             background-size: 169px 169px 169px;
-             background-position: bottom -120% left 18%, top -120% left 48%, bottom -120% right 22%;
-            }
-        }
-        &_development-item {
-          box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08), 10px 10px 32px rgba(2, 105, 0, 0.14);
-border-radius: 4px;
-background-color: $color-white;
-          height: 79px;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          @media screen and (min-width: 768px) {
-
-            flex-basis: calc((100% - 88px) / 2);
-            }
-            @media screen and (min-width: 1280px) {
-            
-             flex-basis: calc((100% - 3 * 32px) / 4);
-            }
-            & > p{
-              max-width: 181px;
-              font-size: 16px;
-              text-align: center;
-              line-height: 1.45;
-              font-weight: 500;
-              @media screen and (min-width: 768px) {
-                font-size: 18px;
-                }
-            }
-        }
-        &_box {
-        }
-        &_icon{
-          min-width: 60px;
-          height: 60px;
-          display: block;
-          @media screen and (min-width: 768px) {
-            min-width: 70px;
-            max-width: 70px;
-            height: 70px;
-          }
-
-        }
-
-        &  .subtitle-blog{
-          font-size: 16px;
-          line-height: 1.2;
-          margin-bottom: 40px;
-          @media screen and (min-width: 768px) {
-            line-height: 1.2;
-            font-size: 20px;
-            max-width: 620px;
-            margin-bottom: 40px;
-            }
-            @media screen and (min-width: 1280px) {
-             font-size: 24px;
-             max-width: 864px;
-             margin-bottom: 0;
-            }
-        }
-        &  .suggestion-block{
+        @media screen and (min-width: 1280px) {
           font-size: 18px;
-          @media screen and (min-width: 768px) {
-            max-width: 519px;
-            margin: 0 auto 20px;
-            font-size: 20px;
-    
-          }
-
         }
-        & .text{
-          font-size: 14px;
-          line-height: 1.2;
-          margin-bottom: 40px;
-          text-align: center;
-          @media screen and (min-width: 768px) {
-            font-size: 16px;
-    
-          }
+      }
+      & p {
+        font-size: 14px;
+        line-height: 1.2;
+        @media screen and (min-width: 768px) {
+          line-height: 1.45;
         }
+        @media screen and (min-width: 1280px) {
+          font-size: 16px;
+        }
+      }
     }
-    
+
+    &_development-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        row-gap: 60px;
+        column-gap: 88px;
+        padding-bottom: 63px;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+        background-image: url(../images/new-minecraft/down-line.svg),
+          url(../images/new-minecraft/down-line.svg);
+        background-repeat: no-repeat;
+        background-size: 169px 169px;
+        background-position: top 3% center, bottom -25% center;
+      }
+      @media screen and (min-width: 1280px) {
+        flex-wrap: nowrap;
+        padding: 60px 0;
+        gap: 32px;
+        margin-bottom: 0;
+        background-image: url(../images/new-minecraft/down-line.svg),
+          url(../images/new-minecraft/up-line.svg),
+          url(../images/new-minecraft/down-line.svg);
+        background-repeat: no-repeat;
+        background-size: 169px 169px 169px;
+        background-position: bottom -120% left 18%, top -120% left 48%,
+          bottom -120% right 22%;
+      }
+    }
+    &_development-item {
+      box-shadow: 0px 1px 2px rgba(2, 105, 0, 0.08),
+        10px 10px 32px rgba(2, 105, 0, 0.14);
+      border-radius: 4px;
+      background-color: $color-white;
+      height: 79px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 88px) / 2);
+      }
+      @media screen and (min-width: 1280px) {
+        flex-basis: calc((100% - 3 * 32px) / 4);
+      }
+      & > p {
+        max-width: 181px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.45;
+        font-weight: 500;
+        @media screen and (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+    }
+    // &_box {
+    // }
+    &_icon {
+      min-width: 60px;
+      height: 60px;
+      display: block;
+      @media screen and (min-width: 768px) {
+        min-width: 70px;
+        max-width: 70px;
+        height: 70px;
+      }
+    }
+
+    & .subtitle-blog {
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        line-height: 1.2;
+        font-size: 20px;
+        max-width: 620px;
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 1280px) {
+        font-size: 24px;
+        max-width: 864px;
+        margin-bottom: 0;
+      }
+    }
+    & .suggestion-block {
+      font-size: 18px;
+      @media screen and (min-width: 768px) {
+        max-width: 519px;
+        margin: 0 auto 20px;
+        font-size: 20px;
+      }
+    }
+    & .text {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
 }
