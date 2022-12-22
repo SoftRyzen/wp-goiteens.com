@@ -151,7 +151,7 @@ $list = get_field('block5_list');
                         <?php if ($item['list']) { ?>
                             <ul class="minecraft-edu_list">
                                 <?php foreach ($item['list'] as $second_item) { ?>
-                                    <li class="minecraft-edu_item minecraft-edu_item--objects"><?= $second_item['text'] ?></li>
+                                    <li class="minecraft-edu_item minecraft-edu_item"><?= $second_item['text'] ?></li>
                                 <?php } ?>
                             </ul>
                         <?php } ?>
