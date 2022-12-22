@@ -2,7 +2,7 @@
   .swiper {
     $offset: 28px;
 
-    width: calc(100% + #{$offset * 2});
+    max-width: calc(100% + #{$offset * 2});
     height: 100%;
     padding: 0 $offset;
     padding-bottom: 45px;
@@ -64,9 +64,6 @@
     }
     &-pagination {
       bottom: 1%;
-    }
-    &-wrapper {
-      //margin-left: -32px;
     }
   }
   .swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {

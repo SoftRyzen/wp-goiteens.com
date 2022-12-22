@@ -1,57 +1,56 @@
 <?php
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( !is_admin() )
-{
+if (!is_admin()) {
     $hide = get_field('block6_show');
-    if( $hide ) return;
+    if ($hide) return;
 }
 
 $title = get_field('block6_title');
+$first_list = get_field('block6_first_list');
+$second_title = get_field('block6_second_title');
+$second_list = get_field('block6_second_list');
+$text_before_button = get_field('block6_third_title');
+$button = get_field('block6_button_text');
 
 ?>
 <section class="lessons">
     <div class="container">
-        <h2 class="section-title">Кожне заняття — це неймовірна пригода, маса нових знань та крутих емоцій</h2>
-        <ul class="lessons_list">
-            <li class="lessons_item">
-            <svg width="70" height="70">
+        <?php if ($title) { ?>
+            <h2 class="section-title"><?= $title ?></h2>
+        <?php } ?>
+        <?php if ($first_list) { ?>
+            <ul class="lessons_list">
+                <?php foreach ($first_list as $item) { ?>
+                    <li class="lessons_item">
+                        <svg width="70" height="70">
 
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-bulb-2"></use>
+                            <use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#<?= $item['icon'] ?>"></use>
 
-</svg>
-                <p><span>Онлайн</span> формат</p>
-            </li>
-            <li class="lessons_item">
-            <svg width="70" height="70">
+                        </svg>
+                        <p><?= $item['text'] ?></p>
+                    </li>
+                <?php } ?>
+            </ul>
+        <?php } ?>
 
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-business-3"></use>
-
-</svg>
-                <p><span>60 хв</span> тривалість заняття</p>
-            </li>
-            <li class="lessons_item">
-            <svg width="70" height="70">
-
-<use href="<?= get_template_directory_uri() ?>/assets/images/new-minecraft/sprite1.svg#icon-target-3"></use>
-
-</svg>
-                <p><span>2 рази / тиждень </span>в будні після школи або вихідні</p>
-            </li>
-        </ul>
-        <h3 class="lessons_subtitle">Заняття складається з 3-х частин:</h3>
-        <ul class="lessons_details-list">
-            <li class="lessons_details-item">
-                <p>Цікаві фішки та можливості Майнкрафту</p>
-            </li>
-            <li class="lessons_details-item">
-                <p>Челенджі на логіку та математичні завдання</p>
-            </li>
-            <li class="lessons_details-item">
-                <p>Творче завдання для реалізації ідеї за допомогою вивчених інструментів</p>
-            </li>
-        </ul>
-        <strong class="suggestion-block" >Реєструйтеся на пробне заняття,           щоб перевірити якість курсу на практиці!</strong>
-        <button class="main-btn btn_registration" data-modal-open>зареєструватися</button>
-</div>
+        <?php if ($second_title) { ?>
+            <h3 class="lessons_subtitle"><?= $second_title ?></h3>
+        <?php } ?>
+        <?php if ($second_list) { ?>
+            <ul class="lessons_details-list">
+                <?php foreach ($second_list as $item) { ?>
+                    <li class="lessons_details-item">
+                        <p><?= $item['text'] ?></p>
+                    </li>
+                <?php } ?>
+            </ul>
+        <?php } ?>
+        <?php if ($text_before_button) { ?>
+            <strong class="suggestion-block"><?= $text_before_button ?></strong>
+        <?php } ?>
+        <?php if ($button) { ?>
+            <button class="main-btn btn_registration" data-modal-open><?= $button ?></button>
+        <?php } ?>
+    </div>
 </section>
