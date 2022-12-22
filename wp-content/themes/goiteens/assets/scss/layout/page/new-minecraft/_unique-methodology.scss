@@ -19,10 +19,19 @@
         row-gap: 20px;
         column-gap: 32px;
         flex-wrap: wrap;
+        padding-top: 35px;
+        background-image: url(../images/new-minecraft/up-line-yellow.svg);
+        background-repeat: no-repeat;
+        background-size: 229px;
+        background-position: top -10% center;
       }
       @media screen and (min-width: 1280px) {
         flex-wrap: nowrap;
         gap: 32px;
+        background-image: url(../images/new-minecraft/up-line-yellow.svg), url(../images/new-minecraft/up-line-yellow.svg);
+        background-repeat: no-repeat;
+        background-size: 229px 229px;
+        background-position: top -10% left 30%, top -10% right 30%;
       }
     }
     &_item {
