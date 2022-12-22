@@ -20,13 +20,13 @@ $list = get_field('block9_list');
                 <?php foreach ($list as $item) { ?>
                     <li class="methodology_item">
                         <div class="percent-wrap">
-                            <h3 class="percent-label"><?=$item['title']?></h3>
+                            <h3 class="percent-label"><?= $item['title'] ?></h3>
                         </div>
                         <?php if ($item['list']) { ?>
                             <ul class="methodology_details-list">
                                 <?php foreach ($item['list'] as $second_list_item) { ?>
                                     <li class="methodology_details-item">
-                                       <?=$second_list_item['text']?>
+                                        <?= $second_list_item['text'] ?>
                                     </li>
                                 <?php } ?>
                             </ul>

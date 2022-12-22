@@ -24,22 +24,10 @@ $list = get_field('block5_list');
         <?= $yellow_picture ?> 1x,
         <?= $yellow_picture ?> 2x" width="568"
                             height="349"/>
-
-                    <source media="(min-width: 1280px)" type="image/webp" srcset="
-        <?= $yellow_picture_webp ?> 1x,
-        <?= $yellow_picture_webp ?> 2x" width="568"
-                            height="349"/>
-
                     <source media="(min-width: 768px)" type="image/png" srcset="
         <?= $yellow_picture ?>1x,
         <?= $yellow_picture ?> 2x" width="316"
                             height="198"/>
-
-                    <source media="(min-width: 768px)" type="image/webp" srcset="
-       <?= $yellow_picture_webp ?> 1x,
-        <?= $yellow_picture_webp ?> 2x" width="316"
-                            height="198"/>
-
                     <img class="item_img" width="240" height="151" loading="lazy" alt="minecraft logo"
                          src="<?= $yellow_picture ?>"
                          srcset="<?= $yellow_picture ?>"/>
@@ -94,22 +82,10 @@ $list = get_field('block5_list');
         <?= $image ?> 1x,
         <?= $image ?> 2x" width="589"
                                     height="392"/>
-
-                            <source media="(min-width: 1280px)" type="image/webp" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-1x.webp 1x,
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-2x.webp 2x" width="589"
-                                    height="392"/>
-
                             <source media="(min-width: 768px)" type="image/png" srcset="
         <?= $image ?> 1x,
         <?= $image ?> 2x" width="336"
                                     height="256"/>
-
-                            <source media="(min-width: 768px)" type="image/webp" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-1x.webp 1x,
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-2x.webp 2x" width="336"
-                                    height="256"/>
-
                             <img class="item_img" width="272" height="208" loading="lazy" alt="coliseum in minecraft"
                                  src="<?= $image ?>"
                                  srcset="<?= $image ?> 2x"/>
@@ -122,19 +98,9 @@ $list = get_field('block5_list');
         <?= $image ?> 2x" width="589"
                                 height="392"/>
 
-                        <source media="(min-width: 1280px)" type="image/webp" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-1x.webp 1x,
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-desk-2x.webp 2x" width="589"
-                                height="392"/>
-
                         <source media="(min-width: 768px)" type="image/png" srcset="
         <?= $image ?> 1x,
         <?= $image ?> 2x" width="336"
-                                height="256"/>
-
-                        <source media="(min-width: 768px)" type="image/webp" srcset="
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-1x.webp 1x,
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/coliseum-tab-2x.webp 2x" width="336"
                                 height="256"/>
 
                         <img class="item_img" width="272" height="208" loading="lazy" alt="coliseum in minecraft"
@@ -151,7 +117,7 @@ $list = get_field('block5_list');
                         <?php if ($item['list']) { ?>
                             <ul class="minecraft-edu_list">
                                 <?php foreach ($item['list'] as $second_item) { ?>
-                                    <li class="minecraft-edu_item minecraft-edu_item--objects"><?= $second_item['text'] ?></li>
+                                    <li class="minecraft-edu_item minecraft-edu_item"><?= $second_item['text'] ?></li>
                                 <?php } ?>
                             </ul>
                         <?php } ?>
