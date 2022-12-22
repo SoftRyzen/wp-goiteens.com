@@ -208,4 +208,82 @@ function goiteens_custom_form_tag_zoho_handler( $tag )
 
 }
 
+/**
+ * Blog
+ * Add Prefix BLOG only Blog Category
+ * Add Rewrite Rule
+ */
+add_action('init', 'goiteens_blog_create_new_url', 999 );
+function goiteens_blog_create_new_url()
+{
+
+    add_rewrite_rule(
+        'blog/([^/]*)$',
+        'index.php?name=$matches[1]',
+        'top'
+    );
+    add_rewrite_tag('%blog%','([^/]*)');
+
+}
+
+/**
+ * Blog
+ * Add Prefix BLOG only Blog Category
+ * Return Post Link with Blog Prefix
+ */
+add_filter( 'post_link', 'goiteens_blog_append_query_string', 10, 3 );
+function goiteens_blog_append_query_string( $url, $post, $leavename )
+{
+
+    if ( $post->post_type != 'post' )
+        return $url;
+
+    if ( post_is_in_descendant_category( get_term_by( 'name', 'blog', 'category' ), $post ) )
+    {
+
+        if ( false !== strpos( $url, '%postname%' ) )
+        {
+            $slug = '%postname%';
+        }
+        elseif ( $post->post_name ) {
+            $slug = $post->post_name;
+        }
+        else {
+            $slug = sanitize_title( $post->post_title );
+        }
+
+        $url = home_url( user_trailingslashit( 'blog/'. $slug ) );
+
+    }
+
+    return $url;
+}
+
+/**
+ * Blog
+ * Add Prefix BLOG only Blog Category
+ * Redirect Old Url
+ */
+add_filter( 'template_redirect', 'goiteens_blog_redirect_old_urls' );
+function goiteens_blog_redirect_old_urls()
+{
+
+    if ( is_singular('post') )
+    {
+
+        global $post;
+
+        if ( post_is_in_descendant_category( get_term_by( 'name', 'blog', 'category' ), $post ) && strpos( $_SERVER['REQUEST_URI'], '/blog/') === false)
+        {
+
+            wp_redirect( home_url( user_trailingslashit( "blog/$post->post_name" ) ), 301 );
+            exit();
+
+        }
+
+    }
+
+}
+
+
 
