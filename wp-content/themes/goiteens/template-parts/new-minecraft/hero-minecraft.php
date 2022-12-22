@@ -32,7 +32,7 @@ $button_text = get_field('block1_button_text');
             <p class="hero-nm_try-free"><?= $text_before_title ?></p>
         <?php } ?>
         <?php if ($button_text) { ?>
-            <button class="btn_registration"><?= $button_text ?></button>
+            <button class="main-btn btn_registration" data-modal-open><?= $button_text ?></button>
         <?php } ?>
     </div>
 </section>

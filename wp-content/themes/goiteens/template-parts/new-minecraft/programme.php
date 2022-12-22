@@ -30,7 +30,7 @@ $list = get_field('block10_list');
                     <?php } ?>
                     <?php if ($first_title) { ?>
                         <img class="programme_img" width="83" height="171" loading="lazy"
-                             alt="хлопчик персонаж майнкрафта"
+                             alt=""
                              src=" <?= $first_image ?>"
                              srcset="<?= $first_image ?> 2x"/>
 
