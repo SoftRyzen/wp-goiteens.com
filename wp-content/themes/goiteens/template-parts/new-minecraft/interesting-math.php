@@ -54,7 +54,7 @@ $purple_image = get_field('block4_purple_image');
                             height="382"/>
                     <source media="(min-width: 768px)" type="image/png" srcset="
          <?= $main_image ?> 1x,
-        <?= get_template_directory_uri() ?>/assets/images/new-minecraft/couple-tab-2x.png 2x" width="335" height="287"/>
+        <?= $main_image ?> 2x" width="335" height="287"/>
                     <img class="int-math_img" width="272" height="233" loading="lazy" alt=""
                          src="<?= $main_image ?>"
                          srcset="<?= $main_image ?> 2x"/>
