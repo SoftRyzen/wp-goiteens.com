@@ -23,7 +23,7 @@
         background-image: url(../images/new-minecraft/up-line-yellow.svg);
         background-repeat: no-repeat;
         background-size: 229px;
-        background-position: top -10% center;
+        background-position: top 0 left 55%;
       }
       @media screen and (min-width: 1280px) {
         flex-wrap: nowrap;
@@ -31,7 +31,7 @@
         background-image: url(../images/new-minecraft/up-line-yellow.svg), url(../images/new-minecraft/up-line-yellow.svg);
         background-repeat: no-repeat;
         background-size: 229px 229px;
-        background-position: top -10% left 30%, top -10% right 30%;
+        background-position: top -165% left 32%, top -165% right 26%;
       }
     }
     &_item {
