@@ -284,6 +284,3 @@ function goiteens_blog_redirect_old_urls()
     }
 
 }
-
-
-
