@@ -4,5 +4,5 @@
 cd wp-content/themes/goiteens
 
 # Build
-gulp css
-gulp js
+#gulp css
+#gulp js
