@@ -8,7 +8,6 @@ if (!is_admin()) {
 
 $title = get_field('block5_title');
 $yellow_picture = get_field('block5_yellow_picture');
-$yellow_picture_webp = get_field('block5_yellow_picture_webp');
 $yellow_title = get_field('block5_yellow_title');
 $yellow_text = get_field('block5_yellow_text');
 $text_after_title = get_field('block5_text_after_title');
@@ -25,7 +24,7 @@ $list = get_field('block5_list');
         <?= $yellow_picture ?> 2x" width="568"
                             height="349"/>
                     <source media="(min-width: 768px)" type="image/png" srcset="
-        <?= $yellow_picture ?>1x,
+        <?= $yellow_picture ?> 1x,
         <?= $yellow_picture ?> 2x" width="316"
                             height="198"/>
                     <img class="item_img" width="240" height="151" loading="lazy" alt="minecraft logo"
@@ -117,7 +116,7 @@ $list = get_field('block5_list');
                         <?php if ($item['list']) { ?>
                             <ul class="minecraft-edu_list">
                                 <?php foreach ($item['list'] as $second_item) { ?>
-                                    <li class="minecraft-edu_item minecraft-edu_item"><?= $second_item['text'] ?></li>
+                                    <li class="minecraft-edu_item"><?= $second_item['text'] ?></li>
                                 <?php } ?>
                             </ul>
                         <?php } ?>

@@ -76,7 +76,7 @@ $purple_image = get_field('block4_purple_image');
 
                     <img class="int-math_img" width="181" height="154" loading="lazy" alt="Дерево в майнкрафті"
                          src="<?= $purple_image ?>"
-                         srcset="<?= $purple_image ?>2x"/>
+                         srcset="<?= $purple_image ?> 2x"/>
 
                 </picture>
             <?php } ?>
