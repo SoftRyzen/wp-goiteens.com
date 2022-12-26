@@ -1,18 +1,19 @@
-.new-minecraft{
- .section-title {
+.new-minecraft {
+  .section-title {
     font-size: 20px;
     line-height: 1.2;
-   text-align: center;
-    color:$color-nm-text;
+    font-weight: 700;
+    text-align: center;
+    color: $color-nm-text;
     margin-bottom: 12px;
     @media screen and (min-width: 768px) {
-        font-size: 24px;
-        margin-bottom: 24px;
-      }
-      @media screen and (min-width: 1280px) {
-        max-width: 800px;
-        font-size: 32px;
-        margin: 0 auto 20px;
-      }
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 800px;
+      font-size: 32px;
+      margin: 0 auto 20px;
     }
   }
+}
