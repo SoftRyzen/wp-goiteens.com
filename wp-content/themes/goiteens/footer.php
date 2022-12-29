@@ -93,7 +93,9 @@ if ( 8820 == get_the_ID() || 4777 == get_the_ID()) {
                 url: '<?= get_stylesheet_directory_uri() . '/assets/crm/' . $folder . '/lead.php' ?>',
                 data: $this.serialize(),
                 dataType: 'json',
-                success: function (response) {},
+                success: function (response) {
+                    console.dir(response)
+                },
                 beforeSend: function () {},
                 complete: function () {
                     let page_thanks = '<?= get_the_permalink(8825) ?>';
