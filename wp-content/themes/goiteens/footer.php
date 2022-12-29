@@ -78,39 +78,42 @@ if ( 8820 == get_the_ID() || 4777 == get_the_ID()) {
 
     $folder = (8820 == get_the_ID()) ? 'pythonstartnopay' : 'pythonautopay';
 
-?>
-<script>
-    (function ($) {
-        "use strict";
+    ?>
+    <script>
+        (function ($) {
+            "use strict";
 
-        $(document).on('submit', '#register_form', function (e) {
+            $(document).on('submit', '#register_form', function (e) {
 
-            e.preventDefault()
-            var $this = $(this)
+                e.preventDefault()
+                var $this = $(this)
 
-            $.ajax({
-                type: 'POST',
-                url: '<?= get_stylesheet_directory_uri() . '/assets/crm/' . $folder . '/lead.php' ?>',
-                data: $this.serialize(),
-                dataType: 'json',
-                success: function (response) {
-                    console.dir(response)
-                },
-                beforeSend: function () {},
-                complete: function () {
-                    let page_thanks = '<?= get_the_permalink(8825) ?>';
-                    location.href = page_thanks;
-                },
-                error: function (e) {}
+                $.ajax({
+                    type: 'POST',
+                    url: '<?= get_stylesheet_directory_uri() . '/assets/crm/' . $folder . '/lead.php' ?>',
+                    data: $this.serialize(),
+                    dataType: 'json',
+                    success: function (response) {
+
+                    },
+                    beforeSend: function () {},
+                    complete: function () {
+
+                        <?php if( 8820 == get_the_ID() ) { ?>
+                        let page_thanks = '<?= get_the_permalink(8825) ?>';
+                        location.href = page_thanks;
+                        <?php } ?>
+                    },
+                    error: function (e) {}
+
+                })
 
             })
 
-        })
 
-
-    })(jQuery);
-</script>
-<?php
+        })(jQuery);
+    </script>
+    <?php
 }
 
 
