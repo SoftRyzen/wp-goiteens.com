@@ -3653,52 +3653,65 @@ input[type=tel].input-field {
     bottom: 5%;
   }
 }
+
+
+
 .find {
-  padding-top: 20px;
-  padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   .find {
-    padding-top: 48px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 .find-form {
   text-align: center;
+  margin: 0 auto 32px;
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .find-form {
+    width: 570px;
   margin-bottom: 40px;
+  
+  }
 }
 @media (min-width: 1280px) {
   .find-form {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 23px;
+    gap: 30px;
   }
 }
 .find-form input {
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  margin-bottom: 12px;
-  border: 1px solid #272D4E;
-  outline: none;
-  border-radius: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    border: 1px solid #272D4E;
+    outline: transparent;
+    border-radius: 4px;
 }
 @media (min-width: 768px) {
   .find-form input {
-    max-width: 206px;
+    border-radius: 4px 0px 0px 4px;
+    width: 50%;
     margin-bottom: 0;
   }
 }
 .find-form input::-moz-placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 0.92;
   color: #272D4E;
 }
 .find-form input::placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 0.92;
   color: #272D4E;
 }
@@ -3712,16 +3725,17 @@ input[type=tel].input-field {
 }
 @media (min-width: 1280px) {
   .find-form input::-moz-placeholder {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 0.91;
-    letter-spacing: -0.02em;
+    
   }
   .find-form input::placeholder {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 0.91;
-    letter-spacing: -0.02em;
+  
   }
   .find-form input {
+    height: 72px;
     padding-top: 23px;
     padding-bottom: 23px;
   }
@@ -3737,16 +3751,18 @@ input[type=tel].input-field {
   background-size: 24px auto;
   background-color: #ffffff;
   width: 100%;
+  border-radius: 4px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 24px;
   margin-bottom: 12px;
   border: 1px solid #272D4E;
-  outline: none;
+  outline: transparent;
 }
 @media (min-width: 768px) {
   .find-form select {
-    max-width: 307px;
+    width: 50%;
+    border-radius: 4px 0px 0px 4px;
     margin-bottom: 0;
   }
 }
@@ -3762,8 +3778,9 @@ input[type=tel].input-field {
 }
 @media (min-width: 1280px) {
   .find-form select:valid {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 0.91;
+    height: 72px;
     letter-spacing: -0.02em;
   }
 }
@@ -3783,28 +3800,43 @@ input[type=tel].input-field {
   }
 }
 @media (min-width: 768px) and (min-width: 1280px) {
+
   .find-form label:nth-child(1) {
+    min-width: 570px;
     margin-bottom: 0;
+  }
+  .find-form label:nth-child(2){
+    min-width: 570px;
   }
 }
 .find-form button {
+  font-family: inherit;
   cursor: pointer;
-  background-color: #E03EAB;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 0.92;
-  width: 184px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+    background-color: #E03EAB;
+    color: #ffffff;
+    font-weight: 700;
+    height: 56px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 0.92;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
   transition: border 150ms linear, background 150ms linear;
 }
 @media (min-width: 768px) {
   .find-form button {
     padding-top: 24px;
+    font-size: 20px;
     padding-bottom: 24px;
-    width: 265px;
+    width: 50%;
     border: 1px solid #E03EAB;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
+@media (min-width: 1280px) {
+  .find-form button {
+    height: 72px;
   }
 }
 .find-form button:hover, .find-form button:focus {
@@ -3837,81 +3869,70 @@ input[type=tel].input-field {
 }
 .find-wrapper__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  row-gap: 12px;
+  gap: 12px;
+  width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 1.43;
   font-weight: 500;
   color: #272D4E;
 }
-@media (max-width: 767.98px) {
-  .find-wrapper__list {
-    max-width: 280px;
-  }
-}
 @media (min-width: 768px) {
   .find-wrapper__list {
     width: 500px;
-    gap: 16px;
-    row-gap: 20px;
-    font-size: 18px;
-    line-height: 17px;
+    gap: 20px;
+    width: 570px;
+    /* font-size: 18px; */
+    /* line-height: 17px; */
   }
 }
 @media (min-width: 1280px) {
   .find-wrapper__list {
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 20px;
     width: auto;
   }
 }
 .find-wrapper__list li {
-  min-width: 120px;
-}
-@media (max-width: 767.98px) {
-  .find-wrapper__list li:nth-child(1) {
-    margin-right: 16px;
-  }
+  width: 134px;
 }
 @media (min-width: 768px) {
-  .find-wrapper__list li:nth-child(1) {
-    min-width: 204px;
-  }
-  .find-wrapper__list li:nth-child(2) {
-    min-width: 204px;
+  .find-wrapper__list li {
+    width: 275px
   }
 }
-@media (max-width: 767.98px) {
-  .find-wrapper__list li:nth-child(3) {
-    margin-right: 15px;
-    min-width: 130px;
-  }
-}
-@media (min-width: 768px) {
-  .find-wrapper__list li:nth-child(3) {
-    min-width: 204px;
-  }
-  .find-wrapper__list li:nth-child(4) {
-    min-width: 231px;
+
+@media (min-width: 1280px) {
+  .find-wrapper__list li {
+    width: 188px;
   }
 }
 .find-wrapper__link {
   display: block;
+  font-size: 12px;
+  font-weight: 300;
   text-align: center;
   background-color: #FFEBF8;
-  border-radius: 20px;
+  border-radius: 4px;
   padding: 8px;
   transition: background 150ms linear;
 }
 @media (min-width: 768px) {
   .find-wrapper__link {
     padding: 16px;
-    border-radius: 50px;
+    border-radius: 4px;
+    font-size: 18px;
   }
 }
 .find-wrapper__link:hover, .find-wrapper__link:focus {
   background-color: #edc1dd;
 }
+
+
+
+
 .publication {
   padding-top: 40px;
   padding-bottom: 40px;
