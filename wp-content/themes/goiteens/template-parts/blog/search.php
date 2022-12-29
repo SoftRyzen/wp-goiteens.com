@@ -83,9 +83,9 @@
             <div class="find-wrapper">
 
                 <!-- title -->
-                <p class="find-wrapper__text">
+                <button class="find-wrapper__text">
                     <?= get_field('categories_title') ?>
-                </p>
+                </button>
                 <!-- end title -->
 
                 <!-- list -->

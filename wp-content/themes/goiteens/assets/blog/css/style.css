@@ -3845,20 +3845,30 @@ input[type=tel].input-field {
   background-color: #C51D8E;
 }
 .find-wrapper__text {
-  font-size: 20px;
-  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  font-weight: 700;
+  background-color: #EFCFDD;
+  border-radius: 4px;
+  width: 130px;
+  font-size: 14px;
+  line-height: 1.17;
   color: #272D4E;
-  margin-bottom: 16px;
+  margin: 0 auto 12px;
 }
 @media (min-width: 768px) {
   .find-wrapper__text {
-    font-size: 24px;
+    width: 270px;
+    height: 62px;
+    font-size: 18px;
     line-height: 0.95;
   }
 }
 @media (min-width: 1280px) {
   .find-wrapper__text {
-    font-size: 30px;
+    font-size: 16px;
     line-height: 0.96;
     margin-bottom: 0;
   }
@@ -4781,7 +4791,7 @@ input[type=tel].input-field {
   }
 }
 .hero-slide{
-  
+
 }
 .hero-box{
 
