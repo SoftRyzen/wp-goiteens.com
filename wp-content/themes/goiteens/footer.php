@@ -74,8 +74,10 @@ if (is_page_template('templates/tmpl-python-start-page.php')) {
 /**
  * Test No Pay
  */
-if (8820 == get_the_ID())
-{
+if ( 8820 == get_the_ID() || 4777 == get_the_ID()) {
+
+    $folder = (8820 == get_the_ID()) ? 'pythonstartnopay' : 'pythonautopay';
+
 ?>
 <script>
     (function ($) {
@@ -88,81 +90,25 @@ if (8820 == get_the_ID())
 
             $.ajax({
                 type: 'POST',
-                url: '<?= get_stylesheet_directory_uri() . '/assets/crm/pythonstartnopay/lead.php' ?>',
+                url: '<?= get_stylesheet_directory_uri() . '/assets/crm/' . $folder . '/lead.php' ?>',
                 data: $this.serialize(),
                 dataType: 'json',
-                success: function (response) {
-                    //console.dir(response)
-
-                },
-                beforeSend: function () {
-
-                },
+                success: function (response) {},
+                beforeSend: function () {},
                 complete: function () {
                     let page_thanks = '<?= get_the_permalink(8825) ?>';
-
                     location.href = page_thanks;
                 },
-                error: function (e) {
-                    console.dir(e)
-                }
+                error: function (e) {}
 
             })
-
 
         })
 
 
     })(jQuery);
-
 </script>
 <?php
-
-/**
- * Test No Pay
- */
-} elseif (4777 == get_the_ID()) {
-    ?>
-    <script>
-        (function ($) {
-            "use strict";
-
-            $(document).on('submit', '#register_form', function (e) {
-
-                e.preventDefault()
-                var $this = $(this)
-
-                $.ajax({
-                    type: 'POST',
-                    url: '<?= get_stylesheet_directory_uri() . '/assets/crm/pythonautopay/lead.php' ?>',
-                    data: $this.serialize(),
-                    dataType: 'json',
-                    success: function (response) {
-                        //console.dir(response)
-
-                    },
-                    beforeSend: function () {
-
-                    },
-                    complete: function () {
-                        let page_thanks = '<?= get_the_permalink(8825) ?>';
-
-                        location.href = page_thanks;
-                    },
-                    error: function (e) {
-                        console.dir(e)
-                    }
-
-                })
-
-
-            })
-
-
-        })(jQuery);
-
-    </script>
-    <?php
 }
 
 
