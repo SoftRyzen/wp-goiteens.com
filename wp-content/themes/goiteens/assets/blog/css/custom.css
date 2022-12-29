@@ -1,6 +1,8 @@
-.hero__content {
+body{
     font-family: "Gotham Pro", sans-serif;
-    font-style: normal;
+}
+.hero__content {
+   
     font-weight: 400;
     color: #707882;
     line-height: 1.45;

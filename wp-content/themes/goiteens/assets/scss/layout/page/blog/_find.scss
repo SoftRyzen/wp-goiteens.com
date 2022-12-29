@@ -187,30 +187,31 @@
   }
 
   .find-wrapper{
+    @media (min-width: 1280px) {
+        display: flex;
+        align-items: center;
+        gap: 66px;
+    }
   &__text {
     font-size: 20px;
     line-height: 19px;
     color: #272D4E;
     margin-bottom: 16px;
-  }
+  
   @media (min-width: 768px) {
-    .find-wrapper__text {
+   
       font-size: 24px;
       line-height: 0.95;
-    }
+    
   }
   @media (min-width: 1280px) {
-    .find-wrapper__text {
+   
       font-size: 30px;
       line-height: 0.96;
       margin-bottom: 0;
-    }
-    .find-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 66px;
-    }
+    
   }
+}
   &__list {
     display: flex;
     justify-content: center;
@@ -231,26 +232,27 @@
     
   }
   @media (min-width: 1280px) {
-    .find-wrapper__list {
+   
       flex-wrap: nowrap;
       gap: 20px;
       width: auto;
-    }
+    
   }
   & li {
     width: 134px;
-  }
+  
   @media (min-width: 768px) {
-    .find-wrapper__list li {
+   
       width: 275px
-    }
+    
   }
   
   @media (min-width: 1280px) {
-    .find-wrapper__list li {
+    
       width: 188px;
-    }
+    
   }
+}
   }
   &__link {
     display: block;

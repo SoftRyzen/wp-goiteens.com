@@ -3820,15 +3820,16 @@ input[type=tel].input-field {
     font-size: 16px;
     line-height: 0.92;
     width: 100%;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   transition: border 150ms linear, background 150ms linear;
 }
 @media (min-width: 768px) {
   .find-form button {
-    padding-top: 24px;
+    
     font-size: 20px;
-    padding-bottom: 24px;
+   
     width: 50%;
     border: 1px solid #E03EAB;
     border-radius: 0px 4px 4px 0px;
@@ -4778,5 +4779,11 @@ input[type=tel].input-field {
     width: 37px;
     height: 70px;
   }
+}
+.hero-slide{
+  
+}
+.hero-box{
+
 }
 /*# sourceMappingURL=style.css.map */
