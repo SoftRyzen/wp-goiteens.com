@@ -238,7 +238,9 @@ function goiteens_blog_append_query_string( $url, $post, $leavename )
     if ( $post->post_type != 'post' )
         return $url;
 
-    if ( post_is_in_descendant_category( get_term_by( 'name', 'blog', 'category' ), $post ) )
+    $idCategory = (get_locale() == 'ru_RU') ? 161 : 62;
+
+    if ( post_is_in_descendant_category( get_term_by( 'id', $idCategory, 'category' ), $post ) )
     {
 
         if ( false !== strpos( $url, '%postname%' ) )
