@@ -3932,7 +3932,7 @@ input[type=tel].input-field {
 }
 @media (min-width: 768px) {
   .find-wrapper__link {
-    padding: 16px;
+    padding: 11px;
     border-radius: 4px;
     font-size: 18px;
   }
@@ -4094,6 +4094,8 @@ input[type=tel].input-field {
     line-height: 1.39;
   }
 }
+
+
 .subscribe {
   padding-top: 24px;
   padding-bottom: 24px;
