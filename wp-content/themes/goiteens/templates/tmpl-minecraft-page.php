@@ -2,6 +2,24 @@
 /*
 Template Name: Minecraft Page
 */
+
+/**
+ * Add Classes
+ */
+add_filter( 'body_class', 'goiteens_minecraft_page_class' );
+function goiteens_minecraft_page_class( $classes )
+{
+
+	if( get_locale() == 'pl_PL' )
+	{
+		$classes[] = 'minecraft_pl';
+	}
+
+	return $classes;
+
+}
+
+
 get_header();
 ?>
 <?php get_template_part( 'template-parts/minecraft/header'); ?>
@@ -29,7 +47,7 @@ get_header();
 <?php get_template_part( 'template-parts/minecraft/awards', get_post_type() ); ?>
 <?php endif	;?>
 
-<?php 
+<?php
 $ratesSection = get_field('rates_title');
 if($ratesSection){
 	get_template_part( 'template-parts/minecraft/rates');
