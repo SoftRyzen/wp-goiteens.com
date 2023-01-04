@@ -1,0 +1,27 @@
+.minecraft_ua {
+
+}
+
+.minecraft_ru {
+
+}
+
+.minecraft_pl {
+
+  .price {
+
+    &__list {
+      @include media_min(xs) {
+        grid-template-columns: repeat(1, 100%);
+      }
+      @include media_min(sm) {
+        grid-template-columns: repeat(1, 300px);
+      }
+      @include media_min(xl) {
+        grid-template-columns: repeat(3, 260px);
+      }
+    }
+
+  }
+
+}
