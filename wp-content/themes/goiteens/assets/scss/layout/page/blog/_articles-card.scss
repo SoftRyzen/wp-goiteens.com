@@ -29,6 +29,7 @@
 
   &_list {
     width: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 280px 200px 128px 200px;
@@ -39,7 +40,7 @@
       gap: 12px;
     }
     @include media_min(lg-min-m) {
-      grid-template-columns: 482px 286px 370px;
+      grid-template-columns: 488px 290px 390px;
       grid-template-rows: 87px;
       gap: 16px;
     }

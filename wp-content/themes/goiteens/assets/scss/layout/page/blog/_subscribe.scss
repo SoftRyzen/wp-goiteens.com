@@ -22,8 +22,8 @@
     text-decoration: none;
   }
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #f9de8a;
 
   @include media_min(lg-min-m) {
@@ -86,12 +86,10 @@
 
       & input {
         width: 100%;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 24px;
+        padding: 12px 12px 12px 24px;
         outline: none;
         margin-bottom: 24px;
-        border-radius: 0;
+        border-radius: 4px;
         border: none;
 
         &::placeholder {
@@ -114,18 +112,20 @@
       }
 
       & button {
+        border: transparent;
         cursor: pointer;
         background-color: #e03eab;
         color: #ffffff;
         font-weight: 700;
+        height: 42px;
         font-size: 14px;
         line-height: 0.92;
-        width: 184px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 12px;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 12px auto;
         transition: border 150ms linear, background 150ms linear;
 
         @include media_min(sm-min) {
@@ -192,6 +192,7 @@
         right: -90px;
       }
     }
+    
     &__label--padding {
       position: relative;
       display: inline-block;
@@ -212,16 +213,24 @@
         margin-left: 0;
       }
     }
-    &__checkbox {
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      left: 0;
-      top: 0;
-
-      @include media_min(sm-min) {
-        top: 2px;
-      }
+    .wpcf7-list-item > label{
+display: flex;
+align-items: center;
+gap:12px;
     }
+    .wpcf7-list-item-label{
+      color: white;
+      font-size: 14px;
+    }
+   
+  
+  &__checkbox{
+      
+    min-width: 18px;
+    min-height: 18px;
+    background: transparent;
+    border: 1px solid white;
+  
   }
+}
 }
