@@ -2,14 +2,14 @@
    .choice-decision{
       background-color: #F6F8FC;
       padding-top: 32px;
-      padding-bottom: 32px;
+      
     @include media_min(sm-min){
            padding-top: 33px;
-           padding-bottom: 58px;
+           
     }
     @include media_min(lg-min-m){
        padding-top: 48px;
-       padding-bottom: 48px;
+       
     }
     & .section-title{
       text-align: center;
@@ -17,9 +17,39 @@
          text-align: start;
       }
     }
+    &_background{
+      padding-bottom: 32px;
+      background: url(../images/international/white-small-grass.svg), url(../images/international/yellow-grass.svg),;
+      
+      background-repeat: no-repeat;
+    background-size: 128px, 255px;
+    background-position: bottom -130px left -20px, bottom -150px right -50px ;
+      @include media_min(sm-min){
+          
+         padding-bottom: 58px;
+          background: url(../images/international/wtite-small-grass.svg), url(../images/international/white-big-grass.svg),;
+      
+      background-repeat: no-repeat;
+    background-size: 245px, 375px;
+    background-position: bottom 0 left -80px, bottom 0 right -140px ;
+      }
+      @include media_min(lg-min-m){
+         
+         padding-bottom: 48px;
+         background: url(../images/international/wtite-small-grass.svg), url(../images/international/white-big-grass.svg),;
+      
+      background-repeat: no-repeat;
+    background-size: 274px, 530px;
+    background-position: bottom 0 left -120px, bottom 0 right -150px ;
+  //   max-width: 1920px;
+  //   margin: 0 auto;
+      }
+      
+  }
     & .container{
       @include media_min(lg-min-m){
          display: flex;
+         align-items: center;
       }
     }
 
@@ -35,9 +65,11 @@
       font-size: 13px;
       @include media_min(sm-min){
         font-size: 16px;
+        text-align: center;
   }
   @include media_min(lg-min-m){
      font-size: 20px;
+     text-align: start;
   }
   &:not(:last-child){
    margin-bottom: 18px;

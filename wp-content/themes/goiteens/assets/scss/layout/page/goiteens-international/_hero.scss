@@ -1,68 +1,50 @@
 .international{
-    .hero{
+    &  .hero-int{
         background: linear-gradient(106.63deg, rgba(255, 236, 63, 0.5) 7.9%, rgba(103, 155, 255, 0.5) 86.7%);
         padding-top: 42px;
-        padding-bottom: 24px;
+       
         @include media_min(sm-min){
             padding-top: 64px;
-            padding-bottom: 61px;
+            
         }
         @include media_min(lg-min-m){
            padding-top: 118px;
-           padding-bottom: 88px;
+           
         }
 
-        & h1{
-            text-align: center;
-            position: relative;
+        &_background{
+            padding-bottom: 24px;
+            background: url(../images/international/wtite-small-grass.svg), url(../images/international/white-big-grass.svg),;
+            
+            background-repeat: no-repeat;
+          background-size: 128px, 255px;
+          background-position: bottom -130px left -20px, bottom -150px right -50px ;
             @include media_min(sm-min){
-                max-width: 608px;
-                margin: 0 auto 36px;
+                
+                padding-bottom: 61px;
+                background: url(../images/international/wtite-small-grass.svg), url(../images/international/white-big-grass.svg),;
+            
+            background-repeat: no-repeat;
+          background-size: 245px, 375px;
+          background-position: bottom 0 left -80px, bottom 0 right -140px ;
             }
             @include media_min(lg-min-m){
-                text-align: start;
-                margin: 0 0 36px 0;
+               
+               padding-bottom: 88px;
+               background: url(../images/international/wtite-small-grass.svg), url(../images/international/white-big-grass.svg),;
+            
+            background-repeat: no-repeat;
+          background-size: 274px, 530px;
+          background-position: bottom 0 left -120px, bottom 0 right -150px ;
+        //   max-width: 1920px;
+        //   margin: 0 auto;
             }
-            & span{
-                right: 0;
-                top: 90%;
-                font-size: 14px;
-                text-transform: uppercase;
-                color:#679BFF;
-                width: 100px;
-                height: 33px;
-                font-weight: 700;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                background: rgba(255, 255, 255, 0.7);
-box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.6);
-backdrop-filter: blur(50px);
-border-radius: 15px;
-transform: rotate(-17.44deg);
-@include media_min(sm-min){
-    font-size: 16px;
-    width: 108px;
-    height: 38px;
-    top:80%;
-    right:10%;
-}
-@include media_min(lg-min-m){
-    font-size: 20px;
-    width: 134px;
-    height: 51px;
-    right: 0;
-    top:70%;
-}
-
-              
-
-            }
+            
         }
         & .container{
             @include media_min(lg-min-m){
                 display: flex;
+                align-items: center;
             }
         }
         &_wrapper{
@@ -71,16 +53,26 @@ transform: rotate(-17.44deg);
                 margin-right: auto;
             }
         }
-        & .form_wrapper{
+        & .box{
             display: none;
             @include media_min(lg-min-m){
                 display: block;
             }
         }
+        & .reg-btn{
+            @include media_min(sm-min){
+                margin: 0 auto;
+            }
+            @include media_min(lg-min-m){
+            display: none;
+            }
+        }
         & p{
             font-size: 15px;
+            margin-bottom: 24px;
             @include media_min(sm-min){
             font-size: 16px;
+            
             text-align: center;
             }
             @include media_min(lg-min-m){
@@ -88,15 +80,15 @@ transform: rotate(-17.44deg);
                text-align: start;
                width: 570px;
             }
-            &:first-child{
-                margin-bottom: 25px;
-                @include media_min(sm-min){
-            margin-bottom: 26px;
-                }
-                @include media_min(lg-min-m){
-                   margin-bottom: 30px;
-                }
-            }
+            // &:first-child{
+            //     margin-bottom: 25px;
+            //     @include media_min(sm-min){
+            // margin-bottom: 26px;
+            //     }
+            //     @include media_min(lg-min-m){
+            //        margin-bottom: 30px;
+            //     }
+            // }
         }
     }
 }

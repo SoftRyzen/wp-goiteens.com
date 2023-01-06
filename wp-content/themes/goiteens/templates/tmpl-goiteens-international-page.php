@@ -2,9 +2,16 @@
 /*
 Template Name: International Page
 */
+add_action('wp_enqueue_scripts', 'goiteens_template_page_goiteens_international_enqueue_styles', 20);
+function goiteens_template_page_goiteens_international_enqueue_styles()
+{
+
+    wp_enqueue_style('montserrat-alternates', 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;800&display=swap');
+
+}
 get_header();
 ?>
-
+<?php get_template_part('template-parts/main-header'); ?>
 <main class="international">
 
 	<?php get_template_part( 'template-parts/goiteens-international/hero' ); ?>
