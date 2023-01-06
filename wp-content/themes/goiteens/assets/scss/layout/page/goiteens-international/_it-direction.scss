@@ -1,5 +1,89 @@
 .international{
     .it-direction{
-        
+        padding-top: 32px;
+        padding-bottom: 32px;
+        @include media_min(sm-min){
+            padding-top: 36px;
+            padding-bottom: 39px;
+            
+        }
+        @include media_min(lg-min-m){
+            padding-top: 48px;
+            padding-bottom: 48px;
+           
+        }
+        & .section-title{
+            text-align: center;
+        }
+        &_list{
+            display: flex;
+            flex-direction: column;
+            gap:24px;
+           
+            
+            @include media_min(sm-min){
+                flex-direction: row;
+                gap:36px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            @include media_min(lg-min-m){
+                
+               
+            } 
+        }
+        &_item{
+            width: 100%;
+            display: flex;
+            gap:14px;
+            @include media_min(sm-min){
+                gap:14px;
+                width: 45%;
+                align-items: center;
+            }
+            @include media_min(lg-min-m){
+                gap:8px;
+                width: 30%;
+               
+            }
+            &:nth-child(even){
+                flex-direction: row-reverse;
+                @include media_min(sm-min){
+                   flex-direction: row;
+                }
+            }
+            & h3{
+
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px;
+            @include media_min(sm-min){
+            font-size: 20px;
+            margin-bottom: 27px;
+            }
+            @include media_min(lg-min-m){
+                margin-bottom: 23px;
+               
+            }
+        }
+& p{
+    font-size: 13px;
+    @include media_min(sm-min){
+          font-size: 16px;  
+    }
+    @include media_min(lg-min-m){
+       font-size: 13px;
+    }
+}
+        }
+        &_img{
+            width: 79px;
+            height: 79px;
+            @include media_min(sm-min){
+            width: 99px;
+            height: 99px;
+            }
+            
+        }
     }
 }

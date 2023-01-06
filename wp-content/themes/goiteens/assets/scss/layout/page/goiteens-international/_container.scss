@@ -1,5 +1,15 @@
 .international{
     .container{
-        
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+        @include media_min(sm-min){
+            max-width: 768px;
+            padding: 0 15px;
+        }
+        @include media_min(lg-min-m){
+            max-width: 1280px;
+            padding: 0 40px;
+        }
     }
 }

@@ -1,5 +1,54 @@
 .international{
    .choice-decision{
-    
+      background-color: #F6F8FC;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    @include media_min(sm-min){
+           padding-top: 33px;
+           padding-bottom: 58px;
+    }
+    @include media_min(lg-min-m){
+       padding-top: 48px;
+       padding-bottom: 48px;
+    }
+    & .section-title{
+      text-align: center;
+      @include media_min(lg-min-m){
+         text-align: start;
+      }
+    }
+    & .container{
+      @include media_min(lg-min-m){
+         display: flex;
+      }
+    }
+
+    &_wrap{
+      margin-bottom: 24px;
+      @include media_min(lg-min-m){
+         margin-bottom: 0;
+         width: 600px;
+         margin-right: auto;
+      }
+    }
+    & p{
+      font-size: 13px;
+      @include media_min(sm-min){
+        font-size: 16px;
+  }
+  @include media_min(lg-min-m){
+     font-size: 20px;
+  }
+  &:not(:last-child){
+   margin-bottom: 18px;
+   @include media_min(sm-min){
+       margin-bottom: 23px;
+   }
+   @include media_min(lg-min-m){
+      margin-bottom: 30px;
+   }
+
+}
+    }
    }
 }

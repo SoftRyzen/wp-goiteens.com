@@ -1,5 +1,6 @@
-.international{
-    ul {
+.international {
+
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -20,5 +21,12 @@
   }
   a {
     text-decoration: none;
+  }
+
+  @include media_min(sm-min){
+            
+  }
+  @include media_min(lg-min-m){
+     
   }
 }
