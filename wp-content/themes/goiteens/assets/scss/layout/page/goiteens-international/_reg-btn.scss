@@ -1,26 +1,25 @@
-.international{
-    .reg-btn{
-        width: 219px;
-        height: 49px;
-        font-weight: 700;
-        font-size: 16px;
-        cursor: pointer;
-        color: white;
-        display: block;
-        background-color: #679BFF;
-        border-radius: 40px;
-        border: transparent;
-        transition: background-color 750ms, box-shadow 750ms;
-        &:hover, &:focus{
-            background: #3574EF;
-box-shadow: 0px 0px 8px #4987FF;
-        }
-        @include media_min(sm-min){
-            margin: 0 auto;
-            
-        }
-        @include media_min(lg-min-m){
-           
-        }
+.international {
+  .reg-btn {
+    width: 219px;
+    height: 49px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    background-color: #679bff;
+    border-radius: 40px;
+    border: transparent;
+    transition: background-color 750ms, box-shadow 750ms;
+    &:hover,
+    &:focus {
+      background: #3574ef;
+      box-shadow: 0px 0px 8px #4987ff;
     }
+    @include media_min(sm-min) {
+      margin: 0 auto;
+    }
+    @include media_min(lg-min-m) {
+    }
+  }
 }

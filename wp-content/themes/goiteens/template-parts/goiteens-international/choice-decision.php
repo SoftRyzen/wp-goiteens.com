@@ -8,12 +8,7 @@
         </div>
         <div class="box">
             <strong class="box_description">Записатися на <span>  безплатний</span> пробний урок</strong>
-            <form action="" class="form">
-                <div class="form_item"><label class="form_label">Ім’я та вік студента</label><input type="text" class="form_input"></div>
-                <div class="form_item"><label class="form_label">Контактний телефон</label><input type="tel" class="form_input"></div>
-                <div class="form_item"><label class="form_label">Email</label><input type="email" class="form_input"></div>
-                <button class="reg-btn">Зареєструватися</button>
-            </form>
+            <?php get_template_part( 'template-parts/goiteens-international/form'  ); ?>
         </div>
     </div>
     </div>

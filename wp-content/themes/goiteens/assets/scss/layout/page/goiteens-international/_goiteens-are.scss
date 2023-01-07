@@ -1,58 +1,49 @@
-.international{
-    .goiteens-are{
-        
-        padding-top: 22px;
-        @include media_min(sm-min){
-            padding-top: 64px;
-        }
-        @include media_min(lg-min-m){
-            padding-top: 48px;
-           
-        }
-        &  .container{
-            @include media_min(sm-min){
-                display: flex;
-                align-items: center;
-              
-            }
-           
-        }
-
-      
-        &  .img-wrap{
-            display: none;
-            @include media_min(sm-min){
-                display: flex;
-            }
-
-        }
-        &_wrapper{
-            width: 100%;
-            @include media_min(sm-min){
-               width: 62%;
-                margin-left: auto;
-            }
-            @include media_min(lg-min-m){
-                max-width: 703px;
-               
-            }
-        }
-        & p{
-            font-size: 15px;
-            @include media_min(sm-min){
-                font-size: 16px;
-             }
-             @include media_min(lg-min-m){
-                 font-size: 20px;
-                
-             }
-             &:not(:last-child){
-                margin-bottom: 22px;
-                @include media_min(sm-min){
-                    margin-bottom: 28px;
-                }
-
-             }
-        }
+.international {
+  .goiteens-are {
+    padding-top: 22px;
+    @include media_min(sm-min) {
+      padding-top: 64px;
     }
+    @include media_min(lg-min-m) {
+      padding-top: 48px;
+    }
+    & .container {
+      @include media_min(sm-min) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    & .img-wrap {
+      display: none;
+      @include media_min(sm-min) {
+        display: flex;
+      }
+    }
+    &_wrapper {
+      width: 100%;
+      @include media_min(sm-min) {
+        width: 62%;
+        margin-left: auto;
+      }
+      @include media_min(lg-min-m) {
+        max-width: 703px;
+      }
+    }
+    & p {
+      font-size: 15px;
+      @include media_min(sm-min) {
+        font-size: 16px;
+      }
+      @include media_min(lg-min-m) {
+        font-size: 20px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 22px;
+        @include media_min(sm-min) {
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
 }
