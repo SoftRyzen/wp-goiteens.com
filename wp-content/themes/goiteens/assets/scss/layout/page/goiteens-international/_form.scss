@@ -1,5 +1,5 @@
 .international {
-  .box {
+  .box, .modal {
     margin: 0 auto;
     position: relative;
     width: 295px;
@@ -16,25 +16,7 @@
       padding: 32px;
     }
 
-    &_description {
-      display: block;
-      text-align: center;
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 14px;
-      & span {
-        text-transform: uppercase;
-        color: #679bff;
-      }
-      @include media_min(sm-min) {
-        margin: 0 auto 24px;
-        max-width: 330px;
-      }
-      @include media_min(lg-min-m) {
-        margin: 0 auto 28px;
-        max-width: 330px;
-      }
-    }
+  
     & .form {
       display: flex;
       flex-direction: column;
@@ -47,6 +29,25 @@
       }
       @include media_min(lg-min-m) {
         flex-direction: column;
+      }
+      & .description {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 14px;
+        & span {
+          text-transform: uppercase;
+          color: #679bff;
+        }
+        @include media_min(sm-min) {
+          margin: 0 auto 24px;
+          max-width: 330px;
+        }
+        @include media_min(lg-min-m) {
+          margin: 0 auto 28px;
+          max-width: 330px;
+        }
       }
       &_item {
         @include media_min(sm-min) {
@@ -81,6 +82,8 @@
       }
       &_input {
         display: block;
+        padding-left: 15px;
+        outline: transparent;
         height: 38px;
         width: 100%;
         font-size: 14px;

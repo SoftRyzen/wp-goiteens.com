@@ -20,7 +20,7 @@ get_header();
 	<?php get_template_part( 'template-parts/goiteens-international/students-projects'  ); ?>
 	<?php get_template_part( 'template-parts/goiteens-international/it-direction'  ); ?>
 	<?php get_template_part( 'template-parts/goiteens-international/choice-decision'  ); ?>	
-
+	<?php get_template_part( 'template-parts/goiteens-international/modal-int'  ); ?>	
 </main>
 
 <?php get_template_part( 'template-parts/main-footer'  ); ?>

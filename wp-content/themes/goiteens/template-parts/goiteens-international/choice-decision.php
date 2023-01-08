@@ -7,7 +7,6 @@
         <p>Ми запропонуємо вам комфортний час для проведення пробного уроку та розповімо про всі можливості навчання.</p>
         </div>
         <div class="box">
-            <strong class="box_description">Записатися на <span>  безплатний</span> пробний урок</strong>
             <?php get_template_part( 'template-parts/goiteens-international/form'  ); ?>
         </div>
     </div>
