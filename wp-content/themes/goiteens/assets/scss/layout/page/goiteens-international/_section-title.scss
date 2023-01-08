@@ -31,7 +31,7 @@
         bottom: 20px;
         font-size: 14px;
         text-transform: uppercase;
-        color: #679bff;
+        color: $light-blue-int;
         width: 100px;
         height: 33px;
         font-weight: 700;
@@ -44,6 +44,7 @@
         backdrop-filter: blur(50px);
         border-radius: 15px;
         transform: rotate(-17.44deg);
+        transition: background-color 750ms;
         @include media_min(sm-min) {
           font-size: 16px;
           width: 108px;
@@ -57,6 +58,9 @@
           height: 51px;
           right: 0;
           bottom: 20%;
+        }
+        &:hover{
+          background-color: rgba(255, 236, 63, 0.3);
         }
       }
     }

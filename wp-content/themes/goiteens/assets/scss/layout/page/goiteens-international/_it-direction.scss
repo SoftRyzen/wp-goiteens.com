@@ -46,6 +46,29 @@
           flex-direction: row;
         }
       }
+        &:nth-child(3){
+        
+          @include media_min(lg-min-m) {
+            order:1;
+          }
+        }
+        &:nth-child(4){
+          @include media_min(lg-min-m) {
+            order:0;
+          }
+        }
+        &:nth-child(5){
+         
+          @include media_min(lg-min-m) {
+            order:1;
+          }
+        }
+        &:nth-child(6){
+          @include media_min(lg-min-m) {
+            order:1;
+          }
+        }
+      
       & h3 {
         font-weight: 700;
         font-size: 16px;

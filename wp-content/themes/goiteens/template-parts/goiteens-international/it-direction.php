@@ -17,13 +17,6 @@
                 </div>
             </li>
             <li class="it-direction_item">
-            <img class="it-direction_img"  loading="lazy" alt="іконка python" src="<?= get_template_directory_uri() ?>/assets/images/international/python.png"/>
-                <div>
-                <h3>Python</h3>
-                <p>Найпопулярніша мова програмування, ідеальна для старту підліткам</p>
-                </div>
-            </li>
-            <li class="it-direction_item">
             <img class="it-direction_img"  loading="lazy" alt="іконка frontend" src="<?= get_template_directory_uri() ?>/assets/images/international/frontend.png"/>
                 <div>
                 <h3>Frontend</h3>
@@ -31,7 +24,15 @@
                 </div>
             </li>
             <li class="it-direction_item">
-            <img class="it-direction_img"  loading="lazy" alt="іконка minecraft" src="<?= get_template_directory_uri() ?>/assets/images/international/cub.png"/>
+            <img class="it-direction_img"  loading="lazy" alt="іконка python" src="<?= get_template_directory_uri() ?>/assets/images/international/python.png"/>
+                <div>
+                <h3>Python</h3>
+                <p>Найпопулярніша мова програмування, ідеальна для старту підліткам</p>
+                </div>
+            </li>
+           
+            <li class="it-direction_item">
+            <img class="it-direction_img"  loading="lazy" alt="іконка minecraft" src="<?= get_template_directory_uri() ?>/assets/images/international/cub-fix.png"/>
                 <div>
                 <h3>Minecraft</h3>
                 <p>Найпопулярніша гра, що має освітнє середовище для вивчення програмування</p>

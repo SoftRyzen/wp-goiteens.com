@@ -1,6 +1,6 @@
 .international {
   .choice-decision {
-    background-color: #f6f8fc;
+    background-color: $light-bgc-int;
     padding-top: 32px;
 
     @include media_min(sm-min) {
