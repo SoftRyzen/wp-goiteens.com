@@ -6,13 +6,14 @@ ini_set('display_errors', 1);
 header('Access-Control-Allow-Origin: *');
 header("Content-type: application/json; charset=utf-8");
 
+$returnURL = ($_POST['page'] == 4777) ? get_template_directory_uri() . "/assets/crm/pythonautopay/return_url.php" : get_template_directory_uri() . "/assets/crm/pythonstartpay/return_url.php";
 
 $token = 'DNBC-3VgDWLIIrpyBab0l9bISr0C-0VO';
 $additionalParameters = array(  // правити для кожного окремого ленда!
     "productID" => 1819773000180826760,                                        // айді продукту з зохо
     "productName" => "GoITeens_UA_PythonStart_1",                            // назва продукту
     "fopID" => 1819773000102087784,                                            // айді фопа з зохо
-    "returnURL" =>  get_template_directory_uri() . "/assets/crm/pythonstartpay/return_url.php",        // перевірка статусу оплати
+    "returnURL" =>  $returnURL,        // перевірка статусу оплати
     "productPrice" => 299,                                                     // ціна продукту
     "productCurrency" => "UAH",                                                // валюта продукту
     "promoKey" => "",                                                          // промокод
