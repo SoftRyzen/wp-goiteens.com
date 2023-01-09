@@ -7,6 +7,7 @@
 </svg>
 </button>
     <?php get_template_part( 'template-parts/goiteens-international/form'  ); ?>
+    <?php get_template_part( 'template-parts/goiteens-international/modal-success'  ); ?>
 </div>
 
 </div>

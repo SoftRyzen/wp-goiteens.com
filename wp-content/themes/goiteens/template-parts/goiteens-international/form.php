@@ -1,4 +1,4 @@
-<form action="" class="form">
+<form action="" class="form" data-form>
 <strong class="description">Записатися на <span>  безплатний</span> пробний урок</strong>
                 <div class="form_item"><label class="form_label">Ім’я та вік студента</label><input type="text" class="form_input"></div>
                 <div class="form_item"><label class="form_label">Контактний телефон</label><input type="tel" class="form_input"></div>

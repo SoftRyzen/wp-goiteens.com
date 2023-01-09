@@ -7,7 +7,9 @@
     background: $backdrop-bgc;
     transition-property: opacity, visibility;
     transition-duration: 750ms;
-
+    @include media_min(lg-min-m) {
+        display: none;
+      }
     .is-hidden {
       opacity: 0;
       pointer-events: none;
@@ -60,8 +62,6 @@
       }
     }
     
-    @include media_min(lg-min-m) {
-      display: none;
-    }
+   
   }
 }
