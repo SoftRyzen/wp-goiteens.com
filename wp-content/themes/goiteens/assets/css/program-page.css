@@ -20,6 +20,9 @@
 .features-10 .features__age-from {
     margin-right: 15px;
 }
+.features-10 .features__level {
+    padding-left: 60px;
+}
 
 .header__logo {
     max-width: 270px;
