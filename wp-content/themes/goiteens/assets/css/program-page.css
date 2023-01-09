@@ -14,6 +14,13 @@
     background-image: url(../images/programs/program-list/program-10.png);
 }
 
+.features-10 .features__age {
+    padding-left: 23px;
+}
+.features-10 .features__age-from {
+    margin-right: 15px;
+}
+
 .header__logo {
     max-width: 270px;
 }
