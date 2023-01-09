@@ -32,6 +32,7 @@
       <!-- hidden inputs for utm-tags -->
       <input type="hidden" name="promo" value="" />
       <input type="hidden" name="ip" value="" />
+        <input type="hidden" name="page" value="<?= get_the_ID() ?>" />
       <!-- end hidden inputs for utm-tags -->
       <div class="btn-cont">
         <button class="btn modal-btn order-btn" type="submit">Замовити</button>
