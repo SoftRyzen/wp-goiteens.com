@@ -24,7 +24,7 @@ get_header();
 
     <?php } ?>
 
-   
+    <?php get_template_part( 'template-parts/blog/specials'); ?>
     <?php get_template_part( 'template-parts/blog/order'); ?>
 
     <?php get_template_part('template-parts/main-footer'); ?>

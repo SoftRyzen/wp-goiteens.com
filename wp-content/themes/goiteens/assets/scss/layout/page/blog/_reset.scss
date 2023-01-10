@@ -15,4 +15,10 @@ img{
 a{
     text-decoration: none;
 }
+@include media_min(sm-min) {
+   
+  }
+  @include media_min(lg-min-m) {
+    
+  }
 }
