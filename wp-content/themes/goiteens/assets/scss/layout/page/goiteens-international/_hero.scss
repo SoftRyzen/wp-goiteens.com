@@ -1,0 +1,94 @@
+.international {
+  & .hero-int {
+    background: linear-gradient(
+      106.63deg,
+      rgba(255, 236, 63, 0.5) 7.9%,
+      rgba(103, 155, 255, 0.5) 86.7%
+    );
+    padding-top: 42px;
+
+    @include media_min(sm-min) {
+      padding-top: 64px;
+    }
+    @include media_min(lg-min-m) {
+      padding-top: 118px;
+    }
+
+    &_background {
+      padding-bottom: 24px;
+      background: url(../images/international/wtite-small-grass.svg),
+        url(../images/international/white-big-grass.svg);
+
+      background-repeat: no-repeat;
+      background-size: 128px, 255px;
+      background-position: bottom -130px left -20px, bottom -150px right -50px;
+      @include media_min(sm-min) {
+        padding-bottom: 61px;
+        background: url(../images/international/wtite-small-grass.svg),
+          url(../images/international/white-big-grass.svg);
+
+        background-repeat: no-repeat;
+        background-size: 245px, 375px;
+        background-position: bottom 0 left -80px, bottom 0 right -140px;
+      }
+      @include media_min(lg-min-m) {
+        padding-bottom: 88px;
+        background: url(../images/international/wtite-small-grass.svg),
+          url(../images/international/white-big-grass.svg);
+
+        background-repeat: no-repeat;
+        background-size: 274px, 530px;
+        background-position: bottom 0 left -120px, bottom 0 right -150px;
+      }
+    }
+    & .container {
+      @include media_min(lg-min-m) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &_wrapper {
+      @include media_min(lg-min-m) {
+        width: 722px;
+        margin-right: auto;
+      }
+    }
+    & .box {
+      display: none;
+      @include media_min(lg-min-m) {
+        display: block;
+      }
+    }
+    & .reg-btn {
+      @include media_min(sm-min) {
+        margin: 0 auto;
+      }
+      @include media_min(lg-min-m) {
+        display: none;
+      }
+    }
+    & p {
+      font-size: 15px;
+      margin-bottom: 24px;
+      @include media_min(sm-min) {
+        font-size: 16px;
+
+        text-align: center;
+      }
+      @include media_min(lg-min-m) {
+        font-size: 20px;
+        text-align: start;
+        width: 570px;
+      }
+      // &:first-child{
+      //     margin-bottom: 25px;
+      //     @include media_min(sm-min){
+      // margin-bottom: 26px;
+      //     }
+      //     @include media_min(lg-min-m){
+      //        margin-bottom: 30px;
+      //     }
+      // }
+    }
+  }
+}

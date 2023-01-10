@@ -1,0 +1,79 @@
+.international {
+  .choice-decision {
+    background-color: $light-bgc-int;
+    padding-top: 32px;
+
+    @include media_min(sm-min) {
+      padding-top: 33px;
+    }
+    @include media_min(lg-min-m) {
+      padding-top: 48px;
+    }
+    & .section-title {
+      text-align: center;
+      @include media_min(lg-min-m) {
+        text-align: start;
+      }
+    }
+    &_background {
+      padding-bottom: 32px;
+      background: url(../images/international/blue-small-right-gr.svg);
+      background-repeat: no-repeat;
+      background-size: 134px;
+      background-position: bottom -50px right -30px;
+      @include media_min(sm-min) {
+        padding-bottom: 58px;
+        background: url(../images/international/blue-big-gr.svg),
+          url(../images/international/yellow-grass.svg);
+
+        background-repeat: no-repeat;
+        background-size: 315px, 256px;
+        background-position: bottom -70px left -90px, bottom -10px right -80px;
+      }
+      @include media_min(lg-min-m) {
+        padding-bottom: 48px;
+        background: url(../images/international/blue-big-gr.svg),
+          url(../images/international/yellow-grass.svg);
+
+        background-repeat: no-repeat;
+        background-size: 315px, 256px;
+        background-position: bottom -180px left -90px, bottom 0 right -80px;
+      }
+    }
+    & .container {
+      @include media_min(lg-min-m) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &_wrap {
+      margin-bottom: 24px;
+      @include media_min(lg-min-m) {
+        margin-bottom: 0;
+        width: 600px;
+        margin-right: auto;
+      }
+    }
+    & p {
+      font-size: 13px;
+      @include media_min(sm-min) {
+        font-size: 16px;
+        text-align: center;
+      }
+      @include media_min(lg-min-m) {
+        font-size: 20px;
+        text-align: start;
+      }
+      &:not(:last-child) {
+        margin-bottom: 18px;
+        @include media_min(sm-min) {
+          margin-bottom: 23px;
+        }
+        @include media_min(lg-min-m) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

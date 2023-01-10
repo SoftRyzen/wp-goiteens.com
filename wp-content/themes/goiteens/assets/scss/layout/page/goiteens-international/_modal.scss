@@ -1,0 +1,67 @@
+.international {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $backdrop-bgc;
+    transition-property: opacity, visibility;
+    transition-duration: 750ms;
+    @include media_min(lg-min-m) {
+        display: none;
+      }
+    .is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+    .modal {
+      width: 295px;
+      background: $bgc-int;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      padding: 40px 8px 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      @include media_min(sm-min) {
+        width: 96%;
+        max-width: 738px;
+        padding: 36px;
+      }
+      & .close-btn{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: transparent;
+        top:14px;
+        right: 14px;
+        color: $text-int;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: transparent;
+        outline: transparent;
+        transition: background-color 750ms, border 750ms;
+        @include media_min(sm-min) {
+            top:36px;
+        right: 36px;
+        }
+        &:hover, &:focus{
+            background-color:$svg-yellow-int;
+            border: 3px dashed $light-blue-int;
+        }
+        & > svg{
+            width: 15px;
+            height: 15px;
+            fill:currentColor;
+        }
+      }
+    }
+    
+   
+  }
+}

@@ -1,0 +1,99 @@
+.international {
+  .free-projects {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(247, 248, 252, 1) 25%
+    );
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media_min(sm-min) {
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 30%,
+        rgba(247, 248, 252, 1) 30%
+      );
+      padding-top: 64px;
+      padding-bottom: 36px;
+    }
+    @include media_min(lg-min-m) {
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 55%,
+        rgba(247, 248, 252, 1) 55%
+      );
+      padding-top: 88px;
+      padding-bottom: 48px;
+    }
+
+    & .section-title {
+      @include media_min(lg-min-m) {
+        max-width: 794px;
+      }
+    }
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      @include media_min(sm-min) {
+        flex-direction: row;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @include media_min(lg-min-m) {
+        flex-wrap: nowrap;
+      }
+    }
+    &_item {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      @include media_min(sm-min) {
+        gap: 14px;
+        width: 48%;
+        align-items: center;
+      }
+      @include media_min(lg-min-m) {
+        gap: 8px;
+        width: 30%;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        @include media_min(sm-min) {
+          flex-direction: row;
+        }
+      }
+      & h3 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 30px;
+        @include media_min(sm-min) {
+          font-size: 20px;
+          margin-bottom: 27px;
+        }
+        @include media_min(lg-min-m) {
+          margin-bottom: 23px;
+        }
+      }
+      & p {
+        font-size: 13px;
+        @include media_min(sm-min) {
+          font-size: 16px;
+        }
+        @include media_min(lg-min-m) {
+          font-size: 13px;
+        }
+      }
+    }
+    &_img {
+      width: 79px;
+      height: 79px;
+      @include media_min(sm-min) {
+        width: 99px;
+        height: 99px;
+      }
+    }
+  }
+}
