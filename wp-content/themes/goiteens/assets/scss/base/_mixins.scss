@@ -19,3 +19,24 @@
         @content;
     }
 }
+@mixin font( $fs, $fw, $c, $lh, $ls, $tt){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+
+@mixin flex($jc, $ai, $fw, $fd){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+}
+@mixin transition($tp, $td, $ttf){
+    transition-property: $tp;
+    transition-duration: $td;
+    transition-timing-function: $ttf;
+}

@@ -1,0 +1,96 @@
+.site{
+    .offers {
+    background-color: #fffcf2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+    @include media_min(sm-min) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      background-image: url("../images/offers/background/offers-wave.svg"),
+        url("../images/offers/background/offers-rocket.svg"),
+        url("../images/offers/background/offers-lightning.svg");
+      background-repeat: no-repeat;
+      background-size: 100%, auto, auto;
+      background-position: top 41% center, bottom 10% left -5%,
+        bottom 10% right 10%;
+    }
+    @include media_min(lg-min-m) {
+      background-image: url("../images/offers/background/offers-wave-desktop.svg"),
+        url("../images/offers/background/offers-lightning-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100%, auto;
+      background-position: center, top 10% right 5%;
+    }
+  
+    &-title {
+      margin: 0 auto;
+      line-height: 1.1;
+      max-width: 263px;
+      margin-bottom: 20px;
+  
+      @include media_min(sm-min) {
+        max-width: 595px;
+        margin-bottom: 36px;
+        line-height: 1.17;
+      }
+      @include media_min(lg-min-m) {
+        margin: 0;
+        margin-bottom: 55px;
+        max-width: 875px;
+      }
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+      @include media_min(sm-min) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 25px;
+        column-gap: 20px;
+      }
+      @include media_min(lg-min-m) {
+        flex-wrap: nowrap;
+        gap: 42px;
+      }
+  
+      & li {
+        margin-bottom: 20px;
+  
+        @include media_min(sm-min) {
+            width: calc((100% - 20px) / 2);
+            margin-bottom: 0;
+         
+        }
+        @include media_min(lg-min-m) {
+            width: calc((100% - 2 * 20px) / 3);
+            flex-wrap: nowrap;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:first-child {
+            @include media_min(sm-min) {
+          width: 51%;
+
+          }
+          @include media_min(lg-min-m) {
+            width: calc((100% - 2 * 20px) / 3);
+          }
+        }
+      }
+    }
+    &-image {
+      margin: 0 auto;
+      height: 100%;
+  
+      @include media_min(sm-min) {
+        width: 275px;
+      }
+      @include media_min(lg-min-m) {
+        width: 370px;
+      }
+    }
+  }
+}

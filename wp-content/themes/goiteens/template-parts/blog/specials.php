@@ -16,13 +16,13 @@ if( $specials ) {
 
             <!-- list -->
             <ul class="offers-list">
-                <?php foreach ( $specials as $special ) { ?>
-                    <li>
-                        <a href="<?= $special['url'] ?>">
-                            <?php echo wp_get_attachment_image($special['image'], [370, 370], '', ['class' => 'offers-image', 'title' => $special['title'], 'alt' => $special['title'] ]) ?>
-                        </a>
-                    </li>
-                <?php } ?>
+                <li class="offers-item"> <img class="item_img" loading="lazy" alt="design" src="<?= get_template_directory_uri() ?>/assets/images/blog/design-1x.jpg "
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/design-2x.jpg  2x"/></li>
+                <li class="offers-item"> <img class="item_img" loading="lazy" alt="python" src="<?= get_template_directory_uri() ?>/assets/images/blog/python-1x.jpg "
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/python-2x.jpg  2x"/></li>
+                <li class="offers-item"> <img class="item_img" loading="lazy" alt="frontend" src="<?= get_template_directory_uri() ?>/assets/images/blog/frontend-1x.jpg"
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/frontend-2x.jpg 2x"/></li>
+            
             </ul>
             <!-- end list -->
 

@@ -7,22 +7,51 @@ $popularPost = get_field('populars');
     <section class="popular blogListPreload">
         <div class="container">
             <h2 class="popular-title"><?= get_field('populars_title') ?></h2>
-            <?php
-            $args = [
-                'post__in' => $popularPost,
-            ];
-            $query = new WP_Query( $args );
-            ?>
-            <ul class="popular-list blogListContainer">
-                <?php if ( $query->have_posts() ) { ?>
-                    <?php while ( $query->have_posts() ) { $query->the_post(); ?>
-                        <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
-                    <?php } ?>
-                <?php } wp_reset_postdata(); ?>
+           
+           <ul class="popular-list">
+           <li class="popular-item">
+            <span class="popular-label">Поради СЕО</span>
+           <img class="item_img"  loading="lazy" alt="smiling boy" src="<?= get_template_directory_uri() ?>/assets/images/blog/car-1-1x.jpg"
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/card-1-2x.jpg 2x"/>
+            <div class="popular-box">
+                <h3 >Які навички знадобляться дітям в 2025 році</h3>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div><a href="">Читати далі ›</a> <svg width="13" height="13">
 
-            </ul>
-            <buttom class="popular-button blogListBtn" type="button"><?= _e( 'Дивитися більше', 'goiteens' ) ?></buttom>
+<use href="<?= get_template_directory_uri() ?>/assets/images/blog/sprite.svg#icon-small-clock"></use>
+
+</svg>5хв</span></div></div>
+</li>
+<li class="popular-item">
+<span class="popular-label">Поради СЕО</span>
+<img class="item_img"  loading="lazy" alt="winner's cup" src="<?= get_template_directory_uri() ?>/assets/images/blog/card-2-1x.jpg "
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/card-2-2x.jpg 2x"/>
+            <div class="popular-box">
+                <h3>Які навички знадобляться дітям в 2025 році</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div><a href="">Читати далі ›</a> <svg width="13" height="13">
+
+<use href="<?= get_template_directory_uri() ?>/assets/images/blog/sprite.svg#icon-small-clock"></use>
+
+</svg>5хв</span></div></div>
+           </li>
+           <li class="popular-item">
+           <span class="popular-label">Поради СЕО</span>
+           <img class="item_img" loading="lazy" alt="boy" src="<?= get_template_directory_uri() ?>/assets/images/blog/card-3-1x.jpg "
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/card-3-2x.jpg  2x"/>
+            <div class="popular-box">
+                <h3>Які навички знадобляться дітям в 2025 році</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div><a href="">Читати далі ›</a> <svg width="13" height="13">
+
+<use href="<?= get_template_directory_uri() ?>/assets/images/blog/sprite.svg#icon-small-clock"></use>
+
+</svg>5хв</span></div>
+           </li>
+           </ul>
+            <button class="popular-button blogListBtn" type="button"><?= _e( 'Дивитися більше', 'goiteens' ) ?></button>
         </div>
+
     </section>
-    <!-- End Popular -->
+    
 <?php } ?>

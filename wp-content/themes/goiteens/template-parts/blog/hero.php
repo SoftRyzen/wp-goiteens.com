@@ -1,50 +1,62 @@
-<?php
 
-?>
-<!-- Hero -->
 <section class="hero">
 
     <!-- container -->
     <div class="container">
 
-        <!-- suptitle -->
-        <p class="hero-suptitle">
-            <?= _e('Завжди в темі', 'goiteens') ?>
-        </p>
-        <!-- end suptitle -->
+   <p class="section-title_text">Виховуємо лідерів IT</p>
+   <h1 class="section-title_hero">GoITeens <span>journal</span></h1>
 
-        <!-- title -->
-        <?php the_title('<h1 class="hero-title hero-title--large">', '</h1>') ?>
-        <!-- end title -->
 
-        <!-- desc -->
-        <div class="hero__content">
-            <?php the_content(); ?>
-        </div>
-        <!-- end desc -->
+   <div class="swiper">
+  
+  <div class="swiper-wrapper">
 
-    </div>
-    <!-- end container -->
+    <div class="swiper-slide hero-slide">
 
     <picture>
-        <!-- WEBP -->
-        <source media="(min-width: 1280px)" type="image/webp" srcset="
-      <?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/desktop/hero-image-desktop.webp 1x,
-      <?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/desktop/hero-image-desktop@2x.webp 2x
-    " />
-        <source media="(min-width: 768px)" type="image/webp" srcset="
-      <?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/tablet/hero--image-tablet.webp 1x,
-      <?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/tablet/hero--image-tablet.webp 2x
-    " />
-        <!-- PNG (insert "image/jpeg" for JPEG) -->
-        <source media="(min-width: 1170px)" type="image/png" srcset="
-      <?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/desktop/hero-image-desktop.png    1x,
-      <?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/desktop/hero-image-desktop@2x.png 2x
-    " />
-        <img class="hero-image" width="246" height="276" loading="lazy" alt="Хлопчик з рупором"
-             src="<?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/tablet/hero--image-tablet.png"
-             srcset="<?= get_stylesheet_directory_uri() ?>/assets/blog/images/hero/tablet/hero--image-tablet.png 2x" />
-    </picture>
+      <source media="(min-width: 768px)" type="image/webp" 
+      srcset="<?= get_template_directory_uri() ?>/assets/images/blog/hero-img-1x.webp 1x,
+      <?= get_template_directory_uri() ?>/assets/images/blog/hero-img-2x.webp 2x" width="572" height="546"/>
+     
+        <source media="(min-width: 768px)" type="image/jpeg" 
+        srcset="<?= get_template_directory_uri() ?>/assets/images/blog/hero-img-1x.jpg 1x,
+        <?= get_template_directory_uri() ?>/assets/images/blog/hero-img-2x.jpg 2x" width="572" height="546"/>
 
+        <img class="hero-image" width="280" height="268" loading="lazy" alt="Учні магічної школи"
+             src="<?= get_template_directory_uri() ?>/assets/images/blog/hero-mob-1x.jpg"
+             srcset="<?= get_template_directory_uri() ?>/assets/images/blog/hero-mob-2x.jpg 2x" />
+    </picture>
+     
+    <div class="hero-box">
+      
+      <div>
+      <span>Тест</span>
+      <span>
+      <svg width="12" height="12">
+
+<use href="<?= get_template_directory_uri() ?>/assets/images/blog/sprite.svg#icon-small-clock"></use>
+
+</svg>5хв</span>
+      </div>
+      <h2>Безпека дитини в інтернеті: що потрібно знати</h2>
+      <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="hero-text"> Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+      <a href="" class="hero-link" >Пройти тест</a>
+    </div>
+
+    </div>
+
+  
+  </div>
+
+  </div>
+  
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+
+    
+  </div>
 </section>
-<!-- End Hero -->

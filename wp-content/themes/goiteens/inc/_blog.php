@@ -9,8 +9,8 @@ function goiteens_blog_enqueue_styles()
 
     if (is_page_template('templates/tmpl-blog-page.php') || is_category()) {
 
-        wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/blog/css/style.css');
-        wp_enqueue_style('blog-custom', get_stylesheet_directory_uri() . '/assets/blog/css/custom.css?v=6');
+        // wp_enqueue_style('blog', get_stylesheet_directory_uri() . '/assets/blog/css/style.css');
+        // wp_enqueue_style('blog-custom', get_stylesheet_directory_uri() . '/assets/blog/css/custom.css?v=6');
 
         wp_enqueue_script('blog', get_stylesheet_directory_uri() . '/assets/blog/js/blog.js?v=5', array('jquery'), false, true);
 

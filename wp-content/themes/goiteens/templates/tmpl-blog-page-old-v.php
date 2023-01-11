@@ -18,7 +18,7 @@ get_header();
 
         <?php get_template_part( 'template-parts/blog/hero'); ?>
         <?php get_template_part( 'template-parts/blog/search'); ?>
-        <?php get_template_part( 'template-parts/blog/articles-card'); ?>
+        <?php get_template_part( 'template-parts/blog/new'); ?>
         <?php get_template_part( 'template-parts/blog/subscribe'); ?>
         <?php get_template_part( 'template-parts/blog/popular'); ?>
 

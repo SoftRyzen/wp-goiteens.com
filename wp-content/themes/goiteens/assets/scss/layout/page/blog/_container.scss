@@ -1,0 +1,25 @@
+.site {
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+  
+        @include media_min(xs-min) {
+          max-width: 480px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        @include media_min(sm-min) {
+          max-width: 768px;
+          padding-right: 98px;
+          padding-left: 98px;
+        }
+        @include media_min(lg-min-m) {
+          max-width: 1280px;
+          padding-right: 40px;
+          padding-left: 40px;
+        }
+      }
+    }

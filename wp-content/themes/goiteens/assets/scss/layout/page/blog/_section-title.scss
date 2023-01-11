@@ -1,0 +1,51 @@
+.site{
+    .section-title, .popular-title, .offers-title{
+        color:$title-blog;
+        font-size: 20px;
+        line-height: 1.1;
+        font-weight: 700;  
+        margin-bottom: 32px;
+        @include media_min(sm-min) {
+            font-size: 48px;
+            line-height: 1.17;
+            margin-bottom: 40px;
+        }
+       
+        &_text{
+            color:$title-blog;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 4px;
+            font-weight: 700;
+            @include media_min(sm-min) {
+       font-size: 28px;
+       margin-bottom: 16px;
+            }
+            @include media_min(lg-min-m) {
+                font-size: 36px;
+                margin-bottom: 5px;
+            }
+
+        }
+        &_hero{
+            color:$title-blog;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 32px;
+            line-height: 1.31;
+            & span{
+                text-transform: uppercase;
+            }
+            @include media_min(sm-min) {
+                font-size: 60px;
+                margin-bottom: 40px;
+               
+            }
+            @include media_min(lg-min-m) {
+                font-size: 96px;
+               
+            }
+
+        }
+    }
+}

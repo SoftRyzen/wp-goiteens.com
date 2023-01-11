@@ -1,0 +1,112 @@
+.site {
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    @include media_min(lg-min-m) {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+    &-slide {
+      display: flex;
+      flex-direction: column;
+
+      @include media_min(sm-min) {
+      }
+      @include media_min(lg-min-m) {
+        flex-direction: row;
+        align-items: center;
+      }
+      & img {
+        margin: 0 auto;
+      }
+    }
+    &-link {
+      color: $title-blog;
+      width: 243px;
+      height: 54px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $blog-purple-text;
+      border-radius: 4px;
+      transition: background-color 750ms, color 750ms;
+      &:hover,
+      &:focus {
+        color: $color-white;
+        background-color: $bgc-btn-blog;
+      }
+    }
+    &-box {
+      padding: 20px 12px;
+      @include media_min(sm-min) {
+        padding: 32px;
+      }
+      @include media_min(lg-min-m) {
+        width: 600px;
+      }
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        @include media_min(lg-min-m) {
+          margin-bottom: 22px;
+        }
+        & > span {
+          display: flex;
+          align-items: center;
+          font-size: 10px;
+          gap:4px;
+          @include media_min(sm-min) {
+            font-size: 12px;
+          }
+          @include media_min(lg-min-m) {
+            font-size: 18px;
+          }
+        }
+      }
+      & > h2 {
+        color: $title-blog;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 20px;
+        @include media_min(sm-min) {
+          font-size: 30px;
+          margin-bottom: 32px;
+        }
+        @include media_min(lg-min-m) {
+          font-size: 32px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+    &-text {
+      font-size: 12px;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      @include media_min(sm-min) {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.44;
+      }
+      @include media_min(lg-min-m) {
+        font-size: 18px;
+      }
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      bottom: 0;
+      content: "";
+      width: 60px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .swiper-button-prev:after {
+      background: url(/assets/images/blog/arrow-left.svg);
+    }
+    .swiper-button-next:after {
+      background: url(/assets/images/blog/arrow-right.svg);
+    }
+  }
+}

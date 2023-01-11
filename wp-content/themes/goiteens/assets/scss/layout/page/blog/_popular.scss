@@ -1,0 +1,226 @@
+.site{
+  .popular {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media_min(lg-min-m) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  &-title {
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+
+    @include media_min(sm-min) {
+      margin-bottom: 36px;
+      letter-spacing: 0em;
+    }
+  }
+  &-list {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include media_min(sm-min) {
+      flex-direction: row;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include media_min(lg-min-m) {
+      gap: 30px;
+      margin-bottom: 48px;
+    }
+  }
+  &-item {
+    position: relative;
+    margin: 0 auto;
+    width: 280px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+
+    @include media_min(sm-min) {
+      width:calc((100% - 20px) / 2);
+    }
+    @include media_min(lg-min-m) {
+      margin: 0;
+      width:calc((100% - 2 * 30px) / 3);
+    }
+&  h3{
+  color:$title-blog;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  @include media_min(sm-min) {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+       
+  }
+  @include media_min(lg-min-m) {
+    font-size: 22px;
+    margin-bottom: 24px;
+    line-height: 1.46;
+  }
+}
+
+
+&  p{font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+  @include media_min(sm-min) {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  @include media_min(lg-min-m) {
+  font-size: 18px;
+  line-height: 1.33;
+ 
+  }
+}
+    // &:not(last-child) {
+    //   margin-bottom: 40px;
+
+    //   @include media_min(sm-min) {
+    //     margin-bottom: 32px;
+    //   }
+    //   @include media_min(lg-min-m) {
+    //     margin-bottom: 0;
+    //   }
+    // }
+  }
+
+  &-label {
+    text-align: center;
+    min-width: 122px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 8px 15px;
+    color: #a04ca1;
+    font-weight: 500;
+
+    @include media_min(sm-min) {
+      top: 24px;
+      left: 24px;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      min-width: 188px;
+    }
+  }
+
+  &-description {
+    background-color: #ffffff;
+    padding: 20px 20px 30px 20px;
+
+    @include media_min(sm-min) {
+      min-height: 372px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 20px 36px;
+    }
+
+    &__title {
+      max-width: 195px;
+      line-height: 1.1;
+
+      @include media(sm-max) {
+        margin-bottom: 8px;
+      }
+      @include media_min(sm-min) {
+        font-size: 22px;
+        line-height: 1.45;
+        max-width: 320px;
+      }
+    }
+    &__text {
+      max-width: 215px;
+
+      @include media(sm-max) {
+        margin-bottom: 16px;
+      }
+      @include media_min(sm-min) {
+        font-size: 18px;
+        line-height: 1.33;
+        max-width: 300px;
+      }
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.79;
+      color: #a04ca1;
+
+      @include media_min(sm-min) {
+        font-size: 18px;
+        line-height: 1.39;
+      }
+    }
+  }
+ 
+  &-button {
+    cursor: pointer;
+    color: $title-blog ;
+    font-size: 500;
+    min-width: 272px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid $bgc-btn-blog;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:$color-white;
+    max-width: 200px;
+    transition: border 750ms linear, background-color 750ms linear, color 750ms linear;
+  
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      background-color: $bgc-btn-blog;
+      color:$color-white;
+    }
+   
+  }
+&-box{
+  padding: 20px;
+  @include media_min(sm-min) {
+      padding: 20px 16px; 
+  }
+  @include media_min(lg-min-m) {
+    padding: 40px 20px;
+  }
+  & > div{
+    display: flex;
+    align-items: center;
+    gap:4px;  
+  & > a{
+    color: $bgc-btn-blog  ;
+font-size: 14px;
+    margin-right: auto;
+    border: 1px solid transparent;
+    transition: border 750ms;
+    &:hover, &:focus{
+border-color:$blog-yellow ;
+border-radius: 4px;
+    }
+    @include media_min(sm-min) {
+      font-size: 18px;
+    }
+  }
+   
+  }
+}
+}
+
+}

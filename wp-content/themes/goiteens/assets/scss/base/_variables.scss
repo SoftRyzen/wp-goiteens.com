@@ -8,6 +8,11 @@ $breakpoints: (
         md: 991px,
         lg: 1199px,
         xl: 1279px,
+        xs-min:480px,
+        sm-min:768px,
+        lg-min:1200px,
+        lg-min-m:1280px,
+        sm-max:767.98px,
 
 );
 
@@ -46,7 +51,7 @@ $color-sale-yellow  :   #FED32B;
 $color-sale-purple  :   #AA43A2;
 $color-sale-ashen   :   #F9F0F8;
 $color-sale-black   :   #202020;
-$color-tabs-yellow   :   #FEC830;
+$color-tabs-yellow  :   #FEC830;
 $color-xmas-btn     :   #19A1CC;
 $color-xmas-red     :   #D10000;
 $color-xmas-beige   :   #F7F6F4;
@@ -65,4 +70,15 @@ $color-nm-marker    :   #FFF2CC;
 $color-nm-text-mid  :   #504C5C;
 $color-nm-text-gray :   #3F3F3F;
 $color-nm-counter-bg:   #FFE58A;
-$color-nm-social:       #5D778E;
+$color-nm-social    :   #5D778E;
+$title-blog         :   #272D4E;
+$text-blog          :   #707882;
+$bgc-btn-blog       :   #AA43A2;
+$bgc-yellow-blog    :   #F9DE8A;
+$blog-yellow        :   #FFD56A;
+$blog-yellow-lite   :   #FFEDBF;
+$blog-pink          :   #EFCEDD;
+$blog-pink-lite     :   #FFEBF8;
+$blog-lilac         :   #BFC2EE;
+$blog-purple-text   :   #AA43A2;
+$blog-hover-yellow  :   #FCBC19;
