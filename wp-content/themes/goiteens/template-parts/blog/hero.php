@@ -26,17 +26,17 @@
       <svg width="12" height="12">
 <use href="<?= get_template_directory_uri() ?>/assets/images/blog/sprite.svg#icon-small-clock"></use>
 </svg>5хв</span>
-    </div>
+</div>
       <h2>Безпека дитини в інтернеті: що потрібно знати</h2>
       <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p class="hero-text"> Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
       <a href="" class="hero-link" >Пройти тест</a>
-      </div>
-      </div>
-      </div>
+</div>
+</div>
+</div>
   <div class="swiper-pagination"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
-  </div>
-  </div>
+</div>
+</div>
 </section>

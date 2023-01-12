@@ -9,17 +9,63 @@
       padding-bottom: 60px;
     }
     & > .container {
+      position: relative;
       @include media_min(lg-min-m) {
         @include flex(space-around, center, null, null);
       }
+      &::after {
+        @include media_min(sm-min) {
+          content: "";
+          background-image: url("../blog/images/lesson/lesson-lines-right.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          // bottom: -90px;
+          top: 110px;
+          right: -1%;
+          width: 45px;
+          height: 85px;
+        }
+
+        @include media_min(lg-min-m) {
+          top: 210px;
+          right: -35px;
+          width: 65px;
+          height: 130px;
+        }
+      }
+      &::before {
+        @include media_min(sm-min) {
+          content: "";
+          background-image: url("../blog/images/lesson/lesson-lines-left.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          top: 110px;
+          left: -1%;
+          width: 45px;
+          height: 85px;
+        }
+
+        @include media_min(lg-min-m) {
+          top: 125px;
+          left: -55px;
+          width: 65px;
+          height: 130px;
+        }
+      }
     }
     &-text {
+      width: 280px;
       text-align: center;
       color: $title-blog;
       line-height: 1.6;
       font-size: 14px;
-      margin-bottom: 16px;
+      margin: 0 auto 16px;
       @include media_min(sm-min) {
+        width: 100%;
         font-size: 28px;
         line-height: 2;
         margin-bottom: 20px;
@@ -108,49 +154,7 @@
 
       // background-image: url(../../../../blog/images/subscribe/);
 
-      &::after {
-        @include media_min(sm-min) {
-          content: "";
-          background-image: url("../blog/images/lesson/lesson-lines-right.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          position: absolute;
-          bottom: -90px;
-          top: 10px;
-          right: -75px;
-          width: 45px;
-          height: 85px;
-        }
-
-        @include media_min(lg-min-m) {
-          top: -25px;
-          right: -685px;
-          width: 65px;
-          height: 130px;
-        }
-      }
-      &::before {
-        @include media_min(sm-min) {
-          content: "";
-          background-image: url("../blog/images/lesson/lesson-lines-left.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          position: absolute;
-          top: 10px;
-          left: -50px;
-          width: 45px;
-          height: 85px;
-        }
-
-        @include media_min(lg-min-m) {
-          top: -25px;
-          left: -95px;
-          width: 65px;
-          height: 130px;
-        }
-      }
+      
 
       // &__span {
       //   text-transform: uppercase;

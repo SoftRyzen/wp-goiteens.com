@@ -7,10 +7,57 @@
   
     
       & > .container {
+        position: relative;
         @include media_min(lg-min-m) {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+      }
+      &::before {
+        content: "";
+        background-image: url("../blog/images/subscribe/lines-left.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 120px;
+        left: -3px;
+        width: 25px;
+        height: 25px;
+  
+        @include media_min(sm-min) {
+            left: 0;
+          top: -10px;
+          width: 90px;
+          height: 130px;
+        }
+        @include media_min(lg-min-m) {
+          top: -5px;
+          left: -40px;
+        }
+      }
+      &::after {
+        content: "";
+        background-image: url("../blog/images/subscribe/lines-right.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 120px;
+        right: -3px;
+        width: 25px;
+        height: 25px;
+  
+        @include media_min(sm-min) {
+          top: -10px;
+          right: 0;
+          width: 75px;
+          height: 130px;
+        }
+        @include media_min(lg-min-m) {
+          top: -5px;
+          right: -40px;
+        }
       }
     }
     @include media(sm-max) {
@@ -147,51 +194,7 @@ color:$title-blog;
       &__wrapper {
         position: relative;
       }
-      &::before {
-        content: "";
-        background-image: url(".../blog/images/subscribe/lines-left.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: 12px;
-        left: -25px;
-        width: 25px;
-        height: 25px;
-  
-        @include media_min(sm-min) {
-          top: -150px;
-          width: 90px;
-          height: 130px;
-        }
-        @include media_min(lg-min-m) {
-          top: -15px;
-          left: -575px;
-        }
-      }
-      &::after {
-        content: "";
-        background-image: url("../blog/images/subscribe/lines-right.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: 12px;
-        right: -25px;
-        width: 25px;
-        height: 25px;
-  
-        @include media_min(sm-min) {
-          top: -150px;
-          right: -20px;
-          width: 75px;
-          height: 130px;
-        }
-        @include media_min(lg-min-m) {
-          top: -25px;
-          right: -90px;
-        }
-      }
+      
       
       &__label--padding {
         position: relative;
