@@ -40,10 +40,12 @@
         max-width: 875px;
       }
     }
-    &-list {
+    &-list {max-width: 370px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
       @include media_min(sm-min) {
+        max-width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;

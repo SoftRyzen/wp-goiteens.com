@@ -4,21 +4,25 @@ $fields = get_field('offers');
 <!-- Lesson -->
 <section class="lesson">
 
-    <!-- container -->
+   
     <div class="container">
 
-        <!-- title -->
-        <h2 class="lesson-title">
-            <?= $fields['title'] ?>
-        </h2>
-        <!-- end title -->
-
-        <!-- form -->
-        <?= do_shortcode('[contact-form-7 id="' . $fields['form'] . '" title="" html_class="lesson-form wpcf7Submit"]') ?>
-        <!-- end form -->
-
+      <div class="lesson_wrap-text">
+        <h2 class="visually-hidden">Пробне заняття</h2>
+        <p class="lesson-text">Бажаєте визначити здібності дитини та допомогти їй досягти успіху?</p>
+        <strong class="lesson-title">Реєструйтеся на <span>безплатне </span>пробне заняття!</strong>
+      </div>
+      <div class="lesson_wrap-form">
+        <form action="" class="lesson_form">
+            <label ><input placeholder="Ім'я" type="text"></label>
+            <label ><input placeholder="Телефон" type="tel"></label>
+            <label ><input placeholder="Email" type="email"></label>
+            <button type="submit">Надіслати</button>
+        </form>
+      </div>
+     
     </div>
-    <!-- end container -->
+  
 
 </section>
 <!-- End Lesson -->

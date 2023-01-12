@@ -1,204 +1,369 @@
-.site{
+.site {
   & .lesson {
-  background-color: #f9de8a;
-  padding-top: 24px;
-  padding-bottom: 24px;
+    background-color: #f9de8a;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
-  @include media_min(sm-min) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @include media_min(lg-min-m) {
+    @include media_min(sm-min) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     & > .container {
-      @include flex(space-around, center, null, null);
+      @include media_min(lg-min-m) {
+        @include flex(space-around, center, null, null);
+      }
     }
-  }
-  &-title {
-    position: relative;
-    margin-bottom: 16px;
-    width: 250px;
-
-    @include media_min(sm-min) {
+    &-text {
       text-align: center;
-      margin: 0 auto;
-      margin-bottom: 124px;
-      width: 572px;
-    }
-    @include media_min(lg-min-m) {
-      text-align: left;
-      margin: 0;
-      margin-bottom: 124px;
-      width: 490px;
-    }
-    &::after {
-      @include media_min(sm-min) {
-        content: "";
-        background-image: url("../images/lesson/lesson-lines-right.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        bottom: -90px;
-        top: 10px;
-        right: -75px;
-        width: 45px;
-        height: 85px;
-      }
-
-      @include media_min(lg-min-m) {
-        top: -25px;
-        right: -685px;
-        width: 65px;
-        height: 130px;
-      }
-    }
-    &::before {
-      @include media_min(sm-min) {
-        content: "";
-        background-image: url("../images/lesson/lesson-lines-left.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: 10px;
-        left: -50px;
-        width: 45px;
-        height: 85px;
-      }
-
-      @include media_min(lg-min-m) {
-        top: -25px;
-        left: -95px;
-        width: 65px;
-        height: 130px;
-      }
-    }
-
-    &__span {
-      text-transform: uppercase;
-      position: relative;
-      z-index: 2;
-
-      &::before {
-        z-index: -1;
-        content: "";
-        background-image: url("../images/lesson/span-accent.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        top: 10px;
-        left: 3px;
-        width: 132px;
-        height: 16px;
-
-        @include media_min(sm-min) {
-          width: 328px;
-          height: 40px;
-          top: 25px;
-          left: 10px;
-        }
-      }
-      &::after {
-        content: "";
-        background-image: url("../images/lesson/lesson-title-wave.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        bottom: -130px;
-        left: -230px;
-        width: 579px;
-        height: 72px;
-
-        @include media_min(lg-min-m) {
-          width: 595px;
-          bottom: -160px;
-          left: -260px;
-        }
-      }
-    }
-  }
-  &-form {
-    text-align: center;
-
-    @include media_min(sm-min) {
-      background-color: #fdf3d4;
-      margin: 0 auto;
-      max-width: 570px;
-      padding: 36px;
-    }
-    @include media_min(lg-min-m) {
-      max-width: 500px;
-      margin: 0;
-    }
-    & input {
-      width: 100%;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      padding-left: 24px;
-      border-radius: 4px;
-      border: none;
-      padding: 10px 24px 10px 24px;
-      margin-bottom: 24px;
-      outline: none;
-
-      @include media_min(sm-min) {
-        padding-top: 23px;
-        padding-bottom: 23px;
-        padding: 26px 56px 26px 56px;
-      }
-      &::placeholder {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 0.92;
-        color: #272d4e;
-
-        @include media_min(sm-min) {
-          font-size: 18px;
-        }
-      }
-    }
-    & button {
-      position: relative;
-      cursor: pointer;
-      background-color: #e03eab;
-      color: #ffffff;
-      font-weight: 700;
+      color: $title-blog;
+      line-height: 1.6;
       font-size: 14px;
-      line-height: 0.92;
-      width: 184px;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      transition: border 150ms linear, background 150ms linear;
-
+      margin-bottom: 16px;
       @include media_min(sm-min) {
-        width: 100%;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        border: 1px solid #e03eab;
+        font-size: 28px;
+        line-height: 2;
+        margin-bottom: 20px;
       }
-      &:hover,
-      &:focus {
-        border-color: #c51d8e;
-        background-color: #c51d8e;
+      @include media_min(lg-min-m) {
+        text-align: start;
+        font-size: 32px;
+        line-height: 1.75;
+        margin-bottom: 32px;
       }
-      &::after {
-        @include media(sm-max) {
+    }
+    &-title {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 2;
+      text-align: center;
+      margin: 0 auto 32px;
+      width: 250px;
+      & > span {
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        
+        z-index: 2;
+
+        &::before {
+          z-index: -1;
           content: "";
-          background-image: url("../images/lesson/lesson-lines.svg");
+          border-radius: 15px;
+          background-image: url("../blog/images/lesson/span-accent.svg");
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
           position: absolute;
-          top: -15px;
-          right: -45px;
-          width: 37px;
-          height: 70px;
+          top: 3px;
+          left: 3px;
+          width: 100px;
+          height: 16px;
+
+          @include media_min(sm-min) {
+            width: 229px;
+            height: 29px;
+            top: 10px;
+            left: 3px;
+          }
+          @include media_min(lg-min-m) {
+        width: 228px;
+          }
+        }
+        &::after {
+          @include media_min(sm-min) {
+          content: "";
+          background-image: url("../blog/images/lesson/lesson-title-wave.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          bottom: -150px;
+          left: -330px;
+          width: 579px;
+          height: 72px;
+          }
+          @include media_min(lg-min-m) {
+            width: 595px;
+            bottom: -150px;
+            left: -290px;
+          }
+        }
+      
+      }
+      @include media_min(sm-min) {
+        font-size: 32px;
+        line-height: 1.75;
+        text-align: center;
+        margin: 0 auto 132px;
+        width: 572px;
+      }
+      @include media_min(lg-min-m) {
+        font-size: 32px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 124px;
+        width: 500px;
+      }
+
+      // background-image: url(../../../../blog/images/subscribe/);
+
+      &::after {
+        @include media_min(sm-min) {
+          content: "";
+          background-image: url("../blog/images/lesson/lesson-lines-right.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          bottom: -90px;
+          top: 10px;
+          right: -75px;
+          width: 45px;
+          height: 85px;
+        }
+
+        @include media_min(lg-min-m) {
+          top: -25px;
+          right: -685px;
+          width: 65px;
+          height: 130px;
+        }
+      }
+      &::before {
+        @include media_min(sm-min) {
+          content: "";
+          background-image: url("../blog/images/lesson/lesson-lines-left.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          top: 10px;
+          left: -50px;
+          width: 45px;
+          height: 85px;
+        }
+
+        @include media_min(lg-min-m) {
+          top: -25px;
+          left: -95px;
+          width: 65px;
+          height: 130px;
+        }
+      }
+
+      // &__span {
+      //   text-transform: uppercase;
+      //   position: relative;
+      //   z-index: 2;
+
+      //   &::before {
+      //     z-index: -1;
+      //     content: "";
+      //     background-image: url("../blog/images/lesson/span-accent.svg");
+      //     background-size: cover;
+      //     background-repeat: no-repeat;
+      //     background-position: center;
+      //     position: absolute;
+      //     top: 10px;
+      //     left: 3px;
+      //     width: 132px;
+      //     height: 16px;
+
+      //     @include media_min(sm-min) {
+      //       width: 328px;
+      //       height: 40px;
+      //       top: 25px;
+      //       left: 10px;
+      //     }
+      //   }
+      //   &::after {
+      //     content: "";
+      //     background-image: url("../blog/images/lesson/lesson-title-wave.svg");
+      //     background-size: cover;
+      //     background-repeat: no-repeat;
+      //     background-position: center;
+      //     position: absolute;
+      //     bottom: -130px;
+      //     left: -230px;
+      //     width: 579px;
+      //     height: 72px;
+
+      //     @include media_min(lg-min-m) {
+      //       width: 595px;
+      //       bottom: -160px;
+      //       left: -260px;
+      //     }
+      //   }
+      // }
+    }
+    &_wrap-text {
+      @include media_min(lg-min-m) {
+        max-width: 597px;
+      }
+    }
+    &_wrap-form {
+      border-radius: 4px;
+      width: 100%;
+      @include media_min(sm-min) {
+        width: 572px;
+        padding: 36px;
+        background-color: #fdf3d4;
+      }
+      @include media_min(lg-min-m) {
+        padding: 40px;
+        min-width: 508px;
+      }
+    }
+    &_form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      @include media_min(sm-min) {
+        gap: 36px;
+      }
+      @include media_min(lg-min-m) {
+        gap: 32px;
+      }
+      & label {
+        width: 100%;
+      }
+      & input {
+        width: 100%;
+        border-radius: 4px;
+        border: transparent;
+        height: 40px;
+        font-size: 16px;
+        padding-left: 24px;
+        @include media_min(sm-min) {
+          padding-left: 56px;
+          font-size: 18px;
+          height: 72px;
+        }
+        @include media_min(lg-min-m) {
+          padding-left: 48px;
+        }
+        &::placeholder {
+          font-size: 16px;
+          @include media_min(sm-min) {
+            font-size: 18px;
+          }
+          @include media_min(lg-min-m) {
+          }
+        }
+      }
+      & button {
+        @include flex(center, center, null, null);
+        border-radius: 4px;
+        cursor: pointer;
+border-color: transparent;
+        background-color: $bgc-btn-blog;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 0.92;
+        width: 100%;
+        height: 42px;
+        transition: border 750ms linear, background-color 750ms linear, color 750ms linear;
+
+        @include media_min(sm-min) {
+          height: 72px;
+          width: 100%;
+          font-size: 18px;
+          border: 1px solid $bgc-btn-blog;
+        }
+        @include media_min(lg-min-m) {
+          font-size: 20px;
+        }
+        &:hover,
+        &:focus {
+          color:$text-blog;
+          border-color: $bgc-btn-blog;
+          background-color: transparent;
         }
       }
     }
+
+    // &-form {
+    //   text-align: center;
+
+    //   @include media_min(sm-min) {
+    //     background-color: #fdf3d4;
+    //     margin: 0 auto;
+    //     max-width: 570px;
+    //     padding: 36px;
+    //   }
+    //   @include media_min(lg-min-m) {
+    //     max-width: 500px;
+    //     margin: 0;
+    //   }
+    //   & input {
+    //     width: 100%;
+    //     padding-top: 12px;
+    //     padding-bottom: 12px;
+    //     padding-left: 24px;
+    //     border-radius: 4px;
+    //     border: none;
+    //     padding: 10px 24px 10px 24px;
+    //     margin-bottom: 24px;
+    //     outline: none;
+
+    //     @include media_min(sm-min) {
+    //       padding-top: 23px;
+    //       padding-bottom: 23px;
+    //       padding: 26px 56px 26px 56px;
+    //     }
+    //     &::placeholder {
+    //       font-weight: 300;
+    //       font-size: 14px;
+    //       line-height: 0.92;
+    //       color: #272d4e;
+
+    //       @include media_min(sm-min) {
+    //         font-size: 18px;
+    //       }
+    //     }
+    //   }
+    //   & button {
+    //     position: relative;
+    //     cursor: pointer;
+    //     background-color: #e03eab;
+    //     color: #ffffff;
+    //     font-weight: 700;
+    //     font-size: 14px;
+    //     line-height: 0.92;
+    //     width: 184px;
+    //     padding-top: 14px;
+    //     padding-bottom: 14px;
+    //     transition: border 150ms linear, background 150ms linear;
+
+    //     @include media_min(sm-min) {
+    //       width: 100%;
+    //       padding-top: 24px;
+    //       padding-bottom: 24px;
+    //       border: 1px solid #e03eab;
+    //     }
+    //     &:hover,
+    //     &:focus {
+    //       border-color: #c51d8e;
+    //       background-color: #c51d8e;
+    //     }
+    //     &::after {
+    //       @include media(sm-max) {
+    //         content: "";
+    //         background-image: url("../blog/images/lesson/lesson-lines.svg");
+    //         background-size: cover;
+    //         background-repeat: no-repeat;
+    //         background-position: center;
+    //         position: absolute;
+    //         top: -15px;
+    //         right: -45px;
+    //         width: 37px;
+    //         height: 70px;
+    //       }
+    //     }
+    //   }
+    // }
   }
-}
 }

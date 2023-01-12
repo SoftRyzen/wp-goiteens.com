@@ -14,13 +14,15 @@
       }
     }
     @include media(sm-max) {
-      background-image: url("../images/subscribe/wave-mobile.svg");
+ 
+
+      background-image: url("../blog/images/subscribe/wave-mobile.svg");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: bottom -20px right 0;
     }
     @include media_min(lg-min-m) {
-      background-image: url("../images/subscribe/wave-desktop.svg");
+      background-image: url("../blog/images/subscribe/wave-desktop.svg");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: bottom, left;
@@ -147,7 +149,7 @@ color:$title-blog;
       }
       &::before {
         content: "";
-        background-image: url("../images/subscribe/lines-left.svg");
+        background-image: url(".../blog/images/subscribe/lines-left.svg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -169,7 +171,7 @@ color:$title-blog;
       }
       &::after {
         content: "";
-        background-image: url("../images/subscribe/lines-right.svg");
+        background-image: url("../blog/images/subscribe/lines-right.svg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
